@@ -30,8 +30,8 @@
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-			this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+			this.BtnYeniProje = new DevExpress.XtraBars.BarButtonItem();
+			this.BtnYeniMusteri = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
@@ -89,6 +89,22 @@
 			this.barButtonItem41 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem48 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem59 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem60 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem61 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem62 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem63 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem64 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem65 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem66 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem67 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem68 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem69 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem70 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem71 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem72 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem73 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem74 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem75 = new DevExpress.XtraBars.BarButtonItem();
 			this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
 			this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -109,30 +125,57 @@
 			this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.ribbonPage6 = new DevExpress.XtraBars.Ribbon.RibbonPage();
 			this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.barButtonItem60 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem61 = new DevExpress.XtraBars.BarButtonItem();
 			this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.barButtonItem62 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem63 = new DevExpress.XtraBars.BarButtonItem();
 			this.ribbonPageGroup16 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.barButtonItem64 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem65 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem66 = new DevExpress.XtraBars.BarButtonItem();
 			this.ribbonPageGroup17 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.barButtonItem67 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem68 = new DevExpress.XtraBars.BarButtonItem();
 			this.ribbonPageGroup18 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.barButtonItem69 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem70 = new DevExpress.XtraBars.BarButtonItem();
 			this.ribbonPageGroup19 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.barButtonItem71 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem72 = new DevExpress.XtraBars.BarButtonItem();
 			this.ribbonPageGroup20 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.barButtonItem73 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem74 = new DevExpress.XtraBars.BarButtonItem();
 			this.ribbonPageGroup21 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.barButtonItem75 = new DevExpress.XtraBars.BarButtonItem();
+			this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
+			this.splitContainerControl2 = new DevExpress.XtraEditors.SplitContainerControl();
+			this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+			this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
+			this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
+			this.memoEdit1 = new DevExpress.XtraEditors.MemoEdit();
+			this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+			this.comboBoxEdit1 = new DevExpress.XtraEditors.ComboBoxEdit();
+			this.lookUpEdit1 = new DevExpress.XtraEditors.LookUpEdit();
+			this.dateEdit2 = new DevExpress.XtraEditors.DateEdit();
+			this.dateEdit1 = new DevExpress.XtraEditors.DateEdit();
+			this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+			this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+			this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+			this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
 			((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel1)).BeginInit();
+			this.splitContainerControl1.Panel1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel2)).BeginInit();
+			this.splitContainerControl1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2.Panel1)).BeginInit();
+			this.splitContainerControl2.Panel1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2.Panel2)).BeginInit();
+			this.splitContainerControl2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+			this.groupControl1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// ribbonControl1
@@ -141,8 +184,8 @@
 			this.ribbonControl1.ExpandCollapseItem.Id = 0;
 			this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
-            this.barButtonItem1,
-            this.barButtonItem2,
+            this.BtnYeniProje,
+            this.BtnYeniMusteri,
             this.barButtonItem3,
             this.barButtonItem4,
             this.barButtonItem5,
@@ -228,21 +271,23 @@
             this.ribbonPage4,
             this.ribbonPage5,
             this.ribbonPage6});
-			this.ribbonControl1.Size = new System.Drawing.Size(1577, 150);
+			this.ribbonControl1.Size = new System.Drawing.Size(1540, 150);
 			// 
-			// barButtonItem1
+			// BtnYeniProje
 			// 
-			this.barButtonItem1.Caption = "Yeni Proje\r\n Ekle";
-			this.barButtonItem1.Id = 1;
-			this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-			this.barButtonItem1.Name = "barButtonItem1";
+			this.BtnYeniProje.Caption = "Yeni Proje\r\n Ekle";
+			this.BtnYeniProje.Id = 1;
+			this.BtnYeniProje.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnYeniProje.ImageOptions.LargeImage")));
+			this.BtnYeniProje.Name = "BtnYeniProje";
+			this.BtnYeniProje.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnYeniProje_ItemClick);
 			// 
-			// barButtonItem2
+			// BtnYeniMusteri
 			// 
-			this.barButtonItem2.Caption = "Yeni Müşteri Ekle";
-			this.barButtonItem2.Id = 2;
-			this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
-			this.barButtonItem2.Name = "barButtonItem2";
+			this.BtnYeniMusteri.Caption = "Yeni Müşteri Ekle";
+			this.BtnYeniMusteri.Id = 2;
+			this.BtnYeniMusteri.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+			this.BtnYeniMusteri.Name = "BtnYeniMusteri";
+			this.BtnYeniMusteri.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnYeniMusteri_ItemClick);
 			// 
 			// barButtonItem3
 			// 
@@ -643,6 +688,118 @@
 			this.barButtonItem59.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem59.ImageOptions.LargeImage")));
 			this.barButtonItem59.Name = "barButtonItem59";
 			// 
+			// barButtonItem60
+			// 
+			this.barButtonItem60.Caption = "Karanlık/Aydınlık Mod";
+			this.barButtonItem60.Id = 63;
+			this.barButtonItem60.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem60.ImageOptions.LargeImage")));
+			this.barButtonItem60.Name = "barButtonItem60";
+			// 
+			// barButtonItem61
+			// 
+			this.barButtonItem61.Caption = "Dil Seçimi";
+			this.barButtonItem61.Id = 64;
+			this.barButtonItem61.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem61.ImageOptions.LargeImage")));
+			this.barButtonItem61.Name = "barButtonItem61";
+			// 
+			// barButtonItem62
+			// 
+			this.barButtonItem62.Caption = "Kullanıcı Bilgileri";
+			this.barButtonItem62.Id = 65;
+			this.barButtonItem62.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem62.ImageOptions.LargeImage")));
+			this.barButtonItem62.Name = "barButtonItem62";
+			// 
+			// barButtonItem63
+			// 
+			this.barButtonItem63.Caption = "Güvenlik Ayarları";
+			this.barButtonItem63.Id = 66;
+			this.barButtonItem63.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem63.ImageOptions.LargeImage")));
+			this.barButtonItem63.Name = "barButtonItem63";
+			// 
+			// barButtonItem64
+			// 
+			this.barButtonItem64.Caption = "Fatura Tasarımı";
+			this.barButtonItem64.Id = 67;
+			this.barButtonItem64.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem64.ImageOptions.LargeImage")));
+			this.barButtonItem64.Name = "barButtonItem64";
+			// 
+			// barButtonItem65
+			// 
+			this.barButtonItem65.Caption = "Vergi ve KDV Oranları";
+			this.barButtonItem65.Id = 68;
+			this.barButtonItem65.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem65.ImageOptions.LargeImage")));
+			this.barButtonItem65.Name = "barButtonItem65";
+			// 
+			// barButtonItem66
+			// 
+			this.barButtonItem66.Caption = "Fatura Numaralandırma";
+			this.barButtonItem66.Id = 69;
+			this.barButtonItem66.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem66.ImageOptions.LargeImage")));
+			this.barButtonItem66.Name = "barButtonItem66";
+			// 
+			// barButtonItem67
+			// 
+			this.barButtonItem67.Caption = "Veritabanı Yedekleme";
+			this.barButtonItem67.Id = 70;
+			this.barButtonItem67.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem67.ImageOptions.LargeImage")));
+			this.barButtonItem67.Name = "barButtonItem67";
+			// 
+			// barButtonItem68
+			// 
+			this.barButtonItem68.Caption = "Geri Yükleme";
+			this.barButtonItem68.Id = 71;
+			this.barButtonItem68.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem68.ImageOptions.LargeImage")));
+			this.barButtonItem68.Name = "barButtonItem68";
+			// 
+			// barButtonItem69
+			// 
+			this.barButtonItem69.Caption = "Bildirim Türleri";
+			this.barButtonItem69.Id = 72;
+			this.barButtonItem69.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem69.ImageOptions.LargeImage")));
+			this.barButtonItem69.Name = "barButtonItem69";
+			// 
+			// barButtonItem70
+			// 
+			this.barButtonItem70.Caption = "Bildirim Yöntemi";
+			this.barButtonItem70.Id = 73;
+			this.barButtonItem70.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem70.ImageOptions.LargeImage")));
+			this.barButtonItem70.Name = "barButtonItem70";
+			// 
+			// barButtonItem71
+			// 
+			this.barButtonItem71.Caption = "Veritabanı Temizleme";
+			this.barButtonItem71.Id = 74;
+			this.barButtonItem71.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem71.ImageOptions.LargeImage")));
+			this.barButtonItem71.Name = "barButtonItem71";
+			// 
+			// barButtonItem72
+			// 
+			this.barButtonItem72.Caption = "Performans Ayarları";
+			this.barButtonItem72.Id = 75;
+			this.barButtonItem72.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem72.ImageOptions.LargeImage")));
+			this.barButtonItem72.Name = "barButtonItem72";
+			// 
+			// barButtonItem73
+			// 
+			this.barButtonItem73.Caption = "Güncelleme Kontrolü";
+			this.barButtonItem73.Id = 76;
+			this.barButtonItem73.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem73.ImageOptions.LargeImage")));
+			this.barButtonItem73.Name = "barButtonItem73";
+			// 
+			// barButtonItem74
+			// 
+			this.barButtonItem74.Caption = "Lisans Bilgileri";
+			this.barButtonItem74.Id = 77;
+			this.barButtonItem74.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem74.ImageOptions.LargeImage")));
+			this.barButtonItem74.Name = "barButtonItem74";
+			// 
+			// barButtonItem75
+			// 
+			this.barButtonItem75.Caption = "Hesap Makinesi";
+			this.barButtonItem75.Id = 78;
+			this.barButtonItem75.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem75.ImageOptions.LargeImage")));
+			this.barButtonItem75.Name = "barButtonItem75";
+			// 
 			// ribbonPage1
 			// 
 			this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -655,8 +812,8 @@
 			// 
 			// ribbonPageGroup1
 			// 
-			this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
-			this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem2);
+			this.ribbonPageGroup1.ItemLinks.Add(this.BtnYeniProje);
+			this.ribbonPageGroup1.ItemLinks.Add(this.BtnYeniMusteri);
 			this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem3);
 			this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem4);
 			this.ribbonPageGroup1.Name = "ribbonPageGroup1";
@@ -827,40 +984,12 @@
 			this.ribbonPageGroup9.Name = "ribbonPageGroup9";
 			this.ribbonPageGroup9.Text = "Genel Ayarlar";
 			// 
-			// barButtonItem60
-			// 
-			this.barButtonItem60.Caption = "Karanlık/Aydınlık Mod";
-			this.barButtonItem60.Id = 63;
-			this.barButtonItem60.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem60.ImageOptions.LargeImage")));
-			this.barButtonItem60.Name = "barButtonItem60";
-			// 
-			// barButtonItem61
-			// 
-			this.barButtonItem61.Caption = "Dil Seçimi";
-			this.barButtonItem61.Id = 64;
-			this.barButtonItem61.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem61.ImageOptions.LargeImage")));
-			this.barButtonItem61.Name = "barButtonItem61";
-			// 
 			// ribbonPageGroup15
 			// 
 			this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem62);
 			this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem63);
 			this.ribbonPageGroup15.Name = "ribbonPageGroup15";
 			this.ribbonPageGroup15.Text = "Kullanıcı Yönetimi";
-			// 
-			// barButtonItem62
-			// 
-			this.barButtonItem62.Caption = "Kullanıcı Bilgileri";
-			this.barButtonItem62.Id = 65;
-			this.barButtonItem62.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem62.ImageOptions.LargeImage")));
-			this.barButtonItem62.Name = "barButtonItem62";
-			// 
-			// barButtonItem63
-			// 
-			this.barButtonItem63.Caption = "Güvenlik Ayarları";
-			this.barButtonItem63.Id = 66;
-			this.barButtonItem63.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem63.ImageOptions.LargeImage")));
-			this.barButtonItem63.Name = "barButtonItem63";
 			// 
 			// ribbonPageGroup16
 			// 
@@ -870,47 +999,12 @@
 			this.ribbonPageGroup16.Name = "ribbonPageGroup16";
 			this.ribbonPageGroup16.Text = "Fatura Ayarları";
 			// 
-			// barButtonItem64
-			// 
-			this.barButtonItem64.Caption = "Fatura Tasarımı";
-			this.barButtonItem64.Id = 67;
-			this.barButtonItem64.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem64.ImageOptions.LargeImage")));
-			this.barButtonItem64.Name = "barButtonItem64";
-			// 
-			// barButtonItem65
-			// 
-			this.barButtonItem65.Caption = "Vergi ve KDV Oranları";
-			this.barButtonItem65.Id = 68;
-			this.barButtonItem65.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem65.ImageOptions.LargeImage")));
-			this.barButtonItem65.Name = "barButtonItem65";
-			// 
-			// barButtonItem66
-			// 
-			this.barButtonItem66.Caption = "Fatura Numaralandırma";
-			this.barButtonItem66.Id = 69;
-			this.barButtonItem66.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem66.ImageOptions.LargeImage")));
-			this.barButtonItem66.Name = "barButtonItem66";
-			// 
 			// ribbonPageGroup17
 			// 
 			this.ribbonPageGroup17.ItemLinks.Add(this.barButtonItem67);
 			this.ribbonPageGroup17.ItemLinks.Add(this.barButtonItem68);
 			this.ribbonPageGroup17.Name = "ribbonPageGroup17";
 			this.ribbonPageGroup17.Text = "Yedekleme ve Geri Yükleme";
-			// 
-			// barButtonItem67
-			// 
-			this.barButtonItem67.Caption = "Veritabanı Yedekleme";
-			this.barButtonItem67.Id = 70;
-			this.barButtonItem67.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem67.ImageOptions.LargeImage")));
-			this.barButtonItem67.Name = "barButtonItem67";
-			// 
-			// barButtonItem68
-			// 
-			this.barButtonItem68.Caption = "Geri Yükleme";
-			this.barButtonItem68.Id = 71;
-			this.barButtonItem68.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem68.ImageOptions.LargeImage")));
-			this.barButtonItem68.Name = "barButtonItem68";
 			// 
 			// ribbonPageGroup18
 			// 
@@ -919,40 +1013,12 @@
 			this.ribbonPageGroup18.Name = "ribbonPageGroup18";
 			this.ribbonPageGroup18.Text = "Bildirim Ayarları";
 			// 
-			// barButtonItem69
-			// 
-			this.barButtonItem69.Caption = "Bildirim Türleri";
-			this.barButtonItem69.Id = 72;
-			this.barButtonItem69.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem69.ImageOptions.LargeImage")));
-			this.barButtonItem69.Name = "barButtonItem69";
-			// 
-			// barButtonItem70
-			// 
-			this.barButtonItem70.Caption = "Bildirim Yöntemi";
-			this.barButtonItem70.Id = 73;
-			this.barButtonItem70.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem70.ImageOptions.LargeImage")));
-			this.barButtonItem70.Name = "barButtonItem70";
-			// 
 			// ribbonPageGroup19
 			// 
 			this.ribbonPageGroup19.ItemLinks.Add(this.barButtonItem71);
 			this.ribbonPageGroup19.ItemLinks.Add(this.barButtonItem72);
 			this.ribbonPageGroup19.Name = "ribbonPageGroup19";
 			this.ribbonPageGroup19.Text = "Veri ve Performans Ayarları";
-			// 
-			// barButtonItem71
-			// 
-			this.barButtonItem71.Caption = "Veritabanı Temizleme";
-			this.barButtonItem71.Id = 74;
-			this.barButtonItem71.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem71.ImageOptions.LargeImage")));
-			this.barButtonItem71.Name = "barButtonItem71";
-			// 
-			// barButtonItem72
-			// 
-			this.barButtonItem72.Caption = "Performans Ayarları";
-			this.barButtonItem72.Id = 75;
-			this.barButtonItem72.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem72.ImageOptions.LargeImage")));
-			this.barButtonItem72.Name = "barButtonItem72";
 			// 
 			// ribbonPageGroup20
 			// 
@@ -961,41 +1027,302 @@
 			this.ribbonPageGroup20.Name = "ribbonPageGroup20";
 			this.ribbonPageGroup20.Text = "Güncelleme ve Lisans Ayarları";
 			// 
-			// barButtonItem73
-			// 
-			this.barButtonItem73.Caption = "Güncelleme Kontrolü";
-			this.barButtonItem73.Id = 76;
-			this.barButtonItem73.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem73.ImageOptions.LargeImage")));
-			this.barButtonItem73.Name = "barButtonItem73";
-			// 
-			// barButtonItem74
-			// 
-			this.barButtonItem74.Caption = "Lisans Bilgileri";
-			this.barButtonItem74.Id = 77;
-			this.barButtonItem74.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem74.ImageOptions.LargeImage")));
-			this.barButtonItem74.Name = "barButtonItem74";
-			// 
 			// ribbonPageGroup21
 			// 
 			this.ribbonPageGroup21.ItemLinks.Add(this.barButtonItem75);
 			this.ribbonPageGroup21.Name = "ribbonPageGroup21";
 			this.ribbonPageGroup21.Text = "Ek İşlemler";
 			// 
-			// barButtonItem75
+			// splitContainerControl1
 			// 
-			this.barButtonItem75.Caption = "Hesap Makinesi";
-			this.barButtonItem75.Id = 78;
-			this.barButtonItem75.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem75.ImageOptions.LargeImage")));
-			this.barButtonItem75.Name = "barButtonItem75";
+			this.splitContainerControl1.Location = new System.Drawing.Point(0, 157);
+			this.splitContainerControl1.Name = "splitContainerControl1";
+			// 
+			// splitContainerControl1.Panel1
+			// 
+			this.splitContainerControl1.Panel1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+			this.splitContainerControl1.Panel1.Controls.Add(this.splitContainerControl2);
+			this.splitContainerControl1.Panel1.Text = "Panel1";
+			// 
+			// splitContainerControl1.Panel2
+			// 
+			this.splitContainerControl1.Panel2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+			this.splitContainerControl1.Panel2.Text = "Panel2";
+			this.splitContainerControl1.Size = new System.Drawing.Size(1608, 534);
+			this.splitContainerControl1.SplitterPosition = 737;
+			this.splitContainerControl1.TabIndex = 1;
+			// 
+			// splitContainerControl2
+			// 
+			this.splitContainerControl2.Location = new System.Drawing.Point(-560, -2);
+			this.splitContainerControl2.Name = "splitContainerControl2";
+			// 
+			// splitContainerControl2.Panel1
+			// 
+			this.splitContainerControl2.Panel1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+			this.splitContainerControl2.Panel1.Controls.Add(this.groupControl1);
+			this.splitContainerControl2.Panel1.Text = "Panel1";
+			// 
+			// splitContainerControl2.Panel2
+			// 
+			this.splitContainerControl2.Panel2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+			this.splitContainerControl2.Panel2.Text = "Panel2";
+			this.splitContainerControl2.Size = new System.Drawing.Size(1608, 534);
+			this.splitContainerControl2.SplitterPosition = 492;
+			this.splitContainerControl2.TabIndex = 2;
+			// 
+			// groupControl1
+			// 
+			this.groupControl1.Controls.Add(this.BtnTemizle);
+			this.groupControl1.Controls.Add(this.BtnKaydet);
+			this.groupControl1.Controls.Add(this.memoEdit1);
+			this.groupControl1.Controls.Add(this.textEdit3);
+			this.groupControl1.Controls.Add(this.comboBoxEdit1);
+			this.groupControl1.Controls.Add(this.lookUpEdit1);
+			this.groupControl1.Controls.Add(this.dateEdit2);
+			this.groupControl1.Controls.Add(this.dateEdit1);
+			this.groupControl1.Controls.Add(this.textEdit2);
+			this.groupControl1.Controls.Add(this.labelControl5);
+			this.groupControl1.Controls.Add(this.labelControl6);
+			this.groupControl1.Controls.Add(this.labelControl7);
+			this.groupControl1.Controls.Add(this.labelControl8);
+			this.groupControl1.Controls.Add(this.labelControl3);
+			this.groupControl1.Controls.Add(this.labelControl4);
+			this.groupControl1.Controls.Add(this.labelControl2);
+			this.groupControl1.Controls.Add(this.labelControl1);
+			this.groupControl1.Controls.Add(this.textEdit1);
+			this.groupControl1.Location = new System.Drawing.Point(1, 1);
+			this.groupControl1.Name = "groupControl1";
+			this.groupControl1.Size = new System.Drawing.Size(493, 528);
+			this.groupControl1.TabIndex = 0;
+			this.groupControl1.Text = "Yeni Proje Ekleme Ekranı";
+			// 
+			// BtnTemizle
+			// 
+			this.BtnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.BtnTemizle.Appearance.Options.UseFont = true;
+			this.BtnTemizle.Location = new System.Drawing.Point(144, 482);
+			this.BtnTemizle.Name = "BtnTemizle";
+			this.BtnTemizle.Size = new System.Drawing.Size(293, 38);
+			this.BtnTemizle.TabIndex = 17;
+			this.BtnTemizle.Text = "TEMİZLE";
+			// 
+			// BtnKaydet
+			// 
+			this.BtnKaydet.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.BtnKaydet.Appearance.Options.UseFont = true;
+			this.BtnKaydet.Location = new System.Drawing.Point(144, 438);
+			this.BtnKaydet.Name = "BtnKaydet";
+			this.BtnKaydet.Size = new System.Drawing.Size(293, 38);
+			this.BtnKaydet.TabIndex = 16;
+			this.BtnKaydet.Text = "KAYDET";
+			// 
+			// memoEdit1
+			// 
+			this.memoEdit1.Location = new System.Drawing.Point(144, 253);
+			this.memoEdit1.MenuManager = this.ribbonControl1;
+			this.memoEdit1.Name = "memoEdit1";
+			this.memoEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.memoEdit1.Properties.Appearance.Options.UseFont = true;
+			this.memoEdit1.Size = new System.Drawing.Size(293, 179);
+			this.memoEdit1.TabIndex = 15;
+			// 
+			// textEdit3
+			// 
+			this.textEdit3.Location = new System.Drawing.Point(144, 221);
+			this.textEdit3.MenuManager = this.ribbonControl1;
+			this.textEdit3.Name = "textEdit3";
+			this.textEdit3.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.textEdit3.Properties.Appearance.Options.UseFont = true;
+			this.textEdit3.Size = new System.Drawing.Size(293, 26);
+			this.textEdit3.TabIndex = 14;
+			// 
+			// comboBoxEdit1
+			// 
+			this.comboBoxEdit1.Location = new System.Drawing.Point(144, 125);
+			this.comboBoxEdit1.MenuManager = this.ribbonControl1;
+			this.comboBoxEdit1.Name = "comboBoxEdit1";
+			this.comboBoxEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.comboBoxEdit1.Properties.Appearance.Options.UseFont = true;
+			this.comboBoxEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+			this.comboBoxEdit1.Size = new System.Drawing.Size(293, 26);
+			this.comboBoxEdit1.TabIndex = 13;
+			// 
+			// lookUpEdit1
+			// 
+			this.lookUpEdit1.Location = new System.Drawing.Point(144, 93);
+			this.lookUpEdit1.MenuManager = this.ribbonControl1;
+			this.lookUpEdit1.Name = "lookUpEdit1";
+			this.lookUpEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.lookUpEdit1.Properties.Appearance.Options.UseFont = true;
+			this.lookUpEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+			this.lookUpEdit1.Size = new System.Drawing.Size(293, 26);
+			this.lookUpEdit1.TabIndex = 12;
+			// 
+			// dateEdit2
+			// 
+			this.dateEdit2.EditValue = null;
+			this.dateEdit2.Location = new System.Drawing.Point(144, 189);
+			this.dateEdit2.MenuManager = this.ribbonControl1;
+			this.dateEdit2.Name = "dateEdit2";
+			this.dateEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.dateEdit2.Properties.Appearance.Options.UseFont = true;
+			this.dateEdit2.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+			this.dateEdit2.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+			this.dateEdit2.Size = new System.Drawing.Size(293, 26);
+			this.dateEdit2.TabIndex = 11;
+			// 
+			// dateEdit1
+			// 
+			this.dateEdit1.EditValue = null;
+			this.dateEdit1.Location = new System.Drawing.Point(144, 157);
+			this.dateEdit1.MenuManager = this.ribbonControl1;
+			this.dateEdit1.Name = "dateEdit1";
+			this.dateEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.dateEdit1.Properties.Appearance.Options.UseFont = true;
+			this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+			this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+			this.dateEdit1.Size = new System.Drawing.Size(293, 26);
+			this.dateEdit1.TabIndex = 10;
+			// 
+			// textEdit2
+			// 
+			this.textEdit2.Location = new System.Drawing.Point(144, 61);
+			this.textEdit2.MenuManager = this.ribbonControl1;
+			this.textEdit2.Name = "textEdit2";
+			this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.textEdit2.Properties.Appearance.Options.UseFont = true;
+			this.textEdit2.Size = new System.Drawing.Size(293, 26);
+			this.textEdit2.TabIndex = 9;
+			// 
+			// labelControl5
+			// 
+			this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl5.Appearance.Options.UseFont = true;
+			this.labelControl5.Location = new System.Drawing.Point(89, 255);
+			this.labelControl5.Name = "labelControl5";
+			this.labelControl5.Size = new System.Drawing.Size(49, 19);
+			this.labelControl5.TabIndex = 8;
+			this.labelControl5.Text = "Notlar:";
+			// 
+			// labelControl6
+			// 
+			this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl6.Appearance.Options.UseFont = true;
+			this.labelControl6.Location = new System.Drawing.Point(35, 224);
+			this.labelControl6.Name = "labelControl6";
+			this.labelControl6.Size = new System.Drawing.Size(103, 19);
+			this.labelControl6.TabIndex = 7;
+			this.labelControl6.Text = "Toplam Tutar:";
+			// 
+			// labelControl7
+			// 
+			this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl7.Appearance.Options.UseFont = true;
+			this.labelControl7.Location = new System.Drawing.Point(57, 192);
+			this.labelControl7.Name = "labelControl7";
+			this.labelControl7.Size = new System.Drawing.Size(81, 19);
+			this.labelControl7.TabIndex = 6;
+			this.labelControl7.Text = "Bitiş Tarihi:";
+			// 
+			// labelControl8
+			// 
+			this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl8.Appearance.Options.UseFont = true;
+			this.labelControl8.Location = new System.Drawing.Point(21, 160);
+			this.labelControl8.Name = "labelControl8";
+			this.labelControl8.Size = new System.Drawing.Size(117, 19);
+			this.labelControl8.TabIndex = 5;
+			this.labelControl8.Text = "Başlangıç Tarihi:";
+			// 
+			// labelControl3
+			// 
+			this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl3.Appearance.Options.UseFont = true;
+			this.labelControl3.Location = new System.Drawing.Point(83, 128);
+			this.labelControl3.Name = "labelControl3";
+			this.labelControl3.Size = new System.Drawing.Size(55, 19);
+			this.labelControl3.TabIndex = 4;
+			this.labelControl3.Text = "Durum:";
+			// 
+			// labelControl4
+			// 
+			this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl4.Appearance.Options.UseFont = true;
+			this.labelControl4.Location = new System.Drawing.Point(59, 96);
+			this.labelControl4.Name = "labelControl4";
+			this.labelControl4.Size = new System.Drawing.Size(79, 19);
+			this.labelControl4.TabIndex = 3;
+			this.labelControl4.Text = "Müşteri ID:";
+			// 
+			// labelControl2
+			// 
+			this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl2.Appearance.Options.UseFont = true;
+			this.labelControl2.Location = new System.Drawing.Point(66, 64);
+			this.labelControl2.Name = "labelControl2";
+			this.labelControl2.Size = new System.Drawing.Size(72, 19);
+			this.labelControl2.TabIndex = 2;
+			this.labelControl2.Text = "Proje Adı:";
+			// 
+			// labelControl1
+			// 
+			this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl1.Appearance.Options.UseFont = true;
+			this.labelControl1.Location = new System.Drawing.Point(73, 30);
+			this.labelControl1.Name = "labelControl1";
+			this.labelControl1.Size = new System.Drawing.Size(65, 19);
+			this.labelControl1.TabIndex = 1;
+			this.labelControl1.Text = "Proje ID:";
+			// 
+			// textEdit1
+			// 
+			this.textEdit1.Location = new System.Drawing.Point(144, 27);
+			this.textEdit1.MenuManager = this.ribbonControl1;
+			this.textEdit1.Name = "textEdit1";
+			this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.textEdit1.Properties.Appearance.Options.UseFont = true;
+			this.textEdit1.Size = new System.Drawing.Size(293, 26);
+			this.textEdit1.TabIndex = 0;
 			// 
 			// Form1
 			// 
-			this.ClientSize = new System.Drawing.Size(1577, 693);
+			this.ClientSize = new System.Drawing.Size(1540, 693);
+			this.Controls.Add(this.splitContainerControl1);
 			this.Controls.Add(this.ribbonControl1);
 			this.Name = "Form1";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.Load += new System.EventHandler(this.Form1_Load);
 			((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel1)).EndInit();
+			this.splitContainerControl1.Panel1.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
+			this.splitContainerControl1.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2.Panel1)).EndInit();
+			this.splitContainerControl2.Panel1.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2.Panel2)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.splitContainerControl2)).EndInit();
+			this.splitContainerControl2.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+			this.groupControl1.ResumeLayout(false);
+			this.groupControl1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.memoEdit1.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.comboBoxEdit1.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.lookUpEdit1.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties.CalendarTimeProperties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties.CalendarTimeProperties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dateEdit1.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -1008,8 +1335,8 @@
 		private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
 		private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem1;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+		private DevExpress.XtraBars.BarButtonItem BtnYeniProje;
+		private DevExpress.XtraBars.BarButtonItem BtnYeniMusteri;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem3;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem4;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem5;
@@ -1108,6 +1435,27 @@
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup20;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem75;
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup21;
+		private DevExpress.XtraEditors.SplitContainerControl splitContainerControl1;
+		private DevExpress.XtraEditors.SplitContainerControl splitContainerControl2;
+		private DevExpress.XtraEditors.GroupControl groupControl1;
+		private DevExpress.XtraEditors.SimpleButton BtnTemizle;
+		private DevExpress.XtraEditors.SimpleButton BtnKaydet;
+		private DevExpress.XtraEditors.MemoEdit memoEdit1;
+		private DevExpress.XtraEditors.TextEdit textEdit3;
+		private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit1;
+		private DevExpress.XtraEditors.LookUpEdit lookUpEdit1;
+		private DevExpress.XtraEditors.DateEdit dateEdit2;
+		private DevExpress.XtraEditors.DateEdit dateEdit1;
+		private DevExpress.XtraEditors.TextEdit textEdit2;
+		private DevExpress.XtraEditors.LabelControl labelControl5;
+		private DevExpress.XtraEditors.LabelControl labelControl6;
+		private DevExpress.XtraEditors.LabelControl labelControl7;
+		private DevExpress.XtraEditors.LabelControl labelControl8;
+		private DevExpress.XtraEditors.LabelControl labelControl3;
+		private DevExpress.XtraEditors.LabelControl labelControl4;
+		private DevExpress.XtraEditors.LabelControl labelControl2;
+		private DevExpress.XtraEditors.LabelControl labelControl1;
+		private DevExpress.XtraEditors.TextEdit textEdit1;
 	}
 }
 

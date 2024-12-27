@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DbProFinModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Ayarlar">
+    <Key>
+      <PropertyRef Name="AyarID" />
+    </Key>
+    <Property Name="AyarID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Anahtar" Type="varchar" MaxLength="100" />
+    <Property Name="Deger" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="FaturaKalemleri">
+    <Key>
+      <PropertyRef Name="KalemID" />
+    </Key>
+    <Property Name="KalemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FaturaID" Type="int" />
+    <Property Name="UrunHizmetAdi" Type="varchar" MaxLength="150" />
+    <Property Name="Miktar" Type="int" />
+    <Property Name="BirimFiyat" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="AraToplam" Type="decimal" Precision="10" Scale="2" />
+  </EntityType>
+  <EntityType Name="Faturalar">
+    <Key>
+      <PropertyRef Name="FaturaID" />
+    </Key>
+    <Property Name="FaturaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MusteriID" Type="int" />
+    <Property Name="ProjeID" Type="int" />
+    <Property Name="FaturaNumarasi" Type="varchar" MaxLength="50" />
+    <Property Name="FaturaTarihi" Type="datetime" />
+    <Property Name="ToplamTutar" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="KDVOrani" Type="int" />
+    <Property Name="OdemeDurumu" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Gorevler">
+    <Key>
+      <PropertyRef Name="GorevID" />
+    </Key>
+    <Property Name="GorevID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjeID" Type="int" />
+    <Property Name="GorevAdi" Type="varchar" MaxLength="150" />
+    <Property Name="Durum" Type="varchar" MaxLength="20" />
+    <Property Name="SonTarih" Type="datetime" />
+    <Property Name="Aciklama" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Kullanicilar">
+    <Key>
+      <PropertyRef Name="KullaniciID" />
+    </Key>
+    <Property Name="KullaniciID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AdSoyad" Type="varchar" MaxLength="100" />
+    <Property Name="KullaniciAdi" Type="varchar" MaxLength="50" />
+    <Property Name="Sifre" Type="varchar" MaxLength="255" />
+    <Property Name="Eposta" Type="varchar" MaxLength="100" />
+    <Property Name="Rol" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Musteriler">
+    <Key>
+      <PropertyRef Name="MusteriID" />
+    </Key>
+    <Property Name="MusteriID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AdSoyad" Type="varchar" MaxLength="100" />
+    <Property Name="Telefon" Type="varchar" MaxLength="15" />
+    <Property Name="Eposta" Type="varchar" MaxLength="100" />
+    <Property Name="Adres" Type="varchar" MaxLength="500" />
+    <Property Name="Notlar" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Projeler">
+    <Key>
+      <PropertyRef Name="ProjeID" />
+    </Key>
+    <Property Name="ProjeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjeAdi" Type="varchar" MaxLength="150" />
+    <Property Name="MusteriID" Type="int" />
+    <Property Name="Durum" Type="varchar" MaxLength="20" />
+    <Property Name="BaslangicTarihi" Type="datetime" />
+    <Property Name="BitisTarihi" Type="datetime" />
+    <Property Name="ToplamTutar" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="Notlar" Type="varchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Raporlar">
+    <Key>
+      <PropertyRef Name="RaporID" />
+    </Key>
+    <Property Name="RaporID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RaporAdi" Type="varchar" MaxLength="100" />
+    <Property Name="OlusturanKullaniciID" Type="int" />
+    <Property Name="OlusturmaTarihi" Type="datetime" />
+    <Property Name="RaporDetaylari" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Yedekleme">
+    <Key>
+      <PropertyRef Name="YedekID" />
+    </Key>
+    <Property Name="YedekID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DosyaYolu" Type="varchar" MaxLength="255" />
+    <Property Name="YedeklemeTarihi" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_FaturaKalemleri_Faturalar">
+    <End Role="Faturalar" Type="Self.Faturalar" Multiplicity="0..1" />
+    <End Role="FaturaKalemleri" Type="Self.FaturaKalemleri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Faturalar">
+        <PropertyRef Name="FaturaID" />
+      </Principal>
+      <Dependent Role="FaturaKalemleri">
+        <PropertyRef Name="FaturaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Faturalar_Musteriler">
+    <End Role="Musteriler" Type="Self.Musteriler" Multiplicity="0..1" />
+    <End Role="Faturalar" Type="Self.Faturalar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Musteriler">
+        <PropertyRef Name="MusteriID" />
+      </Principal>
+      <Dependent Role="Faturalar">
+        <PropertyRef Name="MusteriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Faturalar_Projeler">
+    <End Role="Projeler" Type="Self.Projeler" Multiplicity="0..1" />
+    <End Role="Faturalar" Type="Self.Faturalar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projeler">
+        <PropertyRef Name="ProjeID" />
+      </Principal>
+      <Dependent Role="Faturalar">
+        <PropertyRef Name="ProjeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Gorevler_Projeler">
+    <End Role="Projeler" Type="Self.Projeler" Multiplicity="0..1" />
+    <End Role="Gorevler" Type="Self.Gorevler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projeler">
+        <PropertyRef Name="ProjeID" />
+      </Principal>
+      <Dependent Role="Gorevler">
+        <PropertyRef Name="ProjeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Projeler_Musteriler">
+    <End Role="Musteriler" Type="Self.Musteriler" Multiplicity="0..1" />
+    <End Role="Projeler" Type="Self.Projeler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Musteriler">
+        <PropertyRef Name="MusteriID" />
+      </Principal>
+      <Dependent Role="Projeler">
+        <PropertyRef Name="MusteriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DbProFinModelStoreContainer">
+    <EntitySet Name="Ayarlar" EntityType="Self.Ayarlar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FaturaKalemleri" EntityType="Self.FaturaKalemleri" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Faturalar" EntityType="Self.Faturalar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Gorevler" EntityType="Self.Gorevler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kullanicilar" EntityType="Self.Kullanicilar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Musteriler" EntityType="Self.Musteriler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Projeler" EntityType="Self.Projeler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Raporlar" EntityType="Self.Raporlar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Yedekleme" EntityType="Self.Yedekleme" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_FaturaKalemleri_Faturalar" Association="Self.FK_FaturaKalemleri_Faturalar">
+      <End Role="Faturalar" EntitySet="Faturalar" />
+      <End Role="FaturaKalemleri" EntitySet="FaturaKalemleri" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Faturalar_Musteriler" Association="Self.FK_Faturalar_Musteriler">
+      <End Role="Musteriler" EntitySet="Musteriler" />
+      <End Role="Faturalar" EntitySet="Faturalar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Faturalar_Projeler" Association="Self.FK_Faturalar_Projeler">
+      <End Role="Projeler" EntitySet="Projeler" />
+      <End Role="Faturalar" EntitySet="Faturalar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Gorevler_Projeler" Association="Self.FK_Gorevler_Projeler">
+      <End Role="Projeler" EntitySet="Projeler" />
+      <End Role="Gorevler" EntitySet="Gorevler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Projeler_Musteriler" Association="Self.FK_Projeler_Musteriler">
+      <End Role="Musteriler" EntitySet="Musteriler" />
+      <End Role="Projeler" EntitySet="Projeler" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

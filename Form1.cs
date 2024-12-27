@@ -26,5 +26,17 @@ namespace ProFin
 		{
 
 		}
+
+		private void BtnYeniProje_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmYeniProje YeniProje= new FrmYeniProje();
+			YeniProje.ShowDialog(); 
+		}
+
+		private void BtnYeniMusteri_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmYeniMusteri YeniMusteri = new FrmYeniMusteri();
+			YeniMusteri.ShowDialog();
+		}
 	}
 }
