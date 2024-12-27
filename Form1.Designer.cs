@@ -61,6 +61,14 @@
 			this.barButtonItem29 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem30 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem31 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem32 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem33 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem34 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem35 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem36 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem37 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem38 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem39 = new DevExpress.XtraBars.BarButtonItem();
 			this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
 			this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -76,15 +84,31 @@
 			this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.ribbonPage6 = new DevExpress.XtraBars.Ribbon.RibbonPage();
 			this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.barButtonItem32 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem33 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem34 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem35 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem36 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem37 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem38 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem39 = new DevExpress.XtraBars.BarButtonItem();
-			((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+			this.barButtonItem40 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem42 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem43 = new DevExpress.XtraBars.BarButtonItem();
+			this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+			this.barButtonItem44 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem45 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem46 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem47 = new DevExpress.XtraBars.BarButtonItem();
+			this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+			this.barButtonItem49 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem50 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem51 = new DevExpress.XtraBars.BarButtonItem();
+			this.ribbonPageGroup12 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+			this.barButtonItem52 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem53 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem54 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem55 = new DevExpress.XtraBars.BarButtonItem();
+			this.ribbonPageGroup13 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+			this.barButtonItem56 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem57 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem58 = new DevExpress.XtraBars.BarButtonItem();
+			this.ribbonPageGroup14 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+			this.barButtonItem41 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem48 = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem59 = new DevExpress.XtraBars.BarButtonItem();
 			this.SuspendLayout();
 			// 
 			// ribbonControl1
@@ -131,10 +155,30 @@
             this.barButtonItem36,
             this.barButtonItem37,
             this.barButtonItem38,
-            this.barButtonItem39});
+            this.barButtonItem39,
+            this.barButtonItem40,
+            this.barButtonItem42,
+            this.barButtonItem43,
+            this.barButtonItem44,
+            this.barButtonItem45,
+            this.barButtonItem46,
+            this.barButtonItem47,
+            this.barButtonItem49,
+            this.barButtonItem50,
+            this.barButtonItem51,
+            this.barButtonItem52,
+            this.barButtonItem53,
+            this.barButtonItem54,
+            this.barButtonItem55,
+            this.barButtonItem56,
+            this.barButtonItem57,
+            this.barButtonItem58,
+            this.barButtonItem41,
+            this.barButtonItem48,
+            this.barButtonItem59});
 			this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
 			this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4);
-			this.ribbonControl1.MaxItemId = 41;
+			this.ribbonControl1.MaxItemId = 63;
 			this.ribbonControl1.Name = "ribbonControl1";
 			this.ribbonControl1.OptionsMenuMinWidth = 412;
 			this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -144,7 +188,7 @@
             this.ribbonPage4,
             this.ribbonPage5,
             this.ribbonPage6});
-			this.ribbonControl1.Size = new System.Drawing.Size(1363, 150);
+			this.ribbonControl1.Size = new System.Drawing.Size(1577, 150);
 			// 
 			// barButtonItem1
 			// 
@@ -363,6 +407,62 @@
 			this.barButtonItem31.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem31.ImageOptions.LargeImage")));
 			this.barButtonItem31.Name = "barButtonItem31";
 			// 
+			// barButtonItem32
+			// 
+			this.barButtonItem32.Caption = "Fatura Listesi";
+			this.barButtonItem32.Id = 33;
+			this.barButtonItem32.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem32.ImageOptions.LargeImage")));
+			this.barButtonItem32.Name = "barButtonItem32";
+			// 
+			// barButtonItem33
+			// 
+			this.barButtonItem33.Caption = "Fatura Detayları";
+			this.barButtonItem33.Id = 34;
+			this.barButtonItem33.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem33.ImageOptions.LargeImage")));
+			this.barButtonItem33.Name = "barButtonItem33";
+			// 
+			// barButtonItem34
+			// 
+			this.barButtonItem34.Caption = "Yeni Fatura Oluştur";
+			this.barButtonItem34.Id = 35;
+			this.barButtonItem34.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem34.ImageOptions.LargeImage")));
+			this.barButtonItem34.Name = "barButtonItem34";
+			// 
+			// barButtonItem35
+			// 
+			this.barButtonItem35.Caption = "Filtreleme ve Arama";
+			this.barButtonItem35.Id = 36;
+			this.barButtonItem35.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem35.ImageOptions.LargeImage")));
+			this.barButtonItem35.Name = "barButtonItem35";
+			// 
+			// barButtonItem36
+			// 
+			this.barButtonItem36.Caption = "Faturaların Analiz Raporları";
+			this.barButtonItem36.Id = 37;
+			this.barButtonItem36.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem36.ImageOptions.LargeImage")));
+			this.barButtonItem36.Name = "barButtonItem36";
+			// 
+			// barButtonItem37
+			// 
+			this.barButtonItem37.Caption = "Faturaların Finansal Durum Raporları";
+			this.barButtonItem37.Id = 38;
+			this.barButtonItem37.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem37.ImageOptions.LargeImage")));
+			this.barButtonItem37.Name = "barButtonItem37";
+			// 
+			// barButtonItem38
+			// 
+			this.barButtonItem38.Caption = "Toplu İşlemler";
+			this.barButtonItem38.Id = 39;
+			this.barButtonItem38.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem38.ImageOptions.LargeImage")));
+			this.barButtonItem38.Name = "barButtonItem38";
+			// 
+			// barButtonItem39
+			// 
+			this.barButtonItem39.Caption = "Fatura Yazdırma ve Paylaşma";
+			this.barButtonItem39.Id = 40;
+			this.barButtonItem39.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem39.ImageOptions.LargeImage")));
+			this.barButtonItem39.Name = "barButtonItem39";
+			// 
 			// ribbonPage1
 			// 
 			this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -468,14 +568,22 @@
 			// ribbonPage5
 			// 
 			this.ribbonPage5.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup8});
+            this.ribbonPageGroup8,
+            this.ribbonPageGroup10,
+            this.ribbonPageGroup11,
+            this.ribbonPageGroup12,
+            this.ribbonPageGroup13,
+            this.ribbonPageGroup14});
 			this.ribbonPage5.Name = "ribbonPage5";
 			this.ribbonPage5.Text = "Raporlar";
 			// 
 			// ribbonPageGroup8
 			// 
+			this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem40);
+			this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem42);
+			this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem43);
 			this.ribbonPageGroup8.Name = "ribbonPageGroup8";
-			this.ribbonPageGroup8.Text = "Rapor Yönetimi Modülü";
+			this.ribbonPageGroup8.Text = "Genel Bakış Raporları";
 			// 
 			// ribbonPage6
 			// 
@@ -489,70 +597,194 @@
 			this.ribbonPageGroup9.Name = "ribbonPageGroup9";
 			this.ribbonPageGroup9.Text = "ribbonPageGroup9";
 			// 
-			// barButtonItem32
+			// barButtonItem40
 			// 
-			this.barButtonItem32.Caption = "Fatura Listesi";
-			this.barButtonItem32.Id = 33;
-			this.barButtonItem32.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem32.ImageOptions.LargeImage")));
-			this.barButtonItem32.Name = "barButtonItem32";
+			this.barButtonItem40.Caption = "Toplam Gelir/Gider";
+			this.barButtonItem40.Id = 41;
+			this.barButtonItem40.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem40.ImageOptions.LargeImage")));
+			this.barButtonItem40.Name = "barButtonItem40";
 			// 
-			// barButtonItem33
+			// barButtonItem42
 			// 
-			this.barButtonItem33.Caption = "Fatura Detayları";
-			this.barButtonItem33.Id = 34;
-			this.barButtonItem33.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem33.ImageOptions.LargeImage")));
-			this.barButtonItem33.Name = "barButtonItem33";
+			this.barButtonItem42.Caption = "Ödenmeyen Faturalar";
+			this.barButtonItem42.Id = 43;
+			this.barButtonItem42.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem42.ImageOptions.LargeImage")));
+			this.barButtonItem42.Name = "barButtonItem42";
 			// 
-			// barButtonItem34
+			// barButtonItem43
 			// 
-			this.barButtonItem34.Caption = "Yeni Fatura Oluştur";
-			this.barButtonItem34.Id = 35;
-			this.barButtonItem34.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem34.ImageOptions.LargeImage")));
-			this.barButtonItem34.Name = "barButtonItem34";
+			this.barButtonItem43.Caption = "Bekleyen İşler";
+			this.barButtonItem43.Id = 44;
+			this.barButtonItem43.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem43.ImageOptions.LargeImage")));
+			this.barButtonItem43.Name = "barButtonItem43";
 			// 
-			// barButtonItem35
+			// ribbonPageGroup10
 			// 
-			this.barButtonItem35.Caption = "Filtreleme ve Arama";
-			this.barButtonItem35.Id = 36;
-			this.barButtonItem35.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem35.ImageOptions.LargeImage")));
-			this.barButtonItem35.Name = "barButtonItem35";
+			this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem44);
+			this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem45);
+			this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem46);
+			this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem47);
+			this.ribbonPageGroup10.Name = "ribbonPageGroup10";
+			this.ribbonPageGroup10.Text = "Fatura Raporları";
 			// 
-			// barButtonItem36
+			// barButtonItem44
 			// 
-			this.barButtonItem36.Caption = "Faturaların Analiz Raporları";
-			this.barButtonItem36.Id = 37;
-			this.barButtonItem36.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem36.ImageOptions.LargeImage")));
-			this.barButtonItem36.Name = "barButtonItem36";
+			this.barButtonItem44.Caption = "Müşteri Bazlı Fatura Raporu";
+			this.barButtonItem44.Id = 45;
+			this.barButtonItem44.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem44.ImageOptions.LargeImage")));
+			this.barButtonItem44.Name = "barButtonItem44";
 			// 
-			// barButtonItem37
+			// barButtonItem45
 			// 
-			this.barButtonItem37.Caption = "Faturaların Finansal Durum Raporları";
-			this.barButtonItem37.Id = 38;
-			this.barButtonItem37.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem37.ImageOptions.LargeImage")));
-			this.barButtonItem37.Name = "barButtonItem37";
+			this.barButtonItem45.Caption = "Tarih Bazlı Fatura Raporu";
+			this.barButtonItem45.Id = 46;
+			this.barButtonItem45.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem45.ImageOptions.LargeImage")));
+			this.barButtonItem45.Name = "barButtonItem45";
 			// 
-			// barButtonItem38
+			// barButtonItem46
 			// 
-			this.barButtonItem38.Caption = "Toplu İşlemler";
-			this.barButtonItem38.Id = 39;
-			this.barButtonItem38.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem38.ImageOptions.LargeImage")));
-			this.barButtonItem38.Name = "barButtonItem38";
+			this.barButtonItem46.Caption = "KDV Raporu";
+			this.barButtonItem46.Id = 47;
+			this.barButtonItem46.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem46.ImageOptions.LargeImage")));
+			this.barButtonItem46.Name = "barButtonItem46";
 			// 
-			// barButtonItem39
+			// barButtonItem47
 			// 
-			this.barButtonItem39.Caption = "Fatura Yazdırma ve Paylaşma";
-			this.barButtonItem39.Id = 40;
-			this.barButtonItem39.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem39.ImageOptions.LargeImage")));
-			this.barButtonItem39.Name = "barButtonItem39";
+			this.barButtonItem47.Caption = "Ödeme Durumu Raporu";
+			this.barButtonItem47.Id = 48;
+			this.barButtonItem47.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem47.ImageOptions.LargeImage")));
+			this.barButtonItem47.Name = "barButtonItem47";
+			// 
+			// ribbonPageGroup11
+			// 
+			this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem49);
+			this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem50);
+			this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem51);
+			this.ribbonPageGroup11.Name = "ribbonPageGroup11";
+			this.ribbonPageGroup11.Text = "Müşteri Analiz Raporları";
+			// 
+			// barButtonItem49
+			// 
+			this.barButtonItem49.Caption = "Gecikmiş Ödemeleri Olan Müşteriler";
+			this.barButtonItem49.Id = 50;
+			this.barButtonItem49.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem49.ImageOptions.LargeImage")));
+			this.barButtonItem49.Name = "barButtonItem49";
+			// 
+			// barButtonItem50
+			// 
+			this.barButtonItem50.Caption = "Aktif Müşteriler";
+			this.barButtonItem50.Id = 51;
+			this.barButtonItem50.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem50.ImageOptions.LargeImage")));
+			this.barButtonItem50.Name = "barButtonItem50";
+			// 
+			// barButtonItem51
+			// 
+			this.barButtonItem51.Caption = "Pasif Müşteriler";
+			this.barButtonItem51.Id = 52;
+			this.barButtonItem51.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem51.ImageOptions.LargeImage")));
+			this.barButtonItem51.Name = "barButtonItem51";
+			// 
+			// ribbonPageGroup12
+			// 
+			this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem52);
+			this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem53);
+			this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem54);
+			this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem55);
+			this.ribbonPageGroup12.Name = "ribbonPageGroup12";
+			this.ribbonPageGroup12.Text = "Proje Durumu Raporları";
+			// 
+			// barButtonItem52
+			// 
+			this.barButtonItem52.Caption = "Tamamlanmış Projeler";
+			this.barButtonItem52.Id = 53;
+			this.barButtonItem52.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem52.ImageOptions.LargeImage")));
+			this.barButtonItem52.Name = "barButtonItem52";
+			// 
+			// barButtonItem53
+			// 
+			this.barButtonItem53.Caption = "Devam Eden Projeler";
+			this.barButtonItem53.Id = 54;
+			this.barButtonItem53.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem53.ImageOptions.LargeImage")));
+			this.barButtonItem53.Name = "barButtonItem53";
+			// 
+			// barButtonItem54
+			// 
+			this.barButtonItem54.Caption = "İptal Edilmiş Projeler";
+			this.barButtonItem54.Id = 55;
+			this.barButtonItem54.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem54.ImageOptions.LargeImage")));
+			this.barButtonItem54.Name = "barButtonItem54";
+			// 
+			// barButtonItem55
+			// 
+			this.barButtonItem55.Caption = "Proje Bazlı Gelir ve Gider";
+			this.barButtonItem55.Id = 56;
+			this.barButtonItem55.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem55.ImageOptions.LargeImage")));
+			this.barButtonItem55.Name = "barButtonItem55";
+			// 
+			// ribbonPageGroup13
+			// 
+			this.ribbonPageGroup13.ItemLinks.Add(this.barButtonItem56);
+			this.ribbonPageGroup13.ItemLinks.Add(this.barButtonItem57);
+			this.ribbonPageGroup13.ItemLinks.Add(this.barButtonItem58);
+			this.ribbonPageGroup13.Name = "ribbonPageGroup13";
+			this.ribbonPageGroup13.Text = "Ödeme Raporları";
+			// 
+			// barButtonItem56
+			// 
+			this.barButtonItem56.Caption = "Ödeme Tarihine Göre Rapor";
+			this.barButtonItem56.Id = 57;
+			this.barButtonItem56.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem56.ImageOptions.LargeImage")));
+			this.barButtonItem56.Name = "barButtonItem56";
+			this.barButtonItem56.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem56_ItemClick);
+			// 
+			// barButtonItem57
+			// 
+			this.barButtonItem57.Caption = "Gecikmiş Ödemeler Raporu";
+			this.barButtonItem57.Id = 58;
+			this.barButtonItem57.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem57.ImageOptions.LargeImage")));
+			this.barButtonItem57.Name = "barButtonItem57";
+			// 
+			// barButtonItem58
+			// 
+			this.barButtonItem58.Caption = "Tamamlanmış Ödemeler";
+			this.barButtonItem58.Id = 59;
+			this.barButtonItem58.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem58.ImageOptions.LargeImage")));
+			this.barButtonItem58.Name = "barButtonItem58";
+			// 
+			// ribbonPageGroup14
+			// 
+			this.ribbonPageGroup14.ItemLinks.Add(this.barButtonItem41);
+			this.ribbonPageGroup14.ItemLinks.Add(this.barButtonItem59);
+			this.ribbonPageGroup14.Name = "ribbonPageGroup14";
+			this.ribbonPageGroup14.Text = "Ek İşlemler";
+			// 
+			// barButtonItem41
+			// 
+			this.barButtonItem41.Caption = "Rapor Filtreleme ve Arama";
+			this.barButtonItem41.Id = 60;
+			this.barButtonItem41.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem41.ImageOptions.LargeImage")));
+			this.barButtonItem41.Name = "barButtonItem41";
+			// 
+			// barButtonItem48
+			// 
+			this.barButtonItem48.Caption = "Fatura Yazdırma ve Paylaşma";
+			this.barButtonItem48.Id = 61;
+			this.barButtonItem48.Name = "barButtonItem48";
+			// 
+			// barButtonItem59
+			// 
+			this.barButtonItem59.Caption = "Fatura Yazdırma ve Paylaşma";
+			this.barButtonItem59.Id = 62;
+			this.barButtonItem59.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem59.ImageOptions.LargeImage")));
+			this.barButtonItem59.Name = "barButtonItem59";
 			// 
 			// Form1
 			// 
-			this.ClientSize = new System.Drawing.Size(1363, 592);
+			this.ClientSize = new System.Drawing.Size(1577, 693);
 			this.Controls.Add(this.ribbonControl1);
 			this.Name = "Form1";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.Load += new System.EventHandler(this.Form1_Load);
-			((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -617,6 +849,31 @@
 		private DevExpress.XtraBars.BarButtonItem barButtonItem37;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem38;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem39;
+		private DevExpress.XtraBars.BarButtonItem barButtonItem40;
+		private DevExpress.XtraBars.BarButtonItem barButtonItem42;
+		private DevExpress.XtraBars.BarButtonItem barButtonItem43;
+		private DevExpress.XtraBars.BarButtonItem barButtonItem44;
+		private DevExpress.XtraBars.BarButtonItem barButtonItem45;
+		private DevExpress.XtraBars.BarButtonItem barButtonItem46;
+		private DevExpress.XtraBars.BarButtonItem barButtonItem47;
+		private DevExpress.XtraBars.BarButtonItem barButtonItem49;
+		private DevExpress.XtraBars.BarButtonItem barButtonItem50;
+		private DevExpress.XtraBars.BarButtonItem barButtonItem51;
+		private DevExpress.XtraBars.BarButtonItem barButtonItem52;
+		private DevExpress.XtraBars.BarButtonItem barButtonItem53;
+		private DevExpress.XtraBars.BarButtonItem barButtonItem54;
+		private DevExpress.XtraBars.BarButtonItem barButtonItem55;
+		private DevExpress.XtraBars.BarButtonItem barButtonItem56;
+		private DevExpress.XtraBars.BarButtonItem barButtonItem57;
+		private DevExpress.XtraBars.BarButtonItem barButtonItem58;
+		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
+		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
+		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup12;
+		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup13;
+		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup14;
+		private DevExpress.XtraBars.BarButtonItem barButtonItem41;
+		private DevExpress.XtraBars.BarButtonItem barButtonItem48;
+		private DevExpress.XtraBars.BarButtonItem barButtonItem59;
 	}
 }
 
