@@ -48,3 +48,8 @@ C:\Users\BAHARS\source\repos\ProFin\bin\Debug\DevExpress.XtraTreeList.v24.2.xml
 C:\Users\BAHARS\source\repos\ProFin\bin\Debug\DevExpress.Office.v24.2.Core.xml
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmYeniProje.resources
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmYeniMusteri.resources
+C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmProjeListesi.resources
+C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmMusteriListesi.resources
+C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FaturaOlustur.resources
+C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmFaturaListesi.resources
+C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmFaturaDetay.resources

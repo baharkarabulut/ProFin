@@ -90,5 +90,10 @@ namespace ProFin
 		{
 			Listele();
 		}
+
+		private void BtnYenile_Click(object sender, EventArgs e)
+		{
+			Listele();
+		}
 	}
 }

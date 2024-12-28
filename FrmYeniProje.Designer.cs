@@ -49,6 +49,7 @@
 			this.txtProjeID = new DevExpress.XtraEditors.TextEdit();
 			this.gridControl1 = new DevExpress.XtraGrid.GridControl();
 			this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+			this.BtnYenile = new DevExpress.XtraEditors.SimpleButton();
 			((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel1)).BeginInit();
 			this.splitContainerControl1.Panel1.SuspendLayout();
@@ -85,6 +86,7 @@
 			// splitContainerControl1.Panel2
 			// 
 			this.splitContainerControl1.Panel2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+			this.splitContainerControl1.Panel2.Controls.Add(this.BtnYenile);
 			this.splitContainerControl1.Panel2.Controls.Add(this.gridControl1);
 			this.splitContainerControl1.Panel2.Text = "Panel2";
 			this.splitContainerControl1.Size = new System.Drawing.Size(1608, 534);
@@ -299,7 +301,7 @@
 			this.gridControl1.Location = new System.Drawing.Point(-2, -1);
 			this.gridControl1.MainView = this.gridView1;
 			this.gridControl1.Name = "gridControl1";
-			this.gridControl1.Size = new System.Drawing.Size(948, 528);
+			this.gridControl1.Size = new System.Drawing.Size(948, 478);
 			this.gridControl1.TabIndex = 0;
 			this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -309,6 +311,17 @@
 			// 
 			this.gridView1.GridControl = this.gridControl1;
 			this.gridView1.Name = "gridView1";
+			// 
+			// BtnYenile
+			// 
+			this.BtnYenile.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.BtnYenile.Appearance.Options.UseFont = true;
+			this.BtnYenile.Location = new System.Drawing.Point(760, 484);
+			this.BtnYenile.Name = "BtnYenile";
+			this.BtnYenile.Size = new System.Drawing.Size(186, 45);
+			this.BtnYenile.TabIndex = 3;
+			this.BtnYenile.Text = "YENİLE";
+			this.BtnYenile.Click += new System.EventHandler(this.BtnYenile_Click);
 			// 
 			// FrmYeniProje
 			// 
@@ -369,5 +382,6 @@
 		private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
 		private DevExpress.XtraEditors.LabelControl labelControl1;
 		private DevExpress.XtraEditors.TextEdit txtProjeID;
+		private DevExpress.XtraEditors.SimpleButton BtnYenile;
 	}
 }

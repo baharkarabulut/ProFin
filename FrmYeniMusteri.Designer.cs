@@ -30,6 +30,9 @@
 		{
 			this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
 			this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+			this.memoEditAdres = new DevExpress.XtraEditors.MemoEdit();
+			this.txtEposta = new DevExpress.XtraEditors.TextEdit();
+			this.txtTelefon = new DevExpress.XtraEditors.TextEdit();
 			this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
 			this.memoEditNotlar = new DevExpress.XtraEditors.MemoEdit();
 			this.txtMusteriAdSoyad = new DevExpress.XtraEditors.TextEdit();
@@ -40,9 +43,7 @@
 			this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
 			this.gridControl1 = new DevExpress.XtraGrid.GridControl();
 			this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-			this.txtTelefon = new DevExpress.XtraEditors.TextEdit();
-			this.txtEposta = new DevExpress.XtraEditors.TextEdit();
-			this.memoEditAdres = new DevExpress.XtraEditors.MemoEdit();
+			this.BtnYenile = new DevExpress.XtraEditors.SimpleButton();
 			((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel1)).BeginInit();
 			this.splitContainerControl1.Panel1.SuspendLayout();
@@ -51,13 +52,13 @@
 			this.splitContainerControl1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
 			this.groupControl1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.memoEditAdres.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtEposta.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtTelefon.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.memoEditNotlar.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtMusteriAdSoyad.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtTelefon.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtEposta.Properties)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.memoEditAdres.Properties)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// splitContainerControl1
@@ -74,6 +75,7 @@
 			// splitContainerControl1.Panel2
 			// 
 			this.splitContainerControl1.Panel2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+			this.splitContainerControl1.Panel2.Controls.Add(this.BtnYenile);
 			this.splitContainerControl1.Panel2.Controls.Add(this.gridControl1);
 			this.splitContainerControl1.Panel2.Text = "Panel2";
 			this.splitContainerControl1.Size = new System.Drawing.Size(1608, 534);
@@ -98,6 +100,33 @@
 			this.groupControl1.Size = new System.Drawing.Size(538, 528);
 			this.groupControl1.TabIndex = 0;
 			this.groupControl1.Text = "Yeni Müşteri Ekleme Ekranı";
+			// 
+			// memoEditAdres
+			// 
+			this.memoEditAdres.Location = new System.Drawing.Point(171, 184);
+			this.memoEditAdres.Name = "memoEditAdres";
+			this.memoEditAdres.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.memoEditAdres.Properties.Appearance.Options.UseFont = true;
+			this.memoEditAdres.Size = new System.Drawing.Size(293, 80);
+			this.memoEditAdres.TabIndex = 19;
+			// 
+			// txtEposta
+			// 
+			this.txtEposta.Location = new System.Drawing.Point(171, 137);
+			this.txtEposta.Name = "txtEposta";
+			this.txtEposta.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.txtEposta.Properties.Appearance.Options.UseFont = true;
+			this.txtEposta.Size = new System.Drawing.Size(293, 26);
+			this.txtEposta.TabIndex = 18;
+			// 
+			// txtTelefon
+			// 
+			this.txtTelefon.Location = new System.Drawing.Point(171, 91);
+			this.txtTelefon.Name = "txtTelefon";
+			this.txtTelefon.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.txtTelefon.Properties.Appearance.Options.UseFont = true;
+			this.txtTelefon.Size = new System.Drawing.Size(293, 26);
+			this.txtTelefon.TabIndex = 17;
 			// 
 			// BtnKaydet
 			// 
@@ -183,7 +212,7 @@
 			this.gridControl1.Location = new System.Drawing.Point(2, -1);
 			this.gridControl1.MainView = this.gridView1;
 			this.gridControl1.Name = "gridControl1";
-			this.gridControl1.Size = new System.Drawing.Size(944, 528);
+			this.gridControl1.Size = new System.Drawing.Size(920, 479);
 			this.gridControl1.TabIndex = 0;
 			this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -193,38 +222,22 @@
 			this.gridView1.GridControl = this.gridControl1;
 			this.gridView1.Name = "gridView1";
 			// 
-			// txtTelefon
+			// BtnYenile
 			// 
-			this.txtTelefon.Location = new System.Drawing.Point(171, 91);
-			this.txtTelefon.Name = "txtTelefon";
-			this.txtTelefon.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.txtTelefon.Properties.Appearance.Options.UseFont = true;
-			this.txtTelefon.Size = new System.Drawing.Size(293, 26);
-			this.txtTelefon.TabIndex = 17;
-			// 
-			// txtEposta
-			// 
-			this.txtEposta.Location = new System.Drawing.Point(171, 137);
-			this.txtEposta.Name = "txtEposta";
-			this.txtEposta.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.txtEposta.Properties.Appearance.Options.UseFont = true;
-			this.txtEposta.Size = new System.Drawing.Size(293, 26);
-			this.txtEposta.TabIndex = 18;
-			// 
-			// memoEditAdres
-			// 
-			this.memoEditAdres.Location = new System.Drawing.Point(171, 184);
-			this.memoEditAdres.Name = "memoEditAdres";
-			this.memoEditAdres.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.memoEditAdres.Properties.Appearance.Options.UseFont = true;
-			this.memoEditAdres.Size = new System.Drawing.Size(293, 80);
-			this.memoEditAdres.TabIndex = 19;
+			this.BtnYenile.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.BtnYenile.Appearance.Options.UseFont = true;
+			this.BtnYenile.Location = new System.Drawing.Point(736, 484);
+			this.BtnYenile.Name = "BtnYenile";
+			this.BtnYenile.Size = new System.Drawing.Size(186, 45);
+			this.BtnYenile.TabIndex = 2;
+			this.BtnYenile.Text = "YENİLE";
+			this.BtnYenile.Click += new System.EventHandler(this.BtnYenile_Click);
 			// 
 			// FrmYeniMusteri
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1455, 542);
+			this.ClientSize = new System.Drawing.Size(1455, 546);
 			this.Controls.Add(this.splitContainerControl1);
 			this.Name = "FrmYeniMusteri";
 			this.Text = "FrmYeniMusteri";
@@ -238,13 +251,13 @@
 			((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
 			this.groupControl1.ResumeLayout(false);
 			this.groupControl1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.memoEditAdres.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtEposta.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtTelefon.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.memoEditNotlar.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtMusteriAdSoyad.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtTelefon.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.txtEposta.Properties)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.memoEditAdres.Properties)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -266,5 +279,6 @@
 		private DevExpress.XtraEditors.TextEdit txtTelefon;
 		private DevExpress.XtraEditors.MemoEdit memoEditAdres;
 		private DevExpress.XtraEditors.TextEdit txtEposta;
+		private DevExpress.XtraEditors.SimpleButton BtnYenile;
 	}
 }

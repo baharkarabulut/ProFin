@@ -38,5 +38,60 @@ namespace ProFin
 			FrmYeniMusteri YeniMusteri = new FrmYeniMusteri();
 			YeniMusteri.ShowDialog();
 		}
+
+		private void BtnProjeListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmProjeListesi ProjeListesi = new FrmProjeListesi();
+			ProjeListesi.ShowDialog();
+		}
+
+		private void BtnYeniProje1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmYeniProje YeniProje = new FrmYeniProje();
+			YeniProje.ShowDialog();
+		}
+
+		private void BtnMusteriListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmMusteriListesi MusteriListesi = new FrmMusteriListesi();
+			MusteriListesi.ShowDialog();
+		}
+
+		private void BtnYeniMusteri1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmYeniMusteri YeniMusteri = new FrmYeniMusteri();
+			YeniMusteri.ShowDialog();
+		}
+
+		private void BtnFaturaOlustur_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FaturaOlustur YeniFaturaOlustur = new FaturaOlustur();
+			YeniFaturaOlustur.ShowDialog();
+		}
+
+		private void BtnFaturaOlustur1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FaturaOlustur YeniFaturaOlustur = new FaturaOlustur();
+			YeniFaturaOlustur.ShowDialog();
+		}
+
+		private void BtnFaturaListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmFaturaListesi FaturaListesi = new FrmFaturaListesi();
+			FaturaListesi.ShowDialog();
+		}
+
+		private void BtnFaturaDetay_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmFaturaListesi FaturaListesi = new FrmFaturaListesi();
+			FaturaListesi.ShowDialog();
+
+			if (FaturaListesi.SecilenFaturaID > 0)
+			{
+				FrmFaturaDetay frmFaturaDetay = new FrmFaturaDetay();
+				frmFaturaDetay.FaturaID = FaturaListesi.SecilenFaturaID;
+				frmFaturaDetay.ShowDialog();
+			}
+		}
 	}
 }

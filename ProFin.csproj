@@ -77,11 +77,41 @@
     <Compile Include="Faturalar.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="FaturaOlustur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FaturaOlustur.Designer.cs">
+      <DependentUpon>FaturaOlustur.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFaturaDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFaturaDetay.Designer.cs">
+      <DependentUpon>FrmFaturaDetay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFaturaListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFaturaListesi.Designer.cs">
+      <DependentUpon>FrmFaturaListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMusteriListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMusteriListesi.Designer.cs">
+      <DependentUpon>FrmMusteriListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProjeListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProjeListesi.Designer.cs">
+      <DependentUpon>FrmProjeListesi.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmYeniMusteri.cs">
       <SubType>Form</SubType>
@@ -133,8 +163,23 @@
     <Compile Include="Yedekleme.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FaturaOlustur.resx">
+      <DependentUpon>FaturaOlustur.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFaturaDetay.resx">
+      <DependentUpon>FrmFaturaDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFaturaListesi.resx">
+      <DependentUpon>FrmFaturaListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMusteriListesi.resx">
+      <DependentUpon>FrmMusteriListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProjeListesi.resx">
+      <DependentUpon>FrmProjeListesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmYeniMusteri.resx">
       <DependentUpon>FrmYeniMusteri.cs</DependentUpon>

@@ -1,0 +1,46 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace ProFin
+{
+	public partial class FrmMusteriListesi : Form
+	{
+		public FrmMusteriListesi()
+		{
+			InitializeComponent();
+		}
+		DbProFinEntities db = new DbProFinEntities();
+
+		private void Listele()
+		{
+			var musteriler = from musteri in db.Musteriler
+							 select new
+							 {
+								 musteri.MusteriID,
+								 musteri.AdSoyad,
+								 musteri.Telefon,
+								 musteri.Eposta,
+								 musteri.Adres,
+								 musteri.Notlar
+							 };
+
+			gridControl1.DataSource = musteriler.ToList();
+		}
+		private void FrmMusteriListesi_Load(object sender, EventArgs e)
+		{
+			Listele();
+		}
+
+		private void BtnYenile_Click(object sender, EventArgs e)
+		{
+			Listele();
+		}
+	}
+}

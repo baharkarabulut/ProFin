@@ -117,5 +117,9 @@ namespace ProFin
 			MessageBox.Show("Yeni proje başarıyla kaydedildi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 		}
 
+		private void BtnYenile_Click(object sender, EventArgs e)
+		{
+			Listele();
+		}
 	}
 }
