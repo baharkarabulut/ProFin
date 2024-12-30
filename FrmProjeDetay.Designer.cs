@@ -45,6 +45,7 @@
 			this.dtBitisTarihi = new DevExpress.XtraEditors.DateEdit();
 			this.txtToplamTutar = new DevExpress.XtraEditors.TextEdit();
 			this.memoNotlar = new DevExpress.XtraEditors.MemoEdit();
+			this.BtnSil = new DevExpress.XtraEditors.SimpleButton();
 			((System.ComponentModel.ISupportInitialize)(this.txtProjeID.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtProjeAdi.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.lkpMusteri.Properties)).BeginInit();
@@ -236,11 +237,23 @@
 			this.memoNotlar.Size = new System.Drawing.Size(219, 96);
 			this.memoNotlar.TabIndex = 71;
 			// 
+			// BtnSil
+			// 
+			this.BtnSil.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.BtnSil.Appearance.Options.UseFont = true;
+			this.BtnSil.Location = new System.Drawing.Point(169, 534);
+			this.BtnSil.Name = "BtnSil";
+			this.BtnSil.Size = new System.Drawing.Size(219, 51);
+			this.BtnSil.TabIndex = 72;
+			this.BtnSil.Text = "SİL";
+			this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
+			// 
 			// FrmProjeDetay
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(435, 578);
+			this.ClientSize = new System.Drawing.Size(435, 613);
+			this.Controls.Add(this.BtnSil);
 			this.Controls.Add(this.memoNotlar);
 			this.Controls.Add(this.txtToplamTutar);
 			this.Controls.Add(this.dtBitisTarihi);
@@ -295,5 +308,6 @@
 		private DevExpress.XtraEditors.DateEdit dtBitisTarihi;
 		private DevExpress.XtraEditors.TextEdit txtToplamTutar;
 		private DevExpress.XtraEditors.MemoEdit memoNotlar;
+		private DevExpress.XtraEditors.SimpleButton BtnSil;
 	}
 }

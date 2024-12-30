@@ -45,6 +45,9 @@
 			this.BtnGuncelle = new DevExpress.XtraEditors.SimpleButton();
 			this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
 			this.txtFaturaID = new DevExpress.XtraEditors.TextEdit();
+			this.txtDurumBilgi = new DevExpress.XtraEditors.TextEdit();
+			this.btnIptalEt = new DevExpress.XtraEditors.SimpleButton();
+			this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
 			((System.ComponentModel.ISupportInitialize)(this.txtFaturaNumarasi.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtMusteriAdi.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtProjeAdi.Properties)).BeginInit();
@@ -53,6 +56,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.txtKDVOrani.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtOdemeDurumu.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtFaturaID.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtDurumBilgi.Properties)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// labelControl3
@@ -192,7 +196,7 @@
 			// 
 			this.BtnGuncelle.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.BtnGuncelle.Appearance.Options.UseFont = true;
-			this.BtnGuncelle.Location = new System.Drawing.Point(214, 398);
+			this.BtnGuncelle.Location = new System.Drawing.Point(214, 436);
 			this.BtnGuncelle.Name = "BtnGuncelle";
 			this.BtnGuncelle.Size = new System.Drawing.Size(219, 51);
 			this.BtnGuncelle.TabIndex = 26;
@@ -219,11 +223,44 @@
 			this.txtFaturaID.Size = new System.Drawing.Size(219, 26);
 			this.txtFaturaID.TabIndex = 27;
 			// 
+			// txtDurumBilgi
+			// 
+			this.txtDurumBilgi.Location = new System.Drawing.Point(214, 390);
+			this.txtDurumBilgi.Name = "txtDurumBilgi";
+			this.txtDurumBilgi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.txtDurumBilgi.Properties.Appearance.Options.UseFont = true;
+			this.txtDurumBilgi.Size = new System.Drawing.Size(219, 26);
+			this.txtDurumBilgi.TabIndex = 29;
+			// 
+			// btnIptalEt
+			// 
+			this.btnIptalEt.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnIptalEt.Appearance.Options.UseFont = true;
+			this.btnIptalEt.Location = new System.Drawing.Point(214, 504);
+			this.btnIptalEt.Name = "btnIptalEt";
+			this.btnIptalEt.Size = new System.Drawing.Size(219, 51);
+			this.btnIptalEt.TabIndex = 30;
+			this.btnIptalEt.Text = "İPTAL ET";
+			this.btnIptalEt.Click += new System.EventHandler(this.btnIptalEt_Click);
+			// 
+			// labelControl9
+			// 
+			this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl9.Appearance.Options.UseFont = true;
+			this.labelControl9.Location = new System.Drawing.Point(95, 393);
+			this.labelControl9.Name = "labelControl9";
+			this.labelControl9.Size = new System.Drawing.Size(113, 19);
+			this.labelControl9.TabIndex = 31;
+			this.labelControl9.Text = "Fatura Durumu:";
+			// 
 			// FrmFaturaDetay
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(504, 599);
+			this.ClientSize = new System.Drawing.Size(504, 581);
+			this.Controls.Add(this.labelControl9);
+			this.Controls.Add(this.btnIptalEt);
+			this.Controls.Add(this.txtDurumBilgi);
 			this.Controls.Add(this.labelControl8);
 			this.Controls.Add(this.txtFaturaID);
 			this.Controls.Add(this.BtnGuncelle);
@@ -253,6 +290,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.txtKDVOrani.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtOdemeDurumu.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtFaturaID.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtDurumBilgi.Properties)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -277,5 +315,8 @@
 		private DevExpress.XtraEditors.SimpleButton BtnGuncelle;
 		private DevExpress.XtraEditors.LabelControl labelControl8;
 		private DevExpress.XtraEditors.TextEdit txtFaturaID;
+		private DevExpress.XtraEditors.TextEdit txtDurumBilgi;
+		private DevExpress.XtraEditors.SimpleButton btnIptalEt;
+		private DevExpress.XtraEditors.LabelControl labelControl9;
 	}
 }

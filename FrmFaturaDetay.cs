@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
+using DevExpress.XtraGrid;
 
 namespace ProFin
 {
@@ -19,6 +20,8 @@ namespace ProFin
 		}
 		public int FaturaID { get; set; }
 		DbProFinEntities db = new DbProFinEntities();
+		
+
 		private void FrmFaturaDetay_Load(object sender, EventArgs e)
 		{
 			using (var db = new DbProFinEntities())
@@ -39,6 +42,7 @@ namespace ProFin
 					txtToplamTutar.Text = ((decimal)fatura.ToplamTutar).ToString("C2", CultureInfo.CurrentCulture);
 					txtKDVOrani.Text = fatura.KDVOrani.ToString();
 					txtOdemeDurumu.Text = fatura.OdemeDurumu;
+					txtDurumBilgi.Text = fatura.DurumBilgi;
 				}
 				else
 				{
@@ -102,6 +106,7 @@ namespace ProFin
 
 					// Ödeme Durumu
 					fatura.OdemeDurumu = txtOdemeDurumu.Text;
+					fatura.DurumBilgi = txtDurumBilgi.Text;
 
 
 					// Değişiklikleri Kaydet
@@ -119,6 +124,49 @@ namespace ProFin
 				MessageBox.Show($"Güncelleme sırasında bir hata oluştu: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 
+		}
+
+		private void btnIptalEt_Click(object sender, EventArgs e)
+		{
+			try
+			{
+				int faturaId = Convert.ToInt32(txtFaturaID.Text); // Fatura ID'sini alıyoruz
+
+				using (var dbContext = new DbProFinEntities())  // Veritabanı bağlamını oluşturuyoruz
+				{
+					var fatura = dbContext.Faturalar.FirstOrDefault(f => f.FaturaID == faturaId); // Faturayı buluyoruz
+
+					if (fatura != null)
+					{
+						// Eğer durum "Geçerli" ise, durumu "İptal Edildi" olarak değiştiriyoruz
+						if (fatura.DurumBilgi == "Geçerli")
+						{
+							fatura.DurumBilgi = "İptal Edildi";  // Durumu "İptal Edildi" yapıyoruz
+							dbContext.SaveChanges();  // Değişiklikleri kaydediyoruz
+
+							// Kullanıcıya mesaj veriyoruz
+							MessageBox.Show("Fatura başarıyla iptal edildi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+							
+						}
+						else
+						{
+							// Eğer fatura zaten iptal edildiyse, mesaj veriyoruz
+							MessageBox.Show("Bu fatura zaten iptal edilmiştir.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+						}
+					}
+					else
+					{
+						// Eğer fatura bulunamazsa, hata mesajı veriyoruz
+						MessageBox.Show("Fatura bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					}
+				}
+			}
+			catch (Exception ex)
+			{
+				// Hata durumunda, kullanıcıya hata mesajı gösteriyoruz
+				MessageBox.Show($"İptal işlemi sırasında bir hata oluştu: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
 		}
 	}
 }

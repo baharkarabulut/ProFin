@@ -35,6 +35,9 @@
     <NavigationProperty Name="FaturaKalemleri" Relationship="Self.FK_FaturaKalemleri_Faturalar" FromRole="Faturalar" ToRole="FaturaKalemleri" />
     <NavigationProperty Name="Musteriler" Relationship="Self.FK_Faturalar_Musteriler" FromRole="Faturalar" ToRole="Musteriler" />
     <NavigationProperty Name="Projeler" Relationship="Self.FK_Faturalar_Projeler" FromRole="Faturalar" ToRole="Projeler" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="Durum" Type="Boolean" />
+    <Property Name="DurumBilgi" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="Gorevler">
     <Key>

@@ -31,6 +31,9 @@
     <Property Name="ToplamTutar" Type="decimal" Precision="10" Scale="2" />
     <Property Name="KDVOrani" Type="int" />
     <Property Name="OdemeDurumu" Type="varchar" MaxLength="20" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="Durum" Type="bit" />
+    <Property Name="DurumBilgi" Type="varchar" MaxLength="150" />
   </EntityType>
   <EntityType Name="Gorevler">
     <Key>

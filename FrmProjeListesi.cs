@@ -28,9 +28,10 @@ namespace ProFin
 							   proje.ProjeID,
 							   proje.ProjeAdi,
 							   MusteriAdi = musteri.AdSoyad,
-							   Durum = (proje.Durum == "1" ? "Başlanmadı" :
-									   proje.Durum == "2" ? "Devam Ediyor" :
-									   proje.Durum == "3" ? "Tamamlandı" : "Bilinmiyor"),
+							   Durum = (proje.Durum == "Başlanmadı" ? "Başlanmadı" :
+									   proje.Durum == "Devam Ediyor" ? "Devam Ediyor" :
+									   proje.Durum == "Tamamlandı" ? "Tamamlandı" :
+									   proje.Durum == "İptal Edildi" ? "İptal Edildi" : "Bilinmiyor"),
 							   proje.BaslangicTarihi,
 							   proje.BitisTarihi,
 							   proje.ToplamTutar,
@@ -41,12 +42,6 @@ namespace ProFin
 		}
 		private void FrmProjeListesi_Load(object sender, EventArgs e)
 		{
-			Listele();
-
-			// GridView ayarları
-			gridView1.OptionsSelection.MultiSelect = false;
-			gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
-			gridView1.OptionsSelection.InvertSelection = false;
 			Listele();
 		}
 
@@ -61,7 +56,11 @@ namespace ProFin
 
 			FrmProjeDetay projeDetay = new FrmProjeDetay();
 			projeDetay.ProjeID = ProjeID;
-			projeDetay.ShowDialog();
+
+			if (projeDetay.ShowDialog() == DialogResult.OK)
+			{
+				Listele(); // Listeyi Yenile
+			}
 		}
 	}
 }

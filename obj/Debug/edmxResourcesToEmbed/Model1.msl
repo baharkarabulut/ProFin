@@ -25,6 +25,9 @@
     <EntitySetMapping Name="Faturalar">
       <EntityTypeMapping TypeName="DbProFinModel.Faturalar">
         <MappingFragment StoreEntitySet="Faturalar">
+          <ScalarProperty Name="DurumBilgi" ColumnName="DurumBilgi" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
           <ScalarProperty Name="FaturaID" ColumnName="FaturaID" />
           <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
           <ScalarProperty Name="ProjeID" ColumnName="ProjeID" />

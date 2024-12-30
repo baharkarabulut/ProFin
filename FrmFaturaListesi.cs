@@ -35,7 +35,8 @@ namespace ProFin
 								fatura.FaturaTarihi,
 								fatura.ToplamTutar,
 								fatura.KDVOrani,
-								fatura.OdemeDurumu
+								fatura.OdemeDurumu,
+								fatura.DurumBilgi
 							};
 
 			gridControl1.DataSource = faturalar.ToList();
@@ -58,7 +59,8 @@ namespace ProFin
 									fatura.FaturaTarihi,
 									fatura.ToplamTutar,
 									fatura.KDVOrani,
-									fatura.OdemeDurumu
+									fatura.OdemeDurumu,
+									fatura.DurumBilgi
 								};
 
 				gridControl1.DataSource = faturalar.ToList();

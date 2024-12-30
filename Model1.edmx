@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="DbProFinModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="DbProFinModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Ayarlar">
           <Key>
             <PropertyRef Name="AyarID" />
@@ -36,6 +36,9 @@
           <Property Name="ToplamTutar" Type="decimal" Precision="10" Scale="2" />
           <Property Name="KDVOrani" Type="int" />
           <Property Name="OdemeDurumu" Type="varchar" MaxLength="20" />
+          <Property Name="IsDeleted" Type="bit" />
+          <Property Name="Durum" Type="bit" />
+          <Property Name="DurumBilgi" Type="varchar" MaxLength="150" />
         </EntityType>
         <EntityType Name="Gorevler">
           <Key>
@@ -203,8 +206,7 @@
             <End Role="Projeler" EntitySet="Projeler" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DbProFinModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -243,6 +245,9 @@
           <NavigationProperty Name="FaturaKalemleri" Relationship="Self.FK_FaturaKalemleri_Faturalar" FromRole="Faturalar" ToRole="FaturaKalemleri" />
           <NavigationProperty Name="Musteriler" Relationship="Self.FK_Faturalar_Musteriler" FromRole="Faturalar" ToRole="Musteriler" />
           <NavigationProperty Name="Projeler" Relationship="Self.FK_Faturalar_Projeler" FromRole="Faturalar" ToRole="Projeler" />
+          <Property Name="IsDeleted" Type="Boolean" />
+          <Property Name="Durum" Type="Boolean" />
+          <Property Name="DurumBilgi" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="Gorevler">
           <Key>
@@ -446,6 +451,9 @@
           <EntitySetMapping Name="Faturalar">
             <EntityTypeMapping TypeName="DbProFinModel.Faturalar">
               <MappingFragment StoreEntitySet="Faturalar">
+                <ScalarProperty Name="DurumBilgi" ColumnName="DurumBilgi" />
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
+                <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
                 <ScalarProperty Name="FaturaID" ColumnName="FaturaID" />
                 <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
                 <ScalarProperty Name="ProjeID" ColumnName="ProjeID" />

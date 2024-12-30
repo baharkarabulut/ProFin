@@ -3,24 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|c:\\users\\bahars\\source\\repos\\profin\\frmprojelistesi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:frmprojelistesi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|c:\\users\\bahars\\source\\repos\\profin\\frmprojedetay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:frmprojedetay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|c:\\users\\bahars\\source\\repos\\profin\\frmfaturalistesi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|c:\\users\\bahars\\source\\repos\\profin\\frmfaturadetay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:frmfaturadetay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|c:\\users\\bahars\\source\\repos\\profin\\frmfaturadetay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:frmfaturadetay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|c:\\users\\bahars\\source\\repos\\profin\\faturaolustur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:faturaolustur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|c:\\users\\bahars\\source\\repos\\profin\\faturaolustur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:faturaolustur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|c:\\users\\bahars\\source\\repos\\profin\\frmfaturalistesi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:frmfaturalistesi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|C:\\Users\\BAHARS\\source\\repos\\ProFin\\frmfaturalistesi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:frmfaturalistesi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|c:\\users\\bahars\\source\\repos\\profin\\frmmusterilistesi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:frmmusterilistesi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|C:\\Users\\BAHARS\\source\\repos\\ProFin\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|C:\\Users\\BAHARS\\source\\repos\\ProFin\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|C:\\Users\\BAHARS\\source\\repos\\ProFin\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|c:\\users\\bahars\\source\\repos\\profin\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,7 +62,69 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "FrmProjeDetay.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmProjeDetay.cs",
+              "RelativeDocumentMoniker": "FrmProjeDetay.cs",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmProjeDetay.cs [Design]",
+              "RelativeToolTip": "FrmProjeDetay.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T20:22:11.71Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FaturaOlustur.cs",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FaturaOlustur.cs",
+              "RelativeDocumentMoniker": "FaturaOlustur.cs",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FaturaOlustur.cs",
+              "RelativeToolTip": "FaturaOlustur.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T19:59:29.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FaturaOlustur.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FaturaOlustur.cs",
+              "RelativeDocumentMoniker": "FaturaOlustur.cs",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FaturaOlustur.cs [Design]",
+              "RelativeToolTip": "FaturaOlustur.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T19:59:09.291Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Model1.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\Model1.edmx",
+              "RelativeDocumentMoniker": "Model1.edmx",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\Model1.edmx [Diagram1]",
+              "RelativeToolTip": "Model1.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-12-30T19:37:13.436Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmFaturaListesi.cs",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmFaturaListesi.cs",
+              "RelativeDocumentMoniker": "FrmFaturaListesi.cs",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmFaturaListesi.cs",
+              "RelativeToolTip": "FrmFaturaListesi.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T19:20:54.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "FrmFaturaListesi.cs [Design]",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmFaturaListesi.cs",
               "RelativeDocumentMoniker": "FrmFaturaListesi.cs",
@@ -54,31 +136,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmProjeListesi.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmProjeListesi.cs",
-              "RelativeDocumentMoniker": "FrmProjeListesi.cs",
-              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmProjeListesi.cs [Design]",
-              "RelativeToolTip": "FrmProjeListesi.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T18:04:27.162Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FrmMusteriListesi.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmMusteriListesi.cs",
-              "RelativeDocumentMoniker": "FrmMusteriListesi.cs",
-              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmMusteriListesi.cs [Design]",
-              "RelativeToolTip": "FrmMusteriListesi.cs [Design]",
+              "Title": "FrmFaturaDetay.cs",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmFaturaDetay.cs",
+              "RelativeDocumentMoniker": "FrmFaturaDetay.cs",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmFaturaDetay.cs",
+              "RelativeToolTip": "FrmFaturaDetay.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAAAH0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T18:03:04.279Z",
+              "WhenOpened": "2024-12-30T19:03:49.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmFaturaDetay.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmFaturaDetay.cs",
+              "RelativeDocumentMoniker": "FrmFaturaDetay.cs",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmFaturaDetay.cs [Design]",
+              "RelativeToolTip": "FrmFaturaDetay.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T19:01:09.82Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -90,13 +173,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAuwEwAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAuwEEAAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-27T15:07:50.991Z",
               "EditorCaption": ""

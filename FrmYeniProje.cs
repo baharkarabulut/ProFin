@@ -47,12 +47,13 @@ namespace ProFin
 						   on proje.MusteriID equals musteri.MusteriID
 						   select new
 						   {
+							   proje.ProjeID,
 							   proje.ProjeAdi,
 							   MusteriAdi = musteri.AdSoyad,
-							   Durum = (string.IsNullOrEmpty(proje.Durum) ? "Bilinmiyor" :
-		 proje.Durum == "1" ? "Başlanmadı" :
-		 proje.Durum == "2" ? "Devam Ediyor" :
-		 proje.Durum == "3" ? "Tamamlandı" : "Bilinmiyor"),
+							   Durum = (proje.Durum == "Başlanmadı" ? "Başlanmadı" :
+									   proje.Durum == "Devam Ediyor" ? "Devam Ediyor" :
+									   proje.Durum == "Tamamlandı" ? "Tamamlandı" :
+									   proje.Durum == "İptal Edildi" ? "İptal Edildi" : "Bilinmiyor"),
 							   proje.BaslangicTarihi,
 							   proje.BitisTarihi,
 							   proje.ToplamTutar,
@@ -61,18 +62,8 @@ namespace ProFin
 
 			gridControl1.DataSource = projeler.ToList();
 
-			var musteriler = db.Musteriler.Select(m => new
-			{
-				m.MusteriID,
-				m.AdSoyad
-			}).ToList();
-
-			lookUpEditMusteri.Properties.DataSource = musteriler;
 			lookUpEditMusteri.Properties.DisplayMember = "AdSoyad";
 			lookUpEditMusteri.Properties.ValueMember = "MusteriID";
-			lookUpEditMusteri.Properties.NullText = "Bir müşteri seçin";
-
-			cmbDurum.Properties.Items.AddRange(new string[] { "Başlanmadı", "Devam Ediyor", "Tamamlandı" });
 		}
 
 		private void gridControl1_Click(object sender, EventArgs e)

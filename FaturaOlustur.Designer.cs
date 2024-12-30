@@ -43,6 +43,7 @@
 			this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
 			this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
 			this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+			this.txtDurumBilgi = new DevExpress.XtraEditors.TextEdit();
 			((System.ComponentModel.ISupportInitialize)(this.lookUpEditMusteri.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.lookUpEditProje.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtFaturaNumarasi.Properties)).BeginInit();
@@ -51,6 +52,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.txtToplamTutar.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.spinKDVOrani.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.cmbOdemeDurumu.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtDurumBilgi.Properties)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// lookUpEditMusteri
@@ -151,7 +153,7 @@
 			// 
 			this.BtnKaydet.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.BtnKaydet.Appearance.Options.UseFont = true;
-			this.BtnKaydet.Location = new System.Drawing.Point(182, 396);
+			this.BtnKaydet.Location = new System.Drawing.Point(182, 438);
 			this.BtnKaydet.Name = "BtnKaydet";
 			this.BtnKaydet.Size = new System.Drawing.Size(219, 47);
 			this.BtnKaydet.TabIndex = 8;
@@ -228,11 +230,21 @@
 			this.labelControl7.TabIndex = 15;
 			this.labelControl7.Text = "Ödeme Durumu:";
 			// 
+			// txtDurumBilgi
+			// 
+			this.txtDurumBilgi.Location = new System.Drawing.Point(182, 394);
+			this.txtDurumBilgi.Name = "txtDurumBilgi";
+			this.txtDurumBilgi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.txtDurumBilgi.Properties.Appearance.Options.UseFont = true;
+			this.txtDurumBilgi.Size = new System.Drawing.Size(219, 26);
+			this.txtDurumBilgi.TabIndex = 16;
+			// 
 			// FaturaOlustur
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(452, 488);
+			this.ClientSize = new System.Drawing.Size(452, 542);
+			this.Controls.Add(this.txtDurumBilgi);
 			this.Controls.Add(this.labelControl7);
 			this.Controls.Add(this.labelControl6);
 			this.Controls.Add(this.labelControl5);
@@ -260,6 +272,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.txtToplamTutar.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.spinKDVOrani.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.cmbOdemeDurumu.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.txtDurumBilgi.Properties)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -282,5 +295,6 @@
 		private DevExpress.XtraEditors.LabelControl labelControl5;
 		private DevExpress.XtraEditors.LabelControl labelControl6;
 		private DevExpress.XtraEditors.LabelControl labelControl7;
+		private DevExpress.XtraEditors.TextEdit txtDurumBilgi;
 	}
 }

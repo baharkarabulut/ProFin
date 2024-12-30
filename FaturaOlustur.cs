@@ -36,7 +36,8 @@ namespace ProFin
 				FaturaTarihi = dtpFaturaTarihi.DateTime,
 				ToplamTutar = decimal.Parse(txtToplamTutar.Text),
 				KDVOrani = Convert.ToInt32(spinKDVOrani.EditValue),
-				OdemeDurumu = cmbOdemeDurumu.SelectedItem.ToString()
+				OdemeDurumu = cmbOdemeDurumu.SelectedItem.ToString(),
+				DurumBilgi = txtDurumBilgi.Text
 			};
 
 			db.Faturalar.Add(yeniFatura);

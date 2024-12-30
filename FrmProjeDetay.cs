@@ -147,5 +147,37 @@ namespace ProFin
 				MessageBox.Show($"Güncelleme sırasında bir hata oluştu: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}
+
+		private void BtnSil_Click(object sender, EventArgs e)
+		{
+			try
+			{
+				// Seçili Projeyi Al
+				int projeID = Convert.ToInt32(txtProjeID.Text);
+				var proje = db.Projeler.FirstOrDefault(x => x.ProjeID == projeID);
+
+				if (proje != null)
+				{
+					// Durumu "İptal Edildi" olarak değiştir
+					proje.Durum = "İptal Edildi";
+
+					// Değişiklikleri Kaydet
+					db.SaveChanges();
+					MessageBox.Show("Proje durumu 'İptal Edildi' olarak güncellendi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+					// Listeyi Yenilemek için Ana Forma Bilgi Gönder
+					this.DialogResult = DialogResult.OK;
+					this.Close();
+				}
+				else
+				{
+					MessageBox.Show("Proje bulunamadı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show($"Güncelleme sırasında bir hata oluştu: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
+		}
 	}
 }

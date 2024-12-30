@@ -28,6 +28,9 @@ namespace ProFin
         public Nullable<decimal> ToplamTutar { get; set; }
         public Nullable<int> KDVOrani { get; set; }
         public string OdemeDurumu { get; set; }
+        public Nullable<bool> IsDeleted { get; set; }
+        public Nullable<bool> Durum { get; set; }
+        public string DurumBilgi { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<FaturaKalemleri> FaturaKalemleri { get; set; }
