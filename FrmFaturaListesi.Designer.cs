@@ -38,10 +38,10 @@
 			// 
 			// gridControl1
 			// 
-			this.gridControl1.Location = new System.Drawing.Point(2, 2);
+			this.gridControl1.Location = new System.Drawing.Point(4, 2);
 			this.gridControl1.MainView = this.gridView1;
 			this.gridControl1.Name = "gridControl1";
-			this.gridControl1.Size = new System.Drawing.Size(1530, 639);
+			this.gridControl1.Size = new System.Drawing.Size(1525, 552);
 			this.gridControl1.TabIndex = 0;
 			this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -56,7 +56,7 @@
 			// 
 			this.BtnFaturaOlustur.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.BtnFaturaOlustur.Appearance.Options.UseFont = true;
-			this.BtnFaturaOlustur.Location = new System.Drawing.Point(2, 647);
+			this.BtnFaturaOlustur.Location = new System.Drawing.Point(4, 560);
 			this.BtnFaturaOlustur.Name = "BtnFaturaOlustur";
 			this.BtnFaturaOlustur.Size = new System.Drawing.Size(215, 49);
 			this.BtnFaturaOlustur.TabIndex = 1;
@@ -67,7 +67,7 @@
 			// 
 			this.BtnYenile.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.BtnYenile.Appearance.Options.UseFont = true;
-			this.BtnYenile.Location = new System.Drawing.Point(223, 647);
+			this.BtnYenile.Location = new System.Drawing.Point(225, 560);
 			this.BtnYenile.Name = "BtnYenile";
 			this.BtnYenile.Size = new System.Drawing.Size(186, 49);
 			this.BtnYenile.TabIndex = 3;
@@ -78,11 +78,12 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1537, 708);
+			this.ClientSize = new System.Drawing.Size(1529, 611);
 			this.Controls.Add(this.BtnYenile);
 			this.Controls.Add(this.BtnFaturaOlustur);
 			this.Controls.Add(this.gridControl1);
 			this.Name = "FrmFaturaListesi";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Fatura Listesi";
 			this.Load += new System.EventHandler(this.FrmFaturaListesi_Load);
 			((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();

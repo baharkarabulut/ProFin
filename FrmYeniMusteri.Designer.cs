@@ -41,9 +41,9 @@
 			this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
 			this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
 			this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+			this.BtnYenile = new DevExpress.XtraEditors.SimpleButton();
 			this.gridControl1 = new DevExpress.XtraGrid.GridControl();
 			this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-			this.BtnYenile = new DevExpress.XtraEditors.SimpleButton();
 			((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel1)).BeginInit();
 			this.splitContainerControl1.Panel1.SuspendLayout();
@@ -207,6 +207,17 @@
 			this.labelControl2.TabIndex = 2;
 			this.labelControl2.Text = "Müşteri Ad Soyad:";
 			// 
+			// BtnYenile
+			// 
+			this.BtnYenile.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.BtnYenile.Appearance.Options.UseFont = true;
+			this.BtnYenile.Location = new System.Drawing.Point(736, 484);
+			this.BtnYenile.Name = "BtnYenile";
+			this.BtnYenile.Size = new System.Drawing.Size(186, 45);
+			this.BtnYenile.TabIndex = 2;
+			this.BtnYenile.Text = "YENİLE";
+			this.BtnYenile.Click += new System.EventHandler(this.BtnYenile_Click);
+			// 
 			// gridControl1
 			// 
 			this.gridControl1.Location = new System.Drawing.Point(2, -1);
@@ -222,22 +233,11 @@
 			this.gridView1.GridControl = this.gridControl1;
 			this.gridView1.Name = "gridView1";
 			// 
-			// BtnYenile
-			// 
-			this.BtnYenile.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.BtnYenile.Appearance.Options.UseFont = true;
-			this.BtnYenile.Location = new System.Drawing.Point(736, 484);
-			this.BtnYenile.Name = "BtnYenile";
-			this.BtnYenile.Size = new System.Drawing.Size(186, 45);
-			this.BtnYenile.TabIndex = 2;
-			this.BtnYenile.Text = "YENİLE";
-			this.BtnYenile.Click += new System.EventHandler(this.BtnYenile_Click);
-			// 
 			// FrmYeniMusteri
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1455, 546);
+			this.ClientSize = new System.Drawing.Size(1540, 693);
 			this.Controls.Add(this.splitContainerControl1);
 			this.Name = "FrmYeniMusteri";
 			this.Text = "FrmYeniMusteri";

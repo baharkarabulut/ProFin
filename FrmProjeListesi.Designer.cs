@@ -37,10 +37,10 @@
 			// 
 			// gridControl1
 			// 
-			this.gridControl1.Location = new System.Drawing.Point(2, 2);
+			this.gridControl1.Location = new System.Drawing.Point(1, 2);
 			this.gridControl1.MainView = this.gridView1;
 			this.gridControl1.Name = "gridControl1";
-			this.gridControl1.Size = new System.Drawing.Size(1519, 653);
+			this.gridControl1.Size = new System.Drawing.Size(1525, 552);
 			this.gridControl1.TabIndex = 0;
 			this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -55,7 +55,7 @@
 			// 
 			this.BtnYenile.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.BtnYenile.Appearance.Options.UseFont = true;
-			this.BtnYenile.Location = new System.Drawing.Point(12, 661);
+			this.BtnYenile.Location = new System.Drawing.Point(1, 560);
 			this.BtnYenile.Name = "BtnYenile";
 			this.BtnYenile.Size = new System.Drawing.Size(186, 48);
 			this.BtnYenile.TabIndex = 1;
@@ -66,7 +66,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1533, 712);
+			this.ClientSize = new System.Drawing.Size(1513, 626);
 			this.Controls.Add(this.BtnYenile);
 			this.Controls.Add(this.gridControl1);
 			this.Name = "FrmProjeListesi";

@@ -29,14 +29,16 @@ namespace ProFin
 
 		private void BtnYeniProje_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-			FrmYeniProje YeniProje= new FrmYeniProje();
-			YeniProje.ShowDialog(); 
+			FrmYeniProje fr = new FrmYeniProje();
+			fr.MdiParent = this;
+			fr.Show();
 		}
 
 		private void BtnYeniMusteri_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-			FrmYeniMusteri YeniMusteri = new FrmYeniMusteri();
-			YeniMusteri.ShowDialog();
+			FrmYeniMusteri fr = new FrmYeniMusteri();
+			fr.MdiParent = this;
+			fr.Show();
 		}
 
 		private void BtnProjeListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -48,8 +50,9 @@ namespace ProFin
 
 		private void BtnYeniProje1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-			FrmYeniProje YeniProje = new FrmYeniProje();
-			YeniProje.ShowDialog();
+			FrmYeniProje fr = new FrmYeniProje();
+			fr.MdiParent = this;
+			fr.Show();
 		}
 
 		private void BtnMusteriListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -62,20 +65,21 @@ namespace ProFin
 
 		private void BtnYeniMusteri1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-			FrmYeniMusteri YeniMusteri = new FrmYeniMusteri();
-			YeniMusteri.ShowDialog();
+			FrmYeniMusteri fr = new FrmYeniMusteri();
+			fr.MdiParent = this;
+			fr.Show();
 		}
 
 		private void BtnFaturaOlustur_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-			FaturaOlustur YeniFaturaOlustur = new FaturaOlustur();
-			YeniFaturaOlustur.ShowDialog();
+			FaturaOlustur faturaOlustur = new FaturaOlustur();
+			faturaOlustur.ShowDialog();
 		}
 
 		private void BtnFaturaOlustur1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-			FaturaOlustur YeniFaturaOlustur = new FaturaOlustur();
-			YeniFaturaOlustur.ShowDialog();
+			FaturaOlustur faturaOlustur = new FaturaOlustur();
+			faturaOlustur.ShowDialog();
 		}
 
 		private void BtnFaturaListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
