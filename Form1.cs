@@ -110,5 +110,18 @@ namespace ProFin
 				frmMusteriDetay.ShowDialog();
 			}
 		}
+
+		private void BtnProjeGuncelle_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmProjeListesi ProjeListesi = new FrmProjeListesi();
+			ProjeListesi.ShowDialog();
+
+			if (ProjeListesi.SecilenProjeID > 0)
+			{
+				FrmProjeDetay frmProjeDetay = new FrmProjeDetay();
+				frmProjeDetay.ProjeID = ProjeListesi.SecilenProjeID;
+				frmProjeDetay.ShowDialog();
+			}
+		}
 	}
 }

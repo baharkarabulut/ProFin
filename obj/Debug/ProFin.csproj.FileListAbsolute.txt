@@ -54,3 +54,4 @@ C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FaturaOlustur.resources
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmFaturaListesi.resources
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmFaturaDetay.resources
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmMusteriDetay.resources
+C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmProjeDetay.resources

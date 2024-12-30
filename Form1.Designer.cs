@@ -104,6 +104,7 @@
 			this.barButtonItem73 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem74 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem75 = new DevExpress.XtraBars.BarButtonItem();
+			this.BtnMusteriDetay = new DevExpress.XtraBars.BarButtonItem();
 			this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
 			this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -132,7 +133,7 @@
 			this.ribbonPageGroup20 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.ribbonPageGroup21 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-			this.BtnMusteriDetay = new DevExpress.XtraBars.BarButtonItem();
+			this.BtnProjeGuncelle = new DevExpress.XtraBars.BarButtonItem();
 			((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
 			this.SuspendLayout();
@@ -216,10 +217,11 @@
             this.barButtonItem73,
             this.barButtonItem74,
             this.barButtonItem75,
-            this.BtnMusteriDetay});
+            this.BtnMusteriDetay,
+            this.BtnProjeGuncelle});
 			this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
 			this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4);
-			this.ribbonControl1.MaxItemId = 80;
+			this.ribbonControl1.MaxItemId = 81;
 			this.ribbonControl1.Name = "ribbonControl1";
 			this.ribbonControl1.OptionsMenuMinWidth = 412;
 			this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -752,6 +754,14 @@
 			this.barButtonItem75.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem75.ImageOptions.LargeImage")));
 			this.barButtonItem75.Name = "barButtonItem75";
 			// 
+			// BtnMusteriDetay
+			// 
+			this.BtnMusteriDetay.Caption = "Müşteri Detay";
+			this.BtnMusteriDetay.Id = 79;
+			this.BtnMusteriDetay.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnMusteriDetay.ImageOptions.LargeImage")));
+			this.BtnMusteriDetay.Name = "BtnMusteriDetay";
+			this.BtnMusteriDetay.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnMusteriDetay_ItemClick);
+			// 
 			// ribbonPage1
 			// 
 			this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -805,6 +815,7 @@
 			// ribbonPageGroup3
 			// 
 			this.ribbonPageGroup3.ItemLinks.Add(this.BtnProjeListesi);
+			this.ribbonPageGroup3.ItemLinks.Add(this.BtnProjeGuncelle);
 			this.ribbonPageGroup3.ItemLinks.Add(this.BtnYeniProje1);
 			this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem19);
 			this.ribbonPageGroup3.ItemLinks.Add(this.barButtonItem20);
@@ -988,13 +999,13 @@
 			// 
 			this.xtraTabbedMdiManager1.MdiParent = this;
 			// 
-			// BtnMusteriDetay
+			// BtnProjeGuncelle
 			// 
-			this.BtnMusteriDetay.Caption = "Müşteri Detay";
-			this.BtnMusteriDetay.Id = 79;
-			this.BtnMusteriDetay.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnMusteriDetay.ImageOptions.LargeImage")));
-			this.BtnMusteriDetay.Name = "BtnMusteriDetay";
-			this.BtnMusteriDetay.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnMusteriDetay_ItemClick);
+			this.BtnProjeGuncelle.Caption = "Proje Detayları";
+			this.BtnProjeGuncelle.Id = 80;
+			this.BtnProjeGuncelle.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnProjeGuncelle.ImageOptions.LargeImage")));
+			this.BtnProjeGuncelle.Name = "BtnProjeGuncelle";
+			this.BtnProjeGuncelle.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnProjeGuncelle_ItemClick);
 			// 
 			// Form1
 			// 
@@ -1118,6 +1129,7 @@
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup21;
 		private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
 		private DevExpress.XtraBars.BarButtonItem BtnMusteriDetay;
+		private DevExpress.XtraBars.BarButtonItem BtnProjeGuncelle;
 	}
 }
 

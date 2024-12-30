@@ -17,6 +17,7 @@ namespace ProFin
 			InitializeComponent();
 		}
 		DbProFinEntities db = new DbProFinEntities();
+		public int SecilenProjeID { get; set; } = -1;
 		private void Listele()
 		{
 			var projeler = from proje in db.Projeler
@@ -41,11 +42,26 @@ namespace ProFin
 		private void FrmProjeListesi_Load(object sender, EventArgs e)
 		{
 			Listele();
+
+			// GridView ayarları
+			gridView1.OptionsSelection.MultiSelect = false;
+			gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
+			gridView1.OptionsSelection.InvertSelection = false;
+			Listele();
 		}
 
 		private void BtnYenile_Click(object sender, EventArgs e)
 		{
 			Listele();
+		}
+
+		private void gridView1_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+		{
+			int ProjeID = Convert.ToInt32(gridView1.GetFocusedRowCellValue("ProjeID"));
+
+			FrmProjeDetay projeDetay = new FrmProjeDetay();
+			projeDetay.ProjeID = ProjeID;
+			projeDetay.ShowDialog();
 		}
 	}
 }
