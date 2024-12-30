@@ -41,8 +41,9 @@ namespace ProFin
 
 		private void BtnProjeListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-			FrmProjeListesi ProjeListesi = new FrmProjeListesi();
-			ProjeListesi.ShowDialog();
+			FrmProjeListesi fr = new FrmProjeListesi();
+			fr.MdiParent = this;
+			fr.Show();
 		}
 
 		private void BtnYeniProje1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -53,8 +54,10 @@ namespace ProFin
 
 		private void BtnMusteriListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-			FrmMusteriListesi MusteriListesi = new FrmMusteriListesi();
-			MusteriListesi.ShowDialog();
+			FrmMusteriListesi fr = new FrmMusteriListesi();
+			fr.MdiParent = this;
+			fr.Show();
+
 		}
 
 		private void BtnYeniMusteri1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -77,8 +80,9 @@ namespace ProFin
 
 		private void BtnFaturaListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-			FrmFaturaListesi FaturaListesi = new FrmFaturaListesi();
-			FaturaListesi.ShowDialog();
+			FrmFaturaListesi fr = new FrmFaturaListesi();
+			fr.MdiParent = this;
+			fr.Show();
 		}
 
 		private void BtnFaturaDetay_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -91,6 +95,19 @@ namespace ProFin
 				FrmFaturaDetay frmFaturaDetay = new FrmFaturaDetay();
 				frmFaturaDetay.FaturaID = FaturaListesi.SecilenFaturaID;
 				frmFaturaDetay.ShowDialog();
+			}
+		}
+
+		private void BtnMusteriDetay_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmMusteriListesi MusteriListesi = new FrmMusteriListesi();
+			MusteriListesi.ShowDialog();
+
+			if (MusteriListesi.SecilenMusteriID > 0)
+			{
+				FrmMusteriDetay frmMusteriDetay = new FrmMusteriDetay();
+				frmMusteriDetay.MusteriID = MusteriListesi.SecilenMusteriID;
+				frmMusteriDetay.ShowDialog();
 			}
 		}
 	}

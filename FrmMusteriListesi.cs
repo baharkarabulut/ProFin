@@ -17,7 +17,7 @@ namespace ProFin
 			InitializeComponent();
 		}
 		DbProFinEntities db = new DbProFinEntities();
-
+		public int SecilenMusteriID { get; set; } = -1;
 		private void Listele()
 		{
 			var musteriler = from musteri in db.Musteriler
@@ -35,11 +35,24 @@ namespace ProFin
 		}
 		private void FrmMusteriListesi_Load(object sender, EventArgs e)
 		{
+			// GridView ayarları
+			gridView1.OptionsSelection.MultiSelect = false;
+			gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
+			gridView1.OptionsSelection.InvertSelection = false;
 			Listele();
 		}
 
 		private void BtnYenile_Click(object sender, EventArgs e)
 		{
+			Listele();
+		}
+
+		private void gridView1_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+		{
+			int musteriID = Convert.ToInt32(gridView1.GetFocusedRowCellValue("MusteriID"));
+			FrmMusteriDetay musteriDetay = new FrmMusteriDetay();
+			musteriDetay.MusteriID = musteriID; // Detay formuna ID'yi geçiyoruz.
+			musteriDetay.ShowDialog();
 			Listele();
 		}
 	}

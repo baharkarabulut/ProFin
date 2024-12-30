@@ -101,6 +101,12 @@
     <Compile Include="FrmFaturaListesi.Designer.cs">
       <DependentUpon>FrmFaturaListesi.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMusteriDetay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMusteriDetay.Designer.cs">
+      <DependentUpon>FrmMusteriDetay.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMusteriListesi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFaturaListesi.resx">
       <DependentUpon>FrmFaturaListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMusteriDetay.resx">
+      <DependentUpon>FrmMusteriDetay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMusteriListesi.resx">
       <DependentUpon>FrmMusteriListesi.cs</DependentUpon>
