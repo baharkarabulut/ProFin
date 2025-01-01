@@ -16,10 +16,10 @@ namespace ProFin
 		{
 			InitializeComponent();
 		}
-
+		
 		private void Form1_Load(object sender, EventArgs e)
 		{
-
+			
 		}
 
 		private void barButtonItem56_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -126,6 +126,20 @@ namespace ProFin
 				frmProjeDetay.ProjeID = ProjeListesi.SecilenProjeID;
 				frmProjeDetay.ShowDialog();
 			}
+		}
+
+		private void BtnToplamGelir_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmAnasayfa fr = new FrmAnasayfa();
+			fr.MdiParent = this;
+			fr.Show();
+		}
+
+		private void BtnGelirGider_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmAnasayfa fr = new FrmAnasayfa();
+			fr.MdiParent = this;
+			fr.Show();
 		}
 	}
 }
