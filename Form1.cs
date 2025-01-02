@@ -19,7 +19,9 @@ namespace ProFin
 		
 		private void Form1_Load(object sender, EventArgs e)
 		{
-			
+			FrmAnasayfa fr = new FrmAnasayfa();
+			fr.MdiParent = this;
+			fr.Show();
 		}
 
 		private void barButtonItem56_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

@@ -102,6 +102,26 @@ namespace ProFin
 				gridView2.Columns["Eposta"].Caption = "Mail";
 			}
 		}
+
+		private dynamic GetSonOdenenFatura()
+		{
+			using (var dbContext = new DbProFinEntities())
+			{
+				var sonFatura = dbContext.Faturalar
+					.Where(f => f.OdemeDurumu == "Ödendi")
+					.OrderByDescending(f => f.FaturaTarihi)
+					.Select(f => new
+					{
+						f.FaturaTarihi,
+						f.ToplamTutar,
+						MusteriAdi = f.Musteriler.AdSoyad
+					})
+					.FirstOrDefault();
+
+				return sonFatura;
+			}
+		}
+
 		private void FrmAnasayfa_Load(object sender, EventArgs e)
 		{
 			// Gelir-Gider Grafiği
@@ -149,6 +169,21 @@ namespace ProFin
 
 			ProjeleriListele();
 			MusterileriListele();
+
+			var sonFatura = GetSonOdenenFatura();
+
+			if (sonFatura != null)
+			{
+				lblSonFaturaTarih.Text = $"Tarih: {sonFatura.FaturaTarihi:yyyy-MM-dd}";
+				lblSonFaturaTutar.Text = $"Tutar: {sonFatura.ToplamTutar:C2}";
+				lblSonFaturaMusteri.Text = $"Müşteri: {sonFatura.MusteriAdi}";
+			}
+			else
+			{
+				lblSonFaturaTarih.Text = "Tarih: -";
+				lblSonFaturaTutar.Text = "Tutar: -";
+				lblSonFaturaMusteri.Text = "Müşteri: -";
+			}
 		}
 	}
 }
