@@ -122,6 +122,13 @@ namespace ProFin
 			}
 		}
 
+		private int GetToplamMusteriSayisi()
+		{
+			using (var dbContext = new DbProFinEntities())
+			{
+				return dbContext.Musteriler.Count();
+			}
+		}
 		private void FrmAnasayfa_Load(object sender, EventArgs e)
 		{
 			// Gelir-Gider Grafiği
@@ -184,6 +191,9 @@ namespace ProFin
 				lblSonFaturaTutar.Text = "Tutar: -";
 				lblSonFaturaMusteri.Text = "Müşteri: -";
 			}
+
+			var toplamMusteriSayisi = GetToplamMusteriSayisi();
+			lblMusteriSayisi.Text = toplamMusteriSayisi.ToString();
 		}
 	}
 }
