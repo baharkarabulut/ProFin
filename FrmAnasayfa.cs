@@ -46,7 +46,62 @@ namespace ProFin
 			}
 		}
 
+		private void ProjeleriListele()
+		{
+			using (var db = new DbProFinEntities())
+			{
+				// Proje ve müşteri bilgilerini sorgula
+				var projeler = from proje in db.Projeler
+							   join musteri in db.Musteriler
+							   on proje.MusteriID equals musteri.MusteriID
+							   select new
+							   {
+								   proje.ProjeID,
+								   proje.ProjeAdi,
+								   MusteriAdi = musteri.AdSoyad,
+								   Durum = (proje.Durum == "Başlanmadı" ? "Başlanmadı" :
+										   proje.Durum == "Devam Ediyor" ? "Devam Ediyor" :
+										   proje.Durum == "Tamamlandı" ? "Tamamlandı" :
+										   proje.Durum == "İptal Edildi" ? "İptal Edildi" : "Bilinmiyor"),
+								   proje.BaslangicTarihi,
+								   proje.BitisTarihi,
+								   proje.ToplamTutar,
+								   proje.Notlar
+							   };
 
+				// Verileri gridControl'e ata
+				gridControl1.DataSource = projeler.ToList();
+				gridView1.Columns["ProjeID"].Caption = "Proje ID";
+				gridView1.Columns["ProjeAdi"].Caption = "Proje Adı";
+				gridView1.Columns["MusteriAdi"].Caption = "Müşteri Adı";
+				gridView1.Columns["Durum"].Caption = "Durum";
+				gridView1.Columns["BaslangicTarihi"].Caption = "Başlangıç Tarihi";
+				gridView1.Columns["BitisTarihi"].Caption = "Bitiş Tarihi";
+				gridView1.Columns["ToplamTutar"].Caption = "Toplam Tutar";
+				gridView1.Columns["Notlar"].Caption = "Notlar";
+			}
+		}
+
+		private void MusterileriListele()
+		{
+			using (var db = new DbProFinEntities())
+			{
+				// Müşteri bilgilerini sorgula
+				var musteriler = from musteri in db.Musteriler
+								 select new
+								 {
+									 musteri.MusteriID,
+									 musteri.AdSoyad,
+									 musteri.Eposta
+								 };
+
+				// Verileri gridControl2'ye ata
+				gridControl2.DataSource = musteriler.ToList();
+				gridView2.Columns["MusteriID"].Caption = "Müşteri ID";
+				gridView2.Columns["AdSoyad"].Caption = "Ad Soyad";
+				gridView2.Columns["Eposta"].Caption = "Mail";
+			}
+		}
 		private void FrmAnasayfa_Load(object sender, EventArgs e)
 		{
 			// Gelir-Gider Grafiği
@@ -92,6 +147,8 @@ namespace ProFin
 			chartProjeDurumu.Titles.Clear();
 			chartProjeDurumu.Titles.Add(projeDurumTitle);
 
+			ProjeleriListele();
+			MusterileriListele();
 		}
 	}
 }
