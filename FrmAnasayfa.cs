@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -149,6 +150,69 @@ namespace ProFin
 				return dbContext.Musteriler.Count();
 			}
 		}
+
+		private void ProjeKalanSureleriniListele()
+		{
+			using (var db = new DbProFinEntities())
+			{
+				var devamEdenProjeler = db.Projeler
+										  .Where(p => p.Durum == "Devam Ediyor" && p.BitisTarihi.HasValue)
+										  .Select(p => new
+										  {
+											  p.ProjeID,
+											  p.ProjeAdi,
+											  p.BitisTarihi,
+											  KalanGun = DbFunctions.DiffDays(DateTime.Now, p.BitisTarihi)
+										  })
+										  .Where(p => p.KalanGun > 0)
+										  .OrderBy(p => p.KalanGun)
+										  .ToList();
+
+				listView1.Items.Clear();
+
+				foreach (var proje in devamEdenProjeler)
+				{
+					ListViewItem item = new ListViewItem(proje.ProjeID.ToString()); 
+					item.SubItems.Add(proje.ProjeAdi);                            
+					item.SubItems.Add(proje.BitisTarihi?.ToShortDateString());    
+					item.SubItems.Add(proje.KalanGun?.ToString());                 
+
+					if (proje.KalanGun < 50)
+					{
+						item.BackColor = Color.LightCoral;
+					}
+					else
+					{
+						item.BackColor = Color.LightGreen;
+					}
+
+					listView1.Items.Add(item);
+				}
+			}
+
+			ListViewRenkAyarla();
+		}
+		private void ListViewRenkAyarla()
+		{
+			foreach (ListViewItem item in listView1.Items)
+			{
+				if (int.TryParse(item.SubItems[3].Text, out int kalanGun) && kalanGun >= 0)
+				{
+					if (kalanGun > 50)
+						item.BackColor = Color.LightGreen;
+					else if (kalanGun > 5)
+						item.BackColor = Color.LightCoral;
+				}
+			}
+		}
+		private void InitializeTimer()
+		{
+			Timer timer = new Timer();
+			timer.Interval = 60000; 
+			timer.Tick += (s, e) => ProjeKalanSureleriniListele();
+			timer.Start();
+		}
+
 		private void FrmAnasayfa_Load(object sender, EventArgs e)
 		{
 			// Gelir-Gider Grafiği
@@ -216,21 +280,28 @@ namespace ProFin
 			lblMusteriSayisi.Text = toplamMusteriSayisi.ToString();
 
 
-
+			//Proje durum izleyici
 			var yuzdelikler = GetProjeDurumYuzdelik();
 
-			// Mevcut ProgressBarControl'leri doldur
 			progressTamamlandi.EditValue = yuzdelikler.ContainsKey("Tamamlandı") ? yuzdelikler["Tamamlandı"] : 0;
 			progressDevamEdiyor.EditValue = yuzdelikler.ContainsKey("Devam Ediyor") ? yuzdelikler["Devam Ediyor"] : 0;
 			progressIptalEdildi.EditValue = yuzdelikler.ContainsKey("İptal Edildi") ? yuzdelikler["İptal Edildi"] : 0;
 
-			// Label ile yüzdelikleri göster
 			lblTamamlandi.Text = $"Tamamlandı: {(yuzdelikler.ContainsKey("Tamamlandı") ? yuzdelikler["Tamamlandı"] : 0)}%";
 			lblDevamEdiyor.Text = $"Devam Ediyor: {(yuzdelikler.ContainsKey("Devam Ediyor") ? yuzdelikler["Devam Ediyor"] : 0)}%";
 			lblIptalEdildi.Text = $"İptal Edildi: {(yuzdelikler.ContainsKey("İptal Edildi") ? yuzdelikler["İptal Edildi"] : 0)}%";
 
+			//Proje süresi izleyici
+			listView1.Columns.Clear();
+			listView1.Columns.Add("Proje ID", 70);
+			listView1.Columns.Add("Proje Adı", 200);
+			listView1.Columns.Add("Bitiş Tarihi", 100);
+			listView1.Columns.Add("Kalan Gün", 80);
+			listView1.View = View.Details; 
+			listView1.FullRowSelect = true;
 
-
+			ProjeKalanSureleriniListele();
+			InitializeTimer();
 		}
 	}
 }
