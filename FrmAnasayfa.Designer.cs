@@ -28,12 +28,12 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			DevExpress.XtraCharts.SimpleDiagram3D simpleDiagram3D3 = new DevExpress.XtraCharts.SimpleDiagram3D();
-			DevExpress.XtraCharts.Series series5 = new DevExpress.XtraCharts.Series();
-			DevExpress.XtraCharts.Pie3DSeriesView pie3DSeriesView3 = new DevExpress.XtraCharts.Pie3DSeriesView();
-			DevExpress.XtraCharts.XYDiagram3D xyDiagram3D3 = new DevExpress.XtraCharts.XYDiagram3D();
-			DevExpress.XtraCharts.Series series6 = new DevExpress.XtraCharts.Series();
-			DevExpress.XtraCharts.SideBySideBar3DSeriesView sideBySideBar3DSeriesView3 = new DevExpress.XtraCharts.SideBySideBar3DSeriesView();
+			DevExpress.XtraCharts.SimpleDiagram3D simpleDiagram3D1 = new DevExpress.XtraCharts.SimpleDiagram3D();
+			DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
+			DevExpress.XtraCharts.Pie3DSeriesView pie3DSeriesView1 = new DevExpress.XtraCharts.Pie3DSeriesView();
+			DevExpress.XtraCharts.XYDiagram3D xyDiagram3D1 = new DevExpress.XtraCharts.XYDiagram3D();
+			DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
+			DevExpress.XtraCharts.SideBySideBar3DSeriesView sideBySideBar3DSeriesView1 = new DevExpress.XtraCharts.SideBySideBar3DSeriesView();
 			this.chartToplamGelir = new DevExpress.XtraCharts.ChartControl();
 			this.chartProjeDurumu = new DevExpress.XtraCharts.ChartControl();
 			this.gridControl1 = new DevExpress.XtraGrid.GridControl();
@@ -46,56 +46,65 @@
 			this.lblSonFaturaTarih = new System.Windows.Forms.Label();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.lblMusteriSayisi = new System.Windows.Forms.Label();
+			this.progressTamamlandi = new DevExpress.XtraEditors.ProgressBarControl();
+			this.progressDevamEdiyor = new DevExpress.XtraEditors.ProgressBarControl();
+			this.progressIptalEdildi = new DevExpress.XtraEditors.ProgressBarControl();
+			this.lblTamamlandi = new System.Windows.Forms.Label();
+			this.lblDevamEdiyor = new System.Windows.Forms.Label();
+			this.lblIptalEdildi = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.chartToplamGelir)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(simpleDiagram3D3)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(series5)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(pie3DSeriesView3)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(simpleDiagram3D1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(pie3DSeriesView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.chartProjeDurumu)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(xyDiagram3D3)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(series6)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(sideBySideBar3DSeriesView3)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(xyDiagram3D1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(sideBySideBar3DSeriesView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.progressTamamlandi.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.progressDevamEdiyor.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.progressIptalEdildi.Properties)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// chartToplamGelir
 			// 
 			this.chartToplamGelir.BorderOptions.Visibility = DevExpress.Utils.DefaultBoolean.True;
-			simpleDiagram3D3.RotationMatrixSerializable = "0.406818065349275;-0.913509108681075;-0.000412385968336935;0;0.83809101302482;0.3" +
+			simpleDiagram3D1.RotationMatrixSerializable = "0.406818065349275;-0.913509108681075;-0.000412385968336935;0;0.83809101302482;0.3" +
     "73411242764804;-0.397702775529513;0;0.36345909755089;0.161447056750991;0.9175142" +
     "13663168;0;0;0;0;1";
-			this.chartToplamGelir.Diagram = simpleDiagram3D3;
+			this.chartToplamGelir.Diagram = simpleDiagram3D1;
 			this.chartToplamGelir.Location = new System.Drawing.Point(9, 10);
 			this.chartToplamGelir.Margin = new System.Windows.Forms.Padding(2);
 			this.chartToplamGelir.Name = "chartToplamGelir";
 			this.chartToplamGelir.PaletteBaseColorNumber = 2;
 			this.chartToplamGelir.PaletteName = "Concourse";
-			series5.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
-			series5.Name = "Series";
-			series5.SeriesID = 0;
-			series5.View = pie3DSeriesView3;
+			series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
+			series1.Name = "Series";
+			series1.SeriesID = 0;
+			series1.View = pie3DSeriesView1;
 			this.chartToplamGelir.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series5};
+        series1};
 			this.chartToplamGelir.Size = new System.Drawing.Size(379, 279);
 			this.chartToplamGelir.TabIndex = 0;
 			// 
 			// chartProjeDurumu
 			// 
-			xyDiagram3D3.RotationMatrixSerializable = "-0.964051479177289;0.243979518882632;-0.10525559301981;0;0.226692368403619;0.9618" +
+			xyDiagram3D1.RotationMatrixSerializable = "-0.964051479177289;0.243979518882632;-0.10525559301981;0;0.226692368403619;0.9618" +
     "40478757345;0.153210520302815;0;0.138619319013292;0.123842189054065;-0.982572031" +
     "256068;0;0;0;0;1";
-			this.chartProjeDurumu.Diagram = xyDiagram3D3;
+			this.chartProjeDurumu.Diagram = xyDiagram3D1;
 			this.chartProjeDurumu.Location = new System.Drawing.Point(393, 10);
 			this.chartProjeDurumu.Name = "chartProjeDurumu";
-			series6.Name = "Series2";
-			series6.SeriesID = 1;
-			series6.View = sideBySideBar3DSeriesView3;
+			series2.Name = "Series2";
+			series2.SeriesID = 1;
+			series2.View = sideBySideBar3DSeriesView1;
 			this.chartProjeDurumu.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series6};
+        series2};
 			this.chartProjeDurumu.Size = new System.Drawing.Size(379, 279);
 			this.chartProjeDurumu.TabIndex = 1;
 			// 
@@ -195,11 +204,68 @@
 			this.lblMusteriSayisi.TabIndex = 0;
 			this.lblMusteriSayisi.Text = "10";
 			// 
+			// progressTamamlandi
+			// 
+			this.progressTamamlandi.Location = new System.Drawing.Point(1029, 125);
+			this.progressTamamlandi.Name = "progressTamamlandi";
+			this.progressTamamlandi.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
+			this.progressTamamlandi.Properties.Appearance.BorderColor = System.Drawing.Color.Transparent;
+			this.progressTamamlandi.Properties.Appearance.ForeColor = System.Drawing.Color.Transparent;
+			this.progressTamamlandi.Size = new System.Drawing.Size(140, 36);
+			this.progressTamamlandi.TabIndex = 6;
+			// 
+			// progressDevamEdiyor
+			// 
+			this.progressDevamEdiyor.Location = new System.Drawing.Point(1175, 125);
+			this.progressDevamEdiyor.Name = "progressDevamEdiyor";
+			this.progressDevamEdiyor.Size = new System.Drawing.Size(140, 36);
+			this.progressDevamEdiyor.TabIndex = 7;
+			// 
+			// progressIptalEdildi
+			// 
+			this.progressIptalEdildi.Location = new System.Drawing.Point(1321, 125);
+			this.progressIptalEdildi.Name = "progressIptalEdildi";
+			this.progressIptalEdildi.Size = new System.Drawing.Size(140, 36);
+			this.progressIptalEdildi.TabIndex = 8;
+			// 
+			// lblTamamlandi
+			// 
+			this.lblTamamlandi.AutoSize = true;
+			this.lblTamamlandi.Location = new System.Drawing.Point(1045, 164);
+			this.lblTamamlandi.Name = "lblTamamlandi";
+			this.lblTamamlandi.Size = new System.Drawing.Size(35, 13);
+			this.lblTamamlandi.TabIndex = 9;
+			this.lblTamamlandi.Text = "label1";
+			// 
+			// lblDevamEdiyor
+			// 
+			this.lblDevamEdiyor.AutoSize = true;
+			this.lblDevamEdiyor.Location = new System.Drawing.Point(1186, 164);
+			this.lblDevamEdiyor.Name = "lblDevamEdiyor";
+			this.lblDevamEdiyor.Size = new System.Drawing.Size(35, 13);
+			this.lblDevamEdiyor.TabIndex = 10;
+			this.lblDevamEdiyor.Text = "label1";
+			// 
+			// lblIptalEdildi
+			// 
+			this.lblIptalEdildi.AutoSize = true;
+			this.lblIptalEdildi.Location = new System.Drawing.Point(1335, 164);
+			this.lblIptalEdildi.Name = "lblIptalEdildi";
+			this.lblIptalEdildi.Size = new System.Drawing.Size(35, 13);
+			this.lblIptalEdildi.TabIndex = 11;
+			this.lblIptalEdildi.Text = "label1";
+			// 
 			// FrmAnasayfa
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1506, 626);
+			this.Controls.Add(this.lblIptalEdildi);
+			this.Controls.Add(this.lblDevamEdiyor);
+			this.Controls.Add(this.lblTamamlandi);
+			this.Controls.Add(this.progressIptalEdildi);
+			this.Controls.Add(this.progressDevamEdiyor);
+			this.Controls.Add(this.progressTamamlandi);
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.groupBox1);
 			this.Controls.Add(this.gridControl2);
@@ -210,13 +276,13 @@
 			this.Name = "FrmAnasayfa";
 			this.Text = "Anasayfa";
 			this.Load += new System.EventHandler(this.FrmAnasayfa_Load);
-			((System.ComponentModel.ISupportInitialize)(simpleDiagram3D3)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(pie3DSeriesView3)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(series5)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(simpleDiagram3D1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(pie3DSeriesView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.chartToplamGelir)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(xyDiagram3D3)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(sideBySideBar3DSeriesView3)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(series6)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(xyDiagram3D1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(sideBySideBar3DSeriesView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.chartProjeDurumu)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
@@ -226,7 +292,11 @@
 			this.groupBox1.PerformLayout();
 			this.groupBox2.ResumeLayout(false);
 			this.groupBox2.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.progressTamamlandi.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.progressDevamEdiyor.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.progressIptalEdildi.Properties)).EndInit();
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 
@@ -244,5 +314,11 @@
 		private System.Windows.Forms.Label lblSonFaturaTarih;
 		private System.Windows.Forms.GroupBox groupBox2;
 		private System.Windows.Forms.Label lblMusteriSayisi;
+		private DevExpress.XtraEditors.ProgressBarControl progressTamamlandi;
+		private DevExpress.XtraEditors.ProgressBarControl progressDevamEdiyor;
+		private DevExpress.XtraEditors.ProgressBarControl progressIptalEdildi;
+		private System.Windows.Forms.Label lblTamamlandi;
+		private System.Windows.Forms.Label lblDevamEdiyor;
+		private System.Windows.Forms.Label lblIptalEdildi;
 	}
 }

@@ -122,6 +122,26 @@ namespace ProFin
 			}
 		}
 
+		private Dictionary<string, double> GetProjeDurumYuzdelik()
+		{
+			using (var dbContext = new DbProFinEntities())
+			{
+				int toplamProje = dbContext.Projeler.Count();
+				if (toplamProje == 0) return new Dictionary<string, double>();
+
+				var durumlar = dbContext.Projeler
+					.GroupBy(p => p.Durum)
+					.Select(g => new
+					{
+						Durum = g.Key,
+						Yuzde = (g.Count() / (double)toplamProje) * 100
+					})
+					.ToDictionary(x => x.Durum, x => x.Yuzde);
+
+				return durumlar;
+			}
+		}
+
 		private int GetToplamMusteriSayisi()
 		{
 			using (var dbContext = new DbProFinEntities())
@@ -194,6 +214,23 @@ namespace ProFin
 
 			var toplamMusteriSayisi = GetToplamMusteriSayisi();
 			lblMusteriSayisi.Text = toplamMusteriSayisi.ToString();
+
+
+
+			var yuzdelikler = GetProjeDurumYuzdelik();
+
+			// Mevcut ProgressBarControl'leri doldur
+			progressTamamlandi.EditValue = yuzdelikler.ContainsKey("Tamamlandı") ? yuzdelikler["Tamamlandı"] : 0;
+			progressDevamEdiyor.EditValue = yuzdelikler.ContainsKey("Devam Ediyor") ? yuzdelikler["Devam Ediyor"] : 0;
+			progressIptalEdildi.EditValue = yuzdelikler.ContainsKey("İptal Edildi") ? yuzdelikler["İptal Edildi"] : 0;
+
+			// Label ile yüzdelikleri göster
+			lblTamamlandi.Text = $"Tamamlandı: {(yuzdelikler.ContainsKey("Tamamlandı") ? yuzdelikler["Tamamlandı"] : 0)}%";
+			lblDevamEdiyor.Text = $"Devam Ediyor: {(yuzdelikler.ContainsKey("Devam Ediyor") ? yuzdelikler["Devam Ediyor"] : 0)}%";
+			lblIptalEdildi.Text = $"İptal Edildi: {(yuzdelikler.ContainsKey("İptal Edildi") ? yuzdelikler["İptal Edildi"] : 0)}%";
+
+
+
 		}
 	}
 }
