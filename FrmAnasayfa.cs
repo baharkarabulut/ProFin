@@ -213,6 +213,42 @@ namespace ProFin
 			timer.Start();
 		}
 
+		private void GuncelleHedefler()
+		{
+			using (var db = new DbProFinEntities())
+			{
+				// 1. Gelir Hedefi
+				decimal gelirHedefi = 350000; // Hedeflenen gelir
+				decimal toplamGelir = db.Faturalar
+									   .Where(f => f.DurumBilgi == "Geçerli")
+									   .Sum(f => (decimal?)f.ToplamTutar) ?? 0;
+
+				decimal kalanGelir = gelirHedefi - toplamGelir;
+
+				lblGelirHedefi.Text =
+					$"Gelir Hedefi: {gelirHedefi:C}\n" +
+					$"Şu Anki Gelir: {toplamGelir:C}\n" +
+					$"Kalan Hedef: {(kalanGelir > 0 ? kalanGelir.ToString("C") : "Tamamlandı!")}";
+
+				// 2. Proje Hedefi
+				int projeHedefi = 15; // Tamamlanması gereken proje sayısı
+				int tamamlananProjeler = db.Projeler.Count(p => p.Durum == "Tamamlandı");
+
+				int kalanProje = projeHedefi - tamamlananProjeler;
+
+				lblProjeHedefi.Text =
+					$"Proje Hedefi: {projeHedefi} Proje\n" +
+					$"Tamamlanan Projeler: {tamamlananProjeler}\n" +
+					$"Kalan Hedef: {(kalanProje > 0 ? $"{kalanProje} Proje" : "Tamamlandı!")}";
+
+				// ProgressBar Güncelleme
+				progressGelir.EditValue = toplamGelir / gelirHedefi * 100;
+				progressProje.EditValue = tamamlananProjeler / (double)projeHedefi * 100;
+			}
+		}
+
+
+
 		private void FrmAnasayfa_Load(object sender, EventArgs e)
 		{
 			// Gelir-Gider Grafiği
@@ -293,15 +329,19 @@ namespace ProFin
 
 			//Proje süresi izleyici
 			listView1.Columns.Clear();
-			listView1.Columns.Add("Proje ID", 70);
-			listView1.Columns.Add("Proje Adı", 200);
-			listView1.Columns.Add("Bitiş Tarihi", 100);
-			listView1.Columns.Add("Kalan Gün", 80);
+			listView1.Columns.Add("Proje ID", 56);
+			listView1.Columns.Add("Proje Adı", 210);
+			listView1.Columns.Add("Bitiş Tarihi", 120);
+			listView1.Columns.Add("Kalan Gün", 100);
 			listView1.View = View.Details; 
 			listView1.FullRowSelect = true;
 
 			ProjeKalanSureleriniListele();
 			InitializeTimer();
+
+			GuncelleHedefler();
+
+
 		}
 	}
 }
