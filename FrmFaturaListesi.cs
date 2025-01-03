@@ -70,7 +70,6 @@ namespace ProFin
 				MessageBox.Show($"Faturalar listelenirken bir hata oluştu: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 
-			// GridView ayarları
 			gridView1.OptionsSelection.MultiSelect = false;
 			gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
 			gridView1.OptionsSelection.InvertSelection = false;

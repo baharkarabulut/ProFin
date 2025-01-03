@@ -54,10 +54,12 @@
 			this.lblIptalEdildi = new System.Windows.Forms.Label();
 			this.listView1 = new System.Windows.Forms.ListView();
 			this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-			this.lblGelirHedefi = new DevExpress.XtraEditors.LabelControl();
-			this.lblProjeHedefi = new DevExpress.XtraEditors.LabelControl();
-			this.progressGelir = new DevExpress.XtraEditors.ProgressBarControl();
 			this.progressProje = new DevExpress.XtraEditors.ProgressBarControl();
+			this.progressGelir = new DevExpress.XtraEditors.ProgressBarControl();
+			this.lblProjeHedefi = new DevExpress.XtraEditors.LabelControl();
+			this.lblGelirHedefi = new DevExpress.XtraEditors.LabelControl();
+			this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
+			this.listViewEtkinlikler = new System.Windows.Forms.ListView();
 			((System.ComponentModel.ISupportInitialize)(this.chartToplamGelir)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(simpleDiagram3D3)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(series5)).BeginInit();
@@ -77,8 +79,10 @@
 			((System.ComponentModel.ISupportInitialize)(this.progressIptalEdildi.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
 			this.groupControl1.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.progressGelir.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.progressProje.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.progressGelir.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
+			this.groupControl2.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// chartToplamGelir
@@ -139,7 +143,7 @@
 			this.gridControl2.Location = new System.Drawing.Point(778, 10);
 			this.gridControl2.MainView = this.gridView2;
 			this.gridControl2.Name = "gridControl2";
-			this.gridControl2.Size = new System.Drawing.Size(229, 615);
+			this.gridControl2.Size = new System.Drawing.Size(241, 615);
 			this.gridControl2.TabIndex = 3;
 			this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -156,7 +160,7 @@
 			this.groupBox1.Controls.Add(this.lblSonFaturaTutar);
 			this.groupBox1.Controls.Add(this.lblSonFaturaTarih);
 			this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.groupBox1.Location = new System.Drawing.Point(1014, 10);
+			this.groupBox1.Location = new System.Drawing.Point(1025, 10);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Size = new System.Drawing.Size(242, 109);
 			this.groupBox1.TabIndex = 4;
@@ -197,7 +201,7 @@
 			// 
 			this.groupBox2.Controls.Add(this.lblMusteriSayisi);
 			this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.groupBox2.Location = new System.Drawing.Point(1262, 10);
+			this.groupBox2.Location = new System.Drawing.Point(1273, 10);
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.Size = new System.Drawing.Size(242, 109);
 			this.groupBox2.TabIndex = 5;
@@ -216,7 +220,7 @@
 			// 
 			// progressTamamlandi
 			// 
-			this.progressTamamlandi.Location = new System.Drawing.Point(1014, 125);
+			this.progressTamamlandi.Location = new System.Drawing.Point(1025, 125);
 			this.progressTamamlandi.Name = "progressTamamlandi";
 			this.progressTamamlandi.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
 			this.progressTamamlandi.Properties.Appearance.BorderColor = System.Drawing.Color.Transparent;
@@ -226,14 +230,14 @@
 			// 
 			// progressDevamEdiyor
 			// 
-			this.progressDevamEdiyor.Location = new System.Drawing.Point(1180, 125);
+			this.progressDevamEdiyor.Location = new System.Drawing.Point(1191, 125);
 			this.progressDevamEdiyor.Name = "progressDevamEdiyor";
 			this.progressDevamEdiyor.Size = new System.Drawing.Size(160, 36);
 			this.progressDevamEdiyor.TabIndex = 7;
 			// 
 			// progressIptalEdildi
 			// 
-			this.progressIptalEdildi.Location = new System.Drawing.Point(1344, 125);
+			this.progressIptalEdildi.Location = new System.Drawing.Point(1355, 125);
 			this.progressIptalEdildi.Name = "progressIptalEdildi";
 			this.progressIptalEdildi.Size = new System.Drawing.Size(160, 36);
 			this.progressIptalEdildi.TabIndex = 8;
@@ -241,7 +245,7 @@
 			// lblTamamlandi
 			// 
 			this.lblTamamlandi.AutoSize = true;
-			this.lblTamamlandi.Location = new System.Drawing.Point(1041, 164);
+			this.lblTamamlandi.Location = new System.Drawing.Point(1052, 164);
 			this.lblTamamlandi.Name = "lblTamamlandi";
 			this.lblTamamlandi.Size = new System.Drawing.Size(35, 13);
 			this.lblTamamlandi.TabIndex = 9;
@@ -250,7 +254,7 @@
 			// lblDevamEdiyor
 			// 
 			this.lblDevamEdiyor.AutoSize = true;
-			this.lblDevamEdiyor.Location = new System.Drawing.Point(1208, 164);
+			this.lblDevamEdiyor.Location = new System.Drawing.Point(1219, 164);
 			this.lblDevamEdiyor.Name = "lblDevamEdiyor";
 			this.lblDevamEdiyor.Size = new System.Drawing.Size(35, 13);
 			this.lblDevamEdiyor.TabIndex = 10;
@@ -259,7 +263,7 @@
 			// lblIptalEdildi
 			// 
 			this.lblIptalEdildi.AutoSize = true;
-			this.lblIptalEdildi.Location = new System.Drawing.Point(1372, 164);
+			this.lblIptalEdildi.Location = new System.Drawing.Point(1383, 164);
 			this.lblIptalEdildi.Name = "lblIptalEdildi";
 			this.lblIptalEdildi.Size = new System.Drawing.Size(35, 13);
 			this.lblIptalEdildi.TabIndex = 11;
@@ -268,7 +272,7 @@
 			// listView1
 			// 
 			this.listView1.HideSelection = false;
-			this.listView1.Location = new System.Drawing.Point(1013, 189);
+			this.listView1.Location = new System.Drawing.Point(1024, 189);
 			this.listView1.Name = "listView1";
 			this.listView1.Size = new System.Drawing.Size(491, 162);
 			this.listView1.TabIndex = 12;
@@ -281,21 +285,25 @@
 			this.groupControl1.Controls.Add(this.progressGelir);
 			this.groupControl1.Controls.Add(this.lblProjeHedefi);
 			this.groupControl1.Controls.Add(this.lblGelirHedefi);
-			this.groupControl1.Location = new System.Drawing.Point(1014, 357);
+			this.groupControl1.Location = new System.Drawing.Point(1025, 357);
 			this.groupControl1.Name = "groupControl1";
 			this.groupControl1.Size = new System.Drawing.Size(242, 268);
 			this.groupControl1.TabIndex = 13;
 			this.groupControl1.Text = "Aylık Hedefler";
 			// 
-			// lblGelirHedefi
+			// progressProje
 			// 
-			this.lblGelirHedefi.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.lblGelirHedefi.Appearance.Options.UseFont = true;
-			this.lblGelirHedefi.Location = new System.Drawing.Point(11, 38);
-			this.lblGelirHedefi.Name = "lblGelirHedefi";
-			this.lblGelirHedefi.Size = new System.Drawing.Size(116, 54);
-			this.lblGelirHedefi.TabIndex = 0;
-			this.lblGelirHedefi.Text = "Gelir Hedefi:\r\nGüncel Gelir: \r\nKalan Hedef Gelir:";
+			this.progressProje.Location = new System.Drawing.Point(11, 214);
+			this.progressProje.Name = "progressProje";
+			this.progressProje.Size = new System.Drawing.Size(215, 40);
+			this.progressProje.TabIndex = 3;
+			// 
+			// progressGelir
+			// 
+			this.progressGelir.Location = new System.Drawing.Point(11, 98);
+			this.progressGelir.Name = "progressGelir";
+			this.progressGelir.Size = new System.Drawing.Size(215, 40);
+			this.progressGelir.TabIndex = 2;
 			// 
 			// lblProjeHedefi
 			// 
@@ -307,25 +315,41 @@
 			this.lblProjeHedefi.TabIndex = 1;
 			this.lblProjeHedefi.Text = "Proje Hedefi:\r\nGüncel Proje:\r\nKalan Hedef Proje:";
 			// 
-			// progressGelir
+			// lblGelirHedefi
 			// 
-			this.progressGelir.Location = new System.Drawing.Point(11, 98);
-			this.progressGelir.Name = "progressGelir";
-			this.progressGelir.Size = new System.Drawing.Size(215, 40);
-			this.progressGelir.TabIndex = 2;
+			this.lblGelirHedefi.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.lblGelirHedefi.Appearance.Options.UseFont = true;
+			this.lblGelirHedefi.Location = new System.Drawing.Point(11, 38);
+			this.lblGelirHedefi.Name = "lblGelirHedefi";
+			this.lblGelirHedefi.Size = new System.Drawing.Size(116, 54);
+			this.lblGelirHedefi.TabIndex = 0;
+			this.lblGelirHedefi.Text = "Gelir Hedefi:\r\nGüncel Gelir: \r\nKalan Hedef Gelir:";
 			// 
-			// progressProje
+			// groupControl2
 			// 
-			this.progressProje.Location = new System.Drawing.Point(11, 214);
-			this.progressProje.Name = "progressProje";
-			this.progressProje.Size = new System.Drawing.Size(215, 40);
-			this.progressProje.TabIndex = 3;
+			this.groupControl2.Controls.Add(this.listViewEtkinlikler);
+			this.groupControl2.Location = new System.Drawing.Point(1273, 357);
+			this.groupControl2.Name = "groupControl2";
+			this.groupControl2.Size = new System.Drawing.Size(242, 268);
+			this.groupControl2.TabIndex = 14;
+			this.groupControl2.Text = "Yaklaşan Etkinlikler";
+			// 
+			// listViewEtkinlikler
+			// 
+			this.listViewEtkinlikler.HideSelection = false;
+			this.listViewEtkinlikler.Location = new System.Drawing.Point(5, 38);
+			this.listViewEtkinlikler.Name = "listViewEtkinlikler";
+			this.listViewEtkinlikler.Size = new System.Drawing.Size(232, 216);
+			this.listViewEtkinlikler.TabIndex = 0;
+			this.listViewEtkinlikler.UseCompatibleStateImageBehavior = false;
+			this.listViewEtkinlikler.View = System.Windows.Forms.View.Details;
 			// 
 			// FrmAnasayfa
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1506, 626);
+			this.ClientSize = new System.Drawing.Size(1525, 626);
+			this.Controls.Add(this.groupControl2);
 			this.Controls.Add(this.groupControl1);
 			this.Controls.Add(this.listView1);
 			this.Controls.Add(this.lblIptalEdildi);
@@ -366,8 +390,10 @@
 			((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
 			this.groupControl1.ResumeLayout(false);
 			this.groupControl1.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.progressGelir.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.progressProje.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.progressGelir.Properties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
+			this.groupControl2.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -399,5 +425,7 @@
 		private DevExpress.XtraEditors.LabelControl lblGelirHedefi;
 		private DevExpress.XtraEditors.ProgressBarControl progressProje;
 		private DevExpress.XtraEditors.ProgressBarControl progressGelir;
+		private DevExpress.XtraEditors.GroupControl groupControl2;
+		private System.Windows.Forms.ListView listViewEtkinlikler;
 	}
 }

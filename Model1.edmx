@@ -13,6 +13,16 @@
           <Property Name="Anahtar" Type="varchar" MaxLength="100" />
           <Property Name="Deger" Type="varchar" MaxLength="255" />
         </EntityType>
+        <EntityType Name="Etkinlik">
+          <Key>
+            <PropertyRef Name="EtkinlikID" />
+          </Key>
+          <Property Name="EtkinlikID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EtkinlikAdi" Type="varchar" MaxLength="450" />
+          <Property Name="Tarih" Type="datetime" />
+          <Property Name="Durum" Type="int" />
+          <Property Name="Aciklama" Type="varchar(max)" />
+        </EntityType>
         <EntityType Name="FaturaKalemleri">
           <Key>
             <PropertyRef Name="KalemID" />
@@ -176,6 +186,7 @@
         </Association>
         <EntityContainer Name="DbProFinModelStoreContainer">
           <EntitySet Name="Ayarlar" EntityType="Self.Ayarlar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Etkinlik" EntityType="Self.Etkinlik" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="FaturaKalemleri" EntityType="Self.FaturaKalemleri" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Faturalar" EntityType="Self.Faturalar" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Gorevler" EntityType="Self.Gorevler" Schema="dbo" store:Type="Tables" />
@@ -420,7 +431,18 @@
             <End Role="Musteriler" EntitySet="Musteriler" />
             <End Role="Projeler" EntitySet="Projeler" />
           </AssociationSet>
+          <EntitySet Name="Etkinlik" EntityType="DbProFinModel.Etkinlik" />
         </EntityContainer>
+        <EntityType Name="Etkinlik">
+          <Key>
+            <PropertyRef Name="EtkinlikID" />
+          </Key>
+          <Property Name="EtkinlikID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EtkinlikAdi" Type="String" MaxLength="450" FixedLength="false" Unicode="false" />
+          <Property Name="Tarih" Type="DateTime" Precision="3" />
+          <Property Name="Durum" Type="Int32" />
+          <Property Name="Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -543,6 +565,17 @@
                 <ScalarProperty Name="YedekID" ColumnName="YedekID" />
                 <ScalarProperty Name="DosyaYolu" ColumnName="DosyaYolu" />
                 <ScalarProperty Name="YedeklemeTarihi" ColumnName="YedeklemeTarihi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Etkinlik">
+            <EntityTypeMapping TypeName="DbProFinModel.Etkinlik">
+              <MappingFragment StoreEntitySet="Etkinlik">
+                <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="EtkinlikAdi" ColumnName="EtkinlikAdi" />
+                <ScalarProperty Name="EtkinlikID" ColumnName="EtkinlikID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

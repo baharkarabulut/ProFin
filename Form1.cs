@@ -31,45 +31,38 @@ namespace ProFin
 
 		private void BtnYeniProje_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-			FrmYeniProje fr = new FrmYeniProje();
-			fr.MdiParent = this;
-			fr.Show();
+			FrmYeniProje YeniProje = new FrmYeniProje();
+			YeniProje.ShowDialog();
 		}
 
 		private void BtnYeniMusteri_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-			FrmYeniMusteri fr = new FrmYeniMusteri();
-			fr.MdiParent = this;
-			fr.Show();
+			FrmYeniMusteri YeniMusteri = new FrmYeniMusteri();
+			YeniMusteri.ShowDialog();
 		}
 
 		private void BtnProjeListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-			FrmProjeListesi fr = new FrmProjeListesi();
-			fr.MdiParent = this;
-			fr.Show();
+			FrmProjeListesi ProjeListesi = new FrmProjeListesi();
+			ProjeListesi.ShowDialog();
 		}
 
 		private void BtnYeniProje1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-			FrmYeniProje fr = new FrmYeniProje();
-			fr.MdiParent = this;
-			fr.Show();
+			FrmYeniProje YeniProje = new FrmYeniProje();
+			YeniProje.ShowDialog();
 		}
 
 		private void BtnMusteriListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-			FrmMusteriListesi fr = new FrmMusteriListesi();
-			fr.MdiParent = this;
-			fr.Show();
-
+			FrmMusteriListesi MusteriListesi = new FrmMusteriListesi();
+			MusteriListesi.ShowDialog();
 		}
 
 		private void BtnYeniMusteri1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-			FrmYeniMusteri fr = new FrmYeniMusteri();
-			fr.MdiParent = this;
-			fr.Show();
+			FrmYeniMusteri YeniMusteri = new FrmYeniMusteri();
+			YeniMusteri.ShowDialog();
 		}
 
 		private void BtnFaturaOlustur_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -86,9 +79,8 @@ namespace ProFin
 
 		private void BtnFaturaListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-			FrmFaturaListesi fr = new FrmFaturaListesi();
-			fr.MdiParent = this;
-			fr.Show();
+			FrmFaturaListesi FaturaListesi = new FrmFaturaListesi();
+			FaturaListesi.ShowDialog();
 		}
 
 		private void BtnFaturaDetay_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -132,16 +124,12 @@ namespace ProFin
 
 		private void BtnToplamGelir_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-			FrmAnasayfa fr = new FrmAnasayfa();
-			fr.MdiParent = this;
-			fr.Show();
+			
 		}
 
 		private void BtnGelirGider_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-			FrmAnasayfa fr = new FrmAnasayfa();
-			fr.MdiParent = this;
-			fr.Show();
+			
 		}
 	}
 }

@@ -51,7 +51,6 @@ namespace ProFin
 		{
 			using (var db = new DbProFinEntities())
 			{
-				// Proje ve müşteri bilgilerini sorgula
 				var projeler = from proje in db.Projeler
 							   join musteri in db.Musteriler
 							   on proje.MusteriID equals musteri.MusteriID
@@ -70,7 +69,6 @@ namespace ProFin
 								   proje.Notlar
 							   };
 
-				// Verileri gridControl'e ata
 				gridControl1.DataSource = projeler.ToList();
 				gridView1.Columns["ProjeID"].Caption = "Proje ID";
 				gridView1.Columns["ProjeAdi"].Caption = "Proje Adı";
@@ -80,6 +78,15 @@ namespace ProFin
 				gridView1.Columns["BitisTarihi"].Caption = "Bitiş Tarihi";
 				gridView1.Columns["ToplamTutar"].Caption = "Toplam Tutar";
 				gridView1.Columns["Notlar"].Caption = "Notlar";
+
+				gridView1.Columns["ProjeID"].Width = 60; 
+				gridView1.Columns["ProjeAdi"].Width = 210;  
+				gridView1.Columns["MusteriAdi"].Width = 150; 
+				gridView1.Columns["Durum"].Width = 120; 
+				gridView1.Columns["BaslangicTarihi"].Width = 120; 
+				gridView1.Columns["BitisTarihi"].Width = 120; 
+				gridView1.Columns["ToplamTutar"].Width = 120;  
+				gridView1.Columns["Notlar"].Width = 150; 
 			}
 		}
 
@@ -87,7 +94,6 @@ namespace ProFin
 		{
 			using (var db = new DbProFinEntities())
 			{
-				// Müşteri bilgilerini sorgula
 				var musteriler = from musteri in db.Musteriler
 								 select new
 								 {
@@ -96,13 +102,18 @@ namespace ProFin
 									 musteri.Eposta
 								 };
 
-				// Verileri gridControl2'ye ata
 				gridControl2.DataSource = musteriler.ToList();
-				gridView2.Columns["MusteriID"].Caption = "Müşteri ID";
-				gridView2.Columns["AdSoyad"].Caption = "Ad Soyad";
+
+				gridView2.Columns["MusteriID"].Caption = "ID";
+				gridView2.Columns["AdSoyad"].Caption = "Müşteri";
 				gridView2.Columns["Eposta"].Caption = "Mail";
+
+				gridView2.Columns["MusteriID"].Width = 70;
+				gridView2.Columns["AdSoyad"].Width = 200;
+				gridView2.Columns["Eposta"].Width = 250;
 			}
 		}
+
 
 		private dynamic GetSonOdenenFatura()
 		{
@@ -217,8 +228,7 @@ namespace ProFin
 		{
 			using (var db = new DbProFinEntities())
 			{
-				// 1. Gelir Hedefi
-				decimal gelirHedefi = 350000; // Hedeflenen gelir
+				decimal gelirHedefi = 350000;
 				decimal toplamGelir = db.Faturalar
 									   .Where(f => f.DurumBilgi == "Geçerli")
 									   .Sum(f => (decimal?)f.ToplamTutar) ?? 0;
@@ -230,8 +240,7 @@ namespace ProFin
 					$"Şu Anki Gelir: {toplamGelir:C}\n" +
 					$"Kalan Hedef: {(kalanGelir > 0 ? kalanGelir.ToString("C") : "Tamamlandı!")}";
 
-				// 2. Proje Hedefi
-				int projeHedefi = 15; // Tamamlanması gereken proje sayısı
+				int projeHedefi = 15; 
 				int tamamlananProjeler = db.Projeler.Count(p => p.Durum == "Tamamlandı");
 
 				int kalanProje = projeHedefi - tamamlananProjeler;
@@ -241,13 +250,59 @@ namespace ProFin
 					$"Tamamlanan Projeler: {tamamlananProjeler}\n" +
 					$"Kalan Hedef: {(kalanProje > 0 ? $"{kalanProje} Proje" : "Tamamlandı!")}";
 
-				// ProgressBar Güncelleme
 				progressGelir.EditValue = toplamGelir / gelirHedefi * 100;
 				progressProje.EditValue = tamamlananProjeler / (double)projeHedefi * 100;
 			}
 		}
 
+		private void EtkinlikleriListele()
+		{
+			using (var db = new DbProFinEntities())
+			{
+				var etkinlikler = db.Etkinlik
+					.OrderBy(e => e.Tarih)
+					.Select(e => new
+					{
+						e.EtkinlikAdi,
+						e.Tarih,
+						Durum = e.Durum == 1 ? "Yaklaşan" :
+								e.Durum == 2 ? "Tamamlandı" :
+								"Gecikmiş",
+						e.Aciklama
+					})
+					.ToList();
 
+				listViewEtkinlikler.Items.Clear();
+
+				foreach (var etkinlik in etkinlikler)
+				{
+					ListViewItem item = new ListViewItem(etkinlik.EtkinlikAdi);
+					item.SubItems.Add(etkinlik.Tarih.HasValue
+	? etkinlik.Tarih.Value.ToString("dd.MM.yyyy")
+	: "Belirtilmemiş");
+
+					if (etkinlik.Durum == "Yaklaşan")
+						item.BackColor = Color.LightBlue;
+					else if (etkinlik.Durum == "Tamamlandı")
+						item.BackColor = Color.LightGreen;
+					else if (etkinlik.Durum == "Gecikmiş")
+						item.BackColor = Color.LightCoral;
+
+					listViewEtkinlikler.Items.Add(item);
+				}
+			}
+		}
+		private void InitializeEtkinlikListesi()
+		{
+			listViewEtkinlikler.Clear();
+
+			listViewEtkinlikler.Columns.Add("Etkinlik Adı", 147);
+			listViewEtkinlikler.Columns.Add("Tarih", 80);
+
+			listViewEtkinlikler.View = View.Details;
+			listViewEtkinlikler.FullRowSelect = true;
+			listViewEtkinlikler.GridLines = true;
+		}
 
 		private void FrmAnasayfa_Load(object sender, EventArgs e)
 		{
@@ -341,7 +396,9 @@ namespace ProFin
 
 			GuncelleHedefler();
 
-
+			//Etkinlik Listesi
+			InitializeEtkinlikListesi();
+			EtkinlikleriListele();
 		}
 	}
 }

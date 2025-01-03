@@ -35,7 +35,6 @@ namespace ProFin
 		}
 		private void FrmMusteriListesi_Load(object sender, EventArgs e)
 		{
-			// GridView ayarları
 			gridView1.OptionsSelection.MultiSelect = false;
 			gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
 			gridView1.OptionsSelection.InvertSelection = false;
@@ -51,7 +50,7 @@ namespace ProFin
 		{
 			int musteriID = Convert.ToInt32(gridView1.GetFocusedRowCellValue("MusteriID"));
 			FrmMusteriDetay musteriDetay = new FrmMusteriDetay();
-			musteriDetay.MusteriID = musteriID; // Detay formuna ID'yi geçiyoruz.
+			musteriDetay.MusteriID = musteriID;
 			musteriDetay.ShowDialog();
 			Listele();
 		}

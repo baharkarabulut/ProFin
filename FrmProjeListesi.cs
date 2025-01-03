@@ -59,7 +59,7 @@ namespace ProFin
 
 			if (projeDetay.ShowDialog() == DialogResult.OK)
 			{
-				Listele(); // Listeyi Yenile
+				Listele();
 			}
 		}
 	}

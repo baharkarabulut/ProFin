@@ -33,7 +33,6 @@ namespace ProFin
 					m.Notlar
 				}).ToList();
 
-				// Verileri gridControl'e ata
 				gridControl1.DataSource = musteriler;
 			}
 			catch (Exception ex)
@@ -56,7 +55,6 @@ namespace ProFin
 		{
 			try
 			{
-				// Yeni müşteri nesnesi oluştur
 				Musteriler yeniMusteri = new Musteriler
 				{
 					AdSoyad = txtMusteriAdSoyad.Text,
@@ -66,22 +64,17 @@ namespace ProFin
 					Notlar = memoEditNotlar.Text
 				};
 
-				// Müşteriyi veritabanına ekle
 				db.Musteriler.Add(yeniMusteri);
 
-				// Değişiklikleri kaydet
 				db.SaveChanges();
 
-				// Kullanıcıya bilgi ver
 				MessageBox.Show("Yeni müşteri başarıyla eklendi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-				// Formu temizle ve listeyi yenile
 				Temizle();
 				Listele();
 			}
 			catch (Exception ex)
 			{
-				// Hata durumunda kullanıcıya bilgi ver
 				MessageBox.Show("Bir hata oluştu: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}

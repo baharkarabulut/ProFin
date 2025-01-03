@@ -78,6 +78,9 @@
     <Compile Include="Ayarlar.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Etkinlik.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="FaturaKalemleri.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>

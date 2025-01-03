@@ -240,6 +240,7 @@
 			this.ClientSize = new System.Drawing.Size(1540, 693);
 			this.Controls.Add(this.splitContainerControl1);
 			this.Name = "FrmYeniMusteri";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FrmYeniMusteri";
 			this.Load += new System.EventHandler(this.FrmYeniMusteri_Load_1);
 			((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel1)).EndInit();

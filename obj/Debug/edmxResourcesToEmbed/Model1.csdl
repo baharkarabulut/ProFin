@@ -210,5 +210,16 @@
       <End Role="Musteriler" EntitySet="Musteriler" />
       <End Role="Projeler" EntitySet="Projeler" />
     </AssociationSet>
+    <EntitySet Name="Etkinlik" EntityType="DbProFinModel.Etkinlik" />
   </EntityContainer>
+  <EntityType Name="Etkinlik">
+    <Key>
+      <PropertyRef Name="EtkinlikID" />
+    </Key>
+    <Property Name="EtkinlikID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EtkinlikAdi" Type="String" MaxLength="450" FixedLength="false" Unicode="false" />
+    <Property Name="Tarih" Type="DateTime" Precision="3" />
+    <Property Name="Durum" Type="Int32" />
+    <Property Name="Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
 </Schema>

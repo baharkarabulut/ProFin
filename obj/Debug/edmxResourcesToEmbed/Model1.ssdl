@@ -8,6 +8,16 @@
     <Property Name="Anahtar" Type="varchar" MaxLength="100" />
     <Property Name="Deger" Type="varchar" MaxLength="255" />
   </EntityType>
+  <EntityType Name="Etkinlik">
+    <Key>
+      <PropertyRef Name="EtkinlikID" />
+    </Key>
+    <Property Name="EtkinlikID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EtkinlikAdi" Type="varchar" MaxLength="450" />
+    <Property Name="Tarih" Type="datetime" />
+    <Property Name="Durum" Type="int" />
+    <Property Name="Aciklama" Type="varchar(max)" />
+  </EntityType>
   <EntityType Name="FaturaKalemleri">
     <Key>
       <PropertyRef Name="KalemID" />
@@ -171,6 +181,7 @@
   </Association>
   <EntityContainer Name="DbProFinModelStoreContainer">
     <EntitySet Name="Ayarlar" EntityType="Self.Ayarlar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Etkinlik" EntityType="Self.Etkinlik" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="FaturaKalemleri" EntityType="Self.FaturaKalemleri" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Faturalar" EntityType="Self.Faturalar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Gorevler" EntityType="Self.Gorevler" Schema="dbo" store:Type="Tables" />

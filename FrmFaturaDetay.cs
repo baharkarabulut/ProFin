@@ -26,16 +26,14 @@ namespace ProFin
 		{
 			using (var db = new DbProFinEntities())
 			{
-				// FaturaID ile faturayı sorgula
 				var fatura = db.Faturalar.FirstOrDefault(f => f.FaturaID == FaturaID);
 
 				if (fatura != null)
 				{
-					// Fatura bilgilerini doldur
-					txtFaturaID.Text = fatura.FaturaID.ToString(); // FaturaID görüntülenir
+					txtFaturaID.Text = fatura.FaturaID.ToString(); 
 					txtFaturaNumarasi.Text = fatura.FaturaNumarasi;
-					txtMusteriAdi.Text = fatura.Musteriler.AdSoyad; // Eğer ilişkili bir müşteri varsa
-					txtProjeAdi.Text = fatura.Projeler.ProjeAdi;    // Eğer ilişkili bir proje varsa
+					txtMusteriAdi.Text = fatura.Musteriler.AdSoyad; 
+					txtProjeAdi.Text = fatura.Projeler.ProjeAdi; 
 					txtFaturaTarihi.Text = fatura.FaturaTarihi != null
 						? fatura.FaturaTarihi.Value.ToString("yyyy-MM-dd")
 						: "Tarih belirtilmemiş";
@@ -56,16 +54,13 @@ namespace ProFin
 		{
 			try
 			{
-				// Seçili Faturayı Al
 				int faturaID = Convert.ToInt32(txtFaturaID.Text);
 				var fatura = db.Faturalar.FirstOrDefault(x => x.FaturaID == faturaID);
 
 				if (fatura != null)
 				{
-					// Güncellenecek Alanları Ayarla
 					fatura.FaturaNumarasi = txtFaturaNumarasi.Text;
 
-					// Tarih Değeri Almak
 					if (DateTime.TryParse(txtFaturaTarihi.Text, out DateTime faturaTarihi))
 					{
 						fatura.FaturaTarihi = faturaTarihi;
@@ -76,11 +71,10 @@ namespace ProFin
 						return;
 					}
 
-					// Toplam Tutar
 					string toplamTutarText = txtToplamTutar.Text
-						.Replace("₺", "")         // Para birimi simgesini temizle
-						.Replace(".", "")         // Binlik ayırıcı noktaları temizle
-						.Replace(",", ".");       // Virgülü noktaya çevir (ondalık format için)
+						.Replace("₺", "")      
+						.Replace(".", "")         
+						.Replace(",", ".");      
 
 					if (decimal.TryParse(toplamTutarText, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture, out decimal toplamTutar))
 					{
@@ -92,8 +86,6 @@ namespace ProFin
 						return;
 					}
 
-
-					// KDV Oranı
 					if (int.TryParse(txtKDVOrani.Text, out int kdvOrani))
 					{
 						fatura.KDVOrani = kdvOrani;
@@ -104,12 +96,9 @@ namespace ProFin
 						return;
 					}
 
-					// Ödeme Durumu
 					fatura.OdemeDurumu = txtOdemeDurumu.Text;
 					fatura.DurumBilgi = txtDurumBilgi.Text;
 
-
-					// Değişiklikleri Kaydet
 					db.SaveChanges();
 
 					MessageBox.Show("Fatura başarıyla güncellendi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -130,41 +119,36 @@ namespace ProFin
 		{
 			try
 			{
-				int faturaId = Convert.ToInt32(txtFaturaID.Text); // Fatura ID'sini alıyoruz
+				int faturaId = Convert.ToInt32(txtFaturaID.Text); 
 
-				using (var dbContext = new DbProFinEntities())  // Veritabanı bağlamını oluşturuyoruz
+				using (var dbContext = new DbProFinEntities()) 
 				{
-					var fatura = dbContext.Faturalar.FirstOrDefault(f => f.FaturaID == faturaId); // Faturayı buluyoruz
+					var fatura = dbContext.Faturalar.FirstOrDefault(f => f.FaturaID == faturaId); 
 
 					if (fatura != null)
 					{
-						// Eğer durum "Geçerli" ise, durumu "İptal Edildi" olarak değiştiriyoruz
 						if (fatura.DurumBilgi == "Geçerli")
 						{
-							fatura.DurumBilgi = "İptal Edildi";  // Durumu "İptal Edildi" yapıyoruz
-							dbContext.SaveChanges();  // Değişiklikleri kaydediyoruz
+							fatura.DurumBilgi = "İptal Edildi";  
+							dbContext.SaveChanges(); 
 
-							// Kullanıcıya mesaj veriyoruz
 							MessageBox.Show("Fatura başarıyla iptal edildi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 							
 						}
 						else
 						{
-							// Eğer fatura zaten iptal edildiyse, mesaj veriyoruz
 							MessageBox.Show("Bu fatura zaten iptal edilmiştir.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 						}
 					}
 					else
 					{
-						// Eğer fatura bulunamazsa, hata mesajı veriyoruz
 						MessageBox.Show("Fatura bulunamadı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
 					}
 				}
 			}
 			catch (Exception ex)
 			{
-				// Hata durumunda, kullanıcıya hata mesajı gösteriyoruz
 				MessageBox.Show($"İptal işlemi sırasında bir hata oluştu: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}

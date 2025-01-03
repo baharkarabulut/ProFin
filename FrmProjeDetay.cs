@@ -23,38 +23,31 @@ namespace ProFin
 		{
 			using (var db = new DbProFinEntities())
 			{
-				// ProjeID ile projeyi bul
 				var proje = db.Projeler.FirstOrDefault(x => x.ProjeID == ProjeID);
 
 				if (proje != null)
 				{
-					// Proje bilgilerini doldur
 					txtProjeID.Text = proje.ProjeID.ToString();
 					txtProjeAdi.Text = proje.ProjeAdi;
 
-					// Müşteri LookUpEdit
 					var musteriler = db.Musteriler
 						.Select(x => new { x.MusteriID, x.AdSoyad })
 						.ToList();
 					lkpMusteri.Properties.DataSource = musteriler;
 					lkpMusteri.Properties.DisplayMember = "AdSoyad";
 					lkpMusteri.Properties.ValueMember = "MusteriID";
-					lkpMusteri.EditValue = proje.MusteriID; // Seçili müşteri
+					lkpMusteri.EditValue = proje.MusteriID; 
 
-					// Durum ComboBoxEdit
 					cmbDurum.Properties.Items.AddRange(new string[] { "Devam Ediyor", "Tamamlandı", "İptal Edildi" });
 					cmbDurum.EditValue = proje.Durum;
 
-					// Tarihler
 					if (proje.BaslangicTarihi != null)
 						dtBaslangicTarihi.EditValue = proje.BaslangicTarihi;
 					if (proje.BitisTarihi != null)
 						dtBitisTarihi.EditValue = proje.BitisTarihi;
 
-					// Toplam Tutar
 					txtToplamTutar.Text = ((decimal)proje.ToplamTutar).ToString("C2", CultureInfo.CurrentCulture);
 
-					// Notlar
 					memoNotlar.Text = proje.Notlar;
 				}
 				else
@@ -71,16 +64,13 @@ namespace ProFin
 			{
 				using (var db = new DbProFinEntities())
 				{
-					// ProjeID'yi al
 					int projeID = Convert.ToInt32(txtProjeID.Text);
 					var proje = db.Projeler.FirstOrDefault(x => x.ProjeID == projeID);
 
 					if (proje != null)
 					{
-						// Proje bilgilerini güncelle
 						proje.ProjeAdi = txtProjeAdi.Text;
 
-						// Müşteri ID
 						if (lkpMusteri.EditValue != null && int.TryParse(lkpMusteri.EditValue.ToString(), out int musteriID))
 						{
 							proje.MusteriID = musteriID;
@@ -91,7 +81,6 @@ namespace ProFin
 							return;
 						}
 
-						// Durum
 						if (!string.IsNullOrEmpty(cmbDurum.Text))
 						{
 							proje.Durum = cmbDurum.Text;
@@ -102,19 +91,16 @@ namespace ProFin
 							return;
 						}
 
-						// Başlangıç Tarihi
 						if (DateTime.TryParse(dtBaslangicTarihi.Text, out DateTime baslangicTarihi))
 						{
 							proje.BaslangicTarihi = baslangicTarihi;
 						}
 
-						// Bitiş Tarihi
 						if (DateTime.TryParse(dtBitisTarihi.Text, out DateTime bitisTarihi))
 						{
 							proje.BitisTarihi = bitisTarihi;
 						}
 
-						// Toplam Tutar
 						string toplamTutarText = txtToplamTutar.Text
 							.Replace("₺", "")
 							.Replace(".", "")
@@ -129,10 +115,8 @@ namespace ProFin
 							return;
 						}
 
-						// Notlar
 						proje.Notlar = memoNotlar.Text;
 
-						// Değişiklikleri Kaydet
 						db.SaveChanges();
 						MessageBox.Show("Proje başarıyla güncellendi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 					}
@@ -152,20 +136,16 @@ namespace ProFin
 		{
 			try
 			{
-				// Seçili Projeyi Al
 				int projeID = Convert.ToInt32(txtProjeID.Text);
 				var proje = db.Projeler.FirstOrDefault(x => x.ProjeID == projeID);
 
 				if (proje != null)
 				{
-					// Durumu "İptal Edildi" olarak değiştir
 					proje.Durum = "İptal Edildi";
 
-					// Değişiklikleri Kaydet
 					db.SaveChanges();
 					MessageBox.Show("Proje durumu 'İptal Edildi' olarak güncellendi!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-					// Listeyi Yenilemek için Ana Forma Bilgi Gönder
 					this.DialogResult = DialogResult.OK;
 					this.Close();
 				}

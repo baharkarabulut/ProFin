@@ -20,6 +20,7 @@
         <AssociationConnector Association="DbProFinModel.FK_Faturalar_Projeler" ManuallyRouted="false" />
         <AssociationConnector Association="DbProFinModel.FK_Gorevler_Projeler" ManuallyRouted="false" />
         <AssociationConnector Association="DbProFinModel.FK_Projeler_Musteriler" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DbProFinModel.Etkinlik" Width="1.5" PointX="5" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

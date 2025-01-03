@@ -120,5 +120,16 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Etkinlik">
+      <EntityTypeMapping TypeName="DbProFinModel.Etkinlik">
+        <MappingFragment StoreEntitySet="Etkinlik">
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="Durum" ColumnName="Durum" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="EtkinlikAdi" ColumnName="EtkinlikAdi" />
+          <ScalarProperty Name="EtkinlikID" ColumnName="EtkinlikID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>
