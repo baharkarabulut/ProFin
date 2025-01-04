@@ -45,6 +45,16 @@
     <Property Name="Durum" Type="bit" />
     <Property Name="DurumBilgi" Type="varchar" MaxLength="150" />
   </EntityType>
+  <EntityType Name="Giderler">
+    <Key>
+      <PropertyRef Name="GiderID" />
+    </Key>
+    <Property Name="GiderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Tarih" Type="datetime" />
+    <Property Name="Kategori" Type="varchar" MaxLength="250" />
+    <Property Name="Tutar" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="Aciklama" Type="varchar(max)" />
+  </EntityType>
   <EntityType Name="Gorevler">
     <Key>
       <PropertyRef Name="GorevID" />
@@ -184,6 +194,7 @@
     <EntitySet Name="Etkinlik" EntityType="Self.Etkinlik" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="FaturaKalemleri" EntityType="Self.FaturaKalemleri" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Faturalar" EntityType="Self.Faturalar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Giderler" EntityType="Self.Giderler" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Gorevler" EntityType="Self.Gorevler" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Kullanicilar" EntityType="Self.Kullanicilar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Musteriler" EntityType="Self.Musteriler" Schema="dbo" store:Type="Tables" />

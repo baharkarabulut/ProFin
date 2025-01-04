@@ -117,6 +117,12 @@
     <Compile Include="FrmFaturaListesi.Designer.cs">
       <DependentUpon>FrmFaturaListesi.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmGelirGider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGelirGider.Designer.cs">
+      <DependentUpon>FrmGelirGider.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMusteriDetay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     </Compile>
     <Compile Include="FrmYeniProje.Designer.cs">
       <DependentUpon>FrmYeniProje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giderler.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Gorevler.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -205,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFaturaListesi.resx">
       <DependentUpon>FrmFaturaListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGelirGider.resx">
+      <DependentUpon>FrmGelirGider.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMusteriDetay.resx">
       <DependentUpon>FrmMusteriDetay.cs</DependentUpon>

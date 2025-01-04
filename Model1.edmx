@@ -50,6 +50,16 @@
           <Property Name="Durum" Type="bit" />
           <Property Name="DurumBilgi" Type="varchar" MaxLength="150" />
         </EntityType>
+        <EntityType Name="Giderler">
+          <Key>
+            <PropertyRef Name="GiderID" />
+          </Key>
+          <Property Name="GiderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Tarih" Type="datetime" />
+          <Property Name="Kategori" Type="varchar" MaxLength="250" />
+          <Property Name="Tutar" Type="decimal" Precision="10" Scale="2" />
+          <Property Name="Aciklama" Type="varchar(max)" />
+        </EntityType>
         <EntityType Name="Gorevler">
           <Key>
             <PropertyRef Name="GorevID" />
@@ -189,6 +199,7 @@
           <EntitySet Name="Etkinlik" EntityType="Self.Etkinlik" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="FaturaKalemleri" EntityType="Self.FaturaKalemleri" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Faturalar" EntityType="Self.Faturalar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Giderler" EntityType="Self.Giderler" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Gorevler" EntityType="Self.Gorevler" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Kullanicilar" EntityType="Self.Kullanicilar" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Musteriler" EntityType="Self.Musteriler" Schema="dbo" store:Type="Tables" />
@@ -432,6 +443,7 @@
             <End Role="Projeler" EntitySet="Projeler" />
           </AssociationSet>
           <EntitySet Name="Etkinlik" EntityType="DbProFinModel.Etkinlik" />
+          <EntitySet Name="Giderler" EntityType="DbProFinModel.Giderler" />
         </EntityContainer>
         <EntityType Name="Etkinlik">
           <Key>
@@ -441,6 +453,16 @@
           <Property Name="EtkinlikAdi" Type="String" MaxLength="450" FixedLength="false" Unicode="false" />
           <Property Name="Tarih" Type="DateTime" Precision="3" />
           <Property Name="Durum" Type="Int32" />
+          <Property Name="Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Giderler">
+          <Key>
+            <PropertyRef Name="GiderID" />
+          </Key>
+          <Property Name="GiderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Tarih" Type="DateTime" Precision="3" />
+          <Property Name="Kategori" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Tutar" Type="Decimal" Precision="10" Scale="2" />
           <Property Name="Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
       </Schema>
@@ -576,6 +598,17 @@
                 <ScalarProperty Name="Tarih" ColumnName="Tarih" />
                 <ScalarProperty Name="EtkinlikAdi" ColumnName="EtkinlikAdi" />
                 <ScalarProperty Name="EtkinlikID" ColumnName="EtkinlikID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Giderler">
+            <EntityTypeMapping TypeName="DbProFinModel.Giderler">
+              <MappingFragment StoreEntitySet="Giderler">
+                <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+                <ScalarProperty Name="Tutar" ColumnName="Tutar" />
+                <ScalarProperty Name="Kategori" ColumnName="Kategori" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="GiderID" ColumnName="GiderID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

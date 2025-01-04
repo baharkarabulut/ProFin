@@ -124,7 +124,9 @@ namespace ProFin
 
 		private void BtnToplamGelir_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-			
+			FrmGelirGider GelirGiderGrafik = new FrmGelirGider();
+			GelirGiderGrafik.ShowDialog();
+
 		}
 
 		private void BtnGelirGider_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

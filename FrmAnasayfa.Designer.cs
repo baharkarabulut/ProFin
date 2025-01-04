@@ -28,12 +28,12 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			DevExpress.XtraCharts.SimpleDiagram3D simpleDiagram3D3 = new DevExpress.XtraCharts.SimpleDiagram3D();
-			DevExpress.XtraCharts.Series series5 = new DevExpress.XtraCharts.Series();
-			DevExpress.XtraCharts.Pie3DSeriesView pie3DSeriesView3 = new DevExpress.XtraCharts.Pie3DSeriesView();
-			DevExpress.XtraCharts.XYDiagram3D xyDiagram3D3 = new DevExpress.XtraCharts.XYDiagram3D();
-			DevExpress.XtraCharts.Series series6 = new DevExpress.XtraCharts.Series();
-			DevExpress.XtraCharts.SideBySideBar3DSeriesView sideBySideBar3DSeriesView3 = new DevExpress.XtraCharts.SideBySideBar3DSeriesView();
+			DevExpress.XtraCharts.SimpleDiagram3D simpleDiagram3D1 = new DevExpress.XtraCharts.SimpleDiagram3D();
+			DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
+			DevExpress.XtraCharts.Pie3DSeriesView pie3DSeriesView1 = new DevExpress.XtraCharts.Pie3DSeriesView();
+			DevExpress.XtraCharts.XYDiagram3D xyDiagram3D1 = new DevExpress.XtraCharts.XYDiagram3D();
+			DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
+			DevExpress.XtraCharts.SideBySideBar3DSeriesView sideBySideBar3DSeriesView1 = new DevExpress.XtraCharts.SideBySideBar3DSeriesView();
 			this.chartToplamGelir = new DevExpress.XtraCharts.ChartControl();
 			this.chartProjeDurumu = new DevExpress.XtraCharts.ChartControl();
 			this.gridControl1 = new DevExpress.XtraGrid.GridControl();
@@ -61,13 +61,13 @@
 			this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
 			this.listViewEtkinlikler = new System.Windows.Forms.ListView();
 			((System.ComponentModel.ISupportInitialize)(this.chartToplamGelir)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(simpleDiagram3D3)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(series5)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(pie3DSeriesView3)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(simpleDiagram3D1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(pie3DSeriesView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.chartProjeDurumu)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(xyDiagram3D3)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(series6)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(sideBySideBar3DSeriesView3)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(xyDiagram3D1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(sideBySideBar3DSeriesView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
@@ -88,37 +88,37 @@
 			// chartToplamGelir
 			// 
 			this.chartToplamGelir.BorderOptions.Visibility = DevExpress.Utils.DefaultBoolean.True;
-			simpleDiagram3D3.RotationMatrixSerializable = "0.406818065349275;-0.913509108681075;-0.000412385968336935;0;0.83809101302482;0.3" +
+			simpleDiagram3D1.RotationMatrixSerializable = "0.406818065349275;-0.913509108681075;-0.000412385968336935;0;0.83809101302482;0.3" +
     "73411242764804;-0.397702775529513;0;0.36345909755089;0.161447056750991;0.9175142" +
     "13663168;0;0;0;0;1";
-			this.chartToplamGelir.Diagram = simpleDiagram3D3;
+			this.chartToplamGelir.Diagram = simpleDiagram3D1;
 			this.chartToplamGelir.Location = new System.Drawing.Point(9, 10);
 			this.chartToplamGelir.Margin = new System.Windows.Forms.Padding(2);
 			this.chartToplamGelir.Name = "chartToplamGelir";
 			this.chartToplamGelir.PaletteBaseColorNumber = 2;
 			this.chartToplamGelir.PaletteName = "Concourse";
-			series5.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
-			series5.Name = "Series";
-			series5.SeriesID = 0;
-			series5.View = pie3DSeriesView3;
+			series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.False;
+			series1.Name = "Series";
+			series1.SeriesID = 0;
+			series1.View = pie3DSeriesView1;
 			this.chartToplamGelir.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series5};
+        series1};
 			this.chartToplamGelir.Size = new System.Drawing.Size(379, 279);
 			this.chartToplamGelir.TabIndex = 0;
 			// 
 			// chartProjeDurumu
 			// 
-			xyDiagram3D3.RotationMatrixSerializable = "-0.964051479177289;0.243979518882632;-0.10525559301981;0;0.226692368403619;0.9618" +
-    "40478757345;0.153210520302815;0;0.138619319013292;0.123842189054065;-0.982572031" +
-    "256068;0;0;0;0;1";
-			this.chartProjeDurumu.Diagram = xyDiagram3D3;
+			xyDiagram3D1.RotationMatrixSerializable = "-0.964051479177289;0.242513821179342;-0.108590018110076;0;0.226692368403619;0.963" +
+    "85022463786;0.140011837260875;0;0.138619319013292;0.110362090423314;-0.984177267" +
+    "261226;0;0;0;0;1";
+			this.chartProjeDurumu.Diagram = xyDiagram3D1;
 			this.chartProjeDurumu.Location = new System.Drawing.Point(393, 10);
 			this.chartProjeDurumu.Name = "chartProjeDurumu";
-			series6.Name = "Series2";
-			series6.SeriesID = 1;
-			series6.View = sideBySideBar3DSeriesView3;
+			series2.Name = "Series2";
+			series2.SeriesID = 1;
+			series2.View = sideBySideBar3DSeriesView1;
 			this.chartProjeDurumu.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series6};
+        series2};
 			this.chartProjeDurumu.Size = new System.Drawing.Size(379, 279);
 			this.chartProjeDurumu.TabIndex = 1;
 			// 
@@ -368,13 +368,13 @@
 			this.Name = "FrmAnasayfa";
 			this.Text = "Anasayfa";
 			this.Load += new System.EventHandler(this.FrmAnasayfa_Load);
-			((System.ComponentModel.ISupportInitialize)(simpleDiagram3D3)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(pie3DSeriesView3)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(series5)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(simpleDiagram3D1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(pie3DSeriesView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.chartToplamGelir)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(xyDiagram3D3)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(sideBySideBar3DSeriesView3)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(series6)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(xyDiagram3D1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(sideBySideBar3DSeriesView1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.chartProjeDurumu)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();

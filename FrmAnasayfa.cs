@@ -31,6 +31,18 @@ namespace ProFin
 				return toplamGelir;
 			}
 		}
+
+		private decimal GetToplamGider()
+		{
+			using (var dbContext = new DbProFinEntities())
+			{
+				var toplamGider = dbContext.Giderler
+										   .Sum(g => (decimal?)g.Tutar) ?? 0;
+
+				return toplamGider;
+			}
+		}
+
 		private int GetTamamlananProjeSayisi()
 		{
 			using (var dbContext = new DbProFinEntities())
@@ -309,16 +321,19 @@ namespace ProFin
 			// Gelir-Gider Grafiği
 			Series series = new Series("Gelir-Gider", ViewType.Pie3D);
 
-			SeriesPoint gelirPoint = new SeriesPoint("Gelir", GetToplamGelir());
-			gelirPoint.Color = ColorTranslator.FromHtml("#9bcd9b");
+			decimal toplamGelir = GetToplamGelir();
+			decimal toplamGider = GetToplamGider();
 
-			SeriesPoint giderPoint = new SeriesPoint("Gider", 60000);
-			giderPoint.Color = ColorTranslator.FromHtml("#ee5c42");
+			SeriesPoint gelirPoint = new SeriesPoint("Gelir", toplamGelir);
+			gelirPoint.Color = ColorTranslator.FromHtml("#9bcd9b"); 
+
+			SeriesPoint giderPoint = new SeriesPoint("Gider", toplamGider);
+			giderPoint.Color = ColorTranslator.FromHtml("#ee5c42"); 
 
 			series.Points.Add(gelirPoint);
 			series.Points.Add(giderPoint);
 
-			chartToplamGelir.Series.Clear(); 
+			chartToplamGelir.Series.Clear();
 			chartToplamGelir.Series.Add(series);
 
 			Pie3DSeriesView pieView = (Pie3DSeriesView)series.View;
@@ -328,7 +343,7 @@ namespace ProFin
 
 			ChartTitle chartTitle = new ChartTitle();
 			chartTitle.Text = "Toplam Gelir/Gider";
-			chartToplamGelir.Titles.Clear(); 
+			chartToplamGelir.Titles.Clear();
 			chartToplamGelir.Titles.Add(chartTitle);
 
 			// Proje Durumu Grafiği

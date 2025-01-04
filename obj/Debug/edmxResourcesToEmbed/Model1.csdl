@@ -211,6 +211,7 @@
       <End Role="Projeler" EntitySet="Projeler" />
     </AssociationSet>
     <EntitySet Name="Etkinlik" EntityType="DbProFinModel.Etkinlik" />
+    <EntitySet Name="Giderler" EntityType="DbProFinModel.Giderler" />
   </EntityContainer>
   <EntityType Name="Etkinlik">
     <Key>
@@ -220,6 +221,16 @@
     <Property Name="EtkinlikAdi" Type="String" MaxLength="450" FixedLength="false" Unicode="false" />
     <Property Name="Tarih" Type="DateTime" Precision="3" />
     <Property Name="Durum" Type="Int32" />
+    <Property Name="Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Giderler">
+    <Key>
+      <PropertyRef Name="GiderID" />
+    </Key>
+    <Property Name="GiderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Tarih" Type="DateTime" Precision="3" />
+    <Property Name="Kategori" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Tutar" Type="Decimal" Precision="10" Scale="2" />
     <Property Name="Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
   </EntityType>
 </Schema>
