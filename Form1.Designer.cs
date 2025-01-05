@@ -36,7 +36,7 @@
 			this.BtnFaturaOlustur = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnToplamGelir = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+			this.BtnTamamlananProjeler = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem9 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
@@ -148,7 +148,7 @@
             this.BtnFaturaOlustur,
             this.barButtonItem4,
             this.BtnToplamGelir,
-            this.barButtonItem6,
+            this.BtnTamamlananProjeler,
             this.barButtonItem7,
             this.barButtonItem9,
             this.barButtonItem10,
@@ -229,7 +229,7 @@
             this.ribbonPage4,
             this.ribbonPage5,
             this.ribbonPage6});
-			this.ribbonControl1.Size = new System.Drawing.Size(1540, 183);
+			this.ribbonControl1.Size = new System.Drawing.Size(1540, 150);
 			// 
 			// BtnYeniProje
 			// 
@@ -270,12 +270,13 @@
 			this.BtnToplamGelir.Name = "BtnToplamGelir";
 			this.BtnToplamGelir.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnToplamGelir_ItemClick);
 			// 
-			// barButtonItem6
+			// BtnTamamlananProjeler
 			// 
-			this.barButtonItem6.Caption = "Tamamlanan Projeler";
-			this.barButtonItem6.Id = 6;
-			this.barButtonItem6.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.LargeImage")));
-			this.barButtonItem6.Name = "barButtonItem6";
+			this.BtnTamamlananProjeler.Caption = "Tamamlanan Projeler";
+			this.BtnTamamlananProjeler.Id = 6;
+			this.BtnTamamlananProjeler.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnTamamlananProjeler.ImageOptions.LargeImage")));
+			this.BtnTamamlananProjeler.Name = "BtnTamamlananProjeler";
+			this.BtnTamamlananProjeler.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnTamamlananProjeler_ItemClick);
 			// 
 			// barButtonItem7
 			// 
@@ -498,7 +499,7 @@
 			// 
 			this.BtnGelirGider.Caption = "Toplam Gelir/Gider";
 			this.BtnGelirGider.Id = 41;
-			this.BtnGelirGider.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem40.ImageOptions.LargeImage")));
+			this.BtnGelirGider.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnGelirGider.ImageOptions.LargeImage")));
 			this.BtnGelirGider.Name = "BtnGelirGider";
 			this.BtnGelirGider.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnGelirGider_ItemClick);
 			// 
@@ -785,7 +786,7 @@
 			// ribbonPageGroup2
 			// 
 			this.ribbonPageGroup2.ItemLinks.Add(this.BtnToplamGelir);
-			this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem6);
+			this.ribbonPageGroup2.ItemLinks.Add(this.BtnTamamlananProjeler);
 			this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem7);
 			this.ribbonPageGroup2.Name = "ribbonPageGroup2";
 			this.ribbonPageGroup2.Text = "Özet Bilgiler";
@@ -1026,7 +1027,7 @@
 		private DevExpress.XtraBars.BarButtonItem BtnFaturaOlustur;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem4;
 		private DevExpress.XtraBars.BarButtonItem BtnToplamGelir;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem6;
+		private DevExpress.XtraBars.BarButtonItem BtnTamamlananProjeler;
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem7;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem9;

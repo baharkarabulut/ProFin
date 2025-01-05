@@ -147,6 +147,12 @@
     <Compile Include="FrmProjeListesi.Designer.cs">
       <DependentUpon>FrmProjeListesi.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTamamlananProjeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTamamlananProjeler.Designer.cs">
+      <DependentUpon>FrmTamamlananProjeler.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmYeniMusteri.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProjeListesi.resx">
       <DependentUpon>FrmProjeListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTamamlananProjeler.resx">
+      <DependentUpon>FrmTamamlananProjeler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmYeniMusteri.resx">
       <DependentUpon>FrmYeniMusteri.cs</DependentUpon>

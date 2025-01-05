@@ -133,5 +133,11 @@ namespace ProFin
 		{
 			
 		}
+
+		private void BtnTamamlananProjeler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmTamamlananProjeler tamamlananProjeler = new FrmTamamlananProjeler();
+			tamamlananProjeler.ShowDialog();
+		}
 	}
 }
