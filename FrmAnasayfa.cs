@@ -385,19 +385,16 @@ namespace ProFin
 			var toplamMusteriSayisi = GetToplamMusteriSayisi();
 			lblMusteriSayisi.Text = toplamMusteriSayisi.ToString();
 
-
-			//Proje durum izleyici
 			var yuzdelikler = GetProjeDurumYuzdelik();
 
-			progressTamamlandi.EditValue = yuzdelikler.ContainsKey("Tamamlandı") ? yuzdelikler["Tamamlandı"] : 0;
-			progressDevamEdiyor.EditValue = yuzdelikler.ContainsKey("Devam Ediyor") ? yuzdelikler["Devam Ediyor"] : 0;
-			progressIptalEdildi.EditValue = yuzdelikler.ContainsKey("İptal Edildi") ? yuzdelikler["İptal Edildi"] : 0;
+			progressTamamlandi.EditValue = yuzdelikler.ContainsKey("Tamamlandı") ? Math.Round(yuzdelikler["Tamamlandı"], 2) : 0;
+			progressDevamEdiyor.EditValue = yuzdelikler.ContainsKey("Devam Ediyor") ? Math.Round(yuzdelikler["Devam Ediyor"], 2) : 0;
+			progressIptalEdildi.EditValue = yuzdelikler.ContainsKey("İptal Edildi") ? Math.Round(yuzdelikler["İptal Edildi"], 2) : 0;
 
-			lblTamamlandi.Text = $"Tamamlandı: {(yuzdelikler.ContainsKey("Tamamlandı") ? yuzdelikler["Tamamlandı"] : 0)}%";
-			lblDevamEdiyor.Text = $"Devam Ediyor: {(yuzdelikler.ContainsKey("Devam Ediyor") ? yuzdelikler["Devam Ediyor"] : 0)}%";
-			lblIptalEdildi.Text = $"İptal Edildi: {(yuzdelikler.ContainsKey("İptal Edildi") ? yuzdelikler["İptal Edildi"] : 0)}%";
+			lblTamamlandi.Text = $"Tamamlandı: %{(yuzdelikler.ContainsKey("Tamamlandı") ? Math.Round(yuzdelikler["Tamamlandı"], 2) : 0)}";
+			lblDevamEdiyor.Text = $"Devam Ediyor: %{(yuzdelikler.ContainsKey("Devam Ediyor") ? Math.Round(yuzdelikler["Devam Ediyor"], 2) : 0)}";
+			lblIptalEdildi.Text = $"İptal Edildi: %{(yuzdelikler.ContainsKey("İptal Edildi") ? Math.Round(yuzdelikler["İptal Edildi"], 2) : 0)}";
 
-			//Proje süresi izleyici
 			listView1.Columns.Clear();
 			listView1.Columns.Add("Proje ID", 56);
 			listView1.Columns.Add("Proje Adı", 210);
@@ -411,7 +408,6 @@ namespace ProFin
 
 			GuncelleHedefler();
 
-			//Etkinlik Listesi
 			InitializeEtkinlikListesi();
 			EtkinlikleriListele();
 		}
