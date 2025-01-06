@@ -28,9 +28,13 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMusteriListesi));
 			this.gridControl1 = new DevExpress.XtraGrid.GridControl();
 			this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
 			this.BtnYenile = new DevExpress.XtraEditors.SimpleButton();
+			this.btnYazdir = new DevExpress.XtraEditors.SimpleButton();
+			this.btnPdfAktar = new DevExpress.XtraEditors.SimpleButton();
+			this.btnExcelAktar = new DevExpress.XtraEditors.SimpleButton();
 			((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
 			this.SuspendLayout();
@@ -62,11 +66,50 @@
 			this.BtnYenile.Text = "YENİLE";
 			this.BtnYenile.Click += new System.EventHandler(this.BtnYenile_Click);
 			// 
+			// btnYazdir
+			// 
+			this.btnYazdir.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnYazdir.Appearance.Options.UseFont = true;
+			this.btnYazdir.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnYazdir.ImageOptions.Image")));
+			this.btnYazdir.Location = new System.Drawing.Point(435, 561);
+			this.btnYazdir.Name = "btnYazdir";
+			this.btnYazdir.Size = new System.Drawing.Size(114, 49);
+			this.btnYazdir.TabIndex = 12;
+			this.btnYazdir.Text = "Yazdır";
+			this.btnYazdir.Click += new System.EventHandler(this.btnYazdir_Click);
+			// 
+			// btnPdfAktar
+			// 
+			this.btnPdfAktar.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnPdfAktar.Appearance.Options.UseFont = true;
+			this.btnPdfAktar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPdfAktar.ImageOptions.Image")));
+			this.btnPdfAktar.Location = new System.Drawing.Point(315, 561);
+			this.btnPdfAktar.Name = "btnPdfAktar";
+			this.btnPdfAktar.Size = new System.Drawing.Size(114, 49);
+			this.btnPdfAktar.TabIndex = 11;
+			this.btnPdfAktar.Text = "PDF\'e \r\nAktar";
+			this.btnPdfAktar.Click += new System.EventHandler(this.btnPdfAktar_Click);
+			// 
+			// btnExcelAktar
+			// 
+			this.btnExcelAktar.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnExcelAktar.Appearance.Options.UseFont = true;
+			this.btnExcelAktar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExcelAktar.ImageOptions.Image")));
+			this.btnExcelAktar.Location = new System.Drawing.Point(195, 561);
+			this.btnExcelAktar.Name = "btnExcelAktar";
+			this.btnExcelAktar.Size = new System.Drawing.Size(114, 49);
+			this.btnExcelAktar.TabIndex = 10;
+			this.btnExcelAktar.Text = "Excel\'e \r\nAktar";
+			this.btnExcelAktar.Click += new System.EventHandler(this.btnExcelAktar_Click);
+			// 
 			// FrmMusteriListesi
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(1535, 615);
+			this.Controls.Add(this.btnYazdir);
+			this.Controls.Add(this.btnPdfAktar);
+			this.Controls.Add(this.btnExcelAktar);
 			this.Controls.Add(this.BtnYenile);
 			this.Controls.Add(this.gridControl1);
 			this.Name = "FrmMusteriListesi";
@@ -84,5 +127,8 @@
 		private DevExpress.XtraGrid.GridControl gridControl1;
 		private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
 		private DevExpress.XtraEditors.SimpleButton BtnYenile;
+		private DevExpress.XtraEditors.SimpleButton btnYazdir;
+		private DevExpress.XtraEditors.SimpleButton btnPdfAktar;
+		private DevExpress.XtraEditors.SimpleButton btnExcelAktar;
 	}
 }

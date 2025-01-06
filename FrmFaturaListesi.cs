@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.XtraPrinting;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -103,6 +104,67 @@ namespace ProFin
 		private void BtnYenile_Click(object sender, EventArgs e)
 		{
 			Listele();
+		}
+
+		private void btnExcelAktar_Click(object sender, EventArgs e)
+		{
+			SaveFileDialog saveFileDialog = new SaveFileDialog();
+			saveFileDialog.Filter = "Excel Dosyası (*.xlsx)|*.xlsx";
+			saveFileDialog.Title = "Excel Dosyası Kaydet";
+
+			if (saveFileDialog.ShowDialog() == DialogResult.OK)
+			{
+				string filePath = saveFileDialog.FileName;
+				gridControl1.ExportToXlsx(filePath);
+				MessageBox.Show("Excel dosyası başarıyla kaydedildi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			}
+		}
+
+		private void btnPdfAktar_Click(object sender, EventArgs e)
+		{
+			SaveFileDialog saveFileDialog = new SaveFileDialog();
+			saveFileDialog.Filter = "PDF Dosyası (*.pdf)|*.pdf";
+			saveFileDialog.Title = "PDF Dosyası Kaydet";
+
+			if (saveFileDialog.ShowDialog() == DialogResult.OK)
+			{
+				string filePath = saveFileDialog.FileName;
+				gridControl1.ExportToPdf(filePath);
+				MessageBox.Show("PDF dosyası başarıyla kaydedildi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			}
+		}
+
+		private void btnYazdir_Click(object sender, EventArgs e)
+		{
+			GridControlYazdir();
+		}
+		private void GridControlYazdir()
+		{
+			try
+			{
+				// Yazıcı seçimi için bir PrintDialog oluştur
+				PrintDialog printDialog = new PrintDialog();
+
+				// Varsayılan yazıcıyı ayarla
+				printDialog.UseEXDialog = true;
+
+				// Eğer kullanıcı bir yazıcı seçerse işlemi başlat
+				if (printDialog.ShowDialog() == DialogResult.OK)
+				{
+					// DevExpress GridControl'ün yazıcıya gönderme fonksiyonu
+					PrintableComponentLink link = new PrintableComponentLink(new PrintingSystem())
+					{
+						Component = gridControl1
+					};
+
+					// Seçilen yazıcıya yazdır
+					link.Print(printDialog.PrinterSettings.PrinterName);
+				}
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show($"Yazdırma sırasında hata oluştu: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
 		}
 	}
 }

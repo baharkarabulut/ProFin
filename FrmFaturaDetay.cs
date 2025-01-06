@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Globalization;
 using DevExpress.XtraGrid;
+using DevExpress.XtraPrinting;
+using System.Drawing.Printing;
 
 namespace ProFin
 {
@@ -151,6 +153,54 @@ namespace ProFin
 			{
 				MessageBox.Show($"İptal işlemi sırasında bir hata oluştu: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
+		}
+
+		private void btnYazdir_Click(object sender, EventArgs e)
+		{
+			YazdirFaturaDetay();
+		}
+		private void YazdirFaturaDetay()
+		{
+			PrintDocument printDocument = new PrintDocument();
+			printDocument.PrintPage += new PrintPageEventHandler(FaturaDetay_PrintPage);
+
+			PrintDialog printDialog = new PrintDialog
+			{
+				Document = printDocument
+			};
+
+			if (printDialog.ShowDialog() == DialogResult.OK)
+			{
+				printDocument.Print();
+			}
+		}
+
+		private void FaturaDetay_PrintPage(object sender, PrintPageEventArgs e)
+		{
+			Graphics g = e.Graphics;
+			float yPosition = 20;
+			float leftMargin = e.MarginBounds.Left;
+			Font font = new Font("Arial", 14);
+
+			g.DrawString("Fatura Detayları", new Font("Arial", 18, FontStyle.Bold), Brushes.Black, leftMargin, yPosition);
+			yPosition += 40;
+
+			g.DrawString($"Fatura ID: {txtFaturaID.Text}", font, Brushes.Black, leftMargin, yPosition);
+			yPosition += 30;
+			g.DrawString($"Fatura Numarası: {txtFaturaNumarasi.Text}", font, Brushes.Black, leftMargin, yPosition);
+			yPosition += 30;
+			g.DrawString($"Müşteri Adı: {txtMusteriAdi.Text}", font, Brushes.Black, leftMargin, yPosition);
+			yPosition += 30;
+			g.DrawString($"Proje Adı: {txtProjeAdi.Text}", font, Brushes.Black, leftMargin, yPosition);
+			yPosition += 30;
+			g.DrawString($"Fatura Tutarı: {txtToplamTutar.Text}", font, Brushes.Black, leftMargin, yPosition);
+			yPosition += 30;
+			g.DrawString($"KDV Oranı: {txtKDVOrani.Text}", font, Brushes.Black, leftMargin, yPosition);
+			yPosition += 30;
+			g.DrawString($"Fatura Tarihi: {txtFaturaTarihi.Text}", font, Brushes.Black, leftMargin, yPosition);
+			yPosition += 40;
+
+			g.DrawString("Teşekkür ederiz!", new Font("Arial", 16, FontStyle.Italic), Brushes.Black, leftMargin, yPosition);
 		}
 	}
 }

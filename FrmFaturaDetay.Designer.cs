@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFaturaDetay));
 			this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
 			this.txtFaturaNumarasi = new DevExpress.XtraEditors.TextEdit();
 			this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -48,6 +49,8 @@
 			this.txtDurumBilgi = new DevExpress.XtraEditors.TextEdit();
 			this.btnIptalEt = new DevExpress.XtraEditors.SimpleButton();
 			this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+			this.btnYazdir = new DevExpress.XtraEditors.SimpleButton();
+			this.btnPdfAktar = new DevExpress.XtraEditors.SimpleButton();
 			((System.ComponentModel.ISupportInitialize)(this.txtFaturaNumarasi.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtMusteriAdi.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtProjeAdi.Properties)).BeginInit();
@@ -253,11 +256,36 @@
 			this.labelControl9.TabIndex = 31;
 			this.labelControl9.Text = "Fatura Durumu:";
 			// 
+			// btnYazdir
+			// 
+			this.btnYazdir.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnYazdir.Appearance.Options.UseFont = true;
+			this.btnYazdir.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnYazdir.ImageOptions.Image")));
+			this.btnYazdir.Location = new System.Drawing.Point(330, 561);
+			this.btnYazdir.Name = "btnYazdir";
+			this.btnYazdir.Size = new System.Drawing.Size(103, 62);
+			this.btnYazdir.TabIndex = 33;
+			this.btnYazdir.Text = "Yazdır";
+			this.btnYazdir.Click += new System.EventHandler(this.btnYazdir_Click);
+			// 
+			// btnPdfAktar
+			// 
+			this.btnPdfAktar.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnPdfAktar.Appearance.Options.UseFont = true;
+			this.btnPdfAktar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPdfAktar.ImageOptions.Image")));
+			this.btnPdfAktar.Location = new System.Drawing.Point(214, 561);
+			this.btnPdfAktar.Name = "btnPdfAktar";
+			this.btnPdfAktar.Size = new System.Drawing.Size(103, 62);
+			this.btnPdfAktar.TabIndex = 32;
+			this.btnPdfAktar.Text = "PDF\'e \r\nAktar";
+			// 
 			// FrmFaturaDetay
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(504, 581);
+			this.ClientSize = new System.Drawing.Size(504, 635);
+			this.Controls.Add(this.btnYazdir);
+			this.Controls.Add(this.btnPdfAktar);
 			this.Controls.Add(this.labelControl9);
 			this.Controls.Add(this.btnIptalEt);
 			this.Controls.Add(this.txtDurumBilgi);
@@ -318,5 +346,7 @@
 		private DevExpress.XtraEditors.TextEdit txtDurumBilgi;
 		private DevExpress.XtraEditors.SimpleButton btnIptalEt;
 		private DevExpress.XtraEditors.LabelControl labelControl9;
+		private DevExpress.XtraEditors.SimpleButton btnYazdir;
+		private DevExpress.XtraEditors.SimpleButton btnPdfAktar;
 	}
 }

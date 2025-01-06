@@ -33,10 +33,10 @@
 			DevExpress.XtraCharts.Pie3DSeriesView pie3DSeriesView1 = new DevExpress.XtraCharts.Pie3DSeriesView();
 			this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
 			this.grpToplamGelir = new System.Windows.Forms.GroupBox();
-			this.grpToplamGider = new System.Windows.Forms.GroupBox();
-			this.grpKar = new System.Windows.Forms.GroupBox();
 			this.lblToplamGelir = new System.Windows.Forms.Label();
+			this.grpToplamGider = new System.Windows.Forms.GroupBox();
 			this.lblToplamGider = new System.Windows.Forms.Label();
+			this.grpKar = new System.Windows.Forms.GroupBox();
 			this.lblKar = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(simpleDiagram3D1)).BeginInit();
@@ -51,9 +51,9 @@
 			// 
 			this.chartControl1.AutoLayout = false;
 			this.chartControl1.BorderOptions.Visibility = DevExpress.Utils.DefaultBoolean.False;
-			simpleDiagram3D1.RotationMatrixSerializable = "0.681875337036576;-0.655655505808987;0.324286728750396;0;0.724801518083673;0.5459" +
-    "11677581962;-0.420289423687137;0;0.0985331625640603;0.521628505722244;0.84746381" +
-    "5093672;0;0;0;0;1";
+			simpleDiagram3D1.RotationMatrixSerializable = "0.259308156281058;-0.739839485428802;0.620803363301605;0;0.943181764675566;0.3322" +
+    "71106025672;0.00201764317495969;0;-0.207767752237024;0.585007220383595;0.7839637" +
+    "1933238;0;0;0;0;1";
 			this.chartControl1.Diagram = simpleDiagram3D1;
 			this.chartControl1.Location = new System.Drawing.Point(12, 12);
 			this.chartControl1.Name = "chartControl1";
@@ -77,6 +77,16 @@
 			this.grpToplamGelir.TabStop = false;
 			this.grpToplamGelir.Text = "Toplam Gelir:";
 			// 
+			// lblToplamGelir
+			// 
+			this.lblToplamGelir.AutoSize = true;
+			this.lblToplamGelir.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.lblToplamGelir.Location = new System.Drawing.Point(15, 54);
+			this.lblToplamGelir.Name = "lblToplamGelir";
+			this.lblToplamGelir.Size = new System.Drawing.Size(118, 42);
+			this.lblToplamGelir.TabIndex = 0;
+			this.lblToplamGelir.Text = "label1";
+			// 
 			// grpToplamGider
 			// 
 			this.grpToplamGider.Controls.Add(this.lblToplamGider);
@@ -88,6 +98,16 @@
 			this.grpToplamGider.TabStop = false;
 			this.grpToplamGider.Text = "Toplam Gider:";
 			// 
+			// lblToplamGider
+			// 
+			this.lblToplamGider.AutoSize = true;
+			this.lblToplamGider.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.lblToplamGider.Location = new System.Drawing.Point(15, 55);
+			this.lblToplamGider.Name = "lblToplamGider";
+			this.lblToplamGider.Size = new System.Drawing.Size(118, 42);
+			this.lblToplamGider.TabIndex = 1;
+			this.lblToplamGider.Text = "label2";
+			// 
 			// grpKar
 			// 
 			this.grpKar.Controls.Add(this.lblKar);
@@ -98,26 +118,6 @@
 			this.grpKar.TabIndex = 3;
 			this.grpKar.TabStop = false;
 			this.grpKar.Text = "Kar:";
-			// 
-			// lblToplamGelir
-			// 
-			this.lblToplamGelir.AutoSize = true;
-			this.lblToplamGelir.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.lblToplamGelir.Location = new System.Drawing.Point(15, 54);
-			this.lblToplamGelir.Name = "lblToplamGelir";
-			this.lblToplamGelir.Size = new System.Drawing.Size(118, 42);
-			this.lblToplamGelir.TabIndex = 0;
-			this.lblToplamGelir.Text = "label1";
-			// 
-			// lblToplamGider
-			// 
-			this.lblToplamGider.AutoSize = true;
-			this.lblToplamGider.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.lblToplamGider.Location = new System.Drawing.Point(15, 55);
-			this.lblToplamGider.Name = "lblToplamGider";
-			this.lblToplamGider.Size = new System.Drawing.Size(118, 42);
-			this.lblToplamGider.TabIndex = 1;
-			this.lblToplamGider.Text = "label2";
 			// 
 			// lblKar
 			// 
