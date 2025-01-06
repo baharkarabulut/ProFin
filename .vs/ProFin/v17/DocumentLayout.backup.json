@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|c:\\users\\bahars\\source\\repos\\profin\\frmdevamedenprojeler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:frmdevamedenprojeler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|c:\\users\\bahars\\source\\repos\\profin\\frmdevamedenprojeler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:frmdevamedenprojeler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|c:\\users\\bahars\\source\\repos\\profin\\frmtamamlananprojeler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:frmtamamlananprojeler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|c:\\users\\bahars\\source\\repos\\profin\\frmtamamlananprojeler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:frmtamamlananprojeler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|C:\\Users\\BAHARS\\source\\repos\\ProFin\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|C:\\Users\\BAHARS\\source\\repos\\ProFin\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|c:\\users\\bahars\\source\\repos\\profin\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|c:\\users\\bahars\\source\\repos\\profin\\frmiptaledilenprojeler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:frmiptaledilenprojeler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|C:\\Users\\BAHARS\\source\\repos\\ProFin\\frmtamamlananprojeler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:frmtamamlananprojeler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|c:\\users\\bahars\\source\\repos\\profin\\frmiptaledilenprojeler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:frmiptaledilenprojeler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|C:\\Users\\BAHARS\\source\\repos\\ProFin\\frmdevamedenprojeler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:frmdevamedenprojeler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|C:\\Users\\BAHARS\\source\\repos\\ProFin\\frmanasayfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,20 +54,45 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmiptalEdilenProjeler.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmiptalEdilenProjeler.cs",
+              "RelativeDocumentMoniker": "FrmiptalEdilenProjeler.cs",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmiptalEdilenProjeler.cs [Design]",
+              "RelativeToolTip": "FrmiptalEdilenProjeler.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T12:29:56.872Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "FrmiptalEdilenProjeler.cs",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmiptalEdilenProjeler.cs",
+              "RelativeDocumentMoniker": "FrmiptalEdilenProjeler.cs",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmiptalEdilenProjeler.cs",
+              "RelativeToolTip": "FrmiptalEdilenProjeler.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAwwLgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T12:28:04.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "FrmTamamlananProjeler.cs",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmTamamlananProjeler.cs",
               "RelativeDocumentMoniker": "FrmTamamlananProjeler.cs",
               "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmTamamlananProjeler.cs",
               "RelativeToolTip": "FrmTamamlananProjeler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAkwOAAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-06T12:06:50.316Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "FrmDevamEdenProjeler.cs",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmDevamEdenProjeler.cs",
               "RelativeDocumentMoniker": "FrmDevamEdenProjeler.cs",
@@ -75,32 +100,7 @@
               "RelativeToolTip": "FrmDevamEdenProjeler.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAowEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T12:06:44.869Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FrmTamamlananProjeler.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmTamamlananProjeler.cs",
-              "RelativeDocumentMoniker": "FrmTamamlananProjeler.cs",
-              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmTamamlananProjeler.cs [Design]",
-              "RelativeToolTip": "FrmTamamlananProjeler.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T12:05:09.127Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmDevamEdenProjeler.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmDevamEdenProjeler.cs",
-              "RelativeDocumentMoniker": "FrmDevamEdenProjeler.cs",
-              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmDevamEdenProjeler.cs [Design]",
-              "RelativeToolTip": "FrmDevamEdenProjeler.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T12:05:03.924Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-01-06T12:06:44.869Z"
             },
             {
               "$type": "Document",
@@ -127,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -139,13 +139,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAYwJoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAYwKkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-27T15:07:50.991Z",
               "EditorCaption": ""

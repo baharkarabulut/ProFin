@@ -157,5 +157,17 @@ namespace ProFin
 			FrmDevamEdenProjeler devamEdenProjeler = new FrmDevamEdenProjeler();
 			devamEdenProjeler.ShowDialog();
 		}
+
+		private void btniptalEdilenProjeler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmiptalEdilenProjeler iptalEdilenProjeler = new FrmiptalEdilenProjeler();
+			iptalEdilenProjeler.ShowDialog();
+		}
+
+		private void btniptalEdilenProje_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmiptalEdilenProjeler iptalEdilenProjeler = new FrmiptalEdilenProjeler();
+			iptalEdilenProjeler.ShowDialog();
+		}
 	}
 }
