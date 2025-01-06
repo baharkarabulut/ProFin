@@ -74,7 +74,7 @@
 			// 
 			// splitContainerControl1
 			// 
-			this.splitContainerControl1.Location = new System.Drawing.Point(12, 12);
+			this.splitContainerControl1.Location = new System.Drawing.Point(-2, -1);
 			this.splitContainerControl1.Name = "splitContainerControl1";
 			// 
 			// splitContainerControl1.Panel1
@@ -89,8 +89,8 @@
 			this.splitContainerControl1.Panel2.Controls.Add(this.BtnYenile);
 			this.splitContainerControl1.Panel2.Controls.Add(this.gridControl1);
 			this.splitContainerControl1.Panel2.Text = "Panel2";
-			this.splitContainerControl1.Size = new System.Drawing.Size(1608, 534);
-			this.splitContainerControl1.SplitterPosition = 492;
+			this.splitContainerControl1.Size = new System.Drawing.Size(1622, 547);
+			this.splitContainerControl1.SplitterPosition = 479;
 			this.splitContainerControl1.TabIndex = 2;
 			// 
 			// groupControl1
@@ -114,7 +114,7 @@
 			this.groupControl1.Controls.Add(this.txtProjeID);
 			this.groupControl1.Location = new System.Drawing.Point(1, 1);
 			this.groupControl1.Name = "groupControl1";
-			this.groupControl1.Size = new System.Drawing.Size(493, 528);
+			this.groupControl1.Size = new System.Drawing.Size(471, 541);
 			this.groupControl1.TabIndex = 0;
 			this.groupControl1.Text = "Yeni Proje Ekleme Ekranı";
 			// 
@@ -302,7 +302,7 @@
 			// 
 			this.BtnYenile.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.BtnYenile.Appearance.Options.UseFont = true;
-			this.BtnYenile.Location = new System.Drawing.Point(760, 484);
+			this.BtnYenile.Location = new System.Drawing.Point(817, 497);
 			this.BtnYenile.Name = "BtnYenile";
 			this.BtnYenile.Size = new System.Drawing.Size(186, 45);
 			this.BtnYenile.TabIndex = 3;
@@ -311,10 +311,10 @@
 			// 
 			// gridControl1
 			// 
-			this.gridControl1.Location = new System.Drawing.Point(-2, -1);
+			this.gridControl1.Location = new System.Drawing.Point(1, 1);
 			this.gridControl1.MainView = this.gridView1;
 			this.gridControl1.Name = "gridControl1";
-			this.gridControl1.Size = new System.Drawing.Size(948, 478);
+			this.gridControl1.Size = new System.Drawing.Size(1002, 490);
 			this.gridControl1.TabIndex = 0;
 			this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -330,7 +330,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-			this.ClientSize = new System.Drawing.Size(1540, 693);
+			this.ClientSize = new System.Drawing.Size(1497, 550);
 			this.Controls.Add(this.splitContainerControl1);
 			this.Name = "FrmYeniProje";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

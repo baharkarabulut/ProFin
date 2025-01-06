@@ -90,3 +90,4 @@ C:\Users\BAHARS\source\repos\ProFin\bin\Debug\DevExpress.XtraTreeMap.v24.2.xml
 C:\Users\BAHARS\source\repos\ProFin\bin\Debug\DevExpress.XtraTreeMap.v24.2.UI.xml
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmGelirGider.resources
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmTamamlananProjeler.resources
+C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmDevamEdenProjeler.resources

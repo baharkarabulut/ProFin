@@ -12,39 +12,32 @@ using System.Windows.Forms;
 
 namespace ProFin
 {
-	public partial class FrmTamamlananProjeler : Form
+	public partial class FrmDevamEdenProjeler : Form
 	{
-		public FrmTamamlananProjeler()
+		public FrmDevamEdenProjeler()
 		{
 			InitializeComponent();
 		}
 		DbProFinEntities db = new DbProFinEntities();
-		private void FrmTamamlananProjeler_Load(object sender, EventArgs e)
-		{
-			ListeleTamamlananProjeler();
-			HesaplaIstatistikler();
-			ProjeKazancBarGrafik();
-		}
-
-		private void ListeleTamamlananProjeler()
+		private void ListeleDevamEdenProjeler()
 		{
 			using (var db = new DbProFinEntities())
 			{
-				var tamamlananProjeler = (from proje in db.Projeler
-										  join musteri in db.Musteriler
-										  on proje.MusteriID equals musteri.MusteriID
-										  where proje.Durum == "Tamamlandı"
-										  select new
-										  {
-											  proje.ProjeID,
-											  proje.ProjeAdi,
-											  MusteriAdi = musteri.AdSoyad,
-											  proje.BaslangicTarihi,
-											  proje.BitisTarihi,
-											  proje.ToplamTutar
-										  }).ToList();
+				var devamEdenProjeler = (from proje in db.Projeler
+										 join musteri in db.Musteriler
+										 on proje.MusteriID equals musteri.MusteriID
+										 where proje.Durum == "Devam Ediyor"
+										 select new
+										 {
+											 proje.ProjeID,
+											 proje.ProjeAdi,
+											 MusteriAdi = musteri.AdSoyad,
+											 proje.BaslangicTarihi,
+											 proje.BitisTarihi,
+											 proje.ToplamTutar
+										 }).ToList();
 
-				gridControl1.DataSource = tamamlananProjeler;
+				gridControl1.DataSource = devamEdenProjeler;
 
 				gridView1.Columns["ProjeID"].Caption = "Proje ID";
 				gridView1.Columns["ProjeAdi"].Caption = "Proje Adı";
@@ -60,13 +53,18 @@ namespace ProFin
 				gridView1.Columns["BitisTarihi"].Width = 110;
 				gridView1.Columns["ToplamTutar"].Width = 100;
 
-				// Tarih sütunları için format ayarı
 				gridView1.Columns["BaslangicTarihi"].DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
 				gridView1.Columns["BaslangicTarihi"].DisplayFormat.FormatString = "dd.MM.yyyy";
 
 				gridView1.Columns["BitisTarihi"].DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
 				gridView1.Columns["BitisTarihi"].DisplayFormat.FormatString = "dd.MM.yyyy";
 			}
+		}
+		private void FrmDevamEdenProjeler_Load(object sender, EventArgs e)
+		{
+			ListeleDevamEdenProjeler();
+			HesaplaIstatistikler();
+			ProjeKazancBarGrafik();
 		}
 
 		private void GridSatirDetaylariniGoster()
@@ -120,10 +118,10 @@ namespace ProFin
 		{
 			using (var db = new DbProFinEntities())
 			{
-				int toplamProjeSayisi = db.Projeler.Count(p => p.Durum == "Tamamlandı");
+				int toplamProjeSayisi = db.Projeler.Count(p => p.Durum == "Devam Ediyor");
 
 				decimal toplamKazanc = db.Projeler
-										 .Where(p => p.Durum == "Tamamlandı")
+										 .Where(p => p.Durum == "Devam Ediyor")
 										 .Sum(p => (decimal?)p.ToplamTutar) ?? 0;
 
 				lblToplamProjeSayisi.Text = $"Toplam Proje Sayısı: {toplamProjeSayisi}";
@@ -136,7 +134,7 @@ namespace ProFin
 			using (var db = new DbProFinEntities())
 			{
 				var tamamlananProjeler = (from proje in db.Projeler
-										  where proje.Durum == "Tamamlandı"
+										  where proje.Durum == "Devam Ediyor"
 										  select new
 										  {
 											  proje.ProjeAdi,
@@ -154,7 +152,7 @@ namespace ProFin
 				chartProjeKazanc.Series.Add(barSeries);
 
 				barSeries.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-				barSeries.Label.TextPattern = "{A}: {V:C2}"; 
+				barSeries.Label.TextPattern = "";
 
 				chartProjeKazanc.Legend.Visibility = DevExpress.Utils.DefaultBoolean.True;
 				chartProjeKazanc.Legend.AlignmentHorizontal = LegendAlignmentHorizontal.Center;
@@ -164,34 +162,6 @@ namespace ProFin
 				chartTitle.Text = "Proje Kazançları";
 				chartProjeKazanc.Titles.Clear();
 				chartProjeKazanc.Titles.Add(chartTitle);
-			}
-		}
-
-		private void btnExcelAktar_Click(object sender, EventArgs e)
-		{
-			SaveFileDialog saveFileDialog = new SaveFileDialog();
-			saveFileDialog.Filter = "Excel Dosyası (*.xlsx)|*.xlsx";
-			saveFileDialog.Title = "Excel Dosyası Kaydet";
-
-			if (saveFileDialog.ShowDialog() == DialogResult.OK)
-			{
-				string filePath = saveFileDialog.FileName;
-				gridControl1.ExportToXlsx(filePath);
-				MessageBox.Show("Excel dosyası başarıyla kaydedildi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-			}
-		}
-
-		private void btnPdfAktar_Click(object sender, EventArgs e)
-		{
-			SaveFileDialog saveFileDialog = new SaveFileDialog();
-			saveFileDialog.Filter = "PDF Dosyası (*.pdf)|*.pdf";
-			saveFileDialog.Title = "PDF Dosyası Kaydet";
-
-			if (saveFileDialog.ShowDialog() == DialogResult.OK)
-			{
-				string filePath = saveFileDialog.FileName;
-				gridControl1.ExportToPdf(filePath); 
-				MessageBox.Show("PDF dosyası başarıyla kaydedildi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 			}
 		}
 
@@ -219,7 +189,35 @@ namespace ProFin
 			}
 		}
 
-		private void btnYazdir_Click(object sender, EventArgs e)
+		private void btnExcelAktar_Click_1(object sender, EventArgs e)
+		{
+			SaveFileDialog saveFileDialog = new SaveFileDialog();
+			saveFileDialog.Filter = "Excel Dosyası (*.xlsx)|*.xlsx";
+			saveFileDialog.Title = "Excel Dosyası Kaydet";
+
+			if (saveFileDialog.ShowDialog() == DialogResult.OK)
+			{
+				string filePath = saveFileDialog.FileName;
+				gridControl1.ExportToXlsx(filePath);
+				MessageBox.Show("Excel dosyası başarıyla kaydedildi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			}
+		}
+
+		private void btnPdfAktar_Click_1(object sender, EventArgs e)
+		{
+			SaveFileDialog saveFileDialog = new SaveFileDialog();
+			saveFileDialog.Filter = "PDF Dosyası (*.pdf)|*.pdf";
+			saveFileDialog.Title = "PDF Dosyası Kaydet";
+
+			if (saveFileDialog.ShowDialog() == DialogResult.OK)
+			{
+				string filePath = saveFileDialog.FileName;
+				gridControl1.ExportToPdf(filePath);
+				MessageBox.Show("PDF dosyası başarıyla kaydedildi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			}
+		}
+
+		private void btnYazdir_Click_1(object sender, EventArgs e)
 		{
 			GridControlYazdir();
 		}

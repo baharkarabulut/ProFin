@@ -126,18 +126,36 @@ namespace ProFin
 		{
 			FrmGelirGider GelirGiderGrafik = new FrmGelirGider();
 			GelirGiderGrafik.ShowDialog();
-
 		}
 
 		private void BtnGelirGider_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-			
+			FrmGelirGider GelirGiderGrafik = new FrmGelirGider();
+			GelirGiderGrafik.ShowDialog();
 		}
 
 		private void BtnTamamlananProjeler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
 			FrmTamamlananProjeler tamamlananProjeler = new FrmTamamlananProjeler();
 			tamamlananProjeler.ShowDialog();
+		}
+
+		private void BtnTamamlananProje_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmTamamlananProjeler tamamlananProjeler = new FrmTamamlananProjeler();
+			tamamlananProjeler.ShowDialog();
+		}
+
+		private void btnDevamEdenProjeler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmDevamEdenProjeler devamEdenProjeler = new FrmDevamEdenProjeler();
+			devamEdenProjeler.ShowDialog();
+		}
+
+		private void btnDevamEdenProjeRapor_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmDevamEdenProjeler devamEdenProjeler = new FrmDevamEdenProjeler();
+			devamEdenProjeler.ShowDialog();
 		}
 	}
 }

@@ -105,6 +105,12 @@
     <Compile Include="FrmAnasayfa.Designer.cs">
       <DependentUpon>FrmAnasayfa.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmDevamEdenProjeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDevamEdenProjeler.Designer.cs">
+      <DependentUpon>FrmDevamEdenProjeler.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmFaturaDetay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAnasayfa.resx">
       <DependentUpon>FrmAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDevamEdenProjeler.resx">
+      <DependentUpon>FrmDevamEdenProjeler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFaturaDetay.resx">
       <DependentUpon>FrmFaturaDetay.cs</DependentUpon>
