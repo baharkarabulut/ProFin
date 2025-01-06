@@ -334,7 +334,7 @@
 			this.Controls.Add(this.splitContainerControl1);
 			this.Name = "FrmYeniProje";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "FrmYeniProje";
+			this.Text = "Yeni Proje";
 			this.Load += new System.EventHandler(this.FrmYeniProje_Load);
 			((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel1)).EndInit();
 			this.splitContainerControl1.Panel1.ResumeLayout(false);

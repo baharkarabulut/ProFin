@@ -140,7 +140,7 @@
 			this.Controls.Add(this.chartControl1);
 			this.Name = "FrmGelirGider";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "FrmGelirGider";
+			this.Text = "Gelir/Gider Grafiği";
 			this.Load += new System.EventHandler(this.FrmGelirGider_Load);
 			((System.ComponentModel.ISupportInitialize)(simpleDiagram3D1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(pie3DSeriesView1)).EndInit();

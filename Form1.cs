@@ -169,5 +169,23 @@ namespace ProFin
 			FrmiptalEdilenProjeler iptalEdilenProjeler = new FrmiptalEdilenProjeler();
 			iptalEdilenProjeler.ShowDialog();
 		}
+
+		private void btnOdenmemisFatura_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmOdenmemisFaturalar odenmemisFaturalar = new FrmOdenmemisFaturalar();
+			odenmemisFaturalar.ShowDialog();
+		}
+
+		private void btnOdenmemisFaturalar_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmOdenmemisFaturalar odenmemisFaturalar = new FrmOdenmemisFaturalar();
+			odenmemisFaturalar.ShowDialog();
+		}
+
+		private void btnOdenmemisFaturalar1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmOdenmemisFaturalar odenmemisFaturalar = new FrmOdenmemisFaturalar();
+			odenmemisFaturalar.ShowDialog();
+		}
 	}
 }

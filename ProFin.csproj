@@ -147,6 +147,12 @@
     <Compile Include="FrmMusteriListesi.Designer.cs">
       <DependentUpon>FrmMusteriListesi.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmOdenmemisFaturalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOdenmemisFaturalar.Designer.cs">
+      <DependentUpon>FrmOdenmemisFaturalar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmProjeDetay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,6 +253,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMusteriListesi.resx">
       <DependentUpon>FrmMusteriListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOdenmemisFaturalar.resx">
+      <DependentUpon>FrmOdenmemisFaturalar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProjeDetay.resx">
       <DependentUpon>FrmProjeDetay.cs</DependentUpon>
