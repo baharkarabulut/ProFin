@@ -54,7 +54,7 @@
 			this.barButtonItem24 = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnMusteriListesi = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnYeniMusteri1 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem29 = new DevExpress.XtraBars.BarButtonItem();
+			this.btnMusteriAnalizi = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem30 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem31 = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnFaturaListesi = new DevExpress.XtraBars.BarButtonItem();
@@ -159,7 +159,7 @@
             this.barButtonItem24,
             this.BtnMusteriListesi,
             this.BtnYeniMusteri1,
-            this.barButtonItem29,
+            this.btnMusteriAnalizi,
             this.barButtonItem30,
             this.barButtonItem31,
             this.BtnFaturaListesi,
@@ -391,12 +391,13 @@
 			this.BtnYeniMusteri1.Name = "BtnYeniMusteri1";
 			this.BtnYeniMusteri1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnYeniMusteri1_ItemClick);
 			// 
-			// barButtonItem29
+			// btnMusteriAnalizi
 			// 
-			this.barButtonItem29.Caption = "Müşterilerin Genel Durum Analizi";
-			this.barButtonItem29.Id = 30;
-			this.barButtonItem29.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem29.ImageOptions.LargeImage")));
-			this.barButtonItem29.Name = "barButtonItem29";
+			this.btnMusteriAnalizi.Caption = "Müşterilerin Genel Durum Analizi";
+			this.btnMusteriAnalizi.Id = 30;
+			this.btnMusteriAnalizi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnMusteriAnalizi.ImageOptions.LargeImage")));
+			this.btnMusteriAnalizi.Name = "btnMusteriAnalizi";
+			this.btnMusteriAnalizi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnMusteriAnalizi_ItemClick);
 			// 
 			// barButtonItem30
 			// 
@@ -793,7 +794,7 @@
 			this.ribbonPageGroup6.ItemLinks.Add(this.BtnMusteriListesi);
 			this.ribbonPageGroup6.ItemLinks.Add(this.BtnMusteriDetay);
 			this.ribbonPageGroup6.ItemLinks.Add(this.BtnYeniMusteri1);
-			this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem29);
+			this.ribbonPageGroup6.ItemLinks.Add(this.btnMusteriAnalizi);
 			this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem30);
 			this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem31);
 			this.ribbonPageGroup6.Name = "ribbonPageGroup6";
@@ -1001,7 +1002,7 @@
 		private DevExpress.XtraBars.BarButtonItem barButtonItem24;
 		private DevExpress.XtraBars.BarButtonItem BtnMusteriListesi;
 		private DevExpress.XtraBars.BarButtonItem BtnYeniMusteri1;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem29;
+		private DevExpress.XtraBars.BarButtonItem btnMusteriAnalizi;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem30;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem31;
 		private DevExpress.XtraBars.BarButtonItem BtnFaturaListesi;

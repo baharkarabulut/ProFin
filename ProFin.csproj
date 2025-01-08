@@ -135,6 +135,12 @@
     <Compile Include="FrmiptalEdilenProjeler.Designer.cs">
       <DependentUpon>FrmiptalEdilenProjeler.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMusteriAnalizi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMusteriAnalizi.Designer.cs">
+      <DependentUpon>FrmMusteriAnalizi.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMusteriDetay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,6 +253,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmiptalEdilenProjeler.resx">
       <DependentUpon>FrmiptalEdilenProjeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMusteriAnalizi.resx">
+      <DependentUpon>FrmMusteriAnalizi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMusteriDetay.resx">
       <DependentUpon>FrmMusteriDetay.cs</DependentUpon>

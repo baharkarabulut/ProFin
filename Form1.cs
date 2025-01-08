@@ -187,5 +187,11 @@ namespace ProFin
 			FrmOdenmemisFaturalar odenmemisFaturalar = new FrmOdenmemisFaturalar();
 			odenmemisFaturalar.ShowDialog();
 		}
+
+		private void btnMusteriAnalizi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmMusteriAnalizi musteriAnalizi = new FrmMusteriAnalizi();
+			musteriAnalizi.Show();
+		}
 	}
 }
