@@ -210,6 +210,12 @@
     <Compile Include="FrmTamamlananProjeler.Designer.cs">
       <DependentUpon>FrmTamamlananProjeler.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTamamlanmisSirketOdemeleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTamamlanmisSirketOdemeleri.Designer.cs">
+      <DependentUpon>FrmTamamlanmisSirketOdemeleri.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmTeslimTarihiYaklasan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -328,6 +334,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTamamlananProjeler.resx">
       <DependentUpon>FrmTamamlananProjeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTamamlanmisSirketOdemeleri.resx">
+      <DependentUpon>FrmTamamlanmisSirketOdemeleri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTeslimTarihiYaklasan.resx">
       <DependentUpon>FrmTeslimTarihiYaklasan.cs</DependentUpon>

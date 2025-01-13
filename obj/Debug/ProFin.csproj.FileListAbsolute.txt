@@ -100,3 +100,4 @@ C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmTeslimTarihiYaklasan.res
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmGiderGir.resources
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmGiderListesi.resources
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmOdenmeyenGiderler.resources
+C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmTamamlanmisSirketOdemeleri.resources

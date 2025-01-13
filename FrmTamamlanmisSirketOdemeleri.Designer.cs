@@ -1,6 +1,6 @@
 ﻿namespace ProFin
 {
-	partial class FrmOdenmeyenGiderler
+	partial class FrmTamamlanmisSirketOdemeleri
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -37,11 +37,11 @@
 			// 
 			// gridControl1
 			// 
-			this.gridControl1.Location = new System.Drawing.Point(1, 0);
+			this.gridControl1.Location = new System.Drawing.Point(1, 1);
 			this.gridControl1.MainView = this.gridView1;
 			this.gridControl1.Name = "gridControl1";
 			this.gridControl1.Size = new System.Drawing.Size(506, 340);
-			this.gridControl1.TabIndex = 0;
+			this.gridControl1.TabIndex = 1;
 			this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
 			// 
@@ -55,23 +55,23 @@
 			// 
 			this.lblOdenmeyenSayisi.AutoSize = true;
 			this.lblOdenmeyenSayisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.lblOdenmeyenSayisi.Location = new System.Drawing.Point(64, 363);
+			this.lblOdenmeyenSayisi.Location = new System.Drawing.Point(84, 378);
 			this.lblOdenmeyenSayisi.Name = "lblOdenmeyenSayisi";
 			this.lblOdenmeyenSayisi.Size = new System.Drawing.Size(60, 24);
-			this.lblOdenmeyenSayisi.TabIndex = 1;
+			this.lblOdenmeyenSayisi.TabIndex = 2;
 			this.lblOdenmeyenSayisi.Text = "label1";
 			// 
-			// FrmOdenmeyenGiderler
+			// FrmTamamlanmisSirketOdemeleri
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(510, 411);
+			this.ClientSize = new System.Drawing.Size(511, 426);
 			this.Controls.Add(this.lblOdenmeyenSayisi);
 			this.Controls.Add(this.gridControl1);
-			this.Name = "FrmOdenmeyenGiderler";
+			this.Name = "FrmTamamlanmisSirketOdemeleri";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Ödenmesi Bekleyen Şirket Faturaları";
-			this.Load += new System.EventHandler(this.FrmOdenmeyenGiderler_Load);
+			this.Text = "Tamamlanmış Şirket Ödemeleri";
+			this.Load += new System.EventHandler(this.FrmTamamlanmisSirketOdemeleri_Load);
 			((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
 			this.ResumeLayout(false);

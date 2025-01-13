@@ -26,7 +26,8 @@ namespace ProFin
 
 		private void barButtonItem56_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-
+			FrmGiderListesi giderListesi = new FrmGiderListesi();
+			giderListesi.ShowDialog();
 		}
 
 		private void BtnYeniProje_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -245,6 +246,24 @@ namespace ProFin
 		private void btnOdenmeyenGiderler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
 			FrmOdenmeyenGiderler frm = new FrmOdenmeyenGiderler();
+			frm.ShowDialog();
+		}
+
+		private void btnOdenmeyenGiderler1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmOdenmeyenGiderler frm = new FrmOdenmeyenGiderler();
+			frm.ShowDialog();
+		}
+
+		private void btnOdenmeyenGiderler2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmOdenmeyenGiderler frm = new FrmOdenmeyenGiderler();
+			frm.ShowDialog();
+		}
+
+		private void btnTamamlanmisSirketOdemeleri_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmTamamlanmisSirketOdemeleri frm = new FrmTamamlanmisSirketOdemeleri();
 			frm.ShowDialog();
 		}
 	}
