@@ -241,5 +241,11 @@ namespace ProFin
 			FrmGiderListesi giderListesi = new FrmGiderListesi();
 			giderListesi.ShowDialog();
 		}
+
+		private void btnOdenmeyenGiderler_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmOdenmeyenGiderler frm = new FrmOdenmeyenGiderler();
+			frm.ShowDialog();
+		}
 	}
 }

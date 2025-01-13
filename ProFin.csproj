@@ -186,6 +186,12 @@
     <Compile Include="FrmOdenmemisFaturalar.Designer.cs">
       <DependentUpon>FrmOdenmemisFaturalar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmOdenmeyenGiderler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOdenmeyenGiderler.Designer.cs">
+      <DependentUpon>FrmOdenmeyenGiderler.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmProjeDetay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -310,6 +316,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOdenmemisFaturalar.resx">
       <DependentUpon>FrmOdenmemisFaturalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOdenmeyenGiderler.resx">
+      <DependentUpon>FrmOdenmeyenGiderler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProjeDetay.resx">
       <DependentUpon>FrmProjeDetay.cs</DependentUpon>
