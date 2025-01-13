@@ -36,6 +36,7 @@ namespace ProFin
 							   proje.BaslangicTarihi,
 							   proje.BitisTarihi,
 							   proje.ToplamTutar,
+							   proje.TeslimTarihi,
 							   proje.Notlar
 						   };
 
@@ -100,22 +101,17 @@ namespace ProFin
 		{
 			try
 			{
-				// Yazıcı seçimi için bir PrintDialog oluştur
 				PrintDialog printDialog = new PrintDialog();
 
-				// Varsayılan yazıcıyı ayarla
 				printDialog.UseEXDialog = true;
 
-				// Eğer kullanıcı bir yazıcı seçerse işlemi başlat
 				if (printDialog.ShowDialog() == DialogResult.OK)
 				{
-					// DevExpress GridControl'ün yazıcıya gönderme fonksiyonu
 					PrintableComponentLink link = new PrintableComponentLink(new PrintingSystem())
 					{
 						Component = gridControl1
 					};
 
-					// Seçilen yazıcıya yazdır
 					link.Print(printDialog.PrinterSettings.PrinterName);
 				}
 			}

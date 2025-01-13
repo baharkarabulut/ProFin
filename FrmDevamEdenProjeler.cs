@@ -34,7 +34,8 @@ namespace ProFin
 											 MusteriAdi = musteri.AdSoyad,
 											 proje.BaslangicTarihi,
 											 proje.BitisTarihi,
-											 proje.ToplamTutar
+											 proje.ToplamTutar,
+											 proje.TeslimTarihi
 										 }).ToList();
 
 				gridControl1.DataSource = devamEdenProjeler;
@@ -45,19 +46,24 @@ namespace ProFin
 				gridView1.Columns["BaslangicTarihi"].Caption = "Başlangıç Tarihi";
 				gridView1.Columns["BitisTarihi"].Caption = "Bitiş Tarihi";
 				gridView1.Columns["ToplamTutar"].Caption = "Toplam Tutar";
+				gridView1.Columns["TeslimTarihi"].Caption = "Teslim Tarihi";
 
 				gridView1.Columns["ProjeID"].Width = 50;
-				gridView1.Columns["ProjeAdi"].Width = 220;
-				gridView1.Columns["MusteriAdi"].Width = 150;
-				gridView1.Columns["BaslangicTarihi"].Width = 110;
-				gridView1.Columns["BitisTarihi"].Width = 110;
-				gridView1.Columns["ToplamTutar"].Width = 100;
+				gridView1.Columns["ProjeAdi"].Width = 210;
+				gridView1.Columns["MusteriAdi"].Width = 140;
+				gridView1.Columns["BaslangicTarihi"].Width = 100;
+				gridView1.Columns["BitisTarihi"].Width = 100;
+				gridView1.Columns["ToplamTutar"].Width = 90;
+				gridView1.Columns["TeslimTarihi"].Width = 100;
 
 				gridView1.Columns["BaslangicTarihi"].DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
 				gridView1.Columns["BaslangicTarihi"].DisplayFormat.FormatString = "dd.MM.yyyy";
 
 				gridView1.Columns["BitisTarihi"].DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
 				gridView1.Columns["BitisTarihi"].DisplayFormat.FormatString = "dd.MM.yyyy";
+
+				gridView1.Columns["TeslimTarihi"].DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+				gridView1.Columns["TeslimTarihi"].DisplayFormat.FormatString = "dd.MM.yyyy";
 			}
 		}
 		private void FrmDevamEdenProjeler_Load(object sender, EventArgs e)
@@ -76,12 +82,14 @@ namespace ProFin
 			var baslangic = gridView1.GetFocusedRowCellValue("BaslangicTarihi")?.ToString();
 			var bitis = gridView1.GetFocusedRowCellValue("BitisTarihi")?.ToString();
 			var tutar = gridView1.GetFocusedRowCellValue("ToplamTutar")?.ToString();
+			var teslim = gridView1.GetFocusedRowCellValue("TeslimTarihi")?.ToString();
 
 			lblProjeAdi.Text = $"Proje Adı: {proje}";
 			lblMusteriAdi.Text = $"Müşteri Adı: {musteri}";
 			lblBaslangicTarihi.Text = $"Başlangıç Tarihi: {baslangic}";
 			lblBitisTarihi.Text = $"Bitiş Tarihi: {bitis}";
 			lblToplamTutar.Text = $"Toplam Tutar: {tutar}";
+			lblTeslimTarihi.Text = $"Teslim Tarihi: {teslim}";
 		}
 
 		private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)

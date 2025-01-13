@@ -78,6 +78,7 @@ namespace ProFin
 								   proje.BaslangicTarihi,
 								   proje.BitisTarihi,
 								   proje.ToplamTutar,
+								   proje.TeslimTarihi,
 								   proje.Notlar
 							   };
 
@@ -89,16 +90,18 @@ namespace ProFin
 				gridView1.Columns["BaslangicTarihi"].Caption = "Başlangıç Tarihi";
 				gridView1.Columns["BitisTarihi"].Caption = "Bitiş Tarihi";
 				gridView1.Columns["ToplamTutar"].Caption = "Toplam Tutar";
+				gridView1.Columns["TeslimTarihi"].Caption = "Teslim Tarihi";
 				gridView1.Columns["Notlar"].Caption = "Notlar";
 
 				gridView1.Columns["ProjeID"].Width = 60; 
 				gridView1.Columns["ProjeAdi"].Width = 210;  
 				gridView1.Columns["MusteriAdi"].Width = 150; 
 				gridView1.Columns["Durum"].Width = 120; 
-				gridView1.Columns["BaslangicTarihi"].Width = 120; 
-				gridView1.Columns["BitisTarihi"].Width = 120; 
-				gridView1.Columns["ToplamTutar"].Width = 120;  
-				gridView1.Columns["Notlar"].Width = 150; 
+				gridView1.Columns["BaslangicTarihi"].Width = 110; 
+				gridView1.Columns["BitisTarihi"].Width = 110; 
+				gridView1.Columns["ToplamTutar"].Width = 100;
+				gridView1.Columns["TeslimTarihi"].Width = 110;
+				gridView1.Columns["Notlar"].Width = 140; 
 			}
 		}
 

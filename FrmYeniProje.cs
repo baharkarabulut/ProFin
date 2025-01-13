@@ -34,6 +34,7 @@ namespace ProFin
 							   proje.BaslangicTarihi,
 							   proje.BitisTarihi,
 							   proje.ToplamTutar,
+							   proje.TeslimTarihi,
 							   proje.Notlar
 						   };
 
@@ -57,6 +58,7 @@ namespace ProFin
 							   proje.BaslangicTarihi,
 							   proje.BitisTarihi,
 							   proje.ToplamTutar,
+							   proje.TeslimTarihi,
 							   proje.Notlar
 						   };
 
@@ -79,6 +81,7 @@ namespace ProFin
 				dtpBaslangicTarihi.EditValue = proje.BaslangicTarihi;
 				dtpBitisTarihi.EditValue = proje.BitisTarihi;
 				txtToplamTutar.Text = proje.ToplamTutar.ToString();
+				dtpTeslimTarihi.EditValue = proje.TeslimTarihi;
 				memoEditNotlar.Text = proje.Notlar;
 			}
 		}
@@ -93,10 +96,12 @@ namespace ProFin
 				BaslangicTarihi = dtpBaslangicTarihi.DateTime, 
 				BitisTarihi = dtpBitisTarihi.DateTime,
 				ToplamTutar = decimal.Parse(txtToplamTutar.Text),
+				TeslimTarihi = dtpTeslimTarihi.DateTime,
 				Notlar = memoEditNotlar.Text
 			};
 			DateTime baslangicTarihi = dtpBaslangicTarihi.DateTime; 
-			DateTime bitisTarihi = dtpBitisTarihi.DateTime;         
+			DateTime bitisTarihi = dtpBitisTarihi.DateTime;
+			DateTime teslimTarihi = dtpTeslimTarihi.DateTime;
 			if (baslangicTarihi > bitisTarihi)
 			{
 				MessageBox.Show("Bitiş tarihi başlangıç tarihinden önce olamaz!", "Tarih Hatası", MessageBoxButtons.OK, MessageBoxIcon.Warning);

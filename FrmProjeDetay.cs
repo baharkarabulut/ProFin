@@ -48,6 +48,9 @@ namespace ProFin
 
 					txtToplamTutar.Text = ((decimal)proje.ToplamTutar).ToString("C2", CultureInfo.CurrentCulture);
 
+					if (proje.TeslimTarihi != null)
+						dtTeslimTarihi.EditValue = proje.TeslimTarihi;
+
 					memoNotlar.Text = proje.Notlar;
 				}
 				else
@@ -113,6 +116,11 @@ namespace ProFin
 						{
 							MessageBox.Show("Geçerli bir toplam tutar girin!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 							return;
+						}
+
+						if (DateTime.TryParse(dtTeslimTarihi.Text, out DateTime teslimTarihi))
+						{
+							proje.TeslimTarihi = teslimTarihi;
 						}
 
 						proje.Notlar = memoNotlar.Text;

@@ -30,6 +30,8 @@
 		{
 			this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
 			this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+			this.dtpTeslimTarihi = new DevExpress.XtraEditors.DateEdit();
+			this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
 			this.BtnKaydet = new DevExpress.XtraEditors.SimpleButton();
 			this.memoEditNotlar = new DevExpress.XtraEditors.MemoEdit();
 			this.txtToplamTutar = new DevExpress.XtraEditors.TextEdit();
@@ -58,6 +60,8 @@
 			this.splitContainerControl1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
 			this.groupControl1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dtpTeslimTarihi.Properties)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.dtpTeslimTarihi.Properties.CalendarTimeProperties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.memoEditNotlar.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtToplamTutar.Properties)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.cmbDurum.Properties)).BeginInit();
@@ -95,6 +99,8 @@
 			// 
 			// groupControl1
 			// 
+			this.groupControl1.Controls.Add(this.dtpTeslimTarihi);
+			this.groupControl1.Controls.Add(this.labelControl9);
 			this.groupControl1.Controls.Add(this.BtnKaydet);
 			this.groupControl1.Controls.Add(this.memoEditNotlar);
 			this.groupControl1.Controls.Add(this.txtToplamTutar);
@@ -118,11 +124,35 @@
 			this.groupControl1.TabIndex = 0;
 			this.groupControl1.Text = "Yeni Proje Ekleme Ekranı";
 			// 
+			// dtpTeslimTarihi
+			// 
+			this.dtpTeslimTarihi.EditValue = null;
+			this.dtpTeslimTarihi.Location = new System.Drawing.Point(144, 258);
+			this.dtpTeslimTarihi.Name = "dtpTeslimTarihi";
+			this.dtpTeslimTarihi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.dtpTeslimTarihi.Properties.Appearance.Options.UseFont = true;
+			this.dtpTeslimTarihi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+			this.dtpTeslimTarihi.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+			this.dtpTeslimTarihi.Size = new System.Drawing.Size(293, 26);
+			this.dtpTeslimTarihi.TabIndex = 18;
+			// 
+			// labelControl9
+			// 
+			this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.labelControl9.Appearance.Options.UseFont = true;
+			this.labelControl9.Location = new System.Drawing.Point(39, 261);
+			this.labelControl9.Name = "labelControl9";
+			this.labelControl9.Size = new System.Drawing.Size(99, 19);
+			this.labelControl9.TabIndex = 17;
+			this.labelControl9.Text = "Teslim Tarihi:";
+			// 
 			// BtnKaydet
 			// 
 			this.BtnKaydet.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.BtnKaydet.Appearance.Options.UseFont = true;
-			this.BtnKaydet.Location = new System.Drawing.Point(144, 438);
+			this.BtnKaydet.Location = new System.Drawing.Point(144, 479);
 			this.BtnKaydet.Name = "BtnKaydet";
 			this.BtnKaydet.Size = new System.Drawing.Size(293, 38);
 			this.BtnKaydet.TabIndex = 16;
@@ -131,7 +161,7 @@
 			// 
 			// memoEditNotlar
 			// 
-			this.memoEditNotlar.Location = new System.Drawing.Point(144, 253);
+			this.memoEditNotlar.Location = new System.Drawing.Point(144, 294);
 			this.memoEditNotlar.Name = "memoEditNotlar";
 			this.memoEditNotlar.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.memoEditNotlar.Properties.Appearance.Options.UseFont = true;
@@ -212,7 +242,7 @@
 			// 
 			this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.labelControl5.Appearance.Options.UseFont = true;
-			this.labelControl5.Location = new System.Drawing.Point(89, 255);
+			this.labelControl5.Location = new System.Drawing.Point(89, 296);
 			this.labelControl5.Name = "labelControl5";
 			this.labelControl5.Size = new System.Drawing.Size(49, 19);
 			this.labelControl5.TabIndex = 8;
@@ -345,6 +375,8 @@
 			((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
 			this.groupControl1.ResumeLayout(false);
 			this.groupControl1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dtpTeslimTarihi.Properties.CalendarTimeProperties)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.dtpTeslimTarihi.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.memoEditNotlar.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.txtToplamTutar.Properties)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.cmbDurum.Properties)).EndInit();
@@ -385,5 +417,7 @@
 		private DevExpress.XtraEditors.LabelControl labelControl1;
 		private DevExpress.XtraEditors.TextEdit txtProjeID;
 		private DevExpress.XtraEditors.SimpleButton BtnYenile;
+		private DevExpress.XtraEditors.DateEdit dtpTeslimTarihi;
+		private DevExpress.XtraEditors.LabelControl labelControl9;
 	}
 }

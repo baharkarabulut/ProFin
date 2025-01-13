@@ -46,6 +46,7 @@
 			this.btnYazdir = new DevExpress.XtraEditors.SimpleButton();
 			this.btnPdfAktar = new DevExpress.XtraEditors.SimpleButton();
 			this.btnExcelAktar = new DevExpress.XtraEditors.SimpleButton();
+			this.lblTeslimTarihi = new DevExpress.XtraEditors.LabelControl();
 			((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
@@ -61,7 +62,7 @@
 			this.gridControl1.Location = new System.Drawing.Point(1, 1);
 			this.gridControl1.MainView = this.gridView1;
 			this.gridControl1.Name = "gridControl1";
-			this.gridControl1.Size = new System.Drawing.Size(460, 302);
+			this.gridControl1.Size = new System.Drawing.Size(515, 329);
 			this.gridControl1.TabIndex = 1;
 			this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -76,21 +77,22 @@
 			// 
 			// panelControl1
 			// 
+			this.panelControl1.Controls.Add(this.lblTeslimTarihi);
 			this.panelControl1.Controls.Add(this.lblToplamTutar);
 			this.panelControl1.Controls.Add(this.lblBitisTarihi);
 			this.panelControl1.Controls.Add(this.lblBaslangicTarihi);
 			this.panelControl1.Controls.Add(this.lblMusteriAdi);
 			this.panelControl1.Controls.Add(this.lblProjeAdi);
-			this.panelControl1.Location = new System.Drawing.Point(467, 1);
+			this.panelControl1.Location = new System.Drawing.Point(522, 1);
 			this.panelControl1.Name = "panelControl1";
-			this.panelControl1.Size = new System.Drawing.Size(331, 188);
+			this.panelControl1.Size = new System.Drawing.Size(331, 215);
 			this.panelControl1.TabIndex = 2;
 			// 
 			// lblToplamTutar
 			// 
 			this.lblToplamTutar.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.lblToplamTutar.Appearance.Options.UseFont = true;
-			this.lblToplamTutar.Location = new System.Drawing.Point(15, 153);
+			this.lblToplamTutar.Location = new System.Drawing.Point(15, 156);
 			this.lblToplamTutar.Name = "lblToplamTutar";
 			this.lblToplamTutar.Size = new System.Drawing.Size(94, 19);
 			this.lblToplamTutar.TabIndex = 4;
@@ -141,7 +143,7 @@
 			this.grpIstatistikler.Controls.Add(this.lblToplamKazanc);
 			this.grpIstatistikler.Controls.Add(this.lblToplamProjeSayisi);
 			this.grpIstatistikler.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.grpIstatistikler.Location = new System.Drawing.Point(467, 195);
+			this.grpIstatistikler.Location = new System.Drawing.Point(522, 222);
 			this.grpIstatistikler.Name = "grpIstatistikler";
 			this.grpIstatistikler.Size = new System.Drawing.Size(331, 108);
 			this.grpIstatistikler.TabIndex = 3;
@@ -172,13 +174,13 @@
 			xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
 			this.chartProjeKazanc.Diagram = xyDiagram1;
 			this.chartProjeKazanc.Legend.Visibility = DevExpress.Utils.DefaultBoolean.True;
-			this.chartProjeKazanc.Location = new System.Drawing.Point(1, 309);
+			this.chartProjeKazanc.Location = new System.Drawing.Point(1, 337);
 			this.chartProjeKazanc.Name = "chartProjeKazanc";
 			series1.Name = "barSeries";
 			series1.SeriesID = 0;
 			this.chartProjeKazanc.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1};
-			this.chartProjeKazanc.Size = new System.Drawing.Size(677, 288);
+			this.chartProjeKazanc.Size = new System.Drawing.Size(732, 288);
 			this.chartProjeKazanc.TabIndex = 4;
 			// 
 			// btnYazdir
@@ -186,7 +188,7 @@
 			this.btnYazdir.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.btnYazdir.Appearance.Options.UseFont = true;
 			this.btnYazdir.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnYazdir.ImageOptions.Image")));
-			this.btnYazdir.Location = new System.Drawing.Point(684, 505);
+			this.btnYazdir.Location = new System.Drawing.Point(739, 532);
 			this.btnYazdir.Name = "btnYazdir";
 			this.btnYazdir.Size = new System.Drawing.Size(114, 92);
 			this.btnYazdir.TabIndex = 9;
@@ -198,7 +200,7 @@
 			this.btnPdfAktar.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.btnPdfAktar.Appearance.Options.UseFont = true;
 			this.btnPdfAktar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPdfAktar.ImageOptions.Image")));
-			this.btnPdfAktar.Location = new System.Drawing.Point(684, 407);
+			this.btnPdfAktar.Location = new System.Drawing.Point(739, 434);
 			this.btnPdfAktar.Name = "btnPdfAktar";
 			this.btnPdfAktar.Size = new System.Drawing.Size(114, 92);
 			this.btnPdfAktar.TabIndex = 8;
@@ -210,18 +212,28 @@
 			this.btnExcelAktar.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.btnExcelAktar.Appearance.Options.UseFont = true;
 			this.btnExcelAktar.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnExcelAktar.ImageOptions.Image")));
-			this.btnExcelAktar.Location = new System.Drawing.Point(684, 309);
+			this.btnExcelAktar.Location = new System.Drawing.Point(739, 336);
 			this.btnExcelAktar.Name = "btnExcelAktar";
 			this.btnExcelAktar.Size = new System.Drawing.Size(114, 92);
 			this.btnExcelAktar.TabIndex = 7;
 			this.btnExcelAktar.Text = "Excel\'e \r\nAktar";
 			this.btnExcelAktar.Click += new System.EventHandler(this.btnExcelAktar_Click_1);
 			// 
+			// lblTeslimTarihi
+			// 
+			this.lblTeslimTarihi.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.lblTeslimTarihi.Appearance.Options.UseFont = true;
+			this.lblTeslimTarihi.Location = new System.Drawing.Point(15, 191);
+			this.lblTeslimTarihi.Name = "lblTeslimTarihi";
+			this.lblTeslimTarihi.Size = new System.Drawing.Size(94, 19);
+			this.lblTeslimTarihi.TabIndex = 5;
+			this.lblTeslimTarihi.Text = "labelControl5";
+			// 
 			// FrmDevamEdenProjeler
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(804, 605);
+			this.ClientSize = new System.Drawing.Size(854, 627);
 			this.Controls.Add(this.btnYazdir);
 			this.Controls.Add(this.btnPdfAktar);
 			this.Controls.Add(this.btnExcelAktar);
@@ -264,5 +276,6 @@
 		private DevExpress.XtraEditors.SimpleButton btnYazdir;
 		private DevExpress.XtraEditors.SimpleButton btnPdfAktar;
 		private DevExpress.XtraEditors.SimpleButton btnExcelAktar;
+		private DevExpress.XtraEditors.LabelControl lblTeslimTarihi;
 	}
 }
