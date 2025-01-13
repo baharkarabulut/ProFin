@@ -78,6 +78,7 @@
     <EntitySetMapping Name="Projeler">
       <EntityTypeMapping TypeName="DbProFinModel.Projeler">
         <MappingFragment StoreEntitySet="Projeler">
+          <ScalarProperty Name="TeslimTarihi" ColumnName="TeslimTarihi" />
           <ScalarProperty Name="ProjeID" ColumnName="ProjeID" />
           <ScalarProperty Name="ProjeAdi" ColumnName="ProjeAdi" />
           <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
@@ -139,6 +140,18 @@
           <ScalarProperty Name="Kategori" ColumnName="Kategori" />
           <ScalarProperty Name="Tarih" ColumnName="Tarih" />
           <ScalarProperty Name="GiderID" ColumnName="GiderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Etkilesim">
+      <EntityTypeMapping TypeName="DbProFinModel.Etkilesim">
+        <MappingFragment StoreEntitySet="Etkilesim">
+          <ScalarProperty Name="Detay" ColumnName="Detay" />
+          <ScalarProperty Name="EtkilesimTuru" ColumnName="EtkilesimTuru" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="ProjeID" ColumnName="ProjeID" />
+          <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
+          <ScalarProperty Name="EtkilesimID" ColumnName="EtkilesimID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

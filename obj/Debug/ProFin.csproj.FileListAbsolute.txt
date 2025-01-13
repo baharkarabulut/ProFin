@@ -94,3 +94,5 @@ C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmDevamEdenProjeler.resour
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmiptalEdilenProjeler.resources
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmOdenmemisFaturalar.resources
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmMusteriAnalizi.resources
+C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmEtkilesimGecmisi.resources
+C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmBugunTeslim.resources

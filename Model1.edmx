@@ -13,6 +13,17 @@
           <Property Name="Anahtar" Type="varchar" MaxLength="100" />
           <Property Name="Deger" Type="varchar" MaxLength="255" />
         </EntityType>
+        <EntityType Name="Etkilesim">
+          <Key>
+            <PropertyRef Name="EtkilesimID" />
+          </Key>
+          <Property Name="EtkilesimID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MusteriID" Type="int" />
+          <Property Name="ProjeID" Type="int" />
+          <Property Name="Tarih" Type="datetime" />
+          <Property Name="EtkilesimTuru" Type="varchar" MaxLength="250" />
+          <Property Name="Detay" Type="varchar(max)" />
+        </EntityType>
         <EntityType Name="Etkinlik">
           <Key>
             <PropertyRef Name="EtkinlikID" />
@@ -105,6 +116,7 @@
           <Property Name="BitisTarihi" Type="datetime" />
           <Property Name="ToplamTutar" Type="decimal" Precision="10" Scale="2" />
           <Property Name="Notlar" Type="varchar" MaxLength="500" />
+          <Property Name="TeslimTarihi" Type="datetime" />
         </EntityType>
         <EntityType Name="Raporlar">
           <Key>
@@ -134,6 +146,30 @@
           <Property Name="DosyaYolu" Type="varchar" MaxLength="255" />
           <Property Name="YedeklemeTarihi" Type="datetime" />
         </EntityType>
+        <Association Name="FK_Etkilesim_Musteriler">
+          <End Role="Musteriler" Type="Self.Musteriler" Multiplicity="0..1" />
+          <End Role="Etkilesim" Type="Self.Etkilesim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Musteriler">
+              <PropertyRef Name="MusteriID" />
+            </Principal>
+            <Dependent Role="Etkilesim">
+              <PropertyRef Name="MusteriID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Etkilesim_Projeler">
+          <End Role="Projeler" Type="Self.Projeler" Multiplicity="0..1" />
+          <End Role="Etkilesim" Type="Self.Etkilesim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Projeler">
+              <PropertyRef Name="ProjeID" />
+            </Principal>
+            <Dependent Role="Etkilesim">
+              <PropertyRef Name="ProjeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_FaturaKalemleri_Faturalar">
           <End Role="Faturalar" Type="Self.Faturalar" Multiplicity="0..1" />
           <End Role="FaturaKalemleri" Type="Self.FaturaKalemleri" Multiplicity="*" />
@@ -196,6 +232,7 @@
         </Association>
         <EntityContainer Name="DbProFinModelStoreContainer">
           <EntitySet Name="Ayarlar" EntityType="Self.Ayarlar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Etkilesim" EntityType="Self.Etkilesim" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Etkinlik" EntityType="Self.Etkinlik" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="FaturaKalemleri" EntityType="Self.FaturaKalemleri" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Faturalar" EntityType="Self.Faturalar" Schema="dbo" store:Type="Tables" />
@@ -207,6 +244,14 @@
           <EntitySet Name="Raporlar" EntityType="Self.Raporlar" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Yedekleme" EntityType="Self.Yedekleme" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Etkilesim_Musteriler" Association="Self.FK_Etkilesim_Musteriler">
+            <End Role="Musteriler" EntitySet="Musteriler" />
+            <End Role="Etkilesim" EntitySet="Etkilesim" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Etkilesim_Projeler" Association="Self.FK_Etkilesim_Projeler">
+            <End Role="Projeler" EntitySet="Projeler" />
+            <End Role="Etkilesim" EntitySet="Etkilesim" />
+          </AssociationSet>
           <AssociationSet Name="FK_FaturaKalemleri_Faturalar" Association="Self.FK_FaturaKalemleri_Faturalar">
             <End Role="Faturalar" EntitySet="Faturalar" />
             <End Role="FaturaKalemleri" EntitySet="FaturaKalemleri" />
@@ -306,6 +351,7 @@
           <Property Name="Notlar" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Faturalar" Relationship="Self.FK_Faturalar_Musteriler" FromRole="Musteriler" ToRole="Faturalar" />
           <NavigationProperty Name="Projeler" Relationship="Self.FK_Projeler_Musteriler" FromRole="Musteriler" ToRole="Projeler" />
+          <NavigationProperty Name="Etkilesim" Relationship="DbProFinModel.FK_Etkilesim_Musteriler" FromRole="Musteriler" ToRole="Etkilesim" />
         </EntityType>
         <EntityType Name="Projeler">
           <Key>
@@ -322,6 +368,8 @@
           <NavigationProperty Name="Faturalar" Relationship="Self.FK_Faturalar_Projeler" FromRole="Projeler" ToRole="Faturalar" />
           <NavigationProperty Name="Gorevler" Relationship="Self.FK_Gorevler_Projeler" FromRole="Projeler" ToRole="Gorevler" />
           <NavigationProperty Name="Musteriler" Relationship="Self.FK_Projeler_Musteriler" FromRole="Projeler" ToRole="Musteriler" />
+          <NavigationProperty Name="Etkilesim" Relationship="DbProFinModel.FK_Etkilesim_Projeler" FromRole="Projeler" ToRole="Etkilesim" />
+          <Property Name="TeslimTarihi" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityType Name="Raporlar">
           <Key>
@@ -444,6 +492,15 @@
           </AssociationSet>
           <EntitySet Name="Etkinlik" EntityType="DbProFinModel.Etkinlik" />
           <EntitySet Name="Giderler" EntityType="DbProFinModel.Giderler" />
+          <EntitySet Name="Etkilesim" EntityType="DbProFinModel.Etkilesim" />
+          <AssociationSet Name="FK_Etkilesim_Musteriler" Association="DbProFinModel.FK_Etkilesim_Musteriler">
+            <End Role="Musteriler" EntitySet="Musteriler" />
+            <End Role="Etkilesim" EntitySet="Etkilesim" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Etkilesim_Projeler" Association="DbProFinModel.FK_Etkilesim_Projeler">
+            <End Role="Projeler" EntitySet="Projeler" />
+            <End Role="Etkilesim" EntitySet="Etkilesim" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="Etkinlik">
           <Key>
@@ -465,6 +522,43 @@
           <Property Name="Tutar" Type="Decimal" Precision="10" Scale="2" />
           <Property Name="Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
         </EntityType>
+        <EntityType Name="Etkilesim">
+          <Key>
+            <PropertyRef Name="EtkilesimID" />
+          </Key>
+          <Property Name="EtkilesimID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MusteriID" Type="Int32" />
+          <Property Name="ProjeID" Type="Int32" />
+          <Property Name="Tarih" Type="DateTime" Precision="3" />
+          <Property Name="EtkilesimTuru" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Detay" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Musteriler" Relationship="DbProFinModel.FK_Etkilesim_Musteriler" FromRole="Etkilesim" ToRole="Musteriler" />
+          <NavigationProperty Name="Projeler" Relationship="DbProFinModel.FK_Etkilesim_Projeler" FromRole="Etkilesim" ToRole="Projeler" />
+        </EntityType>
+        <Association Name="FK_Etkilesim_Musteriler">
+          <End Type="DbProFinModel.Musteriler" Role="Musteriler" Multiplicity="0..1" />
+          <End Type="DbProFinModel.Etkilesim" Role="Etkilesim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Musteriler">
+              <PropertyRef Name="MusteriID" />
+            </Principal>
+            <Dependent Role="Etkilesim">
+              <PropertyRef Name="MusteriID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Etkilesim_Projeler">
+          <End Type="DbProFinModel.Projeler" Role="Projeler" Multiplicity="0..1" />
+          <End Type="DbProFinModel.Etkilesim" Role="Etkilesim" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Projeler">
+              <PropertyRef Name="ProjeID" />
+            </Principal>
+            <Dependent Role="Etkilesim">
+              <PropertyRef Name="ProjeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -548,6 +642,7 @@
           <EntitySetMapping Name="Projeler">
             <EntityTypeMapping TypeName="DbProFinModel.Projeler">
               <MappingFragment StoreEntitySet="Projeler">
+                <ScalarProperty Name="TeslimTarihi" ColumnName="TeslimTarihi" />
                 <ScalarProperty Name="ProjeID" ColumnName="ProjeID" />
                 <ScalarProperty Name="ProjeAdi" ColumnName="ProjeAdi" />
                 <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
@@ -609,6 +704,18 @@
                 <ScalarProperty Name="Kategori" ColumnName="Kategori" />
                 <ScalarProperty Name="Tarih" ColumnName="Tarih" />
                 <ScalarProperty Name="GiderID" ColumnName="GiderID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Etkilesim">
+            <EntityTypeMapping TypeName="DbProFinModel.Etkilesim">
+              <MappingFragment StoreEntitySet="Etkilesim">
+                <ScalarProperty Name="Detay" ColumnName="Detay" />
+                <ScalarProperty Name="EtkilesimTuru" ColumnName="EtkilesimTuru" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="ProjeID" ColumnName="ProjeID" />
+                <ScalarProperty Name="MusteriID" ColumnName="MusteriID" />
+                <ScalarProperty Name="EtkilesimID" ColumnName="EtkilesimID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

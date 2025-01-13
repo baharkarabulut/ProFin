@@ -6,12 +6,12 @@
     <edmx:Diagrams>
       <Diagram DiagramId="fd51c5909bf047c380ee754718630504" Name="Diagram1">
         <EntityTypeShape EntityType="DbProFinModel.Ayarlar" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbProFinModel.FaturaKalemleri" Width="1.5" PointX="7.5" PointY="3.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbProFinModel.Faturalar" Width="1.5" PointX="5.25" PointY="3.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbProFinModel.Gorevler" Width="1.5" PointX="5.25" PointY="7.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbProFinModel.Kullanicilar" Width="1.5" PointX="7.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbProFinModel.FaturaKalemleri" Width="1.5" PointX="7.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbProFinModel.Faturalar" Width="1.5" PointX="4.5" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbProFinModel.Gorevler" Width="1.5" PointX="4.875" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbProFinModel.Kullanicilar" Width="1.5" PointX="11.375" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbProFinModel.Musteriler" Width="1.5" PointX="0.75" PointY="3.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbProFinModel.Projeler" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbProFinModel.Projeler" Width="1.5" PointX="2.25" PointY="6.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbProFinModel.Raporlar" Width="1.5" PointX="6.125" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbProFinModel.sysdiagrams" Width="1.5" PointX="7.875" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbProFinModel.Yedekleme" Width="1.5" PointX="2.5" PointY="0.75" IsExpanded="true" />
@@ -22,6 +22,9 @@
         <AssociationConnector Association="DbProFinModel.FK_Projeler_Musteriler" ManuallyRouted="false" />
         <EntityTypeShape EntityType="DbProFinModel.Etkinlik" Width="1.5" PointX="4.375" PointY="0.75" />
         <EntityTypeShape EntityType="DbProFinModel.Giderler" Width="1.5" PointX="9.625" PointY="0.75" />
+        <EntityTypeShape EntityType="DbProFinModel.Etkilesim" Width="1.5" PointX="7.75" PointY="6.25" />
+        <AssociationConnector Association="DbProFinModel.FK_Etkilesim_Musteriler" />
+        <AssociationConnector Association="DbProFinModel.FK_Etkilesim_Projeler" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

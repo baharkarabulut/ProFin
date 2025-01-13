@@ -19,6 +19,7 @@ namespace ProFin
         {
             this.Faturalar = new HashSet<Faturalar>();
             this.Projeler = new HashSet<Projeler>();
+            this.Etkilesim = new HashSet<Etkilesim>();
         }
     
         public int MusteriID { get; set; }
@@ -32,5 +33,7 @@ namespace ProFin
         public virtual ICollection<Faturalar> Faturalar { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Projeler> Projeler { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Etkilesim> Etkilesim { get; set; }
     }
 }

@@ -78,6 +78,9 @@
     <Compile Include="Ayarlar.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Etkilesim.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Etkinlik.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -105,11 +108,23 @@
     <Compile Include="FrmAnasayfa.Designer.cs">
       <DependentUpon>FrmAnasayfa.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBugunTeslim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBugunTeslim.Designer.cs">
+      <DependentUpon>FrmBugunTeslim.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDevamEdenProjeler.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmDevamEdenProjeler.Designer.cs">
       <DependentUpon>FrmDevamEdenProjeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEtkilesimGecmisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEtkilesimGecmisi.Designer.cs">
+      <DependentUpon>FrmEtkilesimGecmisi.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmFaturaDetay.cs">
       <SubType>Form</SubType>
@@ -239,8 +254,14 @@
     <EmbeddedResource Include="FrmAnasayfa.resx">
       <DependentUpon>FrmAnasayfa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmBugunTeslim.resx">
+      <DependentUpon>FrmBugunTeslim.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmDevamEdenProjeler.resx">
       <DependentUpon>FrmDevamEdenProjeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEtkilesimGecmisi.resx">
+      <DependentUpon>FrmEtkilesimGecmisi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFaturaDetay.resx">
       <DependentUpon>FrmFaturaDetay.cs</DependentUpon>

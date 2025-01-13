@@ -74,6 +74,7 @@
     <Property Name="Notlar" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="Faturalar" Relationship="Self.FK_Faturalar_Musteriler" FromRole="Musteriler" ToRole="Faturalar" />
     <NavigationProperty Name="Projeler" Relationship="Self.FK_Projeler_Musteriler" FromRole="Musteriler" ToRole="Projeler" />
+    <NavigationProperty Name="Etkilesim" Relationship="DbProFinModel.FK_Etkilesim_Musteriler" FromRole="Musteriler" ToRole="Etkilesim" />
   </EntityType>
   <EntityType Name="Projeler">
     <Key>
@@ -90,6 +91,8 @@
     <NavigationProperty Name="Faturalar" Relationship="Self.FK_Faturalar_Projeler" FromRole="Projeler" ToRole="Faturalar" />
     <NavigationProperty Name="Gorevler" Relationship="Self.FK_Gorevler_Projeler" FromRole="Projeler" ToRole="Gorevler" />
     <NavigationProperty Name="Musteriler" Relationship="Self.FK_Projeler_Musteriler" FromRole="Projeler" ToRole="Musteriler" />
+    <NavigationProperty Name="Etkilesim" Relationship="DbProFinModel.FK_Etkilesim_Projeler" FromRole="Projeler" ToRole="Etkilesim" />
+    <Property Name="TeslimTarihi" Type="DateTime" Precision="3" />
   </EntityType>
   <EntityType Name="Raporlar">
     <Key>
@@ -212,6 +215,15 @@
     </AssociationSet>
     <EntitySet Name="Etkinlik" EntityType="DbProFinModel.Etkinlik" />
     <EntitySet Name="Giderler" EntityType="DbProFinModel.Giderler" />
+    <EntitySet Name="Etkilesim" EntityType="DbProFinModel.Etkilesim" />
+    <AssociationSet Name="FK_Etkilesim_Musteriler" Association="DbProFinModel.FK_Etkilesim_Musteriler">
+      <End Role="Musteriler" EntitySet="Musteriler" />
+      <End Role="Etkilesim" EntitySet="Etkilesim" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Etkilesim_Projeler" Association="DbProFinModel.FK_Etkilesim_Projeler">
+      <End Role="Projeler" EntitySet="Projeler" />
+      <End Role="Etkilesim" EntitySet="Etkilesim" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="Etkinlik">
     <Key>
@@ -233,4 +245,41 @@
     <Property Name="Tutar" Type="Decimal" Precision="10" Scale="2" />
     <Property Name="Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
   </EntityType>
+  <EntityType Name="Etkilesim">
+    <Key>
+      <PropertyRef Name="EtkilesimID" />
+    </Key>
+    <Property Name="EtkilesimID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MusteriID" Type="Int32" />
+    <Property Name="ProjeID" Type="Int32" />
+    <Property Name="Tarih" Type="DateTime" Precision="3" />
+    <Property Name="EtkilesimTuru" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Detay" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Musteriler" Relationship="DbProFinModel.FK_Etkilesim_Musteriler" FromRole="Etkilesim" ToRole="Musteriler" />
+    <NavigationProperty Name="Projeler" Relationship="DbProFinModel.FK_Etkilesim_Projeler" FromRole="Etkilesim" ToRole="Projeler" />
+  </EntityType>
+  <Association Name="FK_Etkilesim_Musteriler">
+    <End Type="DbProFinModel.Musteriler" Role="Musteriler" Multiplicity="0..1" />
+    <End Type="DbProFinModel.Etkilesim" Role="Etkilesim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Musteriler">
+        <PropertyRef Name="MusteriID" />
+      </Principal>
+      <Dependent Role="Etkilesim">
+        <PropertyRef Name="MusteriID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Etkilesim_Projeler">
+    <End Type="DbProFinModel.Projeler" Role="Projeler" Multiplicity="0..1" />
+    <End Type="DbProFinModel.Etkilesim" Role="Etkilesim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projeler">
+        <PropertyRef Name="ProjeID" />
+      </Principal>
+      <Dependent Role="Etkilesim">
+        <PropertyRef Name="ProjeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

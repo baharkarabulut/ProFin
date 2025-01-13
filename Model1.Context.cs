@@ -37,5 +37,6 @@ namespace ProFin
         public virtual DbSet<Yedekleme> Yedekleme { get; set; }
         public virtual DbSet<Etkinlik> Etkinlik { get; set; }
         public virtual DbSet<Giderler> Giderler { get; set; }
+        public virtual DbSet<Etkilesim> Etkilesim { get; set; }
     }
 }

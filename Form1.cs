@@ -193,5 +193,17 @@ namespace ProFin
 			FrmMusteriAnalizi musteriAnalizi = new FrmMusteriAnalizi();
 			musteriAnalizi.Show();
 		}
+
+		private void btnEtkilesimGecmisi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmEtkilesimGecmisi etkilesimGecmisi = new FrmEtkilesimGecmisi();
+			etkilesimGecmisi.Show();
+		}
+
+		private void btnBugunTeslim_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmBugunTeslim frmBugunTeslim = new FrmBugunTeslim();
+			frmBugunTeslim.ShowDialog();
+		}
 	}
 }
