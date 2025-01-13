@@ -70,6 +70,7 @@
           <Property Name="Kategori" Type="varchar" MaxLength="250" />
           <Property Name="Tutar" Type="decimal" Precision="10" Scale="2" />
           <Property Name="Aciklama" Type="varchar(max)" />
+          <Property Name="OdemeDurumu" Type="bit" />
         </EntityType>
         <EntityType Name="Gorevler">
           <Key>
@@ -521,6 +522,7 @@
           <Property Name="Kategori" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
           <Property Name="Tutar" Type="Decimal" Precision="10" Scale="2" />
           <Property Name="Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="OdemeDurumu" Type="Boolean" />
         </EntityType>
         <EntityType Name="Etkilesim">
           <Key>
@@ -699,6 +701,7 @@
           <EntitySetMapping Name="Giderler">
             <EntityTypeMapping TypeName="DbProFinModel.Giderler">
               <MappingFragment StoreEntitySet="Giderler">
+                <ScalarProperty Name="OdemeDurumu" ColumnName="OdemeDurumu" />
                 <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
                 <ScalarProperty Name="Tutar" ColumnName="Tutar" />
                 <ScalarProperty Name="Kategori" ColumnName="Kategori" />

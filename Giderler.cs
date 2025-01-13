@@ -19,5 +19,6 @@ namespace ProFin
         public string Kategori { get; set; }
         public Nullable<decimal> Tutar { get; set; }
         public string Aciklama { get; set; }
+        public Nullable<bool> OdemeDurumu { get; set; }
     }
 }

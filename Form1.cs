@@ -211,5 +211,29 @@ namespace ProFin
 			FrmTeslimTarihiYaklasan frmTeslimTarihiYaklasan= new FrmTeslimTarihiYaklasan();
 			frmTeslimTarihiYaklasan.ShowDialog();
 		}
+
+		private void BtnTamamlananProjeler1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmTamamlananProjeler tamamlananProjeler = new FrmTamamlananProjeler();
+			tamamlananProjeler.ShowDialog();
+		}
+
+		private void btnDevamEdenProjeler1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmDevamEdenProjeler devamEdenProjeler = new FrmDevamEdenProjeler();
+			devamEdenProjeler.ShowDialog();
+		}
+
+		private void btniptalEdilenProjeler1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmiptalEdilenProjeler iptalEdilenProjeler = new FrmiptalEdilenProjeler();
+			iptalEdilenProjeler.ShowDialog();
+		}
+
+		private void btnGiderGir_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmGiderGir giderGir = new FrmGiderGir();
+			giderGir.ShowDialog();
+		}
 	}
 }

@@ -97,3 +97,4 @@ C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmMusteriAnalizi.resources
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmEtkilesimGecmisi.resources
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmBugunTeslim.resources
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmTeslimTarihiYaklasan.resources
+C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmGiderGir.resources

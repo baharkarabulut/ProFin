@@ -135,6 +135,7 @@
     <EntitySetMapping Name="Giderler">
       <EntityTypeMapping TypeName="DbProFinModel.Giderler">
         <MappingFragment StoreEntitySet="Giderler">
+          <ScalarProperty Name="OdemeDurumu" ColumnName="OdemeDurumu" />
           <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
           <ScalarProperty Name="Tutar" ColumnName="Tutar" />
           <ScalarProperty Name="Kategori" ColumnName="Kategori" />

@@ -244,6 +244,7 @@
     <Property Name="Kategori" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
     <Property Name="Tutar" Type="Decimal" Precision="10" Scale="2" />
     <Property Name="Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="OdemeDurumu" Type="Boolean" />
   </EntityType>
   <EntityType Name="Etkilesim">
     <Key>

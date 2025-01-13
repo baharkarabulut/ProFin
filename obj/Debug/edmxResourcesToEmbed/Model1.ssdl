@@ -65,6 +65,7 @@
     <Property Name="Kategori" Type="varchar" MaxLength="250" />
     <Property Name="Tutar" Type="decimal" Precision="10" Scale="2" />
     <Property Name="Aciklama" Type="varchar(max)" />
+    <Property Name="OdemeDurumu" Type="bit" />
   </EntityType>
   <EntityType Name="Gorevler">
     <Key>
