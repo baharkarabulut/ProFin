@@ -205,5 +205,11 @@ namespace ProFin
 			FrmBugunTeslim frmBugunTeslim = new FrmBugunTeslim();
 			frmBugunTeslim.ShowDialog();
 		}
+
+		private void btnTeslimTarihiYaklasan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmTeslimTarihiYaklasan frmTeslimTarihiYaklasan= new FrmTeslimTarihiYaklasan();
+			frmTeslimTarihiYaklasan.ShowDialog();
+		}
 	}
 }

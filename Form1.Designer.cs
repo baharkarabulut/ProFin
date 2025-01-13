@@ -43,7 +43,7 @@
 			this.btnDevamEdenProjeler = new DevExpress.XtraBars.BarButtonItem();
 			this.btnBugunTeslim = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem17 = new DevExpress.XtraBars.BarButtonItem();
+			this.btnTeslimTarihiYaklasan = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnProjeListesi = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnYeniProje1 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem19 = new DevExpress.XtraBars.BarButtonItem();
@@ -147,7 +147,7 @@
             this.btnDevamEdenProjeler,
             this.btnBugunTeslim,
             this.barButtonItem16,
-            this.barButtonItem17,
+            this.btnTeslimTarihiYaklasan,
             this.BtnProjeListesi,
             this.BtnYeniProje1,
             this.barButtonItem19,
@@ -298,7 +298,7 @@
 			// 
 			this.btnBugunTeslim.Caption = "Bugün teslim tarihi gelen projeler";
 			this.btnBugunTeslim.Id = 15;
-			this.btnBugunTeslim.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem15.ImageOptions.LargeImage")));
+			this.btnBugunTeslim.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnBugunTeslim.ImageOptions.LargeImage")));
 			this.btnBugunTeslim.Name = "btnBugunTeslim";
 			this.btnBugunTeslim.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBugunTeslim_ItemClick);
 			// 
@@ -309,12 +309,13 @@
 			this.barButtonItem16.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem16.ImageOptions.LargeImage")));
 			this.barButtonItem16.Name = "barButtonItem16";
 			// 
-			// barButtonItem17
+			// btnTeslimTarihiYaklasan
 			// 
-			this.barButtonItem17.Caption = "Yaklaşan rapor teslim tarihleri";
-			this.barButtonItem17.Id = 17;
-			this.barButtonItem17.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem17.ImageOptions.LargeImage")));
-			this.barButtonItem17.Name = "barButtonItem17";
+			this.btnTeslimTarihiYaklasan.Caption = "Teslim Tarihi Yaklaşan Projeler";
+			this.btnTeslimTarihiYaklasan.Id = 17;
+			this.btnTeslimTarihiYaklasan.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnTeslimTarihiYaklasan.ImageOptions.LargeImage")));
+			this.btnTeslimTarihiYaklasan.Name = "btnTeslimTarihiYaklasan";
+			this.btnTeslimTarihiYaklasan.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTeslimTarihiYaklasan_ItemClick);
 			// 
 			// BtnProjeListesi
 			// 
@@ -750,7 +751,7 @@
 			// 
 			this.ribbonPageGroup5.ItemLinks.Add(this.btnBugunTeslim);
 			this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem16);
-			this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem17);
+			this.ribbonPageGroup5.ItemLinks.Add(this.btnTeslimTarihiYaklasan);
 			this.ribbonPageGroup5.Name = "ribbonPageGroup5";
 			this.ribbonPageGroup5.Text = "Bildirimler ve Hatırlatmalar";
 			// 
@@ -972,7 +973,7 @@
 		private DevExpress.XtraBars.BarButtonItem btnDevamEdenProjeler;
 		private DevExpress.XtraBars.BarButtonItem btnBugunTeslim;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem16;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem17;
+		private DevExpress.XtraBars.BarButtonItem btnTeslimTarihiYaklasan;
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
 		private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup3;
