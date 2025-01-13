@@ -150,6 +150,12 @@
     <Compile Include="FrmGiderGir.Designer.cs">
       <DependentUpon>FrmGiderGir.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmGiderListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGiderListesi.Designer.cs">
+      <DependentUpon>FrmGiderListesi.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmiptalEdilenProjeler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -286,6 +292,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmGiderGir.resx">
       <DependentUpon>FrmGiderGir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGiderListesi.resx">
+      <DependentUpon>FrmGiderListesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmiptalEdilenProjeler.resx">
       <DependentUpon>FrmiptalEdilenProjeler.cs</DependentUpon>

@@ -103,7 +103,7 @@
 			this.btnDevamEdenProjeler1 = new DevExpress.XtraBars.BarButtonItem();
 			this.btniptalEdilenProjeler1 = new DevExpress.XtraBars.BarButtonItem();
 			this.btnGiderGir = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+			this.btnGiderListesi = new DevExpress.XtraBars.BarButtonItem();
 			this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
 			this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -217,7 +217,7 @@
             this.btnDevamEdenProjeler1,
             this.btniptalEdilenProjeler1,
             this.btnGiderGir,
-            this.barButtonItem4});
+            this.btnGiderListesi});
 			this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
 			this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4);
 			this.ribbonControl1.MaxItemId = 90;
@@ -763,16 +763,17 @@
 			// 
 			this.btnGiderGir.Caption = "Şirket Giderlerini Gir";
 			this.btnGiderGir.Id = 88;
-			this.btnGiderGir.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
+			this.btnGiderGir.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnGiderGir.ImageOptions.LargeImage")));
 			this.btnGiderGir.Name = "btnGiderGir";
 			this.btnGiderGir.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnGiderGir_ItemClick);
 			// 
-			// barButtonItem4
+			// btnGiderListesi
 			// 
-			this.barButtonItem4.Caption = "Şirket Giderleri Listesi";
-			this.barButtonItem4.Id = 89;
-			this.barButtonItem4.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
-			this.barButtonItem4.Name = "barButtonItem4";
+			this.btnGiderListesi.Caption = "Şirket Giderleri Listesi";
+			this.btnGiderListesi.Id = 89;
+			this.btnGiderListesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
+			this.btnGiderListesi.Name = "btnGiderListesi";
+			this.btnGiderListesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnGiderListesi_ItemClick);
 			// 
 			// ribbonPage1
 			// 
@@ -886,7 +887,7 @@
 			// ribbonPageGroup22
 			// 
 			this.ribbonPageGroup22.ItemLinks.Add(this.btnGiderGir);
-			this.ribbonPageGroup22.ItemLinks.Add(this.barButtonItem4);
+			this.ribbonPageGroup22.ItemLinks.Add(this.btnGiderListesi);
 			this.ribbonPageGroup22.Name = "ribbonPageGroup22";
 			this.ribbonPageGroup22.Text = "Gider Faturaları";
 			// 
@@ -1151,7 +1152,7 @@
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
 		private DevExpress.XtraBars.BarButtonItem btnGiderGir;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+		private DevExpress.XtraBars.BarButtonItem btnGiderListesi;
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup22;
 	}
 }

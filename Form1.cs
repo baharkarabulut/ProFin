@@ -235,5 +235,11 @@ namespace ProFin
 			FrmGiderGir giderGir = new FrmGiderGir();
 			giderGir.ShowDialog();
 		}
+
+		private void btnGiderListesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmGiderListesi giderListesi = new FrmGiderListesi();
+			giderListesi.ShowDialog();
+		}
 	}
 }
