@@ -46,8 +46,7 @@
 			this.btnTeslimTarihiYaklasan = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnProjeListesi = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnYeniProje1 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem19 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem20 = new DevExpress.XtraBars.BarButtonItem();
+			this.BtnProjeTakvimi = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem23 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem24 = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnMusteriListesi = new DevExpress.XtraBars.BarButtonItem();
@@ -114,6 +113,7 @@
 			this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
 			this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+			this.ribbonPageGroup24 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.ribbonPage4 = new DevExpress.XtraBars.Ribbon.RibbonPage();
 			this.ribbonPageGroup7 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.ribbonPageGroup23 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -161,8 +161,7 @@
             this.btnTeslimTarihiYaklasan,
             this.BtnProjeListesi,
             this.BtnYeniProje1,
-            this.barButtonItem19,
-            this.barButtonItem20,
+            this.BtnProjeTakvimi,
             this.barButtonItem23,
             this.barButtonItem24,
             this.BtnMusteriListesi,
@@ -350,19 +349,13 @@
 			this.BtnYeniProje1.Name = "BtnYeniProje1";
 			this.BtnYeniProje1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnYeniProje1_ItemClick);
 			// 
-			// barButtonItem19
+			// BtnProjeTakvimi
 			// 
-			this.barButtonItem19.Caption = "Görev Yönetimi";
-			this.barButtonItem19.Id = 20;
-			this.barButtonItem19.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem19.ImageOptions.LargeImage")));
-			this.barButtonItem19.Name = "barButtonItem19";
-			// 
-			// barButtonItem20
-			// 
-			this.barButtonItem20.Caption = "Proje Takvimi";
-			this.barButtonItem20.Id = 21;
-			this.barButtonItem20.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem20.ImageOptions.LargeImage")));
-			this.barButtonItem20.Name = "barButtonItem20";
+			this.BtnProjeTakvimi.Caption = "Proje Takvimi";
+			this.BtnProjeTakvimi.Id = 21;
+			this.BtnProjeTakvimi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem20.ImageOptions.LargeImage")));
+			this.BtnProjeTakvimi.Name = "BtnProjeTakvimi";
+			this.BtnProjeTakvimi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnProjeTakvimi_ItemClick);
 			// 
 			// barButtonItem23
 			// 
@@ -842,8 +835,7 @@
 			// 
 			// ribbonPageGroup11
 			// 
-			this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem19);
-			this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem20);
+			this.ribbonPageGroup11.ItemLinks.Add(this.BtnProjeTakvimi);
 			this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem23);
 			this.ribbonPageGroup11.ItemLinks.Add(this.barButtonItem24);
 			this.ribbonPageGroup11.Name = "ribbonPageGroup11";
@@ -852,7 +844,8 @@
 			// ribbonPage3
 			// 
 			this.ribbonPage3.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup6});
+            this.ribbonPageGroup6,
+            this.ribbonPageGroup24});
 			this.ribbonPage3.Name = "ribbonPage3";
 			this.ribbonPage3.Text = "Müşteri Yönetimi";
 			// 
@@ -861,11 +854,16 @@
 			this.ribbonPageGroup6.ItemLinks.Add(this.BtnMusteriListesi);
 			this.ribbonPageGroup6.ItemLinks.Add(this.BtnMusteriDetay);
 			this.ribbonPageGroup6.ItemLinks.Add(this.BtnYeniMusteri1);
-			this.ribbonPageGroup6.ItemLinks.Add(this.btnMusteriAnalizi);
-			this.ribbonPageGroup6.ItemLinks.Add(this.btnEtkilesimGecmisi);
-			this.ribbonPageGroup6.ItemLinks.Add(this.barButtonItem31);
 			this.ribbonPageGroup6.Name = "ribbonPageGroup6";
 			this.ribbonPageGroup6.Text = "Müşteri Yönetimi Modülü";
+			// 
+			// ribbonPageGroup24
+			// 
+			this.ribbonPageGroup24.ItemLinks.Add(this.btnMusteriAnalizi);
+			this.ribbonPageGroup24.ItemLinks.Add(this.btnEtkilesimGecmisi);
+			this.ribbonPageGroup24.ItemLinks.Add(this.barButtonItem31);
+			this.ribbonPageGroup24.Name = "ribbonPageGroup24";
+			this.ribbonPageGroup24.Text = "Genel Bilgiler";
 			// 
 			// ribbonPage4
 			// 
@@ -1090,8 +1088,7 @@
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup9;
 		private DevExpress.XtraBars.BarButtonItem BtnProjeListesi;
 		private DevExpress.XtraBars.BarButtonItem BtnYeniProje1;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem19;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem20;
+		private DevExpress.XtraBars.BarButtonItem BtnProjeTakvimi;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem23;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem24;
 		private DevExpress.XtraBars.BarButtonItem BtnMusteriListesi;
@@ -1166,6 +1163,7 @@
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup22;
 		private DevExpress.XtraBars.BarButtonItem btnOdenmeyenGiderler1;
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup23;
+		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup24;
 	}
 }
 

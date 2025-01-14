@@ -48,6 +48,10 @@
     <Reference Include="DevExpress.XtraGrid.v24.2, Version=24.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v24.2, Version=24.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraPrinting.v24.2, Version=24.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v24.2, Version=24.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v24.2.Core, Version=24.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v24.2.Core.Desktop, Version=24.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v24.2.Extensions, Version=24.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeMap.v24.2, Version=24.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeMap.v24.2.UI, Version=24.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -204,6 +208,12 @@
     <Compile Include="FrmProjeListesi.Designer.cs">
       <DependentUpon>FrmProjeListesi.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmProjeTakvimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProjeTakvimi.Designer.cs">
+      <DependentUpon>FrmProjeTakvimi.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmTamamlananProjeler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -331,6 +341,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProjeListesi.resx">
       <DependentUpon>FrmProjeListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProjeTakvimi.resx">
+      <DependentUpon>FrmProjeTakvimi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTamamlananProjeler.resx">
       <DependentUpon>FrmTamamlananProjeler.cs</DependentUpon>

@@ -266,5 +266,11 @@ namespace ProFin
 			FrmTamamlanmisSirketOdemeleri frm = new FrmTamamlanmisSirketOdemeleri();
 			frm.ShowDialog();
 		}
+
+		private void BtnProjeTakvimi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmProjeTakvimi frm = new FrmProjeTakvimi();
+			frm.ShowDialog();
+		}
 	}
 }

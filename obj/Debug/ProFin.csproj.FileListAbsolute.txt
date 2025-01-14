@@ -101,3 +101,16 @@ C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmGiderGir.resources
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmGiderListesi.resources
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmOdenmeyenGiderler.resources
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmTamamlanmisSirketOdemeleri.resources
+C:\Users\BAHARS\source\repos\ProFin\bin\Debug\DevExpress.XtraScheduler.v24.2.Core.Desktop.dll
+C:\Users\BAHARS\source\repos\ProFin\bin\Debug\DevExpress.XtraScheduler.v24.2.Core.dll
+C:\Users\BAHARS\source\repos\ProFin\bin\Debug\DevExpress.XtraScheduler.v24.2.dll
+C:\Users\BAHARS\source\repos\ProFin\bin\Debug\DevExpress.XtraScheduler.v24.2.Extensions.dll
+C:\Users\BAHARS\source\repos\ProFin\bin\Debug\DevExpress.XtraSpellChecker.v24.2.dll
+C:\Users\BAHARS\source\repos\ProFin\bin\Debug\DevExpress.SpellChecker.v24.2.Core.dll
+C:\Users\BAHARS\source\repos\ProFin\bin\Debug\DevExpress.XtraScheduler.v24.2.xml
+C:\Users\BAHARS\source\repos\ProFin\bin\Debug\DevExpress.XtraScheduler.v24.2.Core.xml
+C:\Users\BAHARS\source\repos\ProFin\bin\Debug\DevExpress.XtraScheduler.v24.2.Core.Desktop.xml
+C:\Users\BAHARS\source\repos\ProFin\bin\Debug\DevExpress.XtraScheduler.v24.2.Extensions.xml
+C:\Users\BAHARS\source\repos\ProFin\bin\Debug\DevExpress.XtraSpellChecker.v24.2.xml
+C:\Users\BAHARS\source\repos\ProFin\bin\Debug\DevExpress.SpellChecker.v24.2.Core.xml
+C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmProjeTakvimi.resources
