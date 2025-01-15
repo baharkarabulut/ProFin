@@ -203,6 +203,12 @@
     <Compile Include="FrmProjeDetay.Designer.cs">
       <DependentUpon>FrmProjeDetay.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmProjeFatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProjeFatura.Designer.cs">
+      <DependentUpon>FrmProjeFatura.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmProjeListesi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -345,6 +351,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProjeDetay.resx">
       <DependentUpon>FrmProjeDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProjeFatura.resx">
+      <DependentUpon>FrmProjeFatura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProjeListesi.resx">
       <DependentUpon>FrmProjeListesi.cs</DependentUpon>
