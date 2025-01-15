@@ -272,5 +272,11 @@ namespace ProFin
 			FrmProjeTakvimi frm = new FrmProjeTakvimi();
 			frm.ShowDialog();
 		}
+
+		private void BtnProjeMusteri_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmProjeMusteri frm = new FrmProjeMusteri();
+			frm.ShowDialog();
+		}
 	}
 }

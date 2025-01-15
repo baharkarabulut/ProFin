@@ -52,6 +52,7 @@
     <Reference Include="DevExpress.XtraScheduler.v24.2.Core, Version=24.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraScheduler.v24.2.Core.Desktop, Version=24.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraScheduler.v24.2.Extensions, Version=24.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v24.2, Version=24.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraTreeMap.v24.2, Version=24.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeMap.v24.2.UI, Version=24.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
@@ -208,6 +209,12 @@
     <Compile Include="FrmProjeListesi.Designer.cs">
       <DependentUpon>FrmProjeListesi.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmProjeMusteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProjeMusteri.Designer.cs">
+      <DependentUpon>FrmProjeMusteri.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmProjeTakvimi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -341,6 +348,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProjeListesi.resx">
       <DependentUpon>FrmProjeListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProjeMusteri.resx">
+      <DependentUpon>FrmProjeMusteri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProjeTakvimi.resx">
       <DependentUpon>FrmProjeTakvimi.cs</DependentUpon>

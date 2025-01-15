@@ -22,37 +22,31 @@ namespace ProFin
 		{
 
 		}
-
 		private void FrmProjeTakvimi_Load(object sender, EventArgs e)
 		{
-			// Storage oluşturma ve SchedulerControl'e bağlama
 			schedulerControl1.Storage = new DevExpress.XtraScheduler.SchedulerStorage();
 
-			// Veritabanından projeleri çek
 			var projeler = db.Projeler.ToList();
 
 			foreach (var proje in projeler)
 			{
-				// Null kontrolü ve başlangıç tarihi için randevu oluşturma
 				if (proje.BaslangicTarihi.HasValue)
 				{
 					var baslangicAppointment = schedulerControl1.Storage.CreateAppointment(DevExpress.XtraScheduler.AppointmentType.Normal);
-					baslangicAppointment.Start = proje.BaslangicTarihi.Value; // Başlangıç tarihi
+					baslangicAppointment.Start = proje.BaslangicTarihi.Value;
 					
 					baslangicAppointment.Subject = $"{proje.ProjeAdi} (Başlangıç)";
 					schedulerControl1.Storage.Appointments.Add(baslangicAppointment);
 				}
 
-				// Null kontrolü ve bitiş tarihi için randevu oluşturma
 				if (proje.BitisTarihi.HasValue)
 				{
 					var bitisAppointment = schedulerControl1.Storage.CreateAppointment(DevExpress.XtraScheduler.AppointmentType.Normal);
-					bitisAppointment.Start = proje.BitisTarihi.Value; // Bitiş tarihi
+					bitisAppointment.Start = proje.BitisTarihi.Value;
 					bitisAppointment.Subject = $"{proje.ProjeAdi} (Bitiş)";
 					schedulerControl1.Storage.Appointments.Add(bitisAppointment);
 				}
 			}
-
 			schedulerControl1.Views.DayView.TimeRulers.Clear();
 			schedulerControl1.Views.WorkWeekView.TimeRulers.Clear();
 		}
