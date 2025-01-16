@@ -116,3 +116,12 @@ C:\Users\BAHARS\source\repos\ProFin\bin\Debug\DevExpress.SpellChecker.v24.2.Core
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmProjeTakvimi.resources
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmProjeMusteri.resources
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmProjeFatura.resources
+C:\Users\BAHARS\source\repos\ProFin\bin\Debug\System.Text.Json.dll
+C:\Users\BAHARS\source\repos\ProFin\bin\Debug\System.ValueTuple.dll
+C:\Users\BAHARS\source\repos\ProFin\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\BAHARS\source\repos\ProFin\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\BAHARS\source\repos\ProFin\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\BAHARS\source\repos\ProFin\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.csproj.SuggestedBindingRedirects.cache
+C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.exe.config
+C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmMusteriProje.resources

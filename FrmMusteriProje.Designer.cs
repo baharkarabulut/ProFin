@@ -1,6 +1,6 @@
 ﻿namespace ProFin
 {
-	partial class FrmProjeMusteri
+	partial class FrmMusteriProje
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -50,7 +50,7 @@
 			// 
 			// splitContainerControl1
 			// 
-			this.splitContainerControl1.Location = new System.Drawing.Point(1, 2);
+			this.splitContainerControl1.Location = new System.Drawing.Point(-180, -5);
 			this.splitContainerControl1.Name = "splitContainerControl1";
 			// 
 			// splitContainerControl1.Panel1
@@ -64,7 +64,7 @@
 			this.splitContainerControl1.Panel2.Text = "Panel2";
 			this.splitContainerControl1.Size = new System.Drawing.Size(1161, 461);
 			this.splitContainerControl1.SplitterPosition = 799;
-			this.splitContainerControl1.TabIndex = 0;
+			this.splitContainerControl1.TabIndex = 1;
 			// 
 			// treeList1
 			// 
@@ -77,11 +77,10 @@
             this.Toll,
             this.coltreeListColumn6,
             this.coltreeListColumn7});
-			this.treeList1.Location = new System.Drawing.Point(0, 0);
+			this.treeList1.Location = new System.Drawing.Point(178, 5);
 			this.treeList1.Name = "treeList1";
-			this.treeList1.Size = new System.Drawing.Size(797, 461);
+			this.treeList1.Size = new System.Drawing.Size(619, 461);
 			this.treeList1.TabIndex = 0;
-			this.treeList1.CustomUnboundColumnData += new DevExpress.XtraTreeList.CustomColumnDataEventHandler(this.treeList1_CustomUnboundColumnData);
 			this.treeList1.FocusedNodeChanged += new DevExpress.XtraTreeList.FocusedNodeChangedEventHandler(this.treeList1_FocusedNodeChanged);
 			// 
 			// coltreeListColumn0
@@ -158,16 +157,16 @@
 			this.lblBilgi.TabIndex = 10;
 			this.lblBilgi.Text = "label1";
 			// 
-			// FrmProjeMusteri
+			// FrmMusteriProje
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(1167, 464);
+			this.ClientSize = new System.Drawing.Size(985, 459);
 			this.Controls.Add(this.splitContainerControl1);
-			this.Name = "FrmProjeMusteri";
+			this.Name = "FrmMusteriProje";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Projeye Bağlı Müşteri Bilgileri";
-			this.Load += new System.EventHandler(this.FrmProjeMusteri_Load);
+			this.Text = "Müşteriye Bağlı Proje Sayısı ve Geliri";
+			this.Load += new System.EventHandler(this.FrmMusteriProje_Load);
 			((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel1)).EndInit();
 			this.splitContainerControl1.Panel1.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel2)).EndInit();

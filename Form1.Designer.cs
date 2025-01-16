@@ -53,7 +53,6 @@
 			this.BtnYeniMusteri1 = new DevExpress.XtraBars.BarButtonItem();
 			this.btnMusteriAnalizi = new DevExpress.XtraBars.BarButtonItem();
 			this.btnEtkilesimGecmisi = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem31 = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnFaturaListesi = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnFaturaDetay = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnFaturaOlustur1 = new DevExpress.XtraBars.BarButtonItem();
@@ -103,6 +102,7 @@
 			this.btnGiderGir = new DevExpress.XtraBars.BarButtonItem();
 			this.btnGiderListesi = new DevExpress.XtraBars.BarButtonItem();
 			this.btnOdenmeyenGiderler1 = new DevExpress.XtraBars.BarButtonItem();
+			this.BtnMusteriProje = new DevExpress.XtraBars.BarButtonItem();
 			this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
 			this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -168,7 +168,6 @@
             this.BtnYeniMusteri1,
             this.btnMusteriAnalizi,
             this.btnEtkilesimGecmisi,
-            this.barButtonItem31,
             this.BtnFaturaListesi,
             this.BtnFaturaDetay,
             this.BtnFaturaOlustur1,
@@ -217,10 +216,11 @@
             this.btniptalEdilenProjeler1,
             this.btnGiderGir,
             this.btnGiderListesi,
-            this.btnOdenmeyenGiderler1});
+            this.btnOdenmeyenGiderler1,
+            this.BtnMusteriProje});
 			this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
 			this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4);
-			this.ribbonControl1.MaxItemId = 91;
+			this.ribbonControl1.MaxItemId = 92;
 			this.ribbonControl1.Name = "ribbonControl1";
 			this.ribbonControl1.OptionsMenuMinWidth = 412;
 			this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -404,13 +404,6 @@
 			this.btnEtkilesimGecmisi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnEtkilesimGecmisi.ImageOptions.LargeImage")));
 			this.btnEtkilesimGecmisi.Name = "btnEtkilesimGecmisi";
 			this.btnEtkilesimGecmisi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnEtkilesimGecmisi_ItemClick);
-			// 
-			// barButtonItem31
-			// 
-			this.barButtonItem31.Caption = "Toplu İşlemler";
-			this.barButtonItem31.Id = 32;
-			this.barButtonItem31.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem31.ImageOptions.LargeImage")));
-			this.barButtonItem31.Name = "barButtonItem31";
 			// 
 			// BtnFaturaListesi
 			// 
@@ -775,6 +768,14 @@
 			this.btnOdenmeyenGiderler1.Name = "btnOdenmeyenGiderler1";
 			this.btnOdenmeyenGiderler1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnOdenmeyenGiderler1_ItemClick);
 			// 
+			// BtnMusteriProje
+			// 
+			this.BtnMusteriProje.Caption = "Müşteriye Bağlı Proje Sayısı ve Geliri";
+			this.BtnMusteriProje.Id = 91;
+			this.BtnMusteriProje.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
+			this.BtnMusteriProje.Name = "BtnMusteriProje";
+			this.BtnMusteriProje.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnMusteriProje_ItemClick);
+			// 
 			// ribbonPage1
 			// 
 			this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -863,7 +864,7 @@
 			// 
 			this.ribbonPageGroup24.ItemLinks.Add(this.btnMusteriAnalizi);
 			this.ribbonPageGroup24.ItemLinks.Add(this.btnEtkilesimGecmisi);
-			this.ribbonPageGroup24.ItemLinks.Add(this.barButtonItem31);
+			this.ribbonPageGroup24.ItemLinks.Add(this.BtnMusteriProje);
 			this.ribbonPageGroup24.Name = "ribbonPageGroup24";
 			this.ribbonPageGroup24.Text = "Genel Bilgiler";
 			// 
@@ -1097,7 +1098,6 @@
 		private DevExpress.XtraBars.BarButtonItem BtnYeniMusteri1;
 		private DevExpress.XtraBars.BarButtonItem btnMusteriAnalizi;
 		private DevExpress.XtraBars.BarButtonItem btnEtkilesimGecmisi;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem31;
 		private DevExpress.XtraBars.BarButtonItem BtnFaturaListesi;
 		private DevExpress.XtraBars.BarButtonItem BtnFaturaDetay;
 		private DevExpress.XtraBars.BarButtonItem BtnFaturaOlustur1;
@@ -1166,6 +1166,7 @@
 		private DevExpress.XtraBars.BarButtonItem btnOdenmeyenGiderler1;
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup23;
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup24;
+		private DevExpress.XtraBars.BarButtonItem BtnMusteriProje;
 	}
 }
 
