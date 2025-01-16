@@ -125,3 +125,4 @@ C:\Users\BAHARS\source\repos\ProFin\bin\Debug\System.Runtime.CompilerServices.Un
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.csproj.SuggestedBindingRedirects.cache
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.exe.config
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmMusteriProje.resources
+C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmFaturaAnaliz.resources

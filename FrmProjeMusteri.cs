@@ -22,7 +22,7 @@ namespace ProFin
 		{
 
 		}
-
+		
 		private void FrmProjeMusteri_Load(object sender, EventArgs e)
 		{
 			var veriler = db.Projeler.Select(p => new

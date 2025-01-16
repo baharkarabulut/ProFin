@@ -290,5 +290,11 @@ namespace ProFin
 			FrmMusteriProje frm = new FrmMusteriProje();
 			frm.ShowDialog();
 		}
+
+		private void BtnFaturaAnaliz_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmFaturaAnaliz frm = new FrmFaturaAnaliz();
+			frm.ShowDialog();
+		}
 	}
 }

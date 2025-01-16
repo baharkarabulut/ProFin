@@ -96,18 +96,21 @@ namespace ProFin
 		{
 			GridSatirDetaylariniGoster();
 			if (gridView1.GetFocusedRowCellValue("BaslangicTarihi") != null &&
-	   gridView1.GetFocusedRowCellValue("BitisTarihi") != null)
+	   gridView1.GetFocusedRowCellValue("BitisTarihi") != null && gridView1.GetFocusedRowCellValue("TeslimTarihi") != null)
 			{
 				string baslangic = Convert.ToDateTime(gridView1.GetFocusedRowCellValue("BaslangicTarihi")).ToString("dd.MM.yyyy");
 				string bitis = Convert.ToDateTime(gridView1.GetFocusedRowCellValue("BitisTarihi")).ToString("dd.MM.yyyy");
+				string teslim = Convert.ToDateTime(gridView1.GetFocusedRowCellValue("TeslimTarihi")).ToString("dd.MM.yyyy");
 
 				lblBaslangicTarihi.Text = $"Başlangıç Tarihi: {baslangic}";
 				lblBitisTarihi.Text = $"Bitiş Tarihi: {bitis}";
+				lblTeslimTarihi.Text = $"Teslim Tarihi: {teslim}";
 			}
 			else
 			{
 				lblBaslangicTarihi.Text = "Başlangıç tarihi yok";
 				lblBitisTarihi.Text = "Bitiş tarihi yok";
+				lblTeslimTarihi.Text = "Teslim tarihi yok";
 			}
 		}
 

@@ -56,7 +56,7 @@
 			this.BtnFaturaListesi = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnFaturaDetay = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnFaturaOlustur1 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem36 = new DevExpress.XtraBars.BarButtonItem();
+			this.BtnFaturaAnaliz = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem37 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem38 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem39 = new DevExpress.XtraBars.BarButtonItem();
@@ -171,7 +171,7 @@
             this.BtnFaturaListesi,
             this.BtnFaturaDetay,
             this.BtnFaturaOlustur1,
-            this.barButtonItem36,
+            this.BtnFaturaAnaliz,
             this.barButtonItem37,
             this.barButtonItem38,
             this.barButtonItem39,
@@ -429,12 +429,13 @@
 			this.BtnFaturaOlustur1.Name = "BtnFaturaOlustur1";
 			this.BtnFaturaOlustur1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnFaturaOlustur1_ItemClick);
 			// 
-			// barButtonItem36
+			// BtnFaturaAnaliz
 			// 
-			this.barButtonItem36.Caption = "Faturaların Analiz Raporları";
-			this.barButtonItem36.Id = 37;
-			this.barButtonItem36.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem36.ImageOptions.LargeImage")));
-			this.barButtonItem36.Name = "barButtonItem36";
+			this.BtnFaturaAnaliz.Caption = "Faturaların Analiz Raporları";
+			this.BtnFaturaAnaliz.Id = 37;
+			this.BtnFaturaAnaliz.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnFaturaAnaliz.ImageOptions.LargeImage")));
+			this.BtnFaturaAnaliz.Name = "BtnFaturaAnaliz";
+			this.BtnFaturaAnaliz.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnFaturaAnaliz_ItemClick);
 			// 
 			// barButtonItem37
 			// 
@@ -772,7 +773,7 @@
 			// 
 			this.BtnMusteriProje.Caption = "Müşteriye Bağlı Proje Sayısı ve Geliri";
 			this.BtnMusteriProje.Id = 91;
-			this.BtnMusteriProje.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
+			this.BtnMusteriProje.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnMusteriProje.ImageOptions.LargeImage")));
 			this.BtnMusteriProje.Name = "BtnMusteriProje";
 			this.BtnMusteriProje.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnMusteriProje_ItemClick);
 			// 
@@ -888,7 +889,7 @@
 			// ribbonPageGroup23
 			// 
 			this.ribbonPageGroup23.ItemLinks.Add(this.btnOdenmemisFaturalar);
-			this.ribbonPageGroup23.ItemLinks.Add(this.barButtonItem36);
+			this.ribbonPageGroup23.ItemLinks.Add(this.BtnFaturaAnaliz);
 			this.ribbonPageGroup23.ItemLinks.Add(this.barButtonItem37);
 			this.ribbonPageGroup23.ItemLinks.Add(this.barButtonItem38);
 			this.ribbonPageGroup23.ItemLinks.Add(this.barButtonItem39);
@@ -1101,7 +1102,7 @@
 		private DevExpress.XtraBars.BarButtonItem BtnFaturaListesi;
 		private DevExpress.XtraBars.BarButtonItem BtnFaturaDetay;
 		private DevExpress.XtraBars.BarButtonItem BtnFaturaOlustur1;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem36;
+		private DevExpress.XtraBars.BarButtonItem BtnFaturaAnaliz;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem37;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem38;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem39;
