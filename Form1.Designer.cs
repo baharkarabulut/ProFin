@@ -57,7 +57,7 @@
 			this.BtnFaturaDetay = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnFaturaOlustur1 = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnFaturaAnaliz = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem37 = new DevExpress.XtraBars.BarButtonItem();
+			this.BtnFaturaFinansal = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem38 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem39 = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnGelirGider = new DevExpress.XtraBars.BarButtonItem();
@@ -172,7 +172,7 @@
             this.BtnFaturaDetay,
             this.BtnFaturaOlustur1,
             this.BtnFaturaAnaliz,
-            this.barButtonItem37,
+            this.BtnFaturaFinansal,
             this.barButtonItem38,
             this.barButtonItem39,
             this.BtnGelirGider,
@@ -230,7 +230,7 @@
             this.ribbonPage4,
             this.ribbonPage5,
             this.ribbonPage6});
-			this.ribbonControl1.Size = new System.Drawing.Size(1540, 150);
+			this.ribbonControl1.Size = new System.Drawing.Size(1540, 183);
 			// 
 			// BtnYeniProje
 			// 
@@ -437,12 +437,13 @@
 			this.BtnFaturaAnaliz.Name = "BtnFaturaAnaliz";
 			this.BtnFaturaAnaliz.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnFaturaAnaliz_ItemClick);
 			// 
-			// barButtonItem37
+			// BtnFaturaFinansal
 			// 
-			this.barButtonItem37.Caption = "Faturaların Finansal Durum Raporları";
-			this.barButtonItem37.Id = 38;
-			this.barButtonItem37.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem37.ImageOptions.LargeImage")));
-			this.barButtonItem37.Name = "barButtonItem37";
+			this.BtnFaturaFinansal.Caption = "Faturaların Finansal Durum Raporları";
+			this.BtnFaturaFinansal.Id = 38;
+			this.BtnFaturaFinansal.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem37.ImageOptions.LargeImage")));
+			this.BtnFaturaFinansal.Name = "BtnFaturaFinansal";
+			this.BtnFaturaFinansal.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnFaturaFinansal_ItemClick);
 			// 
 			// barButtonItem38
 			// 
@@ -890,7 +891,7 @@
 			// 
 			this.ribbonPageGroup23.ItemLinks.Add(this.btnOdenmemisFaturalar);
 			this.ribbonPageGroup23.ItemLinks.Add(this.BtnFaturaAnaliz);
-			this.ribbonPageGroup23.ItemLinks.Add(this.barButtonItem37);
+			this.ribbonPageGroup23.ItemLinks.Add(this.BtnFaturaFinansal);
 			this.ribbonPageGroup23.ItemLinks.Add(this.barButtonItem38);
 			this.ribbonPageGroup23.ItemLinks.Add(this.barButtonItem39);
 			this.ribbonPageGroup23.Name = "ribbonPageGroup23";
@@ -1103,7 +1104,7 @@
 		private DevExpress.XtraBars.BarButtonItem BtnFaturaDetay;
 		private DevExpress.XtraBars.BarButtonItem BtnFaturaOlustur1;
 		private DevExpress.XtraBars.BarButtonItem BtnFaturaAnaliz;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem37;
+		private DevExpress.XtraBars.BarButtonItem BtnFaturaFinansal;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem38;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem39;
 		private DevExpress.XtraBars.BarButtonItem BtnGelirGider;

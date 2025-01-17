@@ -126,3 +126,4 @@ C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.csproj.SuggestedBindingRedi
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.exe.config
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmMusteriProje.resources
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmFaturaAnaliz.resources
+C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmFaturaFinansal.resources

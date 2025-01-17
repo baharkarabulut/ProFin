@@ -296,5 +296,11 @@ namespace ProFin
 			FrmFaturaAnaliz frm = new FrmFaturaAnaliz();
 			frm.ShowDialog();
 		}
+
+		private void BtnFaturaFinansal_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmFaturaFinansal frm = new FrmFaturaFinansal();	
+			frm.ShowDialog();
+		}
 	}
 }

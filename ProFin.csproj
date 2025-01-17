@@ -143,6 +143,12 @@
     <Compile Include="FrmFaturaDetay.Designer.cs">
       <DependentUpon>FrmFaturaDetay.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmFaturaFinansal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFaturaFinansal.Designer.cs">
+      <DependentUpon>FrmFaturaFinansal.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmFaturaListesi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -333,6 +339,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFaturaDetay.resx">
       <DependentUpon>FrmFaturaDetay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFaturaFinansal.resx">
+      <DependentUpon>FrmFaturaFinansal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFaturaListesi.resx">
       <DependentUpon>FrmFaturaListesi.cs</DependentUpon>
