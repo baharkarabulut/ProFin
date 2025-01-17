@@ -58,24 +58,22 @@
 			this.BtnFaturaOlustur1 = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnFaturaAnaliz = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnFaturaFinansal = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem38 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem39 = new DevExpress.XtraBars.BarButtonItem();
+			this.BtnFaturaListesi1 = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnGelirGider = new DevExpress.XtraBars.BarButtonItem();
 			this.btnOdenmemisFaturalar1 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem43 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem44 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem45 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem46 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem47 = new DevExpress.XtraBars.BarButtonItem();
+			this.BtnMusteriProje1 = new DevExpress.XtraBars.BarButtonItem();
+			this.BtnFaturaAnaliz1 = new DevExpress.XtraBars.BarButtonItem();
+			this.BtnFaturaFinansal1 = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnTamamlananProje = new DevExpress.XtraBars.BarButtonItem();
 			this.btnDevamEdenProjeRapor = new DevExpress.XtraBars.BarButtonItem();
 			this.btniptalEdilenProje = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem55 = new DevExpress.XtraBars.BarButtonItem();
+			this.BtnProjeTakvimi1 = new DevExpress.XtraBars.BarButtonItem();
 			this.btnGiderListesi1 = new DevExpress.XtraBars.BarButtonItem();
 			this.btnOdenmeyenGiderler2 = new DevExpress.XtraBars.BarButtonItem();
 			this.btnTamamlanmisSirketOdemeleri = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem48 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem59 = new DevExpress.XtraBars.BarButtonItem();
+			this.BtnFaturaListesi2 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem60 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem61 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem62 = new DevExpress.XtraBars.BarButtonItem();
@@ -136,6 +134,7 @@
 			this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
 			this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+			this.BtnEtkinlikler = new DevExpress.XtraBars.BarButtonItem();
 			((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
 			this.SuspendLayout();
@@ -173,24 +172,22 @@
             this.BtnFaturaOlustur1,
             this.BtnFaturaAnaliz,
             this.BtnFaturaFinansal,
-            this.barButtonItem38,
-            this.barButtonItem39,
+            this.BtnFaturaListesi1,
             this.BtnGelirGider,
             this.btnOdenmemisFaturalar1,
             this.barButtonItem43,
-            this.barButtonItem44,
-            this.barButtonItem45,
-            this.barButtonItem46,
-            this.barButtonItem47,
+            this.BtnMusteriProje1,
+            this.BtnFaturaAnaliz1,
+            this.BtnFaturaFinansal1,
             this.BtnTamamlananProje,
             this.btnDevamEdenProjeRapor,
             this.btniptalEdilenProje,
-            this.barButtonItem55,
+            this.BtnProjeTakvimi1,
             this.btnGiderListesi1,
             this.btnOdenmeyenGiderler2,
             this.btnTamamlanmisSirketOdemeleri,
             this.barButtonItem48,
-            this.barButtonItem59,
+            this.BtnFaturaListesi2,
             this.barButtonItem60,
             this.barButtonItem61,
             this.barButtonItem62,
@@ -217,10 +214,11 @@
             this.btnGiderGir,
             this.btnGiderListesi,
             this.btnOdenmeyenGiderler1,
-            this.BtnMusteriProje});
+            this.BtnMusteriProje,
+            this.BtnEtkinlikler});
 			this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
 			this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4);
-			this.ribbonControl1.MaxItemId = 92;
+			this.ribbonControl1.MaxItemId = 93;
 			this.ribbonControl1.Name = "ribbonControl1";
 			this.ribbonControl1.OptionsMenuMinWidth = 412;
 			this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -230,7 +228,7 @@
             this.ribbonPage4,
             this.ribbonPage5,
             this.ribbonPage6});
-			this.ribbonControl1.Size = new System.Drawing.Size(1540, 183);
+			this.ribbonControl1.Size = new System.Drawing.Size(1540, 150);
 			// 
 			// BtnYeniProje
 			// 
@@ -441,23 +439,17 @@
 			// 
 			this.BtnFaturaFinansal.Caption = "Faturaların Finansal Durum Raporları";
 			this.BtnFaturaFinansal.Id = 38;
-			this.BtnFaturaFinansal.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem37.ImageOptions.LargeImage")));
+			this.BtnFaturaFinansal.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnFaturaFinansal.ImageOptions.LargeImage")));
 			this.BtnFaturaFinansal.Name = "BtnFaturaFinansal";
 			this.BtnFaturaFinansal.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnFaturaFinansal_ItemClick);
 			// 
-			// barButtonItem38
+			// BtnFaturaListesi1
 			// 
-			this.barButtonItem38.Caption = "Toplu İşlemler";
-			this.barButtonItem38.Id = 39;
-			this.barButtonItem38.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem38.ImageOptions.LargeImage")));
-			this.barButtonItem38.Name = "barButtonItem38";
-			// 
-			// barButtonItem39
-			// 
-			this.barButtonItem39.Caption = "Fatura Yazdırma ve Paylaşma";
-			this.barButtonItem39.Id = 40;
-			this.barButtonItem39.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem39.ImageOptions.LargeImage")));
-			this.barButtonItem39.Name = "barButtonItem39";
+			this.BtnFaturaListesi1.Caption = "Fatura Yazdırma";
+			this.BtnFaturaListesi1.Id = 40;
+			this.BtnFaturaListesi1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem39.ImageOptions.LargeImage")));
+			this.BtnFaturaListesi1.Name = "BtnFaturaListesi1";
+			this.BtnFaturaListesi1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnFaturaListesi1_ItemClick);
 			// 
 			// BtnGelirGider
 			// 
@@ -482,33 +474,29 @@
 			this.barButtonItem43.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem43.ImageOptions.LargeImage")));
 			this.barButtonItem43.Name = "barButtonItem43";
 			// 
-			// barButtonItem44
+			// BtnMusteriProje1
 			// 
-			this.barButtonItem44.Caption = "Müşteri Bazlı Fatura Raporu";
-			this.barButtonItem44.Id = 45;
-			this.barButtonItem44.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem44.ImageOptions.LargeImage")));
-			this.barButtonItem44.Name = "barButtonItem44";
+			this.BtnMusteriProje1.Caption = "Müşteriye Bağlı Proje Sayısı ve Geliri";
+			this.BtnMusteriProje1.Id = 45;
+			this.BtnMusteriProje1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem44.ImageOptions.LargeImage")));
+			this.BtnMusteriProje1.Name = "BtnMusteriProje1";
+			this.BtnMusteriProje1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnMusteriProje1_ItemClick);
 			// 
-			// barButtonItem45
+			// BtnFaturaAnaliz1
 			// 
-			this.barButtonItem45.Caption = "Tarih Bazlı Fatura Raporu";
-			this.barButtonItem45.Id = 46;
-			this.barButtonItem45.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem45.ImageOptions.LargeImage")));
-			this.barButtonItem45.Name = "barButtonItem45";
+			this.BtnFaturaAnaliz1.Caption = "Faturaların Analiz Raporları";
+			this.BtnFaturaAnaliz1.Id = 46;
+			this.BtnFaturaAnaliz1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem45.ImageOptions.LargeImage")));
+			this.BtnFaturaAnaliz1.Name = "BtnFaturaAnaliz1";
+			this.BtnFaturaAnaliz1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnFaturaAnaliz1_ItemClick);
 			// 
-			// barButtonItem46
+			// BtnFaturaFinansal1
 			// 
-			this.barButtonItem46.Caption = "KDV Raporu";
-			this.barButtonItem46.Id = 47;
-			this.barButtonItem46.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem46.ImageOptions.LargeImage")));
-			this.barButtonItem46.Name = "barButtonItem46";
-			// 
-			// barButtonItem47
-			// 
-			this.barButtonItem47.Caption = "Ödeme Durumu Raporu";
-			this.barButtonItem47.Id = 48;
-			this.barButtonItem47.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem47.ImageOptions.LargeImage")));
-			this.barButtonItem47.Name = "barButtonItem47";
+			this.BtnFaturaFinansal1.Caption = "Faturaların Finansal Durum Raporları";
+			this.BtnFaturaFinansal1.Id = 47;
+			this.BtnFaturaFinansal1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem46.ImageOptions.LargeImage")));
+			this.BtnFaturaFinansal1.Name = "BtnFaturaFinansal1";
+			this.BtnFaturaFinansal1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnFaturaFinansal1_ItemClick);
 			// 
 			// BtnTamamlananProje
 			// 
@@ -534,12 +522,13 @@
 			this.btniptalEdilenProje.Name = "btniptalEdilenProje";
 			this.btniptalEdilenProje.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btniptalEdilenProje_ItemClick);
 			// 
-			// barButtonItem55
+			// BtnProjeTakvimi1
 			// 
-			this.barButtonItem55.Caption = "Proje Bazlı Gelir ve Gider";
-			this.barButtonItem55.Id = 56;
-			this.barButtonItem55.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem55.ImageOptions.LargeImage")));
-			this.barButtonItem55.Name = "barButtonItem55";
+			this.BtnProjeTakvimi1.Caption = "Proje Takvimi";
+			this.BtnProjeTakvimi1.Id = 56;
+			this.BtnProjeTakvimi1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem55.ImageOptions.LargeImage")));
+			this.BtnProjeTakvimi1.Name = "BtnProjeTakvimi1";
+			this.BtnProjeTakvimi1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnProjeTakvimi1_ItemClick);
 			// 
 			// btnGiderListesi1
 			// 
@@ -571,12 +560,13 @@
 			this.barButtonItem48.Id = 61;
 			this.barButtonItem48.Name = "barButtonItem48";
 			// 
-			// barButtonItem59
+			// BtnFaturaListesi2
 			// 
-			this.barButtonItem59.Caption = "Fatura Yazdırma ve Paylaşma";
-			this.barButtonItem59.Id = 62;
-			this.barButtonItem59.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem59.ImageOptions.LargeImage")));
-			this.barButtonItem59.Name = "barButtonItem59";
+			this.BtnFaturaListesi2.Caption = "Fatura Yazdırma";
+			this.BtnFaturaListesi2.Id = 62;
+			this.BtnFaturaListesi2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem59.ImageOptions.LargeImage")));
+			this.BtnFaturaListesi2.Name = "BtnFaturaListesi2";
+			this.BtnFaturaListesi2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnFaturaListesi2_ItemClick);
 			// 
 			// barButtonItem60
 			// 
@@ -810,6 +800,7 @@
 			this.ribbonPageGroup5.ItemLinks.Add(this.btnBugunTeslim);
 			this.ribbonPageGroup5.ItemLinks.Add(this.btnOdenmeyenGiderler);
 			this.ribbonPageGroup5.ItemLinks.Add(this.btnTeslimTarihiYaklasan);
+			this.ribbonPageGroup5.ItemLinks.Add(this.BtnEtkinlikler);
 			this.ribbonPageGroup5.Name = "ribbonPageGroup5";
 			this.ribbonPageGroup5.Text = "Bildirimler ve Hatırlatmalar";
 			// 
@@ -892,8 +883,7 @@
 			this.ribbonPageGroup23.ItemLinks.Add(this.btnOdenmemisFaturalar);
 			this.ribbonPageGroup23.ItemLinks.Add(this.BtnFaturaAnaliz);
 			this.ribbonPageGroup23.ItemLinks.Add(this.BtnFaturaFinansal);
-			this.ribbonPageGroup23.ItemLinks.Add(this.barButtonItem38);
-			this.ribbonPageGroup23.ItemLinks.Add(this.barButtonItem39);
+			this.ribbonPageGroup23.ItemLinks.Add(this.BtnFaturaListesi1);
 			this.ribbonPageGroup23.Name = "ribbonPageGroup23";
 			this.ribbonPageGroup23.Text = "Genel İşlemler";
 			// 
@@ -926,19 +916,18 @@
 			// 
 			// ribbonPageGroup10
 			// 
-			this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem44);
-			this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem45);
-			this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem46);
-			this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem47);
+			this.ribbonPageGroup10.ItemLinks.Add(this.BtnMusteriProje1);
+			this.ribbonPageGroup10.ItemLinks.Add(this.BtnFaturaAnaliz1);
+			this.ribbonPageGroup10.ItemLinks.Add(this.BtnFaturaFinansal1);
 			this.ribbonPageGroup10.Name = "ribbonPageGroup10";
-			this.ribbonPageGroup10.Text = "Fatura Raporları";
+			this.ribbonPageGroup10.Text = "Detay Raporlar";
 			// 
 			// ribbonPageGroup12
 			// 
 			this.ribbonPageGroup12.ItemLinks.Add(this.BtnTamamlananProje);
 			this.ribbonPageGroup12.ItemLinks.Add(this.btnDevamEdenProjeRapor);
 			this.ribbonPageGroup12.ItemLinks.Add(this.btniptalEdilenProje);
-			this.ribbonPageGroup12.ItemLinks.Add(this.barButtonItem55);
+			this.ribbonPageGroup12.ItemLinks.Add(this.BtnProjeTakvimi1);
 			this.ribbonPageGroup12.Name = "ribbonPageGroup12";
 			this.ribbonPageGroup12.Text = "Proje Durumu Raporları";
 			// 
@@ -952,7 +941,7 @@
 			// 
 			// ribbonPageGroup14
 			// 
-			this.ribbonPageGroup14.ItemLinks.Add(this.barButtonItem59);
+			this.ribbonPageGroup14.ItemLinks.Add(this.BtnFaturaListesi2);
 			this.ribbonPageGroup14.Name = "ribbonPageGroup14";
 			this.ribbonPageGroup14.Text = "Ek İşlemler";
 			// 
@@ -1044,6 +1033,13 @@
 			this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
 			this.barButtonItem2.Name = "barButtonItem2";
 			// 
+			// BtnEtkinlikler
+			// 
+			this.BtnEtkinlikler.Caption = "Etkinlikler";
+			this.BtnEtkinlikler.Id = 92;
+			this.BtnEtkinlikler.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnEtkinlikler.ImageOptions.LargeImage")));
+			this.BtnEtkinlikler.Name = "BtnEtkinlikler";
+			// 
 			// Form1
 			// 
 			this.ClientSize = new System.Drawing.Size(1540, 693);
@@ -1105,19 +1101,17 @@
 		private DevExpress.XtraBars.BarButtonItem BtnFaturaOlustur1;
 		private DevExpress.XtraBars.BarButtonItem BtnFaturaAnaliz;
 		private DevExpress.XtraBars.BarButtonItem BtnFaturaFinansal;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem38;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem39;
+		private DevExpress.XtraBars.BarButtonItem BtnFaturaListesi1;
 		private DevExpress.XtraBars.BarButtonItem BtnGelirGider;
 		private DevExpress.XtraBars.BarButtonItem btnOdenmemisFaturalar1;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem43;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem44;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem45;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem46;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem47;
+		private DevExpress.XtraBars.BarButtonItem BtnMusteriProje1;
+		private DevExpress.XtraBars.BarButtonItem BtnFaturaAnaliz1;
+		private DevExpress.XtraBars.BarButtonItem BtnFaturaFinansal1;
 		private DevExpress.XtraBars.BarButtonItem BtnTamamlananProje;
 		private DevExpress.XtraBars.BarButtonItem btnDevamEdenProjeRapor;
 		private DevExpress.XtraBars.BarButtonItem btniptalEdilenProje;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem55;
+		private DevExpress.XtraBars.BarButtonItem BtnProjeTakvimi1;
 		private DevExpress.XtraBars.BarButtonItem btnGiderListesi1;
 		private DevExpress.XtraBars.BarButtonItem btnOdenmeyenGiderler2;
 		private DevExpress.XtraBars.BarButtonItem btnTamamlanmisSirketOdemeleri;
@@ -1126,7 +1120,7 @@
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup13;
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup14;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem48;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem59;
+		private DevExpress.XtraBars.BarButtonItem BtnFaturaListesi2;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem60;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem61;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem62;
@@ -1169,6 +1163,7 @@
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup23;
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup24;
 		private DevExpress.XtraBars.BarButtonItem BtnMusteriProje;
+		private DevExpress.XtraBars.BarButtonItem BtnEtkinlikler;
 	}
 }
 

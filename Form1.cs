@@ -302,5 +302,41 @@ namespace ProFin
 			FrmFaturaFinansal frm = new FrmFaturaFinansal();	
 			frm.ShowDialog();
 		}
+
+		private void BtnFaturaListesi1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmFaturaListesi FaturaListesi = new FrmFaturaListesi();
+			FaturaListesi.ShowDialog();
+		}
+
+		private void BtnMusteriProje1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmMusteriProje frm = new FrmMusteriProje();
+			frm.ShowDialog();
+		}
+
+		private void BtnFaturaAnaliz1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmFaturaAnaliz frm = new FrmFaturaAnaliz();
+			frm.ShowDialog();
+		}
+
+		private void BtnFaturaFinansal1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmFaturaFinansal frm = new FrmFaturaFinansal();
+			frm.ShowDialog();
+		}
+
+		private void BtnFaturaListesi2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmFaturaListesi FaturaListesi = new FrmFaturaListesi();
+			FaturaListesi.ShowDialog();
+		}
+
+		private void BtnProjeTakvimi1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmProjeTakvimi frm = new FrmProjeTakvimi();
+			frm.ShowDialog();
+		}
 	}
 }
