@@ -413,6 +413,7 @@ namespace ProFin
 
 			InitializeEtkinlikListesi();
 			EtkinlikleriListele();
+
 		}
 	}
 }

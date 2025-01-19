@@ -22,8 +22,20 @@ namespace ProFin
 			FrmAnasayfa fr = new FrmAnasayfa();
 			fr.MdiParent = this;
 			fr.Show();
+			ApplySavedTheme();
 		}
-
+		private void ApplySavedTheme()
+		{
+			var savedTheme = Properties.Settings.Default.Theme;
+			if (!string.IsNullOrEmpty(savedTheme))
+			{
+				DevExpress.LookAndFeel.UserLookAndFeel.Default.SetSkinStyle(savedTheme);
+			}
+			else
+			{
+				DevExpress.LookAndFeel.UserLookAndFeel.Default.SetSkinStyle("The Bezier"); 
+			}
+		}
 		private void barButtonItem56_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
 			FrmGiderListesi giderListesi = new FrmGiderListesi();
@@ -337,6 +349,23 @@ namespace ProFin
 		{
 			FrmProjeTakvimi frm = new FrmProjeTakvimi();
 			frm.ShowDialog();
+		}
+
+		private void btnDarkMode_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			DevExpress.LookAndFeel.UserLookAndFeel.Default.SetSkinStyle("Office 2019 Black"); 
+			SaveTheme("Office 2019 Black");
+		}
+
+		private void btnLightMode_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			DevExpress.LookAndFeel.UserLookAndFeel.Default.SetSkinStyle("The Bezier"); 
+			SaveTheme("The Bezier");
+		}
+		private void SaveTheme(string themeName)
+		{
+			Properties.Settings.Default.Theme = themeName; 
+			Properties.Settings.Default.Save();
 		}
 	}
 }
