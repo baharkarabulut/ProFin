@@ -22,6 +22,14 @@ namespace ProFin
 			FrmAnasayfa fr = new FrmAnasayfa();
 			fr.MdiParent = this;
 			fr.Show();
+			if (!string.IsNullOrEmpty(CurrentSession.AdSoyad))
+			{
+				barStaticItemUserName.Caption = $"{CurrentSession.AdSoyad}";
+			}
+			else
+			{
+				barStaticItemUserName.Caption = "Misafir";
+			}
 		}
 		private void barButtonItem56_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{

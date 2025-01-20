@@ -16,7 +16,7 @@ namespace ProFin
 		{
 			InitializeComponent();
 		}
-
+		DbProFinEntities db = new DbProFinEntities();
 		private void FrmGiris_Load(object sender, EventArgs e)
 		{
 
