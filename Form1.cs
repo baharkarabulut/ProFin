@@ -359,5 +359,71 @@ namespace ProFin
 		{
 			
 		}
+
+		private void btnCikisYap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			CurrentSession.KullaniciID = null; 
+			CurrentSession.KullaniciAdi = null;
+
+			this.Hide();
+			FrmGiris frmGiris = new FrmGiris();
+			frmGiris.ShowDialog();
+			this.Close();
+		}
+
+		private void btnCikisYap1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			CurrentSession.KullaniciID = null;
+			CurrentSession.KullaniciAdi = null;
+
+			this.Hide();
+			FrmGiris frmGiris = new FrmGiris();
+			frmGiris.ShowDialog();
+			this.Close();
+		}
+
+		private void btnCikisYap2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			CurrentSession.KullaniciID = null;
+			CurrentSession.KullaniciAdi = null;
+
+			this.Hide();
+			FrmGiris frmGiris = new FrmGiris();
+			frmGiris.ShowDialog();
+			this.Close();
+		}
+
+		private void btnCikisYap3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			CurrentSession.KullaniciID = null;
+			CurrentSession.KullaniciAdi = null;
+
+			this.Hide();
+			FrmGiris frmGiris = new FrmGiris();
+			frmGiris.ShowDialog();
+			this.Close();
+		}
+
+		private void btnCikisYap4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			CurrentSession.KullaniciID = null;
+			CurrentSession.KullaniciAdi = null;
+
+			this.Hide();
+			FrmGiris frmGiris = new FrmGiris();
+			frmGiris.ShowDialog();
+			this.Close();
+		}
+
+		private void btnCikisYap5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			CurrentSession.KullaniciID = null;
+			CurrentSession.KullaniciAdi = null;
+
+			this.Hide();
+			FrmGiris frmGiris = new FrmGiris();
+			frmGiris.ShowDialog();
+			this.Close();
+		}
 	}
 }

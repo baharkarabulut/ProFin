@@ -8,7 +8,7 @@ namespace ProFin
 {
 	public static class CurrentSession
 	{
-		public static int KullaniciID { get; set; }
+		public static int? KullaniciID { get; set; }
 		public static string KullaniciAdi { get; set; }
 		public static string AdSoyad { get; set; }
 		public static string Eposta { get; set; }

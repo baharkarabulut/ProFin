@@ -37,7 +37,7 @@
 			// txtKullaniciAdi
 			// 
 			this.txtKullaniciAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.txtKullaniciAdi.Location = new System.Drawing.Point(280, 114);
+			this.txtKullaniciAdi.Location = new System.Drawing.Point(278, 112);
 			this.txtKullaniciAdi.Name = "txtKullaniciAdi";
 			this.txtKullaniciAdi.Size = new System.Drawing.Size(208, 29);
 			this.txtKullaniciAdi.TabIndex = 0;
@@ -45,7 +45,7 @@
 			// txtSifre
 			// 
 			this.txtSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.txtSifre.Location = new System.Drawing.Point(280, 170);
+			this.txtSifre.Location = new System.Drawing.Point(278, 168);
 			this.txtSifre.Name = "txtSifre";
 			this.txtSifre.Size = new System.Drawing.Size(208, 29);
 			this.txtSifre.TabIndex = 1;
@@ -54,7 +54,7 @@
 			// 
 			this.btnGiris.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.btnGiris.Appearance.Options.UseFont = true;
-			this.btnGiris.Location = new System.Drawing.Point(280, 228);
+			this.btnGiris.Location = new System.Drawing.Point(278, 226);
 			this.btnGiris.Name = "btnGiris";
 			this.btnGiris.Size = new System.Drawing.Size(208, 44);
 			this.btnGiris.TabIndex = 2;
@@ -81,6 +81,7 @@
 			this.Controls.Add(this.txtSifre);
 			this.Controls.Add(this.txtKullaniciAdi);
 			this.Name = "FrmGiris";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Giriş Ekranı";
 			this.Load += new System.EventHandler(this.FrmGiris_Load);
 			this.ResumeLayout(false);
