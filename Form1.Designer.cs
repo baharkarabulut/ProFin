@@ -75,8 +75,7 @@
 			this.barButtonItem48 = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnFaturaListesi2 = new DevExpress.XtraBars.BarButtonItem();
 			this.btnDarkMode = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem61 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem62 = new DevExpress.XtraBars.BarButtonItem();
+			this.btnKullaniciBilgileri = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem63 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem64 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem65 = new DevExpress.XtraBars.BarButtonItem();
@@ -101,6 +100,7 @@
 			this.btnGiderListesi = new DevExpress.XtraBars.BarButtonItem();
 			this.btnOdenmeyenGiderler1 = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnMusteriProje = new DevExpress.XtraBars.BarButtonItem();
+			this.btnLightMode = new DevExpress.XtraBars.BarButtonItem();
 			this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
 			this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -134,7 +134,7 @@
 			this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
 			this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-			this.btnLightMode = new DevExpress.XtraBars.BarButtonItem();
+			this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
 			((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
 			this.SuspendLayout();
@@ -189,8 +189,7 @@
             this.barButtonItem48,
             this.BtnFaturaListesi2,
             this.btnDarkMode,
-            this.barButtonItem61,
-            this.barButtonItem62,
+            this.btnKullaniciBilgileri,
             this.barButtonItem63,
             this.barButtonItem64,
             this.barButtonItem65,
@@ -215,10 +214,11 @@
             this.btnGiderListesi,
             this.btnOdenmeyenGiderler1,
             this.BtnMusteriProje,
-            this.btnLightMode});
+            this.btnLightMode,
+            this.barButtonItem3});
 			this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
 			this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4);
-			this.ribbonControl1.MaxItemId = 94;
+			this.ribbonControl1.MaxItemId = 96;
 			this.ribbonControl1.Name = "ribbonControl1";
 			this.ribbonControl1.OptionsMenuMinWidth = 412;
 			this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -572,23 +572,17 @@
 			// 
 			this.btnDarkMode.Caption = "Karanlık Mod";
 			this.btnDarkMode.Id = 63;
-			this.btnDarkMode.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem60.ImageOptions.SvgImage")));
+			this.btnDarkMode.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDarkMode.ImageOptions.SvgImage")));
 			this.btnDarkMode.Name = "btnDarkMode";
 			this.btnDarkMode.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDarkMode_ItemClick);
 			// 
-			// barButtonItem61
+			// btnKullaniciBilgileri
 			// 
-			this.barButtonItem61.Caption = "Dil Seçimi";
-			this.barButtonItem61.Id = 64;
-			this.barButtonItem61.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem61.ImageOptions.LargeImage")));
-			this.barButtonItem61.Name = "barButtonItem61";
-			// 
-			// barButtonItem62
-			// 
-			this.barButtonItem62.Caption = "Kullanıcı Bilgileri";
-			this.barButtonItem62.Id = 65;
-			this.barButtonItem62.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem62.ImageOptions.LargeImage")));
-			this.barButtonItem62.Name = "barButtonItem62";
+			this.btnKullaniciBilgileri.Caption = "Kullanıcı Bilgileri";
+			this.btnKullaniciBilgileri.Id = 65;
+			this.btnKullaniciBilgileri.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnKullaniciBilgileri.ImageOptions.LargeImage")));
+			this.btnKullaniciBilgileri.Name = "btnKullaniciBilgileri";
+			this.btnKullaniciBilgileri.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnKullaniciBilgileri_ItemClick);
 			// 
 			// barButtonItem63
 			// 
@@ -768,6 +762,14 @@
 			this.BtnMusteriProje.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("BtnMusteriProje.ImageOptions.LargeImage")));
 			this.BtnMusteriProje.Name = "BtnMusteriProje";
 			this.BtnMusteriProje.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.BtnMusteriProje_ItemClick);
+			// 
+			// btnLightMode
+			// 
+			this.btnLightMode.Caption = "Aydınlık Mod";
+			this.btnLightMode.Id = 93;
+			this.btnLightMode.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnLightMode.ImageOptions.SvgImage")));
+			this.btnLightMode.Name = "btnLightMode";
+			this.btnLightMode.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLightMode_ItemClick);
 			// 
 			// ribbonPage1
 			// 
@@ -963,13 +965,12 @@
 			// 
 			this.ribbonPageGroup9.ItemLinks.Add(this.btnDarkMode);
 			this.ribbonPageGroup9.ItemLinks.Add(this.btnLightMode);
-			this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem61);
 			this.ribbonPageGroup9.Name = "ribbonPageGroup9";
 			this.ribbonPageGroup9.Text = "Genel Ayarlar";
 			// 
 			// ribbonPageGroup15
 			// 
-			this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem62);
+			this.ribbonPageGroup15.ItemLinks.Add(this.btnKullaniciBilgileri);
 			this.ribbonPageGroup15.ItemLinks.Add(this.barButtonItem63);
 			this.ribbonPageGroup15.Name = "ribbonPageGroup15";
 			this.ribbonPageGroup15.Text = "Kullanıcı Yönetimi";
@@ -1034,13 +1035,11 @@
 			this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
 			this.barButtonItem2.Name = "barButtonItem2";
 			// 
-			// btnLightMode
+			// barButtonItem3
 			// 
-			this.btnLightMode.Caption = "Aydınlık Mod";
-			this.btnLightMode.Id = 93;
-			this.btnLightMode.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem3.ImageOptions.SvgImage")));
-			this.btnLightMode.Name = "btnLightMode";
-			this.btnLightMode.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLightMode_ItemClick);
+			this.barButtonItem3.Caption = "barButtonItem3";
+			this.barButtonItem3.Id = 95;
+			this.barButtonItem3.Name = "barButtonItem3";
 			// 
 			// Form1
 			// 
@@ -1124,8 +1123,7 @@
 		private DevExpress.XtraBars.BarButtonItem barButtonItem48;
 		private DevExpress.XtraBars.BarButtonItem BtnFaturaListesi2;
 		private DevExpress.XtraBars.BarButtonItem btnDarkMode;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem61;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem62;
+		private DevExpress.XtraBars.BarButtonItem btnKullaniciBilgileri;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem63;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem64;
 		private DevExpress.XtraBars.BarButtonItem barButtonItem65;
@@ -1166,6 +1164,7 @@
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup24;
 		private DevExpress.XtraBars.BarButtonItem BtnMusteriProje;
 		private DevExpress.XtraBars.BarButtonItem btnLightMode;
+		private DevExpress.XtraBars.BarButtonItem barButtonItem3;
 	}
 }
 

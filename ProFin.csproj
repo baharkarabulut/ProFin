@@ -83,6 +83,7 @@
     <Compile Include="Ayarlar.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="CurrentSession.cs" />
     <Compile Include="Etkilesim.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -172,6 +173,12 @@
     </Compile>
     <Compile Include="FrmGiderListesi.Designer.cs">
       <DependentUpon>FrmGiderListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGiris.Designer.cs">
+      <DependentUpon>FrmGiris.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmiptalEdilenProjeler.cs">
       <SubType>Form</SubType>
@@ -355,6 +362,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmGiderListesi.resx">
       <DependentUpon>FrmGiderListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGiris.resx">
+      <DependentUpon>FrmGiris.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmiptalEdilenProjeler.resx">
       <DependentUpon>FrmiptalEdilenProjeler.cs</DependentUpon>

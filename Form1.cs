@@ -22,19 +22,6 @@ namespace ProFin
 			FrmAnasayfa fr = new FrmAnasayfa();
 			fr.MdiParent = this;
 			fr.Show();
-			ApplySavedTheme();
-		}
-		private void ApplySavedTheme()
-		{
-			var savedTheme = Properties.Settings.Default.Theme;
-			if (!string.IsNullOrEmpty(savedTheme))
-			{
-				DevExpress.LookAndFeel.UserLookAndFeel.Default.SetSkinStyle(savedTheme);
-			}
-			else
-			{
-				DevExpress.LookAndFeel.UserLookAndFeel.Default.SetSkinStyle("The Bezier"); 
-			}
 		}
 		private void barButtonItem56_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
@@ -366,6 +353,11 @@ namespace ProFin
 		{
 			Properties.Settings.Default.Theme = themeName; 
 			Properties.Settings.Default.Save();
+		}
+
+		private void btnKullaniciBilgileri_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			
 		}
 	}
 }
