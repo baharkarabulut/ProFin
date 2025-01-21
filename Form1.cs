@@ -365,7 +365,8 @@ namespace ProFin
 
 		private void btnKullaniciBilgileri_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
 		{
-			
+			FrmKullaniciBilgi frm = new FrmKullaniciBilgi();
+			frm.ShowDialog();
 		}
 
 		private void btnCikisYap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

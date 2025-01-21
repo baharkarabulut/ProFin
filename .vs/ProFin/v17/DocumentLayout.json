@@ -3,7 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|C:\\Users\\BAHARS\\source\\repos\\ProFin\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|c:\\users\\bahars\\source\\repos\\profin\\frmkullanicibilgi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:frmkullanicibilgi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|c:\\users\\bahars\\source\\repos\\profin\\frmkullanicibilgi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:frmkullanicibilgi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|C:\\Users\\BAHARS\\source\\repos\\ProFin\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|c:\\users\\bahars\\source\\repos\\profin\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -11,28 +23,8 @@
       "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:frmanasayfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|C:\\Users\\BAHARS\\source\\repos\\ProFin\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|c:\\users\\bahars\\source\\repos\\profin\\frmgiris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:frmgiris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|C:\\Users\\BAHARS\\source\\repos\\ProFin\\frmgiris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:frmgiris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|C:\\Users\\BAHARS\\source\\repos\\ProFin\\currentsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:currentsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|C:\\Users\\BAHARS\\source\\repos\\ProFin\\frmanasayfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:frmanasayfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|C:\\Users\\BAHARS\\source\\repos\\ProFin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13D4D9AD-F201-42AC-ADD6-A9D30CF3FF86}|ProFin.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,57 +46,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "FrmKullaniciBilgi.cs",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmKullaniciBilgi.cs",
+              "RelativeDocumentMoniker": "FrmKullaniciBilgi.cs",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmKullaniciBilgi.cs",
+              "RelativeToolTip": "FrmKullaniciBilgi.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T14:31:14.569Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FrmGiris.cs",
-              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmGiris.cs",
-              "RelativeDocumentMoniker": "FrmGiris.cs",
-              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmGiris.cs",
-              "RelativeToolTip": "FrmGiris.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAxwC0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T14:30:20.855Z",
+              "WhenOpened": "2025-01-21T10:37:21.419Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FrmGiris.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmGiris.cs",
-              "RelativeDocumentMoniker": "FrmGiris.cs",
-              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmGiris.cs [Design]",
-              "RelativeToolTip": "FrmGiris.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "FrmKullaniciBilgi.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmKullaniciBilgi.cs",
+              "RelativeDocumentMoniker": "FrmKullaniciBilgi.cs",
+              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmKullaniciBilgi.cs [Design]",
+              "RelativeToolTip": "FrmKullaniciBilgi.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T14:27:01.137Z",
+              "WhenOpened": "2025-01-21T10:34:23.731Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "CurrentSession.cs",
-              "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\CurrentSession.cs",
-              "RelativeDocumentMoniker": "CurrentSession.cs",
-              "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\CurrentSession.cs",
-              "RelativeToolTip": "CurrentSession.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T14:26:09.347Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "FrmAnasayfa.cs",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmAnasayfa.cs",
               "RelativeDocumentMoniker": "FrmAnasayfa.cs",
@@ -112,12 +79,11 @@
               "RelativeToolTip": "FrmAnasayfa.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T11:43:49.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T11:43:49.694Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
@@ -129,15 +95,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "FrmAnasayfa.cs [Design]",
               "DocumentMoniker": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmAnasayfa.cs",
               "RelativeDocumentMoniker": "FrmAnasayfa.cs",
               "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\FrmAnasayfa.cs [Design]",
               "RelativeToolTip": "FrmAnasayfa.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T18:19:44.214Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-01-01T18:19:44.214Z"
             },
             {
               "$type": "Document",
@@ -147,7 +112,7 @@
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\BAHARS\\source\\repos\\ProFin\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAFsBAAAAAAAAAADgv3ABAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-27T15:07:50.991Z",
               "EditorCaption": ""
