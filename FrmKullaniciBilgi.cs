@@ -39,5 +39,14 @@ namespace ProFin
 			}
 		}
 
+		private void btnKullaniciEkle_Click(object sender, EventArgs e)
+		{
+			FrmKullaniciEkle ekle = new FrmKullaniciEkle();
+			ekle.KullaniciEklendi += () =>
+			{
+				ListeleKullanicilar(); 
+			};
+			ekle.ShowDialog();
+		}
 	}
 }
