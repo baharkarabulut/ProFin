@@ -434,5 +434,11 @@ namespace ProFin
 			frmGiris.ShowDialog();
 			this.Close();
 		}
+
+		private void btnGuvenlikAyari_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmGuvenlikAyari frm = new FrmGuvenlikAyari();
+			frm.ShowDialog();
+		}
 	}
 }

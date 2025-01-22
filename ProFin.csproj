@@ -180,6 +180,12 @@
     <Compile Include="FrmGiris.Designer.cs">
       <DependentUpon>FrmGiris.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmGuvenlikAyari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGuvenlikAyari.Designer.cs">
+      <DependentUpon>FrmGuvenlikAyari.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmiptalEdilenProjeler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -377,6 +383,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmGiris.resx">
       <DependentUpon>FrmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGuvenlikAyari.resx">
+      <DependentUpon>FrmGuvenlikAyari.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmiptalEdilenProjeler.resx">
       <DependentUpon>FrmiptalEdilenProjeler.cs</DependentUpon>
