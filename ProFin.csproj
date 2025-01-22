@@ -186,6 +186,12 @@
     <Compile Include="FrmGuvenlikAyari.Designer.cs">
       <DependentUpon>FrmGuvenlikAyari.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmHesapMakinesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHesapMakinesi.Designer.cs">
+      <DependentUpon>FrmHesapMakinesi.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmiptalEdilenProjeler.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -386,6 +392,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmGuvenlikAyari.resx">
       <DependentUpon>FrmGuvenlikAyari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHesapMakinesi.resx">
+      <DependentUpon>FrmHesapMakinesi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmiptalEdilenProjeler.resx">
       <DependentUpon>FrmiptalEdilenProjeler.cs</DependentUpon>

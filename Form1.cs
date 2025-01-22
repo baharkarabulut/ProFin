@@ -440,5 +440,11 @@ namespace ProFin
 			FrmGuvenlikAyari frm = new FrmGuvenlikAyari();
 			frm.ShowDialog();
 		}
+
+		private void btnHesapMakinesi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+		{
+			FrmHesapMakinesi frm = new FrmHesapMakinesi();
+			frm.ShowDialog();
+		}
 	}
 }

@@ -81,9 +81,7 @@
 			this.barButtonItem69 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem70 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem71 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem73 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem74 = new DevExpress.XtraBars.BarButtonItem();
-			this.barButtonItem75 = new DevExpress.XtraBars.BarButtonItem();
+			this.btnHesapMakinesi = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnMusteriDetay = new DevExpress.XtraBars.BarButtonItem();
 			this.BtnProjeGuncelle = new DevExpress.XtraBars.BarButtonItem();
 			this.btniptalEdilenProjeler = new DevExpress.XtraBars.BarButtonItem();
@@ -136,7 +134,6 @@
 			this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.ribbonPageGroup15 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.ribbonPageGroup18 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.ribbonPageGroup20 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.ribbonPageGroup21 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.ribbonPageGroup30 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
@@ -203,9 +200,7 @@
             this.barButtonItem69,
             this.barButtonItem70,
             this.barButtonItem71,
-            this.barButtonItem73,
-            this.barButtonItem74,
-            this.barButtonItem75,
+            this.btnHesapMakinesi,
             this.BtnMusteriDetay,
             this.BtnProjeGuncelle,
             this.btniptalEdilenProjeler,
@@ -599,7 +594,7 @@
 			// 
 			this.btnGuvenlikAyari.Caption = "Güvenlik Ayarları";
 			this.btnGuvenlikAyari.Id = 66;
-			this.btnGuvenlikAyari.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem63.ImageOptions.LargeImage")));
+			this.btnGuvenlikAyari.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnGuvenlikAyari.ImageOptions.LargeImage")));
 			this.btnGuvenlikAyari.Name = "btnGuvenlikAyari";
 			this.btnGuvenlikAyari.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnGuvenlikAyari_ItemClick);
 			// 
@@ -631,26 +626,13 @@
 			this.barButtonItem71.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem71.ImageOptions.LargeImage")));
 			this.barButtonItem71.Name = "barButtonItem71";
 			// 
-			// barButtonItem73
+			// btnHesapMakinesi
 			// 
-			this.barButtonItem73.Caption = "Güncelleme Kontrolü";
-			this.barButtonItem73.Id = 76;
-			this.barButtonItem73.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem73.ImageOptions.LargeImage")));
-			this.barButtonItem73.Name = "barButtonItem73";
-			// 
-			// barButtonItem74
-			// 
-			this.barButtonItem74.Caption = "Lisans Bilgileri";
-			this.barButtonItem74.Id = 77;
-			this.barButtonItem74.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem74.ImageOptions.LargeImage")));
-			this.barButtonItem74.Name = "barButtonItem74";
-			// 
-			// barButtonItem75
-			// 
-			this.barButtonItem75.Caption = "Hesap Makinesi";
-			this.barButtonItem75.Id = 78;
-			this.barButtonItem75.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem75.ImageOptions.LargeImage")));
-			this.barButtonItem75.Name = "barButtonItem75";
+			this.btnHesapMakinesi.Caption = "Hesap Makinesi";
+			this.btnHesapMakinesi.Id = 78;
+			this.btnHesapMakinesi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem75.ImageOptions.LargeImage")));
+			this.btnHesapMakinesi.Name = "btnHesapMakinesi";
+			this.btnHesapMakinesi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHesapMakinesi_ItemClick);
 			// 
 			// BtnMusteriDetay
 			// 
@@ -1045,7 +1027,6 @@
             this.ribbonPageGroup9,
             this.ribbonPageGroup15,
             this.ribbonPageGroup18,
-            this.ribbonPageGroup20,
             this.ribbonPageGroup21,
             this.ribbonPageGroup30});
 			this.ribbonPage6.Name = "ribbonPage6";
@@ -1072,16 +1053,9 @@
 			this.ribbonPageGroup18.Name = "ribbonPageGroup18";
 			this.ribbonPageGroup18.Text = "Bildirim Ayarları";
 			// 
-			// ribbonPageGroup20
-			// 
-			this.ribbonPageGroup20.ItemLinks.Add(this.barButtonItem73);
-			this.ribbonPageGroup20.ItemLinks.Add(this.barButtonItem74);
-			this.ribbonPageGroup20.Name = "ribbonPageGroup20";
-			this.ribbonPageGroup20.Text = "Güncelleme ve Lisans Ayarları";
-			// 
 			// ribbonPageGroup21
 			// 
-			this.ribbonPageGroup21.ItemLinks.Add(this.barButtonItem75);
+			this.ribbonPageGroup21.ItemLinks.Add(this.btnHesapMakinesi);
 			this.ribbonPageGroup21.Name = "ribbonPageGroup21";
 			this.ribbonPageGroup21.Text = "Ek İşlemler";
 			// 
@@ -1206,10 +1180,7 @@
 		private DevExpress.XtraBars.BarButtonItem barButtonItem71;
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup15;
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup18;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem73;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem74;
-		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup20;
-		private DevExpress.XtraBars.BarButtonItem barButtonItem75;
+		private DevExpress.XtraBars.BarButtonItem btnHesapMakinesi;
 		private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup21;
 		private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager1;
 		private DevExpress.XtraBars.BarButtonItem BtnMusteriDetay;
