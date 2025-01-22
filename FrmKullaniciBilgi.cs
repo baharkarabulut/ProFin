@@ -16,7 +16,7 @@ namespace ProFin
 		{
 			InitializeComponent();
 		}
-
+		DbProFinEntities db = new DbProFinEntities();
 		private void FrmKullaniciBilgi_Load(object sender, EventArgs e)
 		{
 			ListeleKullanicilar();
@@ -47,6 +47,32 @@ namespace ProFin
 				ListeleKullanicilar(); 
 			};
 			ekle.ShowDialog();
+		}
+
+		private void btnKullaniciSil_Click(object sender, EventArgs e)
+		{
+			var selectedRow = gridView1.GetFocusedRowCellValue("KullaniciID");
+			if (selectedRow != null)
+			{
+				int id = Convert.ToInt32(selectedRow);
+
+				using (var db = new DbProFinEntities())
+				{
+					var kullanici = db.Kullanicilar.Find(id);
+					if (kullanici != null)
+					{
+						db.Kullanicilar.Remove(kullanici);
+						db.SaveChanges();
+
+						MessageBox.Show("Kullanıcı silindi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+						ListeleKullanicilar();
+					}
+				}
+			}
+			else
+			{
+				MessageBox.Show("Lütfen silmek için bir kullanıcı seçin.", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+			}
 		}
 	}
 }

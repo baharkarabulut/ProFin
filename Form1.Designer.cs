@@ -107,10 +107,13 @@
 			this.btnCikisYap3 = new DevExpress.XtraBars.BarButtonItem();
 			this.btnCikisYap4 = new DevExpress.XtraBars.BarButtonItem();
 			this.btnCikisYap5 = new DevExpress.XtraBars.BarButtonItem();
+			this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
+			this.barStaticItemUserName = new DevExpress.XtraBars.BarStaticItem();
 			this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
 			this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+			this.ribbonPageGroup31 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.ribbonPageGroup25 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
 			this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
 			this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -147,9 +150,6 @@
 			this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
 			this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
 			this.ribbonPage9 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-			this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
-			this.ribbonPageGroup31 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-			this.barStaticItemUserName = new DevExpress.XtraBars.BarStaticItem();
 			((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
 			this.SuspendLayout();
@@ -840,6 +840,19 @@
 			this.btnCikisYap5.Name = "btnCikisYap5";
 			this.btnCikisYap5.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCikisYap5_ItemClick);
 			// 
+			// barStaticItem1
+			// 
+			this.barStaticItem1.Caption = "barStaticItem1";
+			this.barStaticItem1.Id = 104;
+			this.barStaticItem1.Name = "barStaticItem1";
+			// 
+			// barStaticItemUserName
+			// 
+			this.barStaticItemUserName.Caption = "Kullanıcı isim";
+			this.barStaticItemUserName.Id = 105;
+			this.barStaticItemUserName.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barStaticItemUserName.ImageOptions.LargeImage")));
+			this.barStaticItemUserName.Name = "barStaticItemUserName";
+			// 
 			// ribbonPage1
 			// 
 			this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -876,6 +889,13 @@
 			this.ribbonPageGroup5.ItemLinks.Add(this.btnTeslimTarihiYaklasan);
 			this.ribbonPageGroup5.Name = "ribbonPageGroup5";
 			this.ribbonPageGroup5.Text = "Bildirimler ve Hatırlatmalar";
+			// 
+			// ribbonPageGroup31
+			// 
+			this.ribbonPageGroup31.Alignment = DevExpress.XtraBars.Ribbon.RibbonPageGroupAlignment.Far;
+			this.ribbonPageGroup31.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.True;
+			this.ribbonPageGroup31.ItemLinks.Add(this.barStaticItemUserName);
+			this.ribbonPageGroup31.Name = "ribbonPageGroup31";
 			// 
 			// ribbonPageGroup25
 			// 
@@ -1157,33 +1177,13 @@
 			this.ribbonPage9.Name = "ribbonPage9";
 			this.ribbonPage9.Text = "ribbonPage9";
 			// 
-			// barStaticItem1
-			// 
-			this.barStaticItem1.Caption = "barStaticItem1";
-			this.barStaticItem1.Id = 104;
-			this.barStaticItem1.Name = "barStaticItem1";
-			// 
-			// ribbonPageGroup31
-			// 
-			this.ribbonPageGroup31.Alignment = DevExpress.XtraBars.Ribbon.RibbonPageGroupAlignment.Far;
-			this.ribbonPageGroup31.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.True;
-			this.ribbonPageGroup31.ItemLinks.Add(this.barStaticItemUserName);
-			this.ribbonPageGroup31.Name = "ribbonPageGroup31";
-			// 
-			// barStaticItemUserName
-			// 
-			this.barStaticItemUserName.Caption = "Kullanıcı isim";
-			this.barStaticItemUserName.Id = 105;
-			this.barStaticItemUserName.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barStaticItemUserName.ImageOptions.LargeImage")));
-			this.barStaticItemUserName.Name = "barStaticItemUserName";
-			// 
 			// Form1
 			// 
 			this.ClientSize = new System.Drawing.Size(1540, 693);
 			this.Controls.Add(this.ribbonControl1);
 			this.IsMdiContainer = true;
 			this.Name = "Form1";
-			this.Text = "Çıkış";
+			this.Text = "ProFin";
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			this.Load += new System.EventHandler(this.Form1_Load);
 			((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
