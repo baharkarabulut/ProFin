@@ -28,281 +28,295 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.btn0_Click = new System.Windows.Forms.Button();
-			this.btn1_Click = new System.Windows.Forms.Button();
-			this.btn2_Click = new System.Windows.Forms.Button();
-			this.btn3_Click = new System.Windows.Forms.Button();
-			this.btn6_Click = new System.Windows.Forms.Button();
-			this.btn5_Click = new System.Windows.Forms.Button();
-			this.btn4_Click = new System.Windows.Forms.Button();
-			this.btn9_Click = new System.Windows.Forms.Button();
-			this.btn8_Click = new System.Windows.Forms.Button();
-			this.btn7_Click = new System.Windows.Forms.Button();
-			this.button11 = new System.Windows.Forms.Button();
-			this.button12 = new System.Windows.Forms.Button();
-			this.button13 = new System.Windows.Forms.Button();
-			this.button14 = new System.Windows.Forms.Button();
-			this.button15 = new System.Windows.Forms.Button();
-			this.button16 = new System.Windows.Forms.Button();
-			this.button17 = new System.Windows.Forms.Button();
-			this.button18 = new System.Windows.Forms.Button();
-			this.button19 = new System.Windows.Forms.Button();
-			this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-			((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+			this.btnSayi1 = new DevExpress.XtraEditors.SimpleButton();
+			this.btnSayi2 = new DevExpress.XtraEditors.SimpleButton();
+			this.btnSayi3 = new DevExpress.XtraEditors.SimpleButton();
+			this.btnSayi0 = new DevExpress.XtraEditors.SimpleButton();
+			this.btnSayi6 = new DevExpress.XtraEditors.SimpleButton();
+			this.btnSayi5 = new DevExpress.XtraEditors.SimpleButton();
+			this.btnSayi4 = new DevExpress.XtraEditors.SimpleButton();
+			this.btnSayi9 = new DevExpress.XtraEditors.SimpleButton();
+			this.btnSayi8 = new DevExpress.XtraEditors.SimpleButton();
+			this.btnSayi7 = new DevExpress.XtraEditors.SimpleButton();
+			this.btnCarp = new DevExpress.XtraEditors.SimpleButton();
+			this.BtnEsittir = new DevExpress.XtraEditors.SimpleButton();
+			this.btnOndalik = new DevExpress.XtraEditors.SimpleButton();
+			this.btnCikar = new DevExpress.XtraEditors.SimpleButton();
+			this.btnTopla = new DevExpress.XtraEditors.SimpleButton();
+			this.BtnTemizle = new DevExpress.XtraEditors.SimpleButton();
+			this.simpleButton17 = new DevExpress.XtraEditors.SimpleButton();
+			this.simpleButton18 = new DevExpress.XtraEditors.SimpleButton();
+			this.btnBol = new DevExpress.XtraEditors.SimpleButton();
+			this.txtSonuc = new System.Windows.Forms.TextBox();
 			this.SuspendLayout();
 			// 
-			// btn0_Click
+			// btnSayi1
 			// 
-			this.btn0_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.btn0_Click.Location = new System.Drawing.Point(163, 326);
-			this.btn0_Click.Name = "btn0_Click";
-			this.btn0_Click.Size = new System.Drawing.Size(60, 60);
-			this.btn0_Click.TabIndex = 0;
-			this.btn0_Click.Text = "0";
-			this.btn0_Click.UseVisualStyleBackColor = true;
+			this.btnSayi1.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnSayi1.Appearance.Options.UseFont = true;
+			this.btnSayi1.Location = new System.Drawing.Point(91, 245);
+			this.btnSayi1.Name = "btnSayi1";
+			this.btnSayi1.Size = new System.Drawing.Size(56, 57);
+			this.btnSayi1.TabIndex = 20;
+			this.btnSayi1.Text = "1";
+			this.btnSayi1.Click += new System.EventHandler(this.BtnSayi_Click);
 			// 
-			// btn1_Click
+			// btnSayi2
 			// 
-			this.btn1_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.btn1_Click.Location = new System.Drawing.Point(88, 248);
-			this.btn1_Click.Name = "btn1_Click";
-			this.btn1_Click.Size = new System.Drawing.Size(60, 60);
-			this.btn1_Click.TabIndex = 1;
-			this.btn1_Click.Text = "1";
-			this.btn1_Click.UseVisualStyleBackColor = true;
+			this.btnSayi2.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnSayi2.Appearance.Options.UseFont = true;
+			this.btnSayi2.Location = new System.Drawing.Point(163, 245);
+			this.btnSayi2.Name = "btnSayi2";
+			this.btnSayi2.Size = new System.Drawing.Size(56, 57);
+			this.btnSayi2.TabIndex = 21;
+			this.btnSayi2.Text = "2";
+			this.btnSayi2.Click += new System.EventHandler(this.BtnSayi_Click);
 			// 
-			// btn2_Click
+			// btnSayi3
 			// 
-			this.btn2_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.btn2_Click.Location = new System.Drawing.Point(163, 248);
-			this.btn2_Click.Name = "btn2_Click";
-			this.btn2_Click.Size = new System.Drawing.Size(60, 60);
-			this.btn2_Click.TabIndex = 2;
-			this.btn2_Click.Text = "2";
-			this.btn2_Click.UseVisualStyleBackColor = true;
+			this.btnSayi3.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnSayi3.Appearance.Options.UseFont = true;
+			this.btnSayi3.Location = new System.Drawing.Point(234, 245);
+			this.btnSayi3.Name = "btnSayi3";
+			this.btnSayi3.Size = new System.Drawing.Size(56, 57);
+			this.btnSayi3.TabIndex = 22;
+			this.btnSayi3.Text = "3";
+			this.btnSayi3.Click += new System.EventHandler(this.BtnSayi_Click);
 			// 
-			// btn3_Click
+			// btnSayi0
 			// 
-			this.btn3_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.btn3_Click.Location = new System.Drawing.Point(238, 248);
-			this.btn3_Click.Name = "btn3_Click";
-			this.btn3_Click.Size = new System.Drawing.Size(60, 60);
-			this.btn3_Click.TabIndex = 3;
-			this.btn3_Click.Text = "3";
-			this.btn3_Click.UseVisualStyleBackColor = true;
+			this.btnSayi0.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnSayi0.Appearance.Options.UseFont = true;
+			this.btnSayi0.Location = new System.Drawing.Point(163, 317);
+			this.btnSayi0.Name = "btnSayi0";
+			this.btnSayi0.Size = new System.Drawing.Size(56, 57);
+			this.btnSayi0.TabIndex = 23;
+			this.btnSayi0.Text = "0";
+			this.btnSayi0.Click += new System.EventHandler(this.BtnSayi_Click);
 			// 
-			// btn6_Click
+			// btnSayi6
 			// 
-			this.btn6_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.btn6_Click.Location = new System.Drawing.Point(238, 173);
-			this.btn6_Click.Name = "btn6_Click";
-			this.btn6_Click.Size = new System.Drawing.Size(60, 60);
-			this.btn6_Click.TabIndex = 6;
-			this.btn6_Click.Text = "6";
-			this.btn6_Click.UseVisualStyleBackColor = true;
+			this.btnSayi6.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnSayi6.Appearance.Options.UseFont = true;
+			this.btnSayi6.Location = new System.Drawing.Point(234, 170);
+			this.btnSayi6.Name = "btnSayi6";
+			this.btnSayi6.Size = new System.Drawing.Size(56, 57);
+			this.btnSayi6.TabIndex = 26;
+			this.btnSayi6.Text = "6";
+			this.btnSayi6.Click += new System.EventHandler(this.BtnSayi_Click);
 			// 
-			// btn5_Click
+			// btnSayi5
 			// 
-			this.btn5_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.btn5_Click.Location = new System.Drawing.Point(163, 173);
-			this.btn5_Click.Name = "btn5_Click";
-			this.btn5_Click.Size = new System.Drawing.Size(60, 60);
-			this.btn5_Click.TabIndex = 5;
-			this.btn5_Click.Text = "5";
-			this.btn5_Click.UseVisualStyleBackColor = true;
+			this.btnSayi5.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnSayi5.Appearance.Options.UseFont = true;
+			this.btnSayi5.Location = new System.Drawing.Point(163, 170);
+			this.btnSayi5.Name = "btnSayi5";
+			this.btnSayi5.Size = new System.Drawing.Size(56, 57);
+			this.btnSayi5.TabIndex = 25;
+			this.btnSayi5.Text = "5";
+			this.btnSayi5.Click += new System.EventHandler(this.BtnSayi_Click);
 			// 
-			// btn4_Click
+			// btnSayi4
 			// 
-			this.btn4_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.btn4_Click.Location = new System.Drawing.Point(88, 173);
-			this.btn4_Click.Name = "btn4_Click";
-			this.btn4_Click.Size = new System.Drawing.Size(60, 60);
-			this.btn4_Click.TabIndex = 4;
-			this.btn4_Click.Text = "4";
-			this.btn4_Click.UseVisualStyleBackColor = true;
+			this.btnSayi4.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnSayi4.Appearance.Options.UseFont = true;
+			this.btnSayi4.Location = new System.Drawing.Point(91, 170);
+			this.btnSayi4.Name = "btnSayi4";
+			this.btnSayi4.Size = new System.Drawing.Size(56, 57);
+			this.btnSayi4.TabIndex = 24;
+			this.btnSayi4.Text = "4";
+			this.btnSayi4.Click += new System.EventHandler(this.BtnSayi_Click);
 			// 
-			// btn9_Click
+			// btnSayi9
 			// 
-			this.btn9_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.btn9_Click.Location = new System.Drawing.Point(238, 97);
-			this.btn9_Click.Name = "btn9_Click";
-			this.btn9_Click.Size = new System.Drawing.Size(60, 60);
-			this.btn9_Click.TabIndex = 9;
-			this.btn9_Click.Text = "9";
-			this.btn9_Click.UseVisualStyleBackColor = true;
+			this.btnSayi9.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnSayi9.Appearance.Options.UseFont = true;
+			this.btnSayi9.Location = new System.Drawing.Point(234, 94);
+			this.btnSayi9.Name = "btnSayi9";
+			this.btnSayi9.Size = new System.Drawing.Size(56, 57);
+			this.btnSayi9.TabIndex = 29;
+			this.btnSayi9.Text = "9";
+			this.btnSayi9.Click += new System.EventHandler(this.BtnSayi_Click);
 			// 
-			// btn8_Click
+			// btnSayi8
 			// 
-			this.btn8_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.btn8_Click.Location = new System.Drawing.Point(163, 97);
-			this.btn8_Click.Name = "btn8_Click";
-			this.btn8_Click.Size = new System.Drawing.Size(60, 60);
-			this.btn8_Click.TabIndex = 8;
-			this.btn8_Click.Text = "8";
-			this.btn8_Click.UseVisualStyleBackColor = true;
+			this.btnSayi8.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnSayi8.Appearance.Options.UseFont = true;
+			this.btnSayi8.Location = new System.Drawing.Point(163, 94);
+			this.btnSayi8.Name = "btnSayi8";
+			this.btnSayi8.Size = new System.Drawing.Size(56, 57);
+			this.btnSayi8.TabIndex = 28;
+			this.btnSayi8.Text = "8";
+			this.btnSayi8.Click += new System.EventHandler(this.BtnSayi_Click);
 			// 
-			// btn7_Click
+			// btnSayi7
 			// 
-			this.btn7_Click.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.btn7_Click.Location = new System.Drawing.Point(88, 97);
-			this.btn7_Click.Name = "btn7_Click";
-			this.btn7_Click.Size = new System.Drawing.Size(60, 60);
-			this.btn7_Click.TabIndex = 7;
-			this.btn7_Click.Text = "7";
-			this.btn7_Click.UseVisualStyleBackColor = true;
+			this.btnSayi7.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnSayi7.Appearance.Options.UseFont = true;
+			this.btnSayi7.Location = new System.Drawing.Point(91, 94);
+			this.btnSayi7.Name = "btnSayi7";
+			this.btnSayi7.Size = new System.Drawing.Size(56, 57);
+			this.btnSayi7.TabIndex = 27;
+			this.btnSayi7.Text = "7";
+			this.btnSayi7.Click += new System.EventHandler(this.BtnSayi_Click);
 			// 
-			// button11
+			// btnCarp
 			// 
-			this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.button11.Location = new System.Drawing.Point(313, 97);
-			this.button11.Name = "button11";
-			this.button11.Size = new System.Drawing.Size(60, 60);
-			this.button11.TabIndex = 10;
-			this.button11.Text = "x";
-			this.button11.UseVisualStyleBackColor = true;
+			this.btnCarp.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnCarp.Appearance.Options.UseFont = true;
+			this.btnCarp.Location = new System.Drawing.Point(306, 94);
+			this.btnCarp.Name = "btnCarp";
+			this.btnCarp.Size = new System.Drawing.Size(56, 57);
+			this.btnCarp.TabIndex = 32;
+			this.btnCarp.Text = "*";
+			this.btnCarp.Click += new System.EventHandler(this.BtnIslem_Click);
 			// 
-			// button12
+			// BtnEsittir
 			// 
-			this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.button12.Location = new System.Drawing.Point(313, 173);
-			this.button12.Name = "button12";
-			this.button12.Size = new System.Drawing.Size(60, 60);
-			this.button12.TabIndex = 11;
-			this.button12.Text = "-";
-			this.button12.UseVisualStyleBackColor = true;
+			this.BtnEsittir.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.BtnEsittir.Appearance.Options.UseFont = true;
+			this.BtnEsittir.Location = new System.Drawing.Point(234, 317);
+			this.BtnEsittir.Name = "BtnEsittir";
+			this.BtnEsittir.Size = new System.Drawing.Size(128, 57);
+			this.BtnEsittir.TabIndex = 31;
+			this.BtnEsittir.Text = "=";
+			this.BtnEsittir.Click += new System.EventHandler(this.BtnEsittir_Click);
 			// 
-			// button13
+			// btnOndalik
 			// 
-			this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.button13.Location = new System.Drawing.Point(313, 248);
-			this.button13.Name = "button13";
-			this.button13.Size = new System.Drawing.Size(60, 60);
-			this.button13.TabIndex = 12;
-			this.button13.Text = "+";
-			this.button13.UseVisualStyleBackColor = true;
+			this.btnOndalik.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnOndalik.Appearance.Options.UseFont = true;
+			this.btnOndalik.Location = new System.Drawing.Point(91, 317);
+			this.btnOndalik.Name = "btnOndalik";
+			this.btnOndalik.Size = new System.Drawing.Size(56, 57);
+			this.btnOndalik.TabIndex = 30;
+			this.btnOndalik.Text = ",";
 			// 
-			// button14
+			// btnCikar
 			// 
-			this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.button14.Location = new System.Drawing.Point(238, 326);
-			this.button14.Name = "button14";
-			this.button14.Size = new System.Drawing.Size(135, 60);
-			this.button14.TabIndex = 13;
-			this.button14.Text = "=";
-			this.button14.UseVisualStyleBackColor = true;
+			this.btnCikar.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnCikar.Appearance.Options.UseFont = true;
+			this.btnCikar.Location = new System.Drawing.Point(306, 170);
+			this.btnCikar.Name = "btnCikar";
+			this.btnCikar.Size = new System.Drawing.Size(56, 57);
+			this.btnCikar.TabIndex = 35;
+			this.btnCikar.Text = "-";
+			this.btnCikar.Click += new System.EventHandler(this.BtnIslem_Click);
 			// 
-			// button15
+			// btnTopla
 			// 
-			this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.button15.Location = new System.Drawing.Point(88, 326);
-			this.button15.Name = "button15";
-			this.button15.Size = new System.Drawing.Size(60, 60);
-			this.button15.TabIndex = 14;
-			this.button15.Text = ",";
-			this.button15.UseVisualStyleBackColor = true;
+			this.btnTopla.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnTopla.Appearance.Options.UseFont = true;
+			this.btnTopla.Location = new System.Drawing.Point(306, 245);
+			this.btnTopla.Name = "btnTopla";
+			this.btnTopla.Size = new System.Drawing.Size(56, 57);
+			this.btnTopla.TabIndex = 34;
+			this.btnTopla.Text = "+";
+			this.btnTopla.Click += new System.EventHandler(this.BtnIslem_Click);
 			// 
-			// button16
+			// BtnTemizle
 			// 
-			this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.button16.Location = new System.Drawing.Point(15, 172);
-			this.button16.Name = "button16";
-			this.button16.Size = new System.Drawing.Size(60, 60);
-			this.button16.TabIndex = 15;
-			this.button16.Text = "/";
-			this.button16.UseVisualStyleBackColor = true;
+			this.BtnTemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.BtnTemizle.Appearance.Options.UseFont = true;
+			this.BtnTemizle.Location = new System.Drawing.Point(19, 94);
+			this.BtnTemizle.Name = "BtnTemizle";
+			this.BtnTemizle.Size = new System.Drawing.Size(56, 57);
+			this.BtnTemizle.TabIndex = 33;
+			this.BtnTemizle.Text = "C";
+			this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
 			// 
-			// button17
+			// simpleButton17
 			// 
-			this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.button17.Location = new System.Drawing.Point(15, 248);
-			this.button17.Name = "button17";
-			this.button17.Size = new System.Drawing.Size(60, 60);
-			this.button17.TabIndex = 16;
-			this.button17.Text = "(";
-			this.button17.UseVisualStyleBackColor = true;
+			this.simpleButton17.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.simpleButton17.Appearance.Options.UseFont = true;
+			this.simpleButton17.Location = new System.Drawing.Point(19, 242);
+			this.simpleButton17.Name = "simpleButton17";
+			this.simpleButton17.Size = new System.Drawing.Size(56, 57);
+			this.simpleButton17.TabIndex = 38;
+			this.simpleButton17.Text = "(";
 			// 
-			// button18
+			// simpleButton18
 			// 
-			this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.button18.Location = new System.Drawing.Point(15, 326);
-			this.button18.Name = "button18";
-			this.button18.Size = new System.Drawing.Size(60, 60);
-			this.button18.TabIndex = 17;
-			this.button18.Text = ")";
-			this.button18.UseVisualStyleBackColor = true;
+			this.simpleButton18.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.simpleButton18.Appearance.Options.UseFont = true;
+			this.simpleButton18.Location = new System.Drawing.Point(19, 317);
+			this.simpleButton18.Name = "simpleButton18";
+			this.simpleButton18.Size = new System.Drawing.Size(56, 57);
+			this.simpleButton18.TabIndex = 37;
+			this.simpleButton18.Text = ")";
 			// 
-			// button19
+			// btnBol
 			// 
-			this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.button19.Location = new System.Drawing.Point(15, 97);
-			this.button19.Name = "button19";
-			this.button19.Size = new System.Drawing.Size(60, 60);
-			this.button19.TabIndex = 18;
-			this.button19.Text = "C";
-			this.button19.UseVisualStyleBackColor = true;
+			this.btnBol.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.btnBol.Appearance.Options.UseFont = true;
+			this.btnBol.Location = new System.Drawing.Point(19, 166);
+			this.btnBol.Name = "btnBol";
+			this.btnBol.Size = new System.Drawing.Size(56, 57);
+			this.btnBol.TabIndex = 36;
+			this.btnBol.Text = "/";
+			this.btnBol.Click += new System.EventHandler(this.BtnIslem_Click);
 			// 
-			// textEdit1
+			// txtSonuc
 			// 
-			this.textEdit1.Location = new System.Drawing.Point(15, 19);
-			this.textEdit1.Name = "textEdit1";
-			this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.textEdit1.Properties.Appearance.Options.UseFont = true;
-			this.textEdit1.Size = new System.Drawing.Size(358, 58);
-			this.textEdit1.TabIndex = 19;
+			this.txtSonuc.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.txtSonuc.Location = new System.Drawing.Point(19, 23);
+			this.txtSonuc.Name = "txtSonuc";
+			this.txtSonuc.Size = new System.Drawing.Size(343, 56);
+			this.txtSonuc.TabIndex = 39;
 			// 
 			// FrmHesapMakinesi
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(389, 402);
-			this.Controls.Add(this.textEdit1);
-			this.Controls.Add(this.button19);
-			this.Controls.Add(this.button18);
-			this.Controls.Add(this.button17);
-			this.Controls.Add(this.button16);
-			this.Controls.Add(this.button15);
-			this.Controls.Add(this.button14);
-			this.Controls.Add(this.button13);
-			this.Controls.Add(this.button12);
-			this.Controls.Add(this.button11);
-			this.Controls.Add(this.btn9_Click);
-			this.Controls.Add(this.btn8_Click);
-			this.Controls.Add(this.btn7_Click);
-			this.Controls.Add(this.btn6_Click);
-			this.Controls.Add(this.btn5_Click);
-			this.Controls.Add(this.btn4_Click);
-			this.Controls.Add(this.btn3_Click);
-			this.Controls.Add(this.btn2_Click);
-			this.Controls.Add(this.btn1_Click);
-			this.Controls.Add(this.btn0_Click);
+			this.ClientSize = new System.Drawing.Size(376, 402);
+			this.Controls.Add(this.txtSonuc);
+			this.Controls.Add(this.simpleButton17);
+			this.Controls.Add(this.simpleButton18);
+			this.Controls.Add(this.btnBol);
+			this.Controls.Add(this.btnCikar);
+			this.Controls.Add(this.btnTopla);
+			this.Controls.Add(this.BtnTemizle);
+			this.Controls.Add(this.btnCarp);
+			this.Controls.Add(this.BtnEsittir);
+			this.Controls.Add(this.btnOndalik);
+			this.Controls.Add(this.btnSayi9);
+			this.Controls.Add(this.btnSayi8);
+			this.Controls.Add(this.btnSayi7);
+			this.Controls.Add(this.btnSayi6);
+			this.Controls.Add(this.btnSayi5);
+			this.Controls.Add(this.btnSayi4);
+			this.Controls.Add(this.btnSayi0);
+			this.Controls.Add(this.btnSayi3);
+			this.Controls.Add(this.btnSayi2);
+			this.Controls.Add(this.btnSayi1);
 			this.Name = "FrmHesapMakinesi";
 			this.Text = "Hesap Makinesi";
-			((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+			this.Load += new System.EventHandler(this.FrmHesapMakinesi_Load);
 			this.ResumeLayout(false);
+			this.PerformLayout();
 
 		}
 
 		#endregion
-
-		private System.Windows.Forms.Button btn0_Click;
-		private System.Windows.Forms.Button btn1_Click;
-		private System.Windows.Forms.Button btn2_Click;
-		private System.Windows.Forms.Button btn3_Click;
-		private System.Windows.Forms.Button btn6_Click;
-		private System.Windows.Forms.Button btn5_Click;
-		private System.Windows.Forms.Button btn4_Click;
-		private System.Windows.Forms.Button btn9_Click;
-		private System.Windows.Forms.Button btn8_Click;
-		private System.Windows.Forms.Button btn7_Click;
-		private System.Windows.Forms.Button button11;
-		private System.Windows.Forms.Button button12;
-		private System.Windows.Forms.Button button13;
-		private System.Windows.Forms.Button button14;
-		private System.Windows.Forms.Button button15;
-		private System.Windows.Forms.Button button16;
-		private System.Windows.Forms.Button button17;
-		private System.Windows.Forms.Button button18;
-		private System.Windows.Forms.Button button19;
-		private DevExpress.XtraEditors.TextEdit textEdit1;
+		private DevExpress.XtraEditors.SimpleButton btnSayi1;
+		private DevExpress.XtraEditors.SimpleButton btnSayi2;
+		private DevExpress.XtraEditors.SimpleButton btnSayi3;
+		private DevExpress.XtraEditors.SimpleButton btnSayi0;
+		private DevExpress.XtraEditors.SimpleButton btnSayi6;
+		private DevExpress.XtraEditors.SimpleButton btnSayi5;
+		private DevExpress.XtraEditors.SimpleButton btnSayi4;
+		private DevExpress.XtraEditors.SimpleButton btnSayi9;
+		private DevExpress.XtraEditors.SimpleButton btnSayi8;
+		private DevExpress.XtraEditors.SimpleButton btnSayi7;
+		private DevExpress.XtraEditors.SimpleButton btnCarp;
+		private DevExpress.XtraEditors.SimpleButton BtnEsittir;
+		private DevExpress.XtraEditors.SimpleButton btnOndalik;
+		private DevExpress.XtraEditors.SimpleButton btnCikar;
+		private DevExpress.XtraEditors.SimpleButton btnTopla;
+		private DevExpress.XtraEditors.SimpleButton BtnTemizle;
+		private DevExpress.XtraEditors.SimpleButton simpleButton17;
+		private DevExpress.XtraEditors.SimpleButton simpleButton18;
+		private DevExpress.XtraEditors.SimpleButton btnBol;
+		private System.Windows.Forms.TextBox txtSonuc;
 	}
 }

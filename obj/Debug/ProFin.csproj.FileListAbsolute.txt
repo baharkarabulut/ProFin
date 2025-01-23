@@ -131,3 +131,4 @@ C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmGiris.resources
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmKullaniciBilgi.resources
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmKullaniciEkle.resources
 C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmGuvenlikAyari.resources
+C:\Users\BAHARS\source\repos\ProFin\obj\Debug\ProFin.FrmHesapMakinesi.resources
