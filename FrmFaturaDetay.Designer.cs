@@ -278,6 +278,7 @@
 			this.btnPdfAktar.Size = new System.Drawing.Size(103, 62);
 			this.btnPdfAktar.TabIndex = 32;
 			this.btnPdfAktar.Text = "PDF\'e \r\nAktar";
+			this.btnPdfAktar.Click += new System.EventHandler(this.btnPdfAktar_Click);
 			// 
 			// FrmFaturaDetay
 			// 

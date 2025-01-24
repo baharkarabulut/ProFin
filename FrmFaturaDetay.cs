@@ -202,5 +202,10 @@ namespace ProFin
 
 			g.DrawString("Teşekkür ederiz!", new Font("Arial", 16, FontStyle.Italic), Brushes.Black, leftMargin, yPosition);
 		}
+
+		private void btnPdfAktar_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

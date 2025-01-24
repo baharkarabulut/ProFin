@@ -16,126 +16,114 @@ namespace ProFin
 		{
 			InitializeComponent();
 		}
-		private string islem = ""; // İşlem tipi (+, -, *, /)
-		private double sonuc = 0;  // Hesaplanan sonuç
-		private bool yeniGiris = true; // Yeni giriş mi kontrolü
+		private string islem = "";
+		private double sonuc = 0;
+		private bool yeniGiris = true;
 		private void FrmHesapMakinesi_Load(object sender, EventArgs e)
 		{
-			foreach (Control control in this.Controls)
-			{
-				if (control is DevExpress.XtraEditors.SimpleButton button && button.Name.StartsWith("btnSayi"))
-				{
-					button.Click += BtnSayi_Click;
-				}
-			}
+			btnSayi1.Click += BtnSayi_Click;
+			btnSayi2.Click += BtnSayi_Click;
+			btnSayi3.Click += BtnSayi_Click;
+			btnSayi4.Click += BtnSayi_Click;
+			btnSayi5.Click += BtnSayi_Click;
+			btnSayi6.Click += BtnSayi_Click;
+			btnSayi7.Click += BtnSayi_Click;
+			btnSayi8.Click += BtnSayi_Click;
+			btnSayi9.Click += BtnSayi_Click;
+			btnSayi0.Click += BtnSayi_Click;
 
-			// İşlem butonları için:
 			btnTopla.Click += BtnIslem_Click;
 			btnCikar.Click += BtnIslem_Click;
 			btnCarp.Click += BtnIslem_Click;
 			btnBol.Click += BtnIslem_Click;
 
-			// Diğer butonlar:
 			BtnEsittir.Click += BtnEsittir_Click;
 			BtnTemizle.Click += BtnTemizle_Click;
 		}
 
 		private void BtnIslem_Click(object sender, EventArgs e)
 		{
-			var button = sender as DevExpress.XtraEditors.SimpleButton;
-			if (button != null)
+			var button = sender as Button;
+			if (button != null && !string.IsNullOrWhiteSpace(txtSonuc.Text))
 			{
-				if (!string.IsNullOrWhiteSpace(txtSonuc.Text))
+				if (string.IsNullOrEmpty(islem))
 				{
-					if (yeniGiris && !string.IsNullOrEmpty(islem)) // Önceki işlem tamamlandıysa
-					{
-						islem = button.Text; // Yeni işlem tipi
-						txtSonuc.Text = sonuc.ToString() + islem; // Sonucu ve yeni işlemi ekrana yaz
-					}
-					else
-					{
-						// İlk sayı ve işlem tipini al
-						sonuc = Convert.ToDouble(txtSonuc.Text);
-						islem = button.Text;
-						txtSonuc.Text += islem; // İşleci ekle
-						yeniGiris = true; // Yeni giriş bekle
-					}
+					sonuc = Convert.ToDouble(txtSonuc.Text);
 				}
+				else
+				{
+					Hesapla();
+				}
+				islem = button.Text;
+				yeniGiris = true;
 			}
 		}
 
 		private void BtnEsittir_Click(object sender, EventArgs e)
 		{
-			if (!string.IsNullOrWhiteSpace(txtSonuc.Text) && !string.IsNullOrEmpty(islem))
+			if (!string.IsNullOrEmpty(islem) && !string.IsNullOrWhiteSpace(txtSonuc.Text))
 			{
 				Hesapla();
-				txtSonuc.Text = sonuc.ToString(); // Sonucu ekrana yaz
-				islem = ""; // İşlemi sıfırla
-				yeniGiris = true; // Yeni giriş başlasın
+				txtSonuc.Text = sonuc.ToString();
+				islem = "";
+				yeniGiris = true;
+			}
+			else
+			{
+				MessageBox.Show("Geçerli bir işlem giriniz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 			}
 		}
 
 		private void BtnTemizle_Click(object sender, EventArgs e)
 		{
-			txtSonuc.Text = ""; // Giriş alanını temizle
-			islem = "";         // İşlemi sıfırla
-			sonuc = 0;          // Sonucu sıfırla
-			yeniGiris = true;   // Yeni giriş başlasın
+			txtSonuc.Text = "";
+			islem = "";
+			sonuc = 0;
+			yeniGiris = true;
 		}
 
 		private void Hesapla()
 		{
 			try
 			{
-				// İşlem dizisinden ikinci sayıyı al
-				string[] sayilar = txtSonuc.Text.Split(new[] { '+', '-', '*', '/' }, StringSplitOptions.RemoveEmptyEntries);
-
-				if (sayilar.Length > 1)
+				double ikinciSayi = Convert.ToDouble(txtSonuc.Text);
+				switch (islem)
 				{
-					double ikinciSayi = Convert.ToDouble(sayilar[1]);
-
-					switch (islem)
-					{
-						case "+":
-							sonuc += ikinciSayi;
-							break;
-						case "-":
-							sonuc -= ikinciSayi;
-							break;
-						case "*":
-							sonuc *= ikinciSayi;
-							break;
-						case "/":
-							if (ikinciSayi != 0)
-								sonuc /= ikinciSayi;
-							else
-								MessageBox.Show("Sıfıra bölme hatası!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
-							break;
-					}
+					case "+":
+						sonuc += ikinciSayi;
+						break;
+					case "-":
+						sonuc -= ikinciSayi;
+						break;
+					case "*":
+						sonuc *= ikinciSayi;
+						break;
+					case "/":
+						if (ikinciSayi != 0)
+							sonuc /= ikinciSayi;
+						else
+							throw new DivideByZeroException("Sıfıra bölme hatası!");
+						break;
 				}
-				else
-				{
-					MessageBox.Show("Geçerli bir işlem giriniz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-				}
+				yeniGiris = true;
 			}
-			catch (Exception ex)
+			catch
 			{
-				MessageBox.Show("Hesaplama sırasında bir hata oluştu: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show("Geçersiz giriş!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}
 
-
 		private void BtnSayi_Click(object sender, EventArgs e)
 		{
-			var button = sender as DevExpress.XtraEditors.SimpleButton;
+			var button = sender as Button;
 			if (button != null)
 			{
 				if (yeniGiris)
 				{
-					txtSonuc.Text = ""; // Yeni bir giriş başlarsa ekranı temizle
+					txtSonuc.Text = "";
 					yeniGiris = false;
 				}
-				txtSonuc.Text += button.Text; // Tıklanan rakamı ekle
+				txtSonuc.Text += button.Text;
 			}
 		}
 	}
