@@ -11,7 +11,12 @@ using System.Globalization;
 using DevExpress.XtraGrid;
 using DevExpress.XtraPrinting;
 using System.Drawing.Printing;
-
+using iText.Kernel.Pdf;
+using iText.Layout;
+using iText.Layout.Element;
+using iText.Layout.Properties;
+using iText.Kernel.Font;
+using System.IO;
 namespace ProFin
 {
 	public partial class FrmFaturaDetay : Form
@@ -205,7 +210,98 @@ namespace ProFin
 
 		private void btnPdfAktar_Click(object sender, EventArgs e)
 		{
-
+			PdfAktarFaturaDetay();
 		}
+		private void PdfAktarFaturaDetay()
+		{
+			using (SaveFileDialog saveFileDialog = new SaveFileDialog())
+			{
+				saveFileDialog.Filter = "PDF Dosyası (*.pdf)|*.pdf"; 
+				saveFileDialog.Title = "Faturayı Kaydet"; 
+				saveFileDialog.FileName = "FaturaDetaylari.pdf"; 
+
+				if (saveFileDialog.ShowDialog() == DialogResult.OK)
+				{
+					string dosyaYolu = saveFileDialog.FileName; 
+
+					try
+					{
+						using (PdfWriter writer = new PdfWriter(dosyaYolu))
+						{
+							using (PdfDocument pdf = new PdfDocument(writer))
+							{
+								iText.Layout.Document document = new iText.Layout.Document(pdf);
+
+								PdfFont helveticaBold = PdfFontFactory.CreateFont("Helvetica-Bold");
+								document.Add(new Paragraph("Fatura Detayları")
+									.SetFont(helveticaBold)
+									.SetFontSize(18)
+									.SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER));
+
+								document.Add(new Paragraph("\n"));
+
+								PdfFont regularFont = PdfFontFactory.CreateFont("Helvetica");
+								document.Add(new Paragraph($"Fatura ID: {txtFaturaID.Text}")
+									.SetFont(regularFont)
+									.SetFontSize(12));
+								document.Add(new Paragraph($"Fatura Numarası: {txtFaturaNumarasi.Text}")
+									.SetFont(regularFont)
+									.SetFontSize(12));
+								document.Add(new Paragraph($"Müşteri Adı: {txtMusteriAdi.Text}")
+									.SetFont(regularFont)
+									.SetFontSize(12));
+								document.Add(new Paragraph($"Proje Adı: {txtProjeAdi.Text}")
+									.SetFont(regularFont)
+									.SetFontSize(12));
+								document.Add(new Paragraph($"Fatura Tutarı: {txtToplamTutar.Text}")
+									.SetFont(regularFont)
+									.SetFontSize(12));
+								document.Add(new Paragraph($"KDV Oranı: {txtKDVOrani.Text}")
+									.SetFont(regularFont)
+									.SetFontSize(12));
+								document.Add(new Paragraph($"Fatura Tarihi: {txtFaturaTarihi.Text}")
+									.SetFont(regularFont)
+									.SetFontSize(12));
+
+								document.Add(new Paragraph("\n"));
+
+								PdfFont helveticaOblique = PdfFontFactory.CreateFont("Helvetica-Oblique");
+								document.Add(new Paragraph("Teşekkür ederiz!")
+									.SetFont(helveticaOblique)
+									.SetFontSize(16)
+									.SetTextAlignment(iText.Layout.Properties.TextAlignment.CENTER));
+
+							}
+						}
+
+						if (new FileInfo(dosyaYolu).Length == 0)
+						{
+							MessageBox.Show("Dosya oluşturulurken bir hata oluştu. PDF dosyası boş.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+						}
+						else
+						{
+							MessageBox.Show($"Fatura detayları {dosyaYolu} dosyasına kaydedildi.", "Başarılı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+							System.Diagnostics.Process.Start(dosyaYolu);
+						}
+					}
+					catch (IOException ioEx)
+					{
+						MessageBox.Show($"Dosya işlemi sırasında hata oluştu: {ioEx.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					}
+					catch (iText.Kernel.Exceptions.PdfException pdfEx)
+					{
+						MessageBox.Show($"PDF yazarken hata oluştu: {pdfEx.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					}
+					catch (Exception ex)
+					{
+						MessageBox.Show($"Beklenmeyen bir hata oluştu: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					}
+				}
+			}
+		}
+
+
+
 	}
 }
