@@ -105,31 +105,6 @@ namespace ProFin
 			}
 		}
 
-		private void MusterileriListele()
-		{
-			using (var db = new DbProFinEntities())
-			{
-				var musteriler = from musteri in db.Musteriler
-								 select new
-								 {
-									 musteri.MusteriID,
-									 musteri.AdSoyad,
-									 musteri.Eposta
-								 };
-
-				gridControl2.DataSource = musteriler.ToList();
-
-				gridView2.Columns["MusteriID"].Caption = "ID";
-				gridView2.Columns["AdSoyad"].Caption = "Müşteri";
-				gridView2.Columns["Eposta"].Caption = "Mail";
-
-				gridView2.Columns["MusteriID"].Width = 70;
-				gridView2.Columns["AdSoyad"].Width = 200;
-				gridView2.Columns["Eposta"].Width = 250;
-			}
-		}
-
-
 		private dynamic GetSonOdenenFatura()
 		{
 			using (var dbContext = new DbProFinEntities())
@@ -238,85 +213,68 @@ namespace ProFin
 			timer.Tick += (s, e) => ProjeKalanSureleriniListele();
 			timer.Start();
 		}
-
-		private void GuncelleHedefler()
+		private void AylikFinansalDurum()
 		{
-			using (var db = new DbProFinEntities())
-			{
-				decimal gelirHedefi = 350000;
-				decimal toplamGelir = db.Faturalar
-									   .Where(f => f.DurumBilgi == "Geçerli")
-									   .Sum(f => (decimal?)f.ToplamTutar) ?? 0;
+			var aylikVeriler = db.Faturalar
+				.Where(f => f.FaturaTarihi.HasValue)
+				.GroupBy(f => f.FaturaTarihi.Value.Month)
+				.Select(g => new
+				{
+					Ay = g.Key,
+					ToplamTutar = g.Sum(f => (decimal?)f.ToplamTutar) ?? 0,
+					OdenmisTutar = g.Where(f => f.OdemeDurumu == "Ödendi").Sum(f => (decimal?)f.ToplamTutar) ?? 0,
+					OdenmemisTutar = g.Where(f => f.OdemeDurumu == "Ödenmedi").Sum(f => (decimal?)f.ToplamTutar) ?? 0,
+					KismiOdenmisTutar = g.Where(f => f.OdemeDurumu == "Kısmi Ödendi").Sum(f => (decimal?)f.ToplamTutar) ?? 0
+				}).ToList();
 
-				decimal kalanGelir = gelirHedefi - toplamGelir;
+			chartControl1.Series.Clear();
 
-				lblGelirHedefi.Text =
-					$"Gelir Hedefi: {gelirHedefi:C}\n" +
-					$"Şu Anki Gelir: {toplamGelir:C}\n" +
-					$"Kalan Hedef: {(kalanGelir > 0 ? kalanGelir.ToString("C") : "Tamamlandı!")}";
+			var toplamTutarSeri = new DevExpress.XtraCharts.Series("Toplam Tutar", DevExpress.XtraCharts.ViewType.Line);
+			toplamTutarSeri.DataSource = aylikVeriler;
+			toplamTutarSeri.ArgumentDataMember = "Ay";
+			toplamTutarSeri.ValueDataMembers.AddRange("ToplamTutar");
 
-				int projeHedefi = 15; 
-				int tamamlananProjeler = db.Projeler.Count(p => p.Durum == "Tamamlandı");
+			var odenmisTutarSeri = new DevExpress.XtraCharts.Series("Ödenmiş Tutar", DevExpress.XtraCharts.ViewType.Line);
+			odenmisTutarSeri.DataSource = aylikVeriler;
+			odenmisTutarSeri.ArgumentDataMember = "Ay";
+			odenmisTutarSeri.ValueDataMembers.AddRange("OdenmisTutar");
 
-				int kalanProje = projeHedefi - tamamlananProjeler;
+			var odenmemisTutarSeri = new DevExpress.XtraCharts.Series("Ödenmemiş Tutar", DevExpress.XtraCharts.ViewType.Line);
+			odenmemisTutarSeri.DataSource = aylikVeriler;
+			odenmemisTutarSeri.ArgumentDataMember = "Ay";
+			odenmemisTutarSeri.ValueDataMembers.AddRange("OdenmemisTutar");
 
-				lblProjeHedefi.Text =
-					$"Proje Hedefi: {projeHedefi} Proje\n" +
-					$"Tamamlanan Projeler: {tamamlananProjeler}\n" +
-					$"Kalan Hedef: {(kalanProje > 0 ? $"{kalanProje} Proje" : "Tamamlandı!")}";
+			var kismiOdenmisTutarSeri = new DevExpress.XtraCharts.Series("Kısmi Ödenmiş Tutar", DevExpress.XtraCharts.ViewType.Line);
+			kismiOdenmisTutarSeri.DataSource = aylikVeriler;
+			kismiOdenmisTutarSeri.ArgumentDataMember = "Ay";
+			kismiOdenmisTutarSeri.ValueDataMembers.AddRange("KismiOdenmisTutar");
 
-				progressGelir.EditValue = toplamGelir / gelirHedefi * 100;
-				progressProje.EditValue = tamamlananProjeler / (double)projeHedefi * 100;
-			}
+			chartControl1.Series.AddRange(new[] { toplamTutarSeri, odenmisTutarSeri, odenmemisTutarSeri, kismiOdenmisTutarSeri });
 		}
 
-		private void EtkinlikleriListele()
+		private void MusteriBazliDurumDagilimi()
 		{
 			using (var db = new DbProFinEntities())
 			{
-				var etkinlikler = db.Etkinlik
-					.OrderBy(e => e.Tarih)
-					.Select(e => new
+				var durumDagilimi = db.Musteriler
+					.Select(m => new
 					{
-						e.EtkinlikAdi,
-						e.Tarih,
-						Durum = e.Durum == 1 ? "Yaklaşan" :
-								e.Durum == 2 ? "Tamamlandı" :
-								"Gecikmiş",
-						e.Aciklama
+						MusteriAdi = m.AdSoyad,
+						TamamlananProjeler = db.Projeler.Count(p => p.MusteriID == m.MusteriID && p.Durum == "Tamamlandı"),
+						DevamEdenProjeler = db.Projeler.Count(p => p.MusteriID == m.MusteriID && p.Durum == "Devam Ediyor"),
+						IptalEdilenProjeler = db.Projeler.Count(p => p.MusteriID == m.MusteriID && p.Durum == "İptal Edildi")
 					})
 					.ToList();
 
-				listViewEtkinlikler.Items.Clear();
+				gridControl3.DataSource = durumDagilimi;
 
-				foreach (var etkinlik in etkinlikler)
+				// Mevcut sütun isimlerini kontrol et
+				foreach (DevExpress.XtraGrid.Columns.GridColumn column in gridView1.Columns)
 				{
-					ListViewItem item = new ListViewItem(etkinlik.EtkinlikAdi);
-					item.SubItems.Add(etkinlik.Tarih.HasValue
-	? etkinlik.Tarih.Value.ToString("dd.MM.yyyy")
-	: "Belirtilmemiş");
-
-					if (etkinlik.Durum == "Yaklaşan")
-						item.BackColor = Color.LightBlue;
-					else if (etkinlik.Durum == "Tamamlandı")
-						item.BackColor = Color.LightGreen;
-					else if (etkinlik.Durum == "Gecikmiş")
-						item.BackColor = Color.LightCoral;
-
-					listViewEtkinlikler.Items.Add(item);
+					Console.WriteLine($"Column Name: {column.FieldName}");
 				}
+
 			}
-		}
-		private void InitializeEtkinlikListesi()
-		{
-			listViewEtkinlikler.Clear();
-
-			listViewEtkinlikler.Columns.Add("Etkinlik Adı", 147);
-			listViewEtkinlikler.Columns.Add("Tarih", 80);
-
-			listViewEtkinlikler.View = View.Details;
-			listViewEtkinlikler.FullRowSelect = true;
-			listViewEtkinlikler.GridLines = true;
 		}
 
 		private void FrmAnasayfa_Load(object sender, EventArgs e)
@@ -345,7 +303,7 @@ namespace ProFin
 			pieView.Depth = 20;
 
 			ChartTitle chartTitle = new ChartTitle();
-			chartTitle.Text = "Toplam Gelir/Gider";
+			chartTitle.Text = "";
 			chartToplamGelir.Titles.Clear();
 			chartToplamGelir.Titles.Add(chartTitle);
 
@@ -363,12 +321,11 @@ namespace ProFin
 			SideBySideBarSeriesView barView = (SideBySideBarSeriesView)projeDurumSeries.View;
 			barView.ColorEach = true;
 
-			ChartTitle projeDurumTitle = new ChartTitle { Text = "Proje Durumu Grafiği" };
+			ChartTitle projeDurumTitle = new ChartTitle { Text = "" };
 			chartProjeDurumu.Titles.Clear();
 			chartProjeDurumu.Titles.Add(projeDurumTitle);
 
 			ProjeleriListele();
-			MusterileriListele();
 
 			var sonFatura = GetSonOdenenFatura();
 
@@ -408,11 +365,8 @@ namespace ProFin
 
 			ProjeKalanSureleriniListele();
 			InitializeTimer();
-
-			GuncelleHedefler();
-
-			InitializeEtkinlikListesi();
-			EtkinlikleriListele();
+			AylikFinansalDurum();
+			MusteriBazliDurumDagilimi();
 		}
 	}
 }

@@ -119,9 +119,5 @@ namespace ProFin
 				gridView.Columns["EnUzunProjeSuresi"].Width = 150;
 			}
 		}
-
-
-
-
 	}
 }
