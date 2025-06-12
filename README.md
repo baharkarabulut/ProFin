@@ -1,42 +1,50 @@
-# ProFin - Project and Finance Management Application
+# 💼 ProFin - Project and Finance Management Application
 
-ProFin is a desktop application designed to optimize project and financial management processes. With a user-friendly interface, powerful analysis tools, and detailed reporting features, it empowers businesses to manage their financial and operational workflows efficiently.
+**ProFin** is a desktop application developed to optimize project and financial workflows in businesses. With a modern interface and detailed reporting features, it helps users manage projects, customers, invoices, and financial records all in one place.
 
-Project Features
-1. Project Management:
--Project Operations: Add, update, and cancel projects effortlessly.
--Status Tracking: Monitor ongoing, completed, and canceled projects using both tables and graphs.
--Project Calendar: A dedicated calendar view to track project start and end dates.
--Project Details: Access customer and invoice details linked to specific projects.
--Time Remaining and Progress Analysis: View the remaining time and percentage completion of projects.
+## 🧩 Key Features
 
-2. Customer Management:
--Add, edit, and analyze customers’ statuses.
--Gain insights into the number of projects and revenue associated with each customer.
+### 📁 Project Management
+- Add, update, and cancel projects
+- Track project status (ongoing, completed, canceled)
+- View projects in a calendar with start and end dates
+- Access related customer and invoice details
+- Monitor project progress and remaining time
 
-3. Invoice Management:
--Invoice Operations: Add, update, and cancel invoices with ease.
--Invoice Analysis: Monitor unpaid invoices, financial reports, and summaries.
--Invoice Outputs: Print invoices or export them in a professional PDF format.
+### 👥 Customer Management
+- Add and edit customers
+- Analyze the number of projects and revenue per customer
 
-4. Financial Management:
--Record company income and expenses.
--Generate income-expense tables and detailed financial reports.
--View monthly financial analysis through visualized charts.
+### 🧾 Invoice Management
+- Add, update, and cancel invoices
+- Monitor unpaid invoices and generate financial summaries
+- Print invoices or export them as professional PDFs
 
-5. Reporting and Analysis:
--Create detailed reports based on project, customer, and invoice data.
--Evaluate financial status and performance through visual charts and graphs.
--Easily list pending tasks and unpaid invoices.
+### 💰 Financial Management
+- Record income and expenses
+- Generate detailed financial tables and reports
+- View monthly financial analysis with charts
 
-6. Additional Features:
--Light and dark mode support.
--Integrated calculator.
--User management and password change options.
+### 📊 Reporting and Analysis
+- Create visual reports for projects, customers, and invoices
+- Track financial performance with interactive graphs
+- List pending tasks and unpaid invoices
 
-Technologies Used
-Programming Language: C#
-Development Environment: .NET Framework
-Design: Windows Forms with DevExpress for a modern and user-friendly interface.
-Database: SQL Server
-PDF Handling: iText7 Library
+### 🛠️ Additional Features
+- Light/Dark mode support
+- Integrated calculator
+- User management and password change functionality
+
+## 🛠️ Tech Stack
+- **Language:** C#  
+- **Framework:** .NET Framework  
+- **UI:** Windows Forms with DevExpress  
+- **Database:** Microsoft SQL Server  
+- **PDF Export:** iText7 Library  
+
+## 📌 Project Duration
+**December 2024 – January 2025**
+
+## 👨‍💻 Author
+Developed as part of a personal initiative to create an all-in-one business management solution for project and finance tracking.
+
