@@ -1,6 +1,6 @@
 # 💼 ProFin - Project and Finance Management Application
 
-**ProFin** is a desktop application developed to optimize project and financial workflows in businesses. With a modern interface and detailed reporting features, it helps users manage projects, customers, invoices, and financial records all in one place.
+**ProFin** is a desktop application developed to optimize project and financial workflows in businesses. With a modern interface and detailed reporting features, it helps users manage projects, customers, invoices, and financial records all in one place..
 
 ## 🧩 Key Features
 
